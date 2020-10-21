@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ikm-se-056">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Goal View Controller-->
+        <scene sceneID="sKc-LW-d1a">
+            <objects>
+                <viewController storyboardIdentifier="AddGoalViewController" id="Ikm-se-056" customClass="AddGoalViewController" customModule="Goal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7AK-mS-Vv8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GGT-8u-Bxl">
+                                <rect key="frame" x="16" y="60" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="O8p-2P-YSk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="detail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U7Y-Wo-ba8">
+                                <rect key="frame" x="16" y="120" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="l4h-Z6-2ve"/>
+                                    <constraint firstAttribute="height" constant="44" id="oCT-3B-VdD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yb8-GZ-Gjd">
+                                <rect key="frame" x="16" y="818" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hF8-br-GTg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addButtonTouched:" destination="Ikm-se-056" eventType="touchUpInside" id="8fu-C4-jbt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7KI-gn-F8m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7KI-gn-F8m" firstAttribute="trailing" secondItem="Yb8-GZ-Gjd" secondAttribute="trailing" constant="16" id="0lZ-3a-f93"/>
+                            <constraint firstItem="7KI-gn-F8m" firstAttribute="trailing" secondItem="GGT-8u-Bxl" secondAttribute="trailing" constant="16" id="2yU-z7-jhN"/>
+                            <constraint firstItem="7KI-gn-F8m" firstAttribute="trailing" secondItem="U7Y-Wo-ba8" secondAttribute="trailing" constant="16" id="8OU-Z0-HBi"/>
+                            <constraint firstItem="U7Y-Wo-ba8" firstAttribute="top" secondItem="GGT-8u-Bxl" secondAttribute="bottom" constant="16" id="DIe-h6-gS5"/>
+                            <constraint firstItem="Yb8-GZ-Gjd" firstAttribute="leading" secondItem="7KI-gn-F8m" secondAttribute="leading" constant="16" id="FHN-bx-wbF"/>
+                            <constraint firstItem="GGT-8u-Bxl" firstAttribute="top" secondItem="7KI-gn-F8m" secondAttribute="top" constant="16" id="GOm-bA-xN1"/>
+                            <constraint firstItem="GGT-8u-Bxl" firstAttribute="leading" secondItem="7KI-gn-F8m" secondAttribute="leading" constant="16" id="Y3o-7S-1jQ"/>
+                            <constraint firstItem="U7Y-Wo-ba8" firstAttribute="leading" secondItem="7KI-gn-F8m" secondAttribute="leading" constant="16" id="fcj-4p-2QH"/>
+                            <constraint firstItem="Yb8-GZ-Gjd" firstAttribute="bottom" secondItem="7KI-gn-F8m" secondAttribute="bottom" id="huU-Vq-vAN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="Yb8-GZ-Gjd" id="U1a-DA-lD4"/>
+                        <outlet property="detailField" destination="U7Y-Wo-ba8" id="uz4-hp-4zN"/>
+                        <outlet property="titleField" destination="GGT-8u-Bxl" id="bxi-eY-rUe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RsQ-u7-ITD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

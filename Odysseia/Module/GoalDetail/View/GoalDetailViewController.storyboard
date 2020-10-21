@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tNT-mb-9uC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Goal Detail View Controller-->
+        <scene sceneID="gO1-3n-4w4">
+            <objects>
+                <viewController storyboardIdentifier="GoalDetailViewController" id="tNT-mb-9uC" customClass="GoalDetailViewController" customModule="Goal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SP9-aw-Dez">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-KY-Vu8">
+                                <rect key="frame" x="16" y="60" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oth-gQ-1oE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCb-2X-K3F">
+                                <rect key="frame" x="16" y="120" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="u3j-BR-N4F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HfH-6D-pQ4"/>
+                        <color key="backgroundColor" name="astro"/>
+                        <constraints>
+                            <constraint firstItem="WCb-2X-K3F" firstAttribute="top" secondItem="sbr-KY-Vu8" secondAttribute="bottom" constant="16" id="14s-vU-i18"/>
+                            <constraint firstItem="HfH-6D-pQ4" firstAttribute="trailing" secondItem="sbr-KY-Vu8" secondAttribute="trailing" constant="16" id="CZg-8w-Pbc"/>
+                            <constraint firstItem="WCb-2X-K3F" firstAttribute="leading" secondItem="HfH-6D-pQ4" secondAttribute="leading" constant="16" id="aeu-Ff-bLy"/>
+                            <constraint firstItem="sbr-KY-Vu8" firstAttribute="leading" secondItem="HfH-6D-pQ4" secondAttribute="leading" constant="16" id="cII-Eu-VDF"/>
+                            <constraint firstItem="HfH-6D-pQ4" firstAttribute="trailing" secondItem="WCb-2X-K3F" secondAttribute="trailing" constant="16" id="dZW-rj-mSK"/>
+                            <constraint firstItem="sbr-KY-Vu8" firstAttribute="top" secondItem="HfH-6D-pQ4" secondAttribute="top" constant="16" id="epX-zG-NSD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailField" destination="WCb-2X-K3F" id="XHB-KP-PMn"/>
+                        <outlet property="titleField" destination="sbr-KY-Vu8" id="wYH-nD-Kv3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7M-Ou-seo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="astro">
+            <color red="0.12549019607843137" green="0.14117647058823529" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

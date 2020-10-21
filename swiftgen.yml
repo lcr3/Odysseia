@@ -1,0 +1,5 @@
+xcassets:
+  inputs: Goal/Resources/Resources.xcassets
+  outputs:
+    templateName: swift5
+    output: Goal/Resources/Assets.swift

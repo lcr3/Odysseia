@@ -1,0 +1,102 @@
+//
+//  GoalListViewController.swift
+//  CoreDataSampleTest
+//
+//  Created by lcr on 2020/10/19.
+//
+
+import UIKit
+
+enum GoalSection: Int, CaseIterable {
+    case goal
+}
+
+protocol GoalListView: AnyObject {
+    var presenter: GoalListPresentation! { get }
+    func viewDidLoad()
+    func reload(goals: [Goal])
+    func showErrorMessageView(reason: String)
+}
+
+class GoalListViewController: UIViewController, StoryboardInstantiatable {
+    static var instantiateType: StoryboardInstantiateType { .initial }
+
+    @IBOutlet weak var collectionView: UICollectionView!
+    var presenter: GoalListPresentation!
+    private let collectionCellHeight: CGFloat = 110
+    private let collectionViewMargin: CGFloat = 16
+    private let collectionViewInset = UIEdgeInsets(top: 10, left: 2.0, bottom: 2.0, right: 2.0)
+    private lazy var dataSource: UICollectionViewDiffableDataSource<GoalSection, Goal> = {
+        let dataSouce = UICollectionViewDiffableDataSource<GoalSection, Goal>(collectionView: collectionView) { collectionView, indexPath, item -> UICollectionViewCell? in
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GoalListCollectionCell.className, for: indexPath) as? GoalListCollectionCell {
+                cell.titleLabel.text = item.title
+                return cell
+            }
+            return UICollectionViewCell()
+        }
+        return dataSouce
+    }()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        collectionView.dataSource = dataSource
+        collectionView.delegate = self
+        let addBarItem = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addBarButtonTapped(_:)))
+        navigationItem.rightBarButtonItems = [addBarItem]
+        presenter.loadGoals()
+    }
+
+    @objc func addBarButtonTapped(_ sender: UIBarButtonItem) {
+        presenter.addButtonTouched()
+    }
+}
+
+extension GoalListViewController: GoalListView {
+    func reload(goals: [Goal]) {
+        var snapshot = NSDiffableDataSourceSnapshot<GoalSection, Goal>()
+        snapshot.appendSections(GoalSection.allCases)
+        snapshot.appendItems(goals, toSection: .goal)
+        dataSource.apply(snapshot, animatingDifferences: true)
+    }
+
+    func showErrorMessageView(reason: String) {
+        // todo show error message
+    }
+}
+
+extension GoalListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.goalCellTouched(row: indexPath.row)
+    }
+}
+
+extension GoalListViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        presenter.goals.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GoalListCollectionCell.className, for: indexPath) as? GoalListCollectionCell {
+            cell.titleLabel.text = presenter.goals[indexPath.item].title
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+}
+
+extension GoalListViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width - collectionViewMargin
+        return CGSize(width: width, height: collectionCellHeight)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        collectionViewInset
+    }
+}
+
+extension GoalListViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        presenter.loadGoals()
+    }
+}

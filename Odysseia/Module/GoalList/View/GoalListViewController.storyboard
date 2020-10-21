@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KZf-iN-gyq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Goal List View Controller-->
+        <scene sceneID="T7e-5E-bqI">
+            <objects>
+                <viewController id="KZf-iN-gyq" customClass="GoalListViewController" customModule="Odysseia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p0X-cS-Lzw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WGH-8U-Ba9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" name="astro"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q3a-Ep-OPK">
+                                    <size key="itemSize" width="414" height="110"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoalListCollectionCell" id="Eml-8n-Gp4" customClass="GoalListCollectionCell" customModule="Odysseia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UGN-as-Rhr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3d-FD-hqL">
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="110"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="J3d-FD-hqL" secondAttribute="bottom" id="00X-Hy-8br"/>
+                                                <constraint firstAttribute="trailing" secondItem="J3d-FD-hqL" secondAttribute="trailing" constant="16" id="GSz-6x-j1k"/>
+                                                <constraint firstItem="J3d-FD-hqL" firstAttribute="top" secondItem="UGN-as-Rhr" secondAttribute="top" id="NVs-5q-jcn"/>
+                                                <constraint firstItem="J3d-FD-hqL" firstAttribute="leading" secondItem="UGN-as-Rhr" secondAttribute="leading" constant="16" id="hRR-VN-bsj"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="110"/>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="J3d-FD-hqL" id="oNN-1v-qJ0"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D5T-Pf-aEy"/>
+                        <color key="backgroundColor" name="astro"/>
+                        <constraints>
+                            <constraint firstItem="WGH-8U-Ba9" firstAttribute="top" secondItem="D5T-Pf-aEy" secondAttribute="top" id="CgU-5T-Cs7"/>
+                            <constraint firstAttribute="bottom" secondItem="WGH-8U-Ba9" secondAttribute="bottom" id="buM-hy-VV3"/>
+                            <constraint firstItem="WGH-8U-Ba9" firstAttribute="leading" secondItem="D5T-Pf-aEy" secondAttribute="leading" id="faH-Xo-4JR"/>
+                            <constraint firstItem="D5T-Pf-aEy" firstAttribute="trailing" secondItem="WGH-8U-Ba9" secondAttribute="trailing" id="lBs-dg-Gf4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="WGH-8U-Ba9" id="zVC-XR-6g3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bf2-Kn-RsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.014492753623188" y="4.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="astro">
+            <color red="0.125" green="0.14100000262260437" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

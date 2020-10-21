@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FyL-sE-5yz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Goal View Controller-->
+        <scene sceneID="MTQ-AO-gZh">
+            <objects>
+                <viewController storyboardIdentifier="EditGoalViewController" id="FyL-sE-5yz" customClass="EditGoalViewController" customModule="Goal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="beK-G6-4ez">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eUl-p9-eRs">
+                                <rect key="frame" x="16" y="60" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0Ys-nH-pjQ"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="detail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQh-WN-qwd">
+                                <rect key="frame" x="16" y="120" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="1bw-YG-AxA"/>
+                                    <constraint firstAttribute="height" constant="44" id="CK4-BJ-gi2"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgF-qk-vgY">
+                                <rect key="frame" x="16" y="834" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nOL-Nw-zEd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="doneButtonTouched:" destination="FyL-sE-5yz" eventType="touchUpInside" id="l3u-ZA-MIK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EHX-R2-ROL"/>
+                        <color key="backgroundColor" name="astro"/>
+                        <constraints>
+                            <constraint firstItem="EHX-R2-ROL" firstAttribute="trailing" secondItem="eUl-p9-eRs" secondAttribute="trailing" constant="16" id="2d6-jp-dJe"/>
+                            <constraint firstItem="eUl-p9-eRs" firstAttribute="top" secondItem="EHX-R2-ROL" secondAttribute="top" constant="16" id="K7Q-2d-3Nn"/>
+                            <constraint firstItem="eUl-p9-eRs" firstAttribute="leading" secondItem="EHX-R2-ROL" secondAttribute="leading" constant="16" id="TkX-tj-cLi"/>
+                            <constraint firstItem="WgF-qk-vgY" firstAttribute="bottom" secondItem="EHX-R2-ROL" secondAttribute="bottom" constant="16" id="V96-JT-j6N"/>
+                            <constraint firstItem="WgF-qk-vgY" firstAttribute="leading" secondItem="EHX-R2-ROL" secondAttribute="leading" constant="16" id="WHI-an-4ss"/>
+                            <constraint firstItem="EHX-R2-ROL" firstAttribute="trailing" secondItem="WgF-qk-vgY" secondAttribute="trailing" constant="16" id="gIA-me-0y1"/>
+                            <constraint firstItem="eQh-WN-qwd" firstAttribute="top" secondItem="eUl-p9-eRs" secondAttribute="bottom" constant="16" id="qb8-gM-l0B"/>
+                            <constraint firstItem="EHX-R2-ROL" firstAttribute="trailing" secondItem="eQh-WN-qwd" secondAttribute="trailing" constant="16" id="uUo-uW-oEY"/>
+                            <constraint firstItem="eQh-WN-qwd" firstAttribute="leading" secondItem="EHX-R2-ROL" secondAttribute="leading" constant="16" id="z4F-md-Dyu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailField" destination="eQh-WN-qwd" id="sEd-Vu-odX"/>
+                        <outlet property="titleField" destination="eUl-p9-eRs" id="pRV-6d-PeT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7L-LV-Naa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="astro">
+            <color red="0.12549019607843137" green="0.14117647058823529" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
