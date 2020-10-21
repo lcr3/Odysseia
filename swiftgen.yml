@@ -1,5 +1,5 @@
 xcassets:
-  inputs: Goal/Resources/Resources.xcassets
+  inputs: Odysseia/Resources/Resources.xcassets
   outputs:
     templateName: swift5
-    output: Goal/Resources/Assets.swift
+    output: Odysseia/Resources/Assets.swift
