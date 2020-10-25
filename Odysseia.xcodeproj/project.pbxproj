@@ -1,0 +1,1420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016F22FB06656F9DB595306E /* AsapPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958AEC0D1ED177430EFC99DA /* AsapPresenterTests.swift */; };
+		05BE5317C6B3B6C3081C2919 /* AddTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */; };
+		0A79080A4981356A6908510F /* AddTaskRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5626CF0488460640D40A0 /* AddTaskRouterTests.swift */; };
+		0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */; };
+		1D87509790F62302F586FA48 /* AsapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F377FAD742C77C846A29855 /* AsapViewTests.swift */; };
+		23FCC9F67139A893CB708D22 /* AddGoalNameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */; };
+		290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B5C4A253F1537009D54B1 /* Resources.xcassets */; };
+		290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */; };
+		2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
+		2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954E9592540561200E89510 /* GoalNavigationController.swift */; };
+		2954E9672541251A00E89510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
+		295527D8253E5DD5009AFE97 /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527D7253E5DD5009AFE97 /* AddGoalViewController.swift */; };
+		295527DE253E5E87009AFE97 /* AddGoalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527DD253E5E87009AFE97 /* AddGoalPresenter.swift */; };
+		295527E8253E5EA3009AFE97 /* AddGoalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527E7253E5EA3009AFE97 /* AddGoalInteractor.swift */; };
+		295527F0253E5EA9009AFE97 /* AddGoalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527EF253E5EA9009AFE97 /* AddGoalRouter.swift */; };
+		295527FC253E6BD5009AFE97 /* AddGoalInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527FB253E6BD5009AFE97 /* AddGoalInteractorOutput.swift */; };
+		2955280F253E76D9009AFE97 /* PersistentContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */; };
+		29552819253E779C009AFE97 /* GoalServicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552818253E779C009AFE97 /* GoalServicer.swift */; };
+		29552828253E8052009AFE97 /* TemporaryGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552827253E8052009AFE97 /* TemporaryGoal.swift */; };
+		2959D0672549673800A3DC28 /* AddTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D0662549673800A3DC28 /* AddTaskInteractor.swift */; };
+		2959D06C2549679500A3DC28 /* AddTaskInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D06B2549679500A3DC28 /* AddTaskInteractorOutput.swift */; };
+		297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297795DB254842B000AD7E2D /* AddTaskCell.swift */; };
+		29833775254140F7001CB8D9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29833773254140F7001CB8D9 /* Strings+Generated.swift */; };
+		298337A72541B4C1001CB8D9 /* AddGoalInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337A62541B4C1001CB8D9 /* AddGoalInteractorTest.swift */; };
+		298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337BE2541B845001CB8D9 /* MockGoalService.swift */; };
+		298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 298337D72542AAC7001CB8D9 /* HGCircularSlider */; };
+		298337DE25441173001CB8D9 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337DD25441173001CB8D9 /* TaskView.swift */; };
+		298337E325441188001CB8D9 /* TaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298337E225441188001CB8D9 /* TaskView.xib */; };
+		29976052253D96A000CDD568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976051253D96A000CDD568 /* AppDelegate.swift */; };
+		29976054253D96A000CDD568 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976053253D96A000CDD568 /* SceneDelegate.swift */; };
+		2997605E253D96A200CDD568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2997605D253D96A200CDD568 /* Assets.xcassets */; };
+		29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2997605F253D96A200CDD568 /* LaunchScreen.storyboard */; };
+		2997606C253D96A200CDD568 /* OdysseiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997606B253D96A200CDD568 /* OdysseiaTests.swift */; };
+		29976077253D96A200CDD568 /* OdysseiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976076253D96A200CDD568 /* OdysseiaUITests.swift */; };
+		29976097253D96E300CDD568 /* GoalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608D253D96E300CDD568 /* GoalPresenter.swift */; };
+		29976098253D96E300CDD568 /* GoalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608F253D96E300CDD568 /* GoalListViewController.swift */; };
+		29976099253D96E300CDD568 /* GoalListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29976090253D96E300CDD568 /* GoalListViewController.storyboard */; };
+		2997609A253D96E300CDD568 /* GoalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976092253D96E300CDD568 /* GoalInteractor.swift */; };
+		2997609B253D96E300CDD568 /* GoalInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976094253D96E300CDD568 /* GoalInteractorOutput.swift */; };
+		2997609C253D96E300CDD568 /* GoalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976096253D96E300CDD568 /* GoalRouter.swift */; };
+		299760A2253D96F900CDD568 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299760A1253D96F900CDD568 /* Extension.swift */; };
+		299D7614253EB841006985FD /* GoalListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7613253EB841006985FD /* GoalListCollectionCell.swift */; };
+		299D761B253ECC57006985FD /* GoalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D761A253ECC57006985FD /* GoalDetailViewController.swift */; };
+		299D7626253ECD4C006985FD /* GoalDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7625253ECD4C006985FD /* GoalDetailPresenter.swift */; };
+		299D762C253ECDF8006985FD /* GoalDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D762B253ECDF8006985FD /* GoalDetailInteractor.swift */; };
+		299D7637253ECFA1006985FD /* GoalDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299D7636253ECFA1006985FD /* GoalDetailViewController.storyboard */; };
+		299D763E253ED49F006985FD /* GoalDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D763D253ED49F006985FD /* GoalDetailRouter.swift */; };
+		299D764E253EDBC3006985FD /* EditGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D764D253EDBC3006985FD /* EditGoalViewController.swift */; };
+		299D7656253EDBD1006985FD /* EditGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299D7655253EDBD1006985FD /* EditGoalViewController.storyboard */; };
+		299D765B253EDC31006985FD /* EditGoalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D765A253EDC31006985FD /* EditGoalPresenter.swift */; };
+		299D7660253EDC81006985FD /* EditGoalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D765F253EDC81006985FD /* EditGoalInteractor.swift */; };
+		299D7666253EDCB1006985FD /* EditGoalInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7665253EDCB1006985FD /* EditGoalInteractorOutput.swift */; };
+		299D766E253EDCE7006985FD /* EditGoalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D766D253EDCE7006985FD /* EditGoalRouter.swift */; };
+		29B13479253D97E800C273F1 /* Goal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29B13477253D97E800C273F1 /* Goal.xcdatamodeld */; };
+		29B198D3254927160086B21D /* BottomHalfModal in Frameworks */ = {isa = PBXBuildFile; productRef = 29B198D2254927160086B21D /* BottomHalfModal */; };
+		29B198DB254928D90086B21D /* TaskInputModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B198DA254928D90086B21D /* TaskInputModalViewController.swift */; };
+		29B198E0254939100086B21D /* TaskInputModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29B198DF254939100086B21D /* TaskInputModalViewController.xib */; };
+		29FB83F62547A7F800E0B387 /* AddGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB83F52547A7F800E0B387 /* AddGoalViewController.storyboard */; };
+		29FB84032547A85D00E0B387 /* AddGoalNameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */; };
+		29FB84112547CC0200E0B387 /* AddTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB84102547CC0200E0B387 /* AddTaskViewController.storyboard */; };
+		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
+		6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */; };
+		7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */; };
+		7D5782F4FF379C023F0EB819 /* AddTaskInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */; };
+		912C0E341BB3295DC5F8AA1B /* AddTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C9C45CD6FBED72AF5954F /* AddTaskViewTests.swift */; };
+		B396BC7E75984A86F2A84969 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794871EE74CF19196C409A51 /* AddTaskViewController.swift */; };
+		C4B155383D956F46C39C6D3D /* AddGoalNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */; };
+		DA7D765E2976E0D99B129A6C /* AsapRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C47D4F601DF7C4A31BBDFAF /* AsapRouterTests.swift */; };
+		E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */; };
+		E8F60B35D491C5E4536AAB91 /* AsapInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB091323DBECC8A77FB2956 /* AsapInteractorTests.swift */; };
+		F03277B2A7935E5EE21703EE /* AddTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F45DC0B51C7F550CA4798D8 /* AddTaskPresenter.swift */; };
+		F90E7D81DE7987F0F077D31F /* AddGoalNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD23B7AE9ED9C8E2FC06E5BA /* AddGoalNamePresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29976068253D96A200CDD568 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29976046253D96A000CDD568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2997604D253D96A000CDD568;
+			remoteInfo = Goal;
+		};
+		29976073253D96A200CDD568 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29976046253D96A000CDD568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2997604D253D96A000CDD568;
+			remoteInfo = Goal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameViewController.swift; sourceTree = "<group>"; };
+		10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskPresenterTests.swift; sourceTree = "<group>"; };
+		161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameRouter.swift; sourceTree = "<group>"; };
+		17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskRouter.swift; sourceTree = "<group>"; };
+		290B5C4A253F1537009D54B1 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailInteractorOutput.swift; sourceTree = "<group>"; };
+		2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		2954E9592540561200E89510 /* GoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNavigationController.swift; sourceTree = "<group>"; };
+		2954E9682541251A00E89510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2954E96D254125C600E89510 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2954E96E254125C700E89510 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		295527D7253E5DD5009AFE97 /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
+		295527DD253E5E87009AFE97 /* AddGoalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalPresenter.swift; sourceTree = "<group>"; };
+		295527E7253E5EA3009AFE97 /* AddGoalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalInteractor.swift; sourceTree = "<group>"; };
+		295527EF253E5EA9009AFE97 /* AddGoalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalRouter.swift; sourceTree = "<group>"; };
+		295527FB253E6BD5009AFE97 /* AddGoalInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalInteractorOutput.swift; sourceTree = "<group>"; };
+		2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainerProvider.swift; sourceTree = "<group>"; };
+		29552818253E779C009AFE97 /* GoalServicer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalServicer.swift; sourceTree = "<group>"; };
+		29552827253E8052009AFE97 /* TemporaryGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryGoal.swift; sourceTree = "<group>"; };
+		2959D0662549673800A3DC28 /* AddTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskInteractor.swift; sourceTree = "<group>"; };
+		2959D06B2549679500A3DC28 /* AddTaskInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskInteractorOutput.swift; sourceTree = "<group>"; };
+		297795DB254842B000AD7E2D /* AddTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCell.swift; sourceTree = "<group>"; };
+		29833773254140F7001CB8D9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		298337A62541B4C1001CB8D9 /* AddGoalInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalInteractorTest.swift; sourceTree = "<group>"; };
+		298337BE2541B845001CB8D9 /* MockGoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGoalService.swift; sourceTree = "<group>"; };
+		298337DD25441173001CB8D9 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		298337E225441188001CB8D9 /* TaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskView.xib; sourceTree = "<group>"; };
+		2997604E253D96A000CDD568 /* Odysseia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Odysseia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29976051253D96A000CDD568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29976053253D96A000CDD568 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2997605D253D96A200CDD568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29976060253D96A200CDD568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29976062253D96A200CDD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29976067253D96A200CDD568 /* OdysseiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2997606B253D96A200CDD568 /* OdysseiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaTests.swift; sourceTree = "<group>"; };
+		2997606D253D96A200CDD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29976072253D96A200CDD568 /* OdysseiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29976076253D96A200CDD568 /* OdysseiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaUITests.swift; sourceTree = "<group>"; };
+		29976078253D96A200CDD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2997608D253D96E300CDD568 /* GoalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalPresenter.swift; sourceTree = "<group>"; };
+		2997608F253D96E300CDD568 /* GoalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListViewController.swift; sourceTree = "<group>"; };
+		29976090253D96E300CDD568 /* GoalListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GoalListViewController.storyboard; sourceTree = "<group>"; };
+		29976092253D96E300CDD568 /* GoalInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalInteractor.swift; sourceTree = "<group>"; };
+		29976094253D96E300CDD568 /* GoalInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalInteractorOutput.swift; sourceTree = "<group>"; };
+		29976096253D96E300CDD568 /* GoalRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalRouter.swift; sourceTree = "<group>"; };
+		299760A1253D96F900CDD568 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		299D7613253EB841006985FD /* GoalListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListCollectionCell.swift; sourceTree = "<group>"; };
+		299D761A253ECC57006985FD /* GoalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewController.swift; sourceTree = "<group>"; };
+		299D7625253ECD4C006985FD /* GoalDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailPresenter.swift; sourceTree = "<group>"; };
+		299D762B253ECDF8006985FD /* GoalDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailInteractor.swift; sourceTree = "<group>"; };
+		299D7636253ECFA1006985FD /* GoalDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoalDetailViewController.storyboard; sourceTree = "<group>"; };
+		299D763D253ED49F006985FD /* GoalDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailRouter.swift; sourceTree = "<group>"; };
+		299D764D253EDBC3006985FD /* EditGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalViewController.swift; sourceTree = "<group>"; };
+		299D7655253EDBD1006985FD /* EditGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditGoalViewController.storyboard; sourceTree = "<group>"; };
+		299D765A253EDC31006985FD /* EditGoalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalPresenter.swift; sourceTree = "<group>"; };
+		299D765F253EDC81006985FD /* EditGoalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalInteractor.swift; sourceTree = "<group>"; };
+		299D7665253EDCB1006985FD /* EditGoalInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalInteractorOutput.swift; sourceTree = "<group>"; };
+		299D766D253EDCE7006985FD /* EditGoalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalRouter.swift; sourceTree = "<group>"; };
+		29B13478253D97E800C273F1 /* Goal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goal.xcdatamodel; sourceTree = "<group>"; };
+		29B198DA254928D90086B21D /* TaskInputModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputModalViewController.swift; sourceTree = "<group>"; };
+		29B198DF254939100086B21D /* TaskInputModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskInputModalViewController.xib; sourceTree = "<group>"; };
+		29FB83F52547A7F800E0B387 /* AddGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddGoalViewController.storyboard; sourceTree = "<group>"; };
+		29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddGoalNameViewController.storyboard; sourceTree = "<group>"; };
+		29FB84102547CC0200E0B387 /* AddTaskViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTaskViewController.storyboard; sourceTree = "<group>"; };
+		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
+		64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameRouterTests.swift; sourceTree = "<group>"; };
+		6C47D4F601DF7C4A31BBDFAF /* AsapRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsapRouterTests.swift; sourceTree = "<group>"; };
+		6F377FAD742C77C846A29855 /* AsapViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsapViewTests.swift; sourceTree = "<group>"; };
+		6F45DC0B51C7F550CA4798D8 /* AddTaskPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskPresenter.swift; sourceTree = "<group>"; };
+		794871EE74CF19196C409A51 /* AddTaskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameViewTests.swift; sourceTree = "<group>"; };
+		925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNamePresenterTests.swift; sourceTree = "<group>"; };
+		958AEC0D1ED177430EFC99DA /* AsapPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsapPresenterTests.swift; sourceTree = "<group>"; };
+		9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskInteractorTests.swift; sourceTree = "<group>"; };
+		BAB091323DBECC8A77FB2956 /* AsapInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsapInteractorTests.swift; sourceTree = "<group>"; };
+		BD6C9C45CD6FBED72AF5954F /* AddTaskViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskViewTests.swift; sourceTree = "<group>"; };
+		CDB5626CF0488460640D40A0 /* AddTaskRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskRouterTests.swift; sourceTree = "<group>"; };
+		DD23B7AE9ED9C8E2FC06E5BA /* AddGoalNamePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNamePresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2997604B253D96A000CDD568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B198D3254927160086B21D /* BottomHalfModal in Frameworks */,
+				298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29976064253D96A200CDD568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2997606F253D96A200CDD568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0170338343CCDFDF714CECE2 /* Asap */ = {
+			isa = PBXGroup;
+			children = (
+				30C68FEF3A4051C2CF95BC4D /* View */,
+				E68D4C091FE6812078824851 /* Interactor */,
+				56C36F0BBB78F1BEC92545A1 /* Presenter */,
+				6902105868F20124AE266CFC /* Router */,
+			);
+			path = Asap;
+			sourceTree = "<group>";
+		};
+		290B5C49253F1503009D54B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29833773254140F7001CB8D9 /* Strings+Generated.swift */,
+				2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */,
+				2997605F253D96A200CDD568 /* LaunchScreen.storyboard */,
+				290B5C4A253F1537009D54B1 /* Resources.xcassets */,
+				2997605D253D96A200CDD568 /* Assets.xcassets */,
+				2954E9692541251A00E89510 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		290B5C54254004E9009D54B1 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		2910BDA825403CD100E0D56A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				29552818253E779C009AFE97 /* GoalServicer.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2954E95E25405CBA00E89510 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		295527DC253E5E12009AFE97 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				295527DD253E5E87009AFE97 /* AddGoalPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		295527E5253E5E8E009AFE97 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				295527FA253E6BCA009AFE97 /* Output */,
+				295527E7253E5EA3009AFE97 /* AddGoalInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		295527E6253E5E93009AFE97 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				295527EF253E5EA9009AFE97 /* AddGoalRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		295527FA253E6BCA009AFE97 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				295527FB253E6BD5009AFE97 /* AddGoalInteractorOutput.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		29552826253E8032009AFE97 /* Entiry */ = {
+			isa = PBXGroup;
+			children = (
+				29552827253E8052009AFE97 /* TemporaryGoal.swift */,
+			);
+			path = Entiry;
+			sourceTree = "<group>";
+		};
+		2959D0652549672800A3DC28 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2959D0662549673800A3DC28 /* AddTaskInteractor.swift */,
+				2959D06B2549679500A3DC28 /* AddTaskInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		297795DA2548428E00AD7E2D /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				297795DB254842B000AD7E2D /* AddTaskCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		298337A32541B35F001CB8D9 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				298337A42541B371001CB8D9 /* AddGoal */,
+				CE43A372CB41AE1600C8BEBF /* AddGoalName */,
+				956D56AD9BC7A7F214AD8F66 /* AddTask */,
+				0170338343CCDFDF714CECE2 /* Asap */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		298337A42541B371001CB8D9 /* AddGoal */ = {
+			isa = PBXGroup;
+			children = (
+				298337A52541B488001CB8D9 /* Interactor */,
+			);
+			path = AddGoal;
+			sourceTree = "<group>";
+		};
+		298337A52541B488001CB8D9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				298337A62541B4C1001CB8D9 /* AddGoalInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		298337BD2541B836001CB8D9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				298337BE2541B845001CB8D9 /* MockGoalService.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		298337DC25441117001CB8D9 /* TaskView */ = {
+			isa = PBXGroup;
+			children = (
+				298337DD25441173001CB8D9 /* TaskView.swift */,
+				298337E225441188001CB8D9 /* TaskView.xib */,
+			);
+			path = TaskView;
+			sourceTree = "<group>";
+		};
+		29976045253D96A000CDD568 = {
+			isa = PBXGroup;
+			children = (
+				29976050253D96A000CDD568 /* Odysseia */,
+				2997606A253D96A200CDD568 /* OdysseiaTests */,
+				29976075253D96A200CDD568 /* OdysseiaUITests */,
+				2997604F253D96A000CDD568 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2997604F253D96A000CDD568 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2997604E253D96A000CDD568 /* Odysseia.app */,
+				29976067253D96A200CDD568 /* OdysseiaTests.xctest */,
+				29976072253D96A200CDD568 /* OdysseiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29976050253D96A000CDD568 /* Odysseia */ = {
+			isa = PBXGroup;
+			children = (
+				2954E95E25405CBA00E89510 /* CoreData */,
+				2910BDA825403CD100E0D56A /* Service */,
+				290B5C49253F1503009D54B1 /* Resources */,
+				299760A0253D96EC00CDD568 /* Util */,
+				29976087253D96AE00CDD568 /* Module */,
+				29976051253D96A000CDD568 /* AppDelegate.swift */,
+				29976053253D96A000CDD568 /* SceneDelegate.swift */,
+				29B13477253D97E800C273F1 /* Goal.xcdatamodeld */,
+				29976062253D96A200CDD568 /* Info.plist */,
+			);
+			path = Odysseia;
+			sourceTree = "<group>";
+		};
+		2997606A253D96A200CDD568 /* OdysseiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				298337BD2541B836001CB8D9 /* CoreData */,
+				298337A32541B35F001CB8D9 /* Module */,
+				2997606B253D96A200CDD568 /* OdysseiaTests.swift */,
+				2997606D253D96A200CDD568 /* Info.plist */,
+			);
+			path = OdysseiaTests;
+			sourceTree = "<group>";
+		};
+		29976075253D96A200CDD568 /* OdysseiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29976076253D96A200CDD568 /* OdysseiaUITests.swift */,
+				29976078253D96A200CDD568 /* Info.plist */,
+			);
+			path = OdysseiaUITests;
+			sourceTree = "<group>";
+		};
+		29976087253D96AE00CDD568 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				299D7648253EDB8B006985FD /* EditGoal */,
+				299D7618253EC9B0006985FD /* GoalDetail */,
+				29B13495253DB0D900C273F1 /* AddGoal */,
+				2997608B253D96E300CDD568 /* GoalList */,
+				67806E344036324E04D9591A /* AddGoalName */,
+				E982E9AC6CBA1613F8E8A628 /* AddTask */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		2997608B253D96E300CDD568 /* GoalList */ = {
+			isa = PBXGroup;
+			children = (
+				29552826253E8032009AFE97 /* Entiry */,
+				2997608C253D96E300CDD568 /* Presenter */,
+				2997608E253D96E300CDD568 /* View */,
+				29976091253D96E300CDD568 /* Interactor */,
+				29976095253D96E300CDD568 /* Router */,
+			);
+			path = GoalList;
+			sourceTree = "<group>";
+		};
+		2997608C253D96E300CDD568 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2997608D253D96E300CDD568 /* GoalPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2997608E253D96E300CDD568 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29B13485253DA6B200C273F1 /* SubViews */,
+				2997608F253D96E300CDD568 /* GoalListViewController.swift */,
+				29976090253D96E300CDD568 /* GoalListViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29976091253D96E300CDD568 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				29976092253D96E300CDD568 /* GoalInteractor.swift */,
+				29976093253D96E300CDD568 /* Output */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		29976093253D96E300CDD568 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				29976094253D96E300CDD568 /* GoalInteractorOutput.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		29976095253D96E300CDD568 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				29976096253D96E300CDD568 /* GoalRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		299760A0253D96EC00CDD568 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				299760A1253D96F900CDD568 /* Extension.swift */,
+				2954E9592540561200E89510 /* GoalNavigationController.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		299D7618253EC9B0006985FD /* GoalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				299D763B253ED464006985FD /* Router */,
+				299D762A253ECDE8006985FD /* Interactor */,
+				299D7624253ECD3B006985FD /* Presenter */,
+				299D7619253ECC44006985FD /* View */,
+			);
+			path = GoalDetail;
+			sourceTree = "<group>";
+		};
+		299D7619253ECC44006985FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				298337DC25441117001CB8D9 /* TaskView */,
+				299D761A253ECC57006985FD /* GoalDetailViewController.swift */,
+				299D7636253ECFA1006985FD /* GoalDetailViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		299D7624253ECD3B006985FD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				299D7625253ECD4C006985FD /* GoalDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		299D762A253ECDE8006985FD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				290B5C54254004E9009D54B1 /* Output */,
+				299D762B253ECDF8006985FD /* GoalDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		299D763B253ED464006985FD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				299D763D253ED49F006985FD /* GoalDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		299D7648253EDB8B006985FD /* EditGoal */ = {
+			isa = PBXGroup;
+			children = (
+				299D764C253EDBA8006985FD /* View */,
+				299D764B253EDBA2006985FD /* Interactor */,
+				299D764A253EDB9E006985FD /* Router */,
+				299D7649253EDB97006985FD /* Presenter */,
+			);
+			path = EditGoal;
+			sourceTree = "<group>";
+		};
+		299D7649253EDB97006985FD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				299D765A253EDC31006985FD /* EditGoalPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		299D764A253EDB9E006985FD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				299D766D253EDCE7006985FD /* EditGoalRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		299D764B253EDBA2006985FD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				299D7664253EDC9F006985FD /* Output */,
+				299D765F253EDC81006985FD /* EditGoalInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		299D764C253EDBA8006985FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				299D764D253EDBC3006985FD /* EditGoalViewController.swift */,
+				299D7655253EDBD1006985FD /* EditGoalViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		299D7664253EDC9F006985FD /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				299D7665253EDCB1006985FD /* EditGoalInteractorOutput.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		29B13485253DA6B200C273F1 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				299D7613253EB841006985FD /* GoalListCollectionCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		29B13495253DB0D900C273F1 /* AddGoal */ = {
+			isa = PBXGroup;
+			children = (
+				295527E6253E5E93009AFE97 /* Router */,
+				295527E5253E5E8E009AFE97 /* Interactor */,
+				295527DC253E5E12009AFE97 /* Presenter */,
+				29B13496253DB0E300C273F1 /* View */,
+			);
+			path = AddGoal;
+			sourceTree = "<group>";
+		};
+		29B13496253DB0E300C273F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				295527D7253E5DD5009AFE97 /* AddGoalViewController.swift */,
+				29FB83F52547A7F800E0B387 /* AddGoalViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29FB841B2548EBC400E0B387 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		30C68FEF3A4051C2CF95BC4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F377FAD742C77C846A29855 /* AsapViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EFA8EB208345F4A30F83653 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5042C15C1FF7A895096646CB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DD23B7AE9ED9C8E2FC06E5BA /* AddGoalNamePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		56C36F0BBB78F1BEC92545A1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				958AEC0D1ED177430EFC99DA /* AsapPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		63DDA7E8669FD281A079D67D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67806E344036324E04D9591A /* AddGoalName */ = {
+			isa = PBXGroup;
+			children = (
+				AE627AA88E88184080ADECB3 /* View */,
+				5042C15C1FF7A895096646CB /* Presenter */,
+				A17E58781F20ED55F30EE6E7 /* Router */,
+			);
+			path = AddGoalName;
+			sourceTree = "<group>";
+		};
+		6902105868F20124AE266CFC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6C47D4F601DF7C4A31BBDFAF /* AsapRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		765D0700B3756BCE138AEF77 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6F45DC0B51C7F550CA4798D8 /* AddTaskPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7ED89A13CD8B6157EEA473DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				297795DA2548428E00AD7E2D /* SubViews */,
+				794871EE74CF19196C409A51 /* AddTaskViewController.swift */,
+				29FB84102547CC0200E0B387 /* AddTaskViewController.storyboard */,
+				29B198DA254928D90086B21D /* TaskInputModalViewController.swift */,
+				29B198DF254939100086B21D /* TaskInputModalViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81CB75202C09A767808F65D6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		956D56AD9BC7A7F214AD8F66 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1A099AA7787553DF95437 /* View */,
+				81CB75202C09A767808F65D6 /* Interactor */,
+				4EFA8EB208345F4A30F83653 /* Presenter */,
+				A9E13215CAA3D6A6FE5543DA /* Router */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		9D0AE5CB0F5638BF76CA83DB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A17E58781F20ED55F30EE6E7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A386FEEBC6B02D745762271E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A8A1A099AA7787553DF95437 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD6C9C45CD6FBED72AF5954F /* AddTaskViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9E13215CAA3D6A6FE5543DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5626CF0488460640D40A0 /* AddTaskRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AE627AA88E88184080ADECB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */,
+				06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE43A372CB41AE1600C8BEBF /* AddGoalName */ = {
+			isa = PBXGroup;
+			children = (
+				63DDA7E8669FD281A079D67D /* View */,
+				D71395C61B6F667EB6D69EB0 /* Presenter */,
+				9D0AE5CB0F5638BF76CA83DB /* Router */,
+			);
+			path = AddGoalName;
+			sourceTree = "<group>";
+		};
+		D71395C61B6F667EB6D69EB0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E68D4C091FE6812078824851 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BAB091323DBECC8A77FB2956 /* AsapInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E982E9AC6CBA1613F8E8A628 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				2959D0652549672800A3DC28 /* Interactor */,
+				29FB841B2548EBC400E0B387 /* Entity */,
+				7ED89A13CD8B6157EEA473DD /* View */,
+				765D0700B3756BCE138AEF77 /* Presenter */,
+				A386FEEBC6B02D745762271E /* Router */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2997604D253D96A000CDD568 /* Odysseia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2997607B253D96A200CDD568 /* Build configuration list for PBXNativeTarget "Odysseia" */;
+			buildPhases = (
+				2997604A253D96A000CDD568 /* Sources */,
+				2997604B253D96A000CDD568 /* Frameworks */,
+				2997604C253D96A000CDD568 /* Resources */,
+				290B5C45253F11A3009D54B1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Odysseia;
+			packageProductDependencies = (
+				298337D72542AAC7001CB8D9 /* HGCircularSlider */,
+				29B198D2254927160086B21D /* BottomHalfModal */,
+			);
+			productName = Goal;
+			productReference = 2997604E253D96A000CDD568 /* Odysseia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29976066253D96A200CDD568 /* OdysseiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2997607E253D96A200CDD568 /* Build configuration list for PBXNativeTarget "OdysseiaTests" */;
+			buildPhases = (
+				29976063253D96A200CDD568 /* Sources */,
+				29976064253D96A200CDD568 /* Frameworks */,
+				29976065253D96A200CDD568 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29976069253D96A200CDD568 /* PBXTargetDependency */,
+			);
+			name = OdysseiaTests;
+			productName = GoalTests;
+			productReference = 29976067253D96A200CDD568 /* OdysseiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29976071253D96A200CDD568 /* OdysseiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29976081253D96A200CDD568 /* Build configuration list for PBXNativeTarget "OdysseiaUITests" */;
+			buildPhases = (
+				2997606E253D96A200CDD568 /* Sources */,
+				2997606F253D96A200CDD568 /* Frameworks */,
+				29976070253D96A200CDD568 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29976074253D96A200CDD568 /* PBXTargetDependency */,
+			);
+			name = OdysseiaUITests;
+			productName = GoalUITests;
+			productReference = 29976072253D96A200CDD568 /* OdysseiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29976046253D96A000CDD568 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					2997604D253D96A000CDD568 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					29976066253D96A200CDD568 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 2997604D253D96A000CDD568;
+					};
+					29976071253D96A200CDD568 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 2997604D253D96A000CDD568;
+					};
+				};
+			};
+			buildConfigurationList = 29976049253D96A000CDD568 /* Build configuration list for PBXProject "Odysseia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 29976045253D96A000CDD568;
+			packageReferences = (
+				298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */,
+				29B198D1254927160086B21D /* XCRemoteSwiftPackageReference "BottomHalfModal" */,
+			);
+			productRefGroup = 2997604F253D96A000CDD568 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2997604D253D96A000CDD568 /* Odysseia */,
+				29976066253D96A200CDD568 /* OdysseiaTests */,
+				29976071253D96A200CDD568 /* OdysseiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2997604C253D96A000CDD568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B198E0254939100086B21D /* TaskInputModalViewController.xib in Resources */,
+				29FB84112547CC0200E0B387 /* AddTaskViewController.storyboard in Resources */,
+				29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */,
+				290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */,
+				298337E325441188001CB8D9 /* TaskView.xib in Resources */,
+				29FB84032547A85D00E0B387 /* AddGoalNameViewController.storyboard in Resources */,
+				2997605E253D96A200CDD568 /* Assets.xcassets in Resources */,
+				2954E9672541251A00E89510 /* Localizable.strings in Resources */,
+				299D7637253ECFA1006985FD /* GoalDetailViewController.storyboard in Resources */,
+				29976099253D96E300CDD568 /* GoalListViewController.storyboard in Resources */,
+				29FB83F62547A7F800E0B387 /* AddGoalViewController.storyboard in Resources */,
+				299D7656253EDBD1006985FD /* EditGoalViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29976065253D96A200CDD568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29976070253D96A200CDD568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		290B5C45253F11A3009D54B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which mint >/dev/null; then\n  mint run swiftlint swiftlint autocorrect --format\n  mint run swiftlint swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2997604A253D96A000CDD568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */,
+				299D7660253EDC81006985FD /* EditGoalInteractor.swift in Sources */,
+				295527F0253E5EA9009AFE97 /* AddGoalRouter.swift in Sources */,
+				2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */,
+				299D7626253ECD4C006985FD /* GoalDetailPresenter.swift in Sources */,
+				2955280F253E76D9009AFE97 /* PersistentContainerProvider.swift in Sources */,
+				295527E8253E5EA3009AFE97 /* AddGoalInteractor.swift in Sources */,
+				29B13479253D97E800C273F1 /* Goal.xcdatamodeld in Sources */,
+				299D7666253EDCB1006985FD /* EditGoalInteractorOutput.swift in Sources */,
+				2997609C253D96E300CDD568 /* GoalRouter.swift in Sources */,
+				299D764E253EDBC3006985FD /* EditGoalViewController.swift in Sources */,
+				2959D0672549673800A3DC28 /* AddTaskInteractor.swift in Sources */,
+				29976052253D96A000CDD568 /* AppDelegate.swift in Sources */,
+				29976098253D96E300CDD568 /* GoalListViewController.swift in Sources */,
+				299760A2253D96F900CDD568 /* Extension.swift in Sources */,
+				299D766E253EDCE7006985FD /* EditGoalRouter.swift in Sources */,
+				297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */,
+				2997609B253D96E300CDD568 /* GoalInteractorOutput.swift in Sources */,
+				29976054253D96A000CDD568 /* SceneDelegate.swift in Sources */,
+				29552828253E8052009AFE97 /* TemporaryGoal.swift in Sources */,
+				295527D8253E5DD5009AFE97 /* AddGoalViewController.swift in Sources */,
+				295527DE253E5E87009AFE97 /* AddGoalPresenter.swift in Sources */,
+				299D7614253EB841006985FD /* GoalListCollectionCell.swift in Sources */,
+				29976097253D96E300CDD568 /* GoalPresenter.swift in Sources */,
+				2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */,
+				299D763E253ED49F006985FD /* GoalDetailRouter.swift in Sources */,
+				295527FC253E6BD5009AFE97 /* AddGoalInteractorOutput.swift in Sources */,
+				29552819253E779C009AFE97 /* GoalServicer.swift in Sources */,
+				298337DE25441173001CB8D9 /* TaskView.swift in Sources */,
+				299D765B253EDC31006985FD /* EditGoalPresenter.swift in Sources */,
+				299D761B253ECC57006985FD /* GoalDetailViewController.swift in Sources */,
+				299D762C253ECDF8006985FD /* GoalDetailInteractor.swift in Sources */,
+				2997609A253D96E300CDD568 /* GoalInteractor.swift in Sources */,
+				29833775254140F7001CB8D9 /* Strings+Generated.swift in Sources */,
+				29B198DB254928D90086B21D /* TaskInputModalViewController.swift in Sources */,
+				C4B155383D956F46C39C6D3D /* AddGoalNameViewController.swift in Sources */,
+				F90E7D81DE7987F0F077D31F /* AddGoalNamePresenter.swift in Sources */,
+				23FCC9F67139A893CB708D22 /* AddGoalNameRouter.swift in Sources */,
+				B396BC7E75984A86F2A84969 /* AddTaskViewController.swift in Sources */,
+				F03277B2A7935E5EE21703EE /* AddTaskPresenter.swift in Sources */,
+				29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */,
+				05BE5317C6B3B6C3081C2919 /* AddTaskRouter.swift in Sources */,
+				2959D06C2549679500A3DC28 /* AddTaskInteractorOutput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29976063253D96A200CDD568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */,
+				2997606C253D96A200CDD568 /* OdysseiaTests.swift in Sources */,
+				298337A72541B4C1001CB8D9 /* AddGoalInteractorTest.swift in Sources */,
+				7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */,
+				E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */,
+				0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */,
+				912C0E341BB3295DC5F8AA1B /* AddTaskViewTests.swift in Sources */,
+				7D5782F4FF379C023F0EB819 /* AddTaskInteractorTests.swift in Sources */,
+				6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */,
+				0A79080A4981356A6908510F /* AddTaskRouterTests.swift in Sources */,
+				1D87509790F62302F586FA48 /* AsapViewTests.swift in Sources */,
+				E8F60B35D491C5E4536AAB91 /* AsapInteractorTests.swift in Sources */,
+				016F22FB06656F9DB595306E /* AsapPresenterTests.swift in Sources */,
+				DA7D765E2976E0D99B129A6C /* AsapRouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2997606E253D96A200CDD568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29976077253D96A200CDD568 /* OdysseiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29976069253D96A200CDD568 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2997604D253D96A000CDD568 /* Odysseia */;
+			targetProxy = 29976068253D96A200CDD568 /* PBXContainerItemProxy */;
+		};
+		29976074253D96A200CDD568 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2997604D253D96A000CDD568 /* Odysseia */;
+			targetProxy = 29976073253D96A200CDD568 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2954E9692541251A00E89510 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2954E9682541251A00E89510 /* en */,
+				2954E96E254125C700E89510 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2997605F253D96A200CDD568 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29976060253D96A200CDD568 /* Base */,
+				2954E96D254125C600E89510 /* ja */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29976079253D96A200CDD568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2997607A253D96A200CDD568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2997607C253D96A200CDD568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = Odysseia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2997607D253D96A200CDD568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = Odysseia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2997607F253D96A200CDD568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Odysseia.app/Odysseia";
+			};
+			name = Debug;
+		};
+		29976080253D96A200CDD568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Odysseia.app/Odysseia";
+			};
+			name = Release;
+		};
+		29976082253D96A200CDD568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Goal;
+			};
+			name = Debug;
+		};
+		29976083253D96A200CDD568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Goal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29976049253D96A000CDD568 /* Build configuration list for PBXProject "Odysseia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29976079253D96A200CDD568 /* Debug */,
+				2997607A253D96A200CDD568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2997607B253D96A200CDD568 /* Build configuration list for PBXNativeTarget "Odysseia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2997607C253D96A200CDD568 /* Debug */,
+				2997607D253D96A200CDD568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2997607E253D96A200CDD568 /* Build configuration list for PBXNativeTarget "OdysseiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2997607F253D96A200CDD568 /* Debug */,
+				29976080253D96A200CDD568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29976081253D96A200CDD568 /* Build configuration list for PBXNativeTarget "OdysseiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29976082253D96A200CDD568 /* Debug */,
+				29976083253D96A200CDD568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HamzaGhazouani/HGCircularSlider";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		29B198D1254927160086B21D /* XCRemoteSwiftPackageReference "BottomHalfModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mercari/BottomHalfModal";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		298337D72542AAC7001CB8D9 /* HGCircularSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */;
+			productName = HGCircularSlider;
+		};
+		29B198D2254927160086B21D /* BottomHalfModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29B198D1254927160086B21D /* XCRemoteSwiftPackageReference "BottomHalfModal" */;
+			productName = BottomHalfModal;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		29B13477253D97E800C273F1 /* Goal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29B13478253D97E800C273F1 /* Goal.xcdatamodel */,
+			);
+			currentVersion = 29B13478253D97E800C273F1 /* Goal.xcdatamodel */;
+			path = Goal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29976046253D96A000CDD568 /* Project object */;
+}

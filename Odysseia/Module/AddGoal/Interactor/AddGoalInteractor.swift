@@ -1,6 +1,6 @@
 //
 //  AddGoalInteractor.swift
-//  Odysseial
+//  Odysseia
 //
 //  Created by lcr on 2020/10/20.
 //
@@ -9,12 +9,17 @@ import CoreData
 
 protocol AddGoalUsecase: AnyObject {
     var output: AddGoalInteractorOutput? { get }
+    var service: GoalServicer { get }
     func addGoal(goal: TemporaryGoal)
 }
 
 class AddGoalInteractor {
     weak var output: AddGoalInteractorOutput?
-    private let service = GoalServicer.shared
+    let service: GoalServicer
+
+    init(service: GoalServicer) {
+        self.service = service
+    }
 }
 
 extension AddGoalInteractor: AddGoalUsecase {

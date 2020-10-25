@@ -13,6 +13,7 @@ enum GoalSection: Int, CaseIterable {
 
 protocol GoalListView: AnyObject {
     var presenter: GoalListPresentation! { get }
+    // Prensenter -> View
     func viewDidLoad()
     func reload(goals: [Goal])
     func showErrorMessageView(reason: String)
@@ -29,7 +30,7 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
     private lazy var dataSource: UICollectionViewDiffableDataSource<GoalSection, Goal> = {
         let dataSouce = UICollectionViewDiffableDataSource<GoalSection, Goal>(collectionView: collectionView) { collectionView, indexPath, item -> UICollectionViewCell? in
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GoalListCollectionCell.className, for: indexPath) as? GoalListCollectionCell {
-                cell.titleLabel.text = item.title
+                cell.setCell(goal: item)
                 return cell
             }
             return UICollectionViewCell()
@@ -41,8 +42,12 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         super.viewDidLoad()
         collectionView.dataSource = dataSource
         collectionView.delegate = self
-        let addBarItem = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addBarButtonTapped(_:)))
+        let addBarItem = UIBarButtonItem(title: L10n.Localizable.addButtonText, style: .done, target: self, action: #selector(addBarButtonTapped(_:)))
         navigationItem.rightBarButtonItems = [addBarItem]
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         presenter.loadGoals()
     }
 

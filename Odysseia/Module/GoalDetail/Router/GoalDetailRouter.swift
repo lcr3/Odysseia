@@ -29,7 +29,8 @@ class GoalDetailRouter {
                                             router: router,
                                             interactor: interector,
                                             goal: goal)
-        view.presenter = presenter    // ViewにPresenterを設定
+        view.presenter = presenter
+        interector.output = presenter
         return view
     }
 
@@ -38,7 +39,7 @@ class GoalDetailRouter {
 extension GoalDetailRouter: GoalDetailWireframe {
     func showEdit(goal: Goal) {
         let editView = EditGoalRouter.assembleModules(editGoal: goal)
-        let nav = UINavigationController(rootViewController: editView)
+        let nav = GoalNavigationController(rootViewController: editView)
         editView.presentationController?.delegate = viewController as? UIAdaptivePresentationControllerDelegate
         viewController.navigationController?.present(nav, animated: true)
     }

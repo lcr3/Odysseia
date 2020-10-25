@@ -1,0 +1,35 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by lcr on {{ date }}.
+//
+
+import UIKit
+
+protocol {{ module_info.name }}Wireframe: AnyObject {
+    // Presenter -> Router
+}
+
+class {{ module_info.name }}Router {
+    private unowned let viewController: UIViewController
+
+    init(viewController: UIViewController) {
+        self.viewController = viewController
+    }
+
+    static func assembleModules() -> UIViewController {
+        let view = {{ module_info.name }}ViewController.instantiate()
+        let router = {{ module_info.name }}Router(viewController: view)
+        let interector = {{ module_info.name }}Interactor()
+        let presenter = {{ module_info.name }}Presenter(view: view,
+                                          router: router,
+                                          interactor: interector)
+        view.presenter = presenter
+        interector.output = presenter
+        return view
+    }
+}
+
+extension {{ module_info.name }}Router: {{ module_info.name }}Wireframe {
+}

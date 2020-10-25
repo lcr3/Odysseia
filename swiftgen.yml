@@ -1,5 +1,19 @@
+strings:
+  inputs:
+    # - Odysseia/Resources/en.lproj
+    - Odysseia/Resources/ja.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: Odysseia/Resources/Strings+Generated.swift
 xcassets:
   inputs: Odysseia/Resources/Resources.xcassets
   outputs:
+    - templateName: swift5
+      params:
+        forceProvidesNamespaces: true
+      output: Odysseia/Resources/XCAssets+Generated.swift
+coredata:
+  inputs: Odysseia/Goal.xcdatamodeld
+  outputs:
     templateName: swift5
-    output: Odysseia/Resources/Assets.swift
+    output: Odysseia/Resources/XCCoreDataX+Generated.swift

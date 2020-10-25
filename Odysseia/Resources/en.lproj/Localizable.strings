@@ -1,0 +1,16 @@
+/*
+  Localizable.strings
+  Odysseia
+
+  Created by lcr on 2020/10/22.
+  
+*/
+
+"doneButtonText" = "Done";
+"addButtonText" = "Add";
+"editButtonText" = "Edit";
+"AddGoalErrorMessage" = "Failed to add data.";
+"EditGoalErrorMessage" = "Failed to edit data";
+"UpdateGoalErrorMessage" = "Failed to update data";
+"GetGoalErrorMessage" = "Failed to get data";
+"DeleteGoalErrorMessage" = "Failed to delete data";

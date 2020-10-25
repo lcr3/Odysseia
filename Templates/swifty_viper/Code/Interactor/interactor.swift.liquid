@@ -1,0 +1,18 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by lcr on {{ date }}.
+//
+
+protocol {{ module_info.name }}Usecase: AnyObject {
+    // Interactor -> Presenter
+    var output: {{ module_info.name }}InteractorOutput? { get }
+}
+
+class {{ module_info.name }}Interactor {
+    weak var output: {{ module_info.name }}InteractorOutput?
+}
+
+extension {{ module_info.name }}Interactor: {{ module_info.name }}Usecase {
+}

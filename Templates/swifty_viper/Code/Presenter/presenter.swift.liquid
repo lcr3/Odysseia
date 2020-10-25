@@ -1,0 +1,33 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by lcr on {{ date }}.
+//
+
+protocol {{ module_info.name }}Presentation: AnyObject {
+    // View -> Presenter
+    func viewDidLoad()
+}
+
+class {{ module_info.name }}Presenter {
+    private weak var view: {{ module_info.name }}View?
+    private let router: {{ module_info.name }}Wireframe
+    private let interactor: {{ module_info.name }}Usecase
+
+    init(view: {{ module_info.name }}View,
+         router: {{ module_info.name }}Wireframe,
+         interactor: {{ module_info.name }}Usecase) {
+        self.view = view
+        self.router = router
+        self.interactor = interactor
+    }
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}Presentation {
+    func viewDidLoad() {
+    }
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput {
+}
