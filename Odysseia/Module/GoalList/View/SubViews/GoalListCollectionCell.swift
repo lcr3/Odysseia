@@ -1,6 +1,6 @@
 //
 //  GoalListCollectionCell.swift
-//  Odysseial
+//  Odysseia
 //
 //  Created by lcr on 2020/10/20.
 //
@@ -19,5 +19,10 @@ class GoalListCollectionCell: UICollectionViewCell {
         self.layer.borderColor = UIColor.black.cgColor
         // cellを丸くする
         self.layer.cornerRadius = 8.0
+    }
+
+    func setCell(goal: Goal) {
+        titleLabel.text = goal.title
+        backgroundColor = Asset.moon.color
     }
 }

@@ -14,4 +14,12 @@ mint
 > $ mint bootstrap
 
 SwiftGen
-> $mint run swiftgen
+> $ mint run swiftgen
+
+gem
+> $ bundle install
+
+### Development
+
+generamba
+> generamba gen <TemplateName> swifty_viper

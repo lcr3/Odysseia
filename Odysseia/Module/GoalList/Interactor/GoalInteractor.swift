@@ -5,11 +5,9 @@
 //  Created by lcr on 2020/10/19.
 //
 import CoreData
-import UIKit
 
 protocol GoalListUsecase: AnyObject {
     var output: GoalListInteractorOutput? { get }
-    func addGoal()
     func loadGoalList()
 }
 
@@ -26,12 +24,5 @@ extension GoalListInteractor: GoalListUsecase {
         } catch {
             output?.failedLoad(error: error)
         }
-    }
-    func addGoal() {
-        //        do {
-        //            try
-        //        } catch {
-        //
-        //        }
     }
 }

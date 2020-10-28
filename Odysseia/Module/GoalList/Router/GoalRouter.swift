@@ -43,8 +43,8 @@ extension GoalListRouter: GoalListWireframe {
     }
 
     func showAddGoal() {
-        let addGoalView = AddGoalRouter.assembleModules()
-        let nav = UINavigationController(rootViewController: addGoalView)
+        let addGoalView = AddGoalNameRouter.assembleModules()
+        let nav = GoalNavigationController(rootViewController: addGoalView)
         addGoalView.presentationController?.delegate = viewController as? UIAdaptivePresentationControllerDelegate
         viewController.navigationController?.present(nav, animated: true)
     }

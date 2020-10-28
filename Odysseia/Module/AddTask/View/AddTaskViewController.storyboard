@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BLF-1T-5Sz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Task View Controller-->
+        <scene sceneID="dfh-qa-gcB">
+            <objects>
+                <viewController id="BLF-1T-5Sz" customClass="AddTaskViewController" customModule="Odysseia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m9f-Rj-UML">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Tasks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA6-CS-gT7">
+                                <rect key="frame" x="16" y="60" width="134" height="33.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qey-Uf-pc7">
+                                <rect key="frame" x="368" y="54" width="30" height="46"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="tintColor" name="venus"/>
+                                <state key="normal" title="＋">
+                                    <color key="titleColor" name="venus"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTaskButtonTouched:" destination="BLF-1T-5Sz" eventType="touchUpInside" id="pEs-AN-D8J"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c7i-Ek-mx6">
+                                <rect key="frame" x="16" y="109.5" width="382" height="676.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0kG-bE-MTQ">
+                                    <size key="itemSize" width="382" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AddTaskCell" id="Grh-zq-uhj" customClass="AddTaskCell" customModule="Odysseia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aC1-Do-5te">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUl-aI-NOn">
+                                                    <rect key="frame" x="16" y="33" width="42" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="75X-PD-iq1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xif-Dh-MBP">
+                                                    <rect key="frame" x="355" y="33" width="11" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="jE2-F5-UPI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TargetLevel:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyJ-JC-TK2">
+                                                    <rect key="frame" x="254.5" y="33" width="92.5" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="Plh-SQ-9SC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="venus"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TyJ-JC-TK2" firstAttribute="centerY" secondItem="aC1-Do-5te" secondAttribute="centerY" id="0bs-VO-BjK"/>
+                                                <constraint firstItem="GUl-aI-NOn" firstAttribute="leading" secondItem="aC1-Do-5te" secondAttribute="leading" constant="16" id="gsW-ZU-If8"/>
+                                                <constraint firstItem="Xif-Dh-MBP" firstAttribute="centerY" secondItem="aC1-Do-5te" secondAttribute="centerY" id="h32-yG-dHN"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xif-Dh-MBP" secondAttribute="trailing" constant="16" id="nik-lO-1Vc"/>
+                                                <constraint firstItem="Xif-Dh-MBP" firstAttribute="leading" secondItem="TyJ-JC-TK2" secondAttribute="trailing" constant="8" id="o5z-Rd-8tJ"/>
+                                                <constraint firstItem="GUl-aI-NOn" firstAttribute="centerY" secondItem="aC1-Do-5te" secondAttribute="centerY" id="pQB-0Z-4b6"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="mercury"/>
+                                        <size key="customSize" width="382" height="110"/>
+                                        <connections>
+                                            <outlet property="targetLevelLabel" destination="Xif-Dh-MBP" id="b4Y-kq-OpD"/>
+                                            <outlet property="titleLabel" destination="GUl-aI-NOn" id="eb1-IJ-VE9"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woo-Q6-tJu">
+                                <rect key="frame" x="16" y="802" width="382" height="44"/>
+                                <color key="backgroundColor" name="venus"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="N90-Wn-wlQ"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTouched:" destination="BLF-1T-5Sz" eventType="touchUpInside" id="Dlg-fb-uHS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T6o-YI-lxN"/>
+                        <color key="backgroundColor" name="astro"/>
+                        <constraints>
+                            <constraint firstItem="woo-Q6-tJu" firstAttribute="leading" secondItem="T6o-YI-lxN" secondAttribute="leading" constant="16" id="Cjf-fy-6sI"/>
+                            <constraint firstItem="c7i-Ek-mx6" firstAttribute="top" secondItem="TA6-CS-gT7" secondAttribute="bottom" constant="16" id="UlQ-1w-QB5"/>
+                            <constraint firstItem="T6o-YI-lxN" firstAttribute="trailing" secondItem="c7i-Ek-mx6" secondAttribute="trailing" constant="16" id="X2e-rU-Qx7"/>
+                            <constraint firstItem="TA6-CS-gT7" firstAttribute="leading" secondItem="T6o-YI-lxN" secondAttribute="leading" constant="16" id="aLi-MR-5Bu"/>
+                            <constraint firstItem="T6o-YI-lxN" firstAttribute="trailing" secondItem="woo-Q6-tJu" secondAttribute="trailing" constant="16" id="aic-jQ-9xS"/>
+                            <constraint firstItem="woo-Q6-tJu" firstAttribute="top" secondItem="c7i-Ek-mx6" secondAttribute="bottom" constant="16" id="dFK-s7-0dg"/>
+                            <constraint firstItem="T6o-YI-lxN" firstAttribute="bottom" secondItem="woo-Q6-tJu" secondAttribute="bottom" constant="16" id="kss-dA-4VF"/>
+                            <constraint firstItem="T6o-YI-lxN" firstAttribute="trailing" secondItem="qey-Uf-pc7" secondAttribute="trailing" constant="16" id="tod-oT-cw8"/>
+                            <constraint firstItem="c7i-Ek-mx6" firstAttribute="leading" secondItem="T6o-YI-lxN" secondAttribute="leading" constant="16" id="uAc-80-CWk"/>
+                            <constraint firstItem="TA6-CS-gT7" firstAttribute="top" secondItem="T6o-YI-lxN" secondAttribute="top" constant="16" id="v18-dD-bLn"/>
+                            <constraint firstItem="qey-Uf-pc7" firstAttribute="top" secondItem="T6o-YI-lxN" secondAttribute="top" constant="10" id="vUg-ln-wqS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="c7i-Ek-mx6" id="lpx-pG-1OE"/>
+                        <outlet property="nextButton" destination="woo-Q6-tJu" id="I5u-ax-hTG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hey-3F-DqV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295.6521739130435" y="59.598214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="astro">
+            <color red="0.125" green="0.14100000262260437" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mercury">
+            <color red="0.41200000047683716" green="0.43500000238418579" blue="0.5220000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="venus">
+            <color red="0.94900000095367432" green="0.52499997615814209" blue="0.39599999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

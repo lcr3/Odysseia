@@ -1,0 +1,36 @@
+### Headers settings
+company: lcr
+
+### Xcode project settings
+project_name: Odysseia
+xcodeproj_path: Odysseia.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Odysseia
+
+# The file path for new modules
+project_file_path: Odysseia/Module
+
+# The Xcode group path to new modules
+project_group_path: Odysseia/Module
+
+### Tests generation settings section
+# The tests target name
+test_target: OdysseiaTests
+
+# The file path for new tests
+test_file_path: OdysseiaTests/Module
+
+# The Xcode group path to new tests
+test_group_path: OdysseiaTests/Module
+
+### Dependencies settings section
+
+cartfile_path: Cartfile
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}

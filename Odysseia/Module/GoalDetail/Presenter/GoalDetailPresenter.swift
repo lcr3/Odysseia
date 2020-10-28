@@ -1,6 +1,6 @@
 //
 //  GoalDetailPresenter.swift
-//  Odysseial
+//  Odysseia
 //
 //  Created by lcr on 2020/10/20.
 //
@@ -16,7 +16,7 @@ class GoalDetailPresenter {
     private weak var view: GoalDetailView?
     private let router: GoalDetailWireframe
     private let interactor: GoalDetailUsecase
-    let goal: Goal
+    var goal: Goal
 
     init(view: GoalDetailView,
          router: GoalDetailWireframe,
@@ -35,6 +35,15 @@ extension GoalDetailPresenter: GoalDetailPresentation {
     }
 
     func loadGoal() {
+        interactor.loadGoalList(objectId: goal.objectID)
+    }
+}
 
+extension GoalDetailPresenter: GoalDetailInteractorOutput {
+    func successLoad(goal: Goal) {
+        self.goal = goal
+        view?.setGoal()
+    }
+    func failedLoad(error: Error) {
     }
 }

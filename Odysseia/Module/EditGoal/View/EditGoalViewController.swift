@@ -8,7 +8,6 @@
 import UIKit
 
 protocol EditGoalView: AnyObject {
-
 }
 
 class EditGoalViewController: UIViewController, StoryboardInstantiatable {
@@ -20,11 +19,14 @@ class EditGoalViewController: UIViewController, StoryboardInstantiatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let doneBarItem = UIBarButtonItem(title: L10n.Localizable.doneButtonText, style: .done, target: self, action: #selector(doneBarButtonTapped(_:)))
+        navigationItem.rightBarButtonItems = [doneBarItem]
+
         titleField.text = presenter.editGoal.title
         detailField.text = presenter.editGoal.detail
     }
 
-    @IBAction func doneButtonTouched(_ sender: Any) {
+    @objc func doneBarButtonTapped(_ sender: UIBarButtonItem) {
         guard let title = titleField.text else {
             return
         }
@@ -37,4 +39,14 @@ class EditGoalViewController: UIViewController, StoryboardInstantiatable {
 
 extension EditGoalViewController: EditGoalView {
 
+}
+
+extension EditGoalViewController {
+    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        super.dismiss(animated: flag, completion: completion)
+        guard let presentationController = presentationController else {
+            return
+        }
+        presentationController.delegate?.presentationControllerDidDismiss?(presentationController)
+    }
 }

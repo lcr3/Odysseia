@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  Odysseial
+//  GoalServicer.swift
+//  Odysseia
 //
 //  Created by lcr on 2020/10/20.
 //
@@ -11,6 +11,7 @@ protocol GoalService {
     func add(goal: TemporaryGoal) throws -> Goal
     func update(goal: Goal) throws -> Goal
     func delete(id: String) throws
+    func get(objectId: NSManagedObjectID) throws -> Goal
     func getAll() throws -> [Goal]
 }
 
@@ -28,25 +29,38 @@ extension GoalServicer: GoalService {
         let newGoal = Goal(context: managedContext)
         newGoal.title = goal.title
         newGoal.detail = goal.detail
+        newGoal.planet = Int16(goal.planet.rawValue)
         do {
             try managedContext.save()
         } catch {
-            throw GoalServiceError.addError(msg: "データの追加に失敗しました")
+            throw GoalServiceError.addError(msg: L10n.Localizable.addGoalErrorMessage)
         }
         return newGoal
     }
 
     func delete(id: String) throws {
-        throw GoalServiceError.deleteError(msg: "データの削除に失敗しました")
+        throw GoalServiceError.deleteError(msg: L10n.Localizable.deleteGoalErrorMessage)
     }
 
     func update(goal: Goal) throws -> Goal {
         do {
             try managedContext.save()
         } catch {
-            throw GoalServiceError.updateError(msg: "データの更新に失敗しました")
+            throw GoalServiceError.updateError(msg: L10n.Localizable.updateGoalErrorMessage)
         }
         return goal
+    }
+
+    func get(objectId: NSManagedObjectID) throws -> Goal {
+        do {
+            let result = try managedContext.existingObject(with: objectId)
+            if let goal = result as? Goal {
+                return goal
+            }
+            throw GoalServiceError.getError(msg: L10n.Localizable.getGoalErrorMessage)
+        } catch {
+            throw error
+        }
     }
 
     func getAll() throws -> [Goal] {
@@ -55,7 +69,7 @@ extension GoalServicer: GoalService {
             if let goals = result as? [Goal] {
                 return goals
             }
-            throw GoalServiceError.getError(msg: "データの取得に失敗しました")
+            throw GoalServiceError.getError(msg: L10n.Localizable.getGoalErrorMessage)
         } catch {
             throw error
         }

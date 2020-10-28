@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Odysseial
+//  Odysseia
 //
 //  Created by lcr on 2020/10/19.
 //
@@ -21,11 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             //            RootRouter().presentFirstScreen(in: window)
             let rootView = GoalListRouter.assembleModules()
-            let nav = UINavigationController(rootViewController: rootView)
-            //                    nav.navigationBar.barTintColor = #colorLiteral(red: 0.1254901961, green: 0.1411764706, blue: 0.168627451, alpha: 1)
-            nav.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            nav.navigationBar.shadowImage = UIImage()
-            nav.navigationBar.isTranslucent = true
+            let nav = GoalNavigationController(rootViewController: rootView)
             window.rootViewController = nav
             window.makeKeyAndVisible()
         }
