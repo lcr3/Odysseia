@@ -16,6 +16,8 @@ protocol AddTaskView: AnyObject {
     var presenter: AddTaskPresentation! { get }
     // Presenter -> View
     func reload(tasks: [TemporaryTask])
+    func validationError(msg: String)
+    func showDeleteAlert(row: Int)
 }
 
 class AddTaskViewController: UIViewController, StoryboardInstantiatable {
@@ -45,7 +47,6 @@ class AddTaskViewController: UIViewController, StoryboardInstantiatable {
         super.viewDidLoad()
         collectionView.dataSource = dataSource
         collectionView.delegate = self
-        presenter.viewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -70,6 +71,24 @@ extension AddTaskViewController: AddTaskView {
         snapshot.appendSections(TaskSection.allCases)
         snapshot.appendItems(tasks, toSection: .task)
         dataSource.apply(snapshot, animatingDifferences: true)
+    }
+
+    func validationError(msg: String) {
+        let alert = UIAlertController.errorAlert(msg: msg)
+        present(alert, animated: true)
+    }
+
+    func showDeleteAlert(row: Int) {
+        let alert = UIAlertController(title: nil,
+                                      message: L10n.Localizable.addTaskDeleteMsg,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: L10n.Localizable.delete,
+                                      style: .destructive) { _ in
+            self.presenter.deleteButtonTouched(row: row)
+        })
+        alert.addAction(UIAlertAction(title: L10n.Localizable.cancel,
+                                      style: .cancel))
+        present(alert, animated: true)
     }
 }
 

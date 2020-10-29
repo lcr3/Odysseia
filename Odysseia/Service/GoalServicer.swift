@@ -8,11 +8,16 @@
 import CoreData
 
 protocol GoalService {
+    // Goal
     func add(goal: TemporaryGoal) throws -> Goal
+    func add(goal: TemporaryGoal, tasks: [TemporaryTask]) throws -> Goal
     func update(goal: Goal) throws -> Goal
     func delete(id: String) throws
     func get(objectId: NSManagedObjectID) throws -> Goal
     func getAll() throws -> [Goal]
+
+    // Task
+    func update(task: Task) throws -> Task
 }
 
 class GoalServicer {
@@ -25,28 +30,49 @@ class GoalServicer {
 }
 
 extension GoalServicer: GoalService {
+    func add(goal: TemporaryGoal, tasks: [TemporaryTask]) throws -> Goal {
+        let newGoal = Goal(context: managedContext)
+        newGoal.title = goal.title
+        newGoal.detail = goal.detail
+        newGoal.deadlineDate = goal.deadlineDate
+
+        for task in tasks {
+            let newTask = Task(context: managedContext)
+            newTask.title = task.title
+            newTask.targetCount = Int16(task.targetCount)
+            newTask.goal = newGoal
+        }
+
+        do {
+            try managedContext.save()
+        } catch {
+            throw GoalServiceError.addGoalError(msg: L10n.Localizable.addGoalErrorMsg)
+        }
+        return newGoal
+    }
+
     func add(goal: TemporaryGoal) throws -> Goal {
         let newGoal = Goal(context: managedContext)
         newGoal.title = goal.title
         newGoal.detail = goal.detail
-        newGoal.planet = Int16(goal.planet.rawValue)
+        newGoal.deadlineDate = goal.deadlineDate
         do {
             try managedContext.save()
         } catch {
-            throw GoalServiceError.addError(msg: L10n.Localizable.addGoalErrorMessage)
+            throw GoalServiceError.addGoalError(msg: L10n.Localizable.addGoalErrorMsg)
         }
         return newGoal
     }
 
     func delete(id: String) throws {
-        throw GoalServiceError.deleteError(msg: L10n.Localizable.deleteGoalErrorMessage)
+        throw GoalServiceError.deleteGoalError(msg: L10n.Localizable.deleteGoalErrorMsg)
     }
 
     func update(goal: Goal) throws -> Goal {
         do {
             try managedContext.save()
         } catch {
-            throw GoalServiceError.updateError(msg: L10n.Localizable.updateGoalErrorMessage)
+            throw GoalServiceError.updateGoalError(msg: L10n.Localizable.updateGoalErrorMsg)
         }
         return goal
     }
@@ -57,7 +83,7 @@ extension GoalServicer: GoalService {
             if let goal = result as? Goal {
                 return goal
             }
-            throw GoalServiceError.getError(msg: L10n.Localizable.getGoalErrorMessage)
+            throw GoalServiceError.getGoalError(msg: L10n.Localizable.getGoalErrorMsg)
         } catch {
             throw error
         }
@@ -69,16 +95,26 @@ extension GoalServicer: GoalService {
             if let goals = result as? [Goal] {
                 return goals
             }
-            throw GoalServiceError.getError(msg: L10n.Localizable.getGoalErrorMessage)
+            throw GoalServiceError.getGoalError(msg: L10n.Localizable.getGoalErrorMsg)
         } catch {
             throw error
         }
     }
+
+    func update(task: Task) throws -> Task {
+        do {
+            try managedContext.save()
+        } catch {
+            throw GoalServiceError.updateTaskError(msg: L10n.Localizable.updateGoalErrorMsg)
+        }
+        return task
+    }
 }
 
 enum GoalServiceError: Error {
-    case getError(msg: String)
-    case updateError(msg: String)
-    case addError(msg: String)
-    case deleteError(msg: String)
+    case getGoalError(msg: String)
+    case updateGoalError(msg: String)
+    case addGoalError(msg: String)
+    case deleteGoalError(msg: String)
+    case updateTaskError(msg: String)
 }

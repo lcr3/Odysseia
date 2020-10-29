@@ -19,9 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             self.window = window
-            //            RootRouter().presentFirstScreen(in: window)
             let rootView = GoalListRouter.assembleModules()
             let nav = GoalNavigationController(rootViewController: rootView)
+            nav.hero.isEnabled = true
             window.rootViewController = nav
             window.makeKeyAndVisible()
         }

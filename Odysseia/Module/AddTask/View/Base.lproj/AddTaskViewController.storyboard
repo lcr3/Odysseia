@@ -51,8 +51,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="382" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUl-aI-NOn">
-                                                    <rect key="frame" x="16" y="33" width="42" height="44"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUl-aI-NOn">
+                                                    <rect key="frame" x="16" y="33" width="0.0" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="75X-PD-iq1"/>
                                                     </constraints>
@@ -103,7 +103,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="N90-Wn-wlQ"/>
                                 </constraints>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Set Goal🎉">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>

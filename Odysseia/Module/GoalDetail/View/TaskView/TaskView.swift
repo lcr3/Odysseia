@@ -2,31 +2,59 @@
 //  TaskView.swift
 //  Odysseia
 //
-//  Created by okano on 2020/10/24.
+//  Created by lcr on 2020/10/24.
 //
 
 import UIKit
+import HGCircularSlider
+
+protocol TaskViewDelegate: AnyObject {
+    func taskTouched(index: Int)
+}
 
 class TaskView: UIView {
+    static let height = 120
+    static let xMergin = 16
 
-    @IBOutlet weak var circleArea: UIView!
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configure()
+    weak var delegate: TaskViewDelegate?
+    private var index = 0
+
+    @IBOutlet weak var achievementCircle: TaskAchievementCircle!
+    @IBOutlet weak var targetCountLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+
+    static func make(delegate: TaskViewDelegate, task: Task, index: Int) -> TaskView {
+        guard let view = UINib(nibName: TaskView.className, bundle: nil)
+                .instantiate(withOwner: nil, options: nil)
+                .first as? TaskView else {
+            fatalError("Faild task view")
+        }
+        //        view.frame = frame
+        view.delegate = delegate
+        view.index = index
+        view.set(task: task)
+        view.layer.borderWidth = 1.0
+        view.layer.borderColor = UIColor.black.cgColor
+        view.layer.cornerRadius = CGFloat(TaskView.height / 4)
+
+        return view
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        configure()
     }
 
-    private func configure() {
-        let nib = UINib(nibName: "TaskView", bundle: nil)
-        guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else { return }
-        addSubview(view)
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
 
-    func setTask(task: Task) {
+    func set(task: Task) {
+        titleLabel.text = task.title
+        targetCountLabel.text = "\(task.reachCount) / \(task.targetCount)"
+        achievementCircle.setCircle(task: task)
+    }
 
+    @IBAction func taskViewtouched(_ sender: Any) {
+        delegate?.taskTouched(index: index)
     }
 }

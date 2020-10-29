@@ -2,7 +2,7 @@
 //  TaskInputModalViewController.swift
 //  Odysseia
 //
-//  Created by ryookano on 2020/10/28.
+//  Created by lcr on 2020/10/28.
 //
 import BottomHalfModal
 import UIKit
@@ -15,10 +15,6 @@ protocol TaskInputDelegate: AnyObject {
 class TaskInputModalViewController: UIViewController {
     @IBOutlet weak var targetLevelField: UITextField!
     @IBOutlet weak var titleField: UITextField!
-    let toolbarFrame = CGRect(x: 0,
-                              y: 0,
-                              width: UIScreen.main.bounds.width,
-                              height: 44)
     var sheetContentHeightToModify: CGFloat = 500
     var pickerView = UIPickerView()
     weak var delegate: TaskInputDelegate?
@@ -28,18 +24,21 @@ class TaskInputModalViewController: UIViewController {
         self.delegate = delegate
     }
 
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(add))
-
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel,
+                                                           target: self,
+                                                           action: #selector(cancel))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
+                                                            target: self,
+                                                            action: #selector(addTask))
         setTargetField()
         setTitleField()
-
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tapGesture)
     }
@@ -54,27 +53,11 @@ class TaskInputModalViewController: UIViewController {
         adjustFrameToSheetContentHeightIfNeeded(with: coordinator)
     }
 
-    func setTitleField() {
-        titleField.delegate = self
-        let titleToolbar = UIToolbar()
-        titleToolbar.frame = toolbarFrame
-        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneInputTitle))
-        titleToolbar.setItems([doneItem], animated: true)
-        titleField.inputAccessoryView = titleToolbar
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        targetLevelField.endEditing(true)
     }
 
-    func setTargetField() {
-        targetLevelField.inputView = pickerView
-        pickerView.delegate = self
-        pickerView.dataSource = self
-
-        let targetLevelToolbar = UIToolbar()
-        targetLevelToolbar.frame = toolbarFrame
-        let doneButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(donePicker))
-        targetLevelToolbar.setItems([doneButtonItem], animated: true)
-        targetLevelField.inputAccessoryView = targetLevelToolbar
-    }
-
+    // MARK: Action
     @objc func donePicker() {
         targetLevelField.endEditing(true)
     }
@@ -83,10 +66,13 @@ class TaskInputModalViewController: UIViewController {
         view.endEditing(true)
     }
 
-    @objc func add() {
-        // validation
-        guard let title = titleField.text, !title.isEmpty, let targetText = targetLevelField.text, !targetText.isEmpty, let targetLevel = Int(targetText) else {
-            // error
+    @objc func addTask() {
+        guard let title = titleField.text, !title.isEmpty else {
+            showErrorAlert(msg: L10n.Localizable.addTaskTitleNilMsg)
+            return
+        }
+        guard let targetText = targetLevelField.text, !targetText.isEmpty, let targetLevel = Int(targetText) else {
+            showErrorAlert(msg: L10n.Localizable.addTaskTargetLevelNilMsg)
             return
         }
         dismiss(animated: true) {
@@ -103,23 +89,39 @@ class TaskInputModalViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-    @IBAction func cancelButtonTouched(_ sender: Any) {
-        //        dismiss(animated: true, completion: nil)
-
+    private func setTitleField() {
+        titleField.delegate = self
+        let titleToolbar = UIToolbar()
+        titleToolbar.frame = toolbarFrame
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneInputTitle))
+        titleToolbar.setItems([doneItem], animated: true)
+        titleField.inputAccessoryView = titleToolbar
     }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        targetLevelField.endEditing(true)
+
+    private func setTargetField() {
+        targetLevelField.inputView = pickerView
+        pickerView.delegate = self
+        pickerView.dataSource = self
+
+        let targetLevelToolbar = UIToolbar()
+        targetLevelToolbar.frame = toolbarFrame
+        let doneButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(donePicker))
+        targetLevelToolbar.setItems([doneButtonItem], animated: true)
+        targetLevelField.inputAccessoryView = targetLevelToolbar
+    }
+
+    private func showErrorAlert(msg: String) {
+        let alert = UIAlertController.errorAlert(msg: msg)
+        present(alert, animated: true)
     }
 }
 
 extension TaskInputModalViewController: SheetContentHeightModifiable {
     func adjustFrameToSheetContentHeightIfNeeded(with coordinator: UIViewControllerTransitionCoordinator) {
-
     }
 }
 
 extension TaskInputModalViewController: UIPickerViewDelegate {
-
 }
 
 extension TaskInputModalViewController: UIPickerViewDataSource {
@@ -128,7 +130,7 @@ extension TaskInputModalViewController: UIPickerViewDataSource {
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        99
+        taskReachMaxCount
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         String(row)

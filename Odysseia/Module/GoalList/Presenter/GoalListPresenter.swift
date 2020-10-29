@@ -1,6 +1,6 @@
 //
-//  GoalPresenter.swift
-//  CoreDataSample
+//  GoalListPresenter.swift
+//  Odysseia
 //
 //  Created by lcr on 2020/10/19.
 //
@@ -49,5 +49,11 @@ extension GoalListPresenter: GoalListInteractorOutput {
     func successLoad(goals: [Goal]) {
         self.goals = goals
         view?.reload(goals: goals)
+    }
+}
+
+extension GoalListPresenter: GoalListRouterOutput {
+    func successAddGoal() {
+        interactor.loadGoalList()
     }
 }

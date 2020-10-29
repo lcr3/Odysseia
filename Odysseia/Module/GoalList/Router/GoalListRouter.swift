@@ -1,6 +1,6 @@
 //
 //  GoalRouter.swift
-//  CoreDataSample
+//  Odysseia
 //
 //  Created by lcr on 2020/10/19.
 //
@@ -10,28 +10,28 @@ import UIKit
 protocol GoalListWireframe: AnyObject {
     func showDetail(goal: Goal)
     func showAddGoal()
+
+    var output: GoalListRouterOutput? { get }
 }
 
 class GoalListRouter {
-    // 画面遷移のためにViewControllerが必要。initで受け取る
     private unowned let viewController: UIViewController
+    weak var output: GoalListRouterOutput?
 
     init(viewController: UIViewController) {
         self.viewController = viewController
     }
 
-    // DI
     static func assembleModules() -> UIViewController {
         let view = GoalListViewController.instantiate()
         let router = GoalListRouter(viewController: view)
         let interector = GoalListInteractor()
-        // 生成し、initの引数で渡す
         let presenter = GoalListPresenter(view: view,
                                           router: router,
                                           interactor: interector)
-        view.presenter = presenter    // ViewにPresenterを設定
+        view.presenter = presenter
         interector.output = presenter
-
+        router.output = presenter
         return view
     }
 }
@@ -44,8 +44,14 @@ extension GoalListRouter: GoalListWireframe {
 
     func showAddGoal() {
         let addGoalView = AddGoalNameRouter.assembleModules()
-        let nav = GoalNavigationController(rootViewController: addGoalView)
-        addGoalView.presentationController?.delegate = viewController as? UIAdaptivePresentationControllerDelegate
+        let nav = AddGoalNavigationController(rootVc: addGoalView, delegate: self)
         viewController.navigationController?.present(nav, animated: true)
+    }
+}
+
+extension GoalListRouter: AddGoalDelegate {
+    // Success add goal notification.
+    func successAddGoal() {
+        output?.successAddGoal()
     }
 }

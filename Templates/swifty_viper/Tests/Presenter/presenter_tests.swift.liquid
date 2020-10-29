@@ -5,6 +5,7 @@
 //  Created by lcr on {{ date }}.
 //
 
+@testable import {{ module_info.project_name }}
 import XCTest
 
 class {{ module_info.name }}PresenterTest: XCTestCase {
@@ -19,15 +20,15 @@ class {{ module_info.name }}PresenterTest: XCTestCase {
         super.tearDown()
     }
 
-    class MockInteractor: {{ module_info.name }}InteractorInput {
+    class MockInteractor: {{ module_info.name }}UseCase {
 
     }
 
-    class MockRouter: {{ module_info.name }}RouterInput {
+    class MockRouter: {{ module_info.name }}WireFrame {
 
     }
 
-    class MockViewController: {{ module_info.name }}ViewInput {
+    class MockViewController: {{ module_info.name }}View {
 
         func setupInitialState() {
 
