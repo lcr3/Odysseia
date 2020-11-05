@@ -1,6 +1,6 @@
 //
-//  GoalInteractorOutput.swift
-//  CoreDataSample
+//  GoalListInteractorOutput.swift
+//  Odysseia
 //
 //  Created by lcr on 2020/10/19.
 //

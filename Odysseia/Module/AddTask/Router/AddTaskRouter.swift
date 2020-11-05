@@ -9,6 +9,7 @@ import UIKit
 
 protocol AddTaskWireframe: AnyObject {
     // Presenter -> Router
+    func dismiss()
 }
 
 class AddTaskRouter {
@@ -18,13 +19,14 @@ class AddTaskRouter {
         self.viewController = viewController
     }
 
-    static func assembleModules() -> UIViewController {
+    static func assembleModules(goal: TemporaryGoal) -> UIViewController {
         let view = AddTaskViewController.instantiate()
         let router = AddTaskRouter(viewController: view)
         let interactor = AddTaskInteractor(service: GoalServicer.shared)
         let presenter = AddTaskPresenter(view: view,
                                          interactor: interactor,
-                                         router: router)
+                                         router: router,
+                                         goal: goal)
         view.presenter = presenter
         interactor.output = presenter
         return view
@@ -32,4 +34,10 @@ class AddTaskRouter {
 }
 
 extension AddTaskRouter: AddTaskWireframe {
+    func dismiss() {
+        guard let addGoalNav = viewController.navigationController as? AddGoalNavigationController else {
+            return
+        }
+        addGoalNav.dismissSuccessAddGoal()
+    }
 }

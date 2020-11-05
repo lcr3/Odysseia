@@ -8,8 +8,11 @@
 protocol GoalDetailPresentation: AnyObject {
     var goal: Goal { get }
 
+    // View -> Presenter
     func editButtonTouched()
+    func taskTouched(index: Int)
     func loadGoal()
+    func getAchievementRate() -> String
 }
 
 class GoalDetailPresenter {
@@ -34,16 +37,31 @@ extension GoalDetailPresenter: GoalDetailPresentation {
         router.showEdit(goal: goal)
     }
 
+    func taskTouched(index: Int) {
+        router.showEdit(task: goal.getTask(index: index), output: self)
+    }
+
     func loadGoal() {
         interactor.loadGoalList(objectId: goal.objectID)
+    }
+
+    func getAchievementRate() -> String {
+        "\(goal.achievementRate())%"
     }
 }
 
 extension GoalDetailPresenter: GoalDetailInteractorOutput {
     func successLoad(goal: Goal) {
         self.goal = goal
-        view?.setGoal()
+        view?.updateViews()
     }
+
     func failedLoad(error: Error) {
+    }
+}
+
+extension GoalDetailPresenter: EditTaskPresenterOutput {
+    func successUpdete(task: Task) {
+        loadGoal()
     }
 }

@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016F22FB06656F9DB595306E /* AsapPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958AEC0D1ED177430EFC99DA /* AsapPresenterTests.swift */; };
 		05BE5317C6B3B6C3081C2919 /* AddTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */; };
 		0A79080A4981356A6908510F /* AddTaskRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5626CF0488460640D40A0 /* AddTaskRouterTests.swift */; };
 		0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */; };
-		1D87509790F62302F586FA48 /* AsapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F377FAD742C77C846A29855 /* AsapViewTests.swift */; };
 		23FCC9F67139A893CB708D22 /* AddGoalNameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */; };
 		290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B5C4A253F1537009D54B1 /* Resources.xcassets */; };
 		290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */; };
+		291B74642552EC710042DFB3 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 291B74632552EC710042DFB3 /* Hero */; };
+		291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746925541C430042DFB3 /* TaskAchievementCircle.swift */; };
+		291B746F25541C780042DFB3 /* GoalAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */; };
 		2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
 		2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954E9592540561200E89510 /* GoalNavigationController.swift */; };
 		2954E9672541251A00E89510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
-		295527D8253E5DD5009AFE97 /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527D7253E5DD5009AFE97 /* AddGoalViewController.swift */; };
-		295527DE253E5E87009AFE97 /* AddGoalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527DD253E5E87009AFE97 /* AddGoalPresenter.swift */; };
-		295527E8253E5EA3009AFE97 /* AddGoalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527E7253E5EA3009AFE97 /* AddGoalInteractor.swift */; };
-		295527F0253E5EA9009AFE97 /* AddGoalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527EF253E5EA9009AFE97 /* AddGoalRouter.swift */; };
-		295527FC253E6BD5009AFE97 /* AddGoalInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295527FB253E6BD5009AFE97 /* AddGoalInteractorOutput.swift */; };
 		2955280F253E76D9009AFE97 /* PersistentContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */; };
 		29552819253E779C009AFE97 /* GoalServicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552818253E779C009AFE97 /* GoalServicer.swift */; };
 		29552828253E8052009AFE97 /* TemporaryGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552827253E8052009AFE97 /* TemporaryGoal.swift */; };
 		2959D0672549673800A3DC28 /* AddTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D0662549673800A3DC28 /* AddTaskInteractor.swift */; };
 		2959D06C2549679500A3DC28 /* AddTaskInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D06B2549679500A3DC28 /* AddTaskInteractorOutput.swift */; };
+		2959D094254A652000A3DC28 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D093254A652000A3DC28 /* Constraints.swift */; };
+		2959D09C254A7C2700A3DC28 /* AddGoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D09B254A7C2700A3DC28 /* AddGoalNavigationController.swift */; };
+		2959D0A1254A83DC00A3DC28 /* GoalListRouterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D0A0254A83DC00A3DC28 /* GoalListRouterOutput.swift */; };
+		2959D0BC254A985C00A3DC28 /* AddTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2959D0BE254A985C00A3DC28 /* AddTaskViewController.storyboard */; };
+		296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296412432552404D00CA732A /* EditTaskPresenterOutput.swift */; };
 		297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297795DB254842B000AD7E2D /* AddTaskCell.swift */; };
 		29833775254140F7001CB8D9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29833773254140F7001CB8D9 /* Strings+Generated.swift */; };
-		298337A72541B4C1001CB8D9 /* AddGoalInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337A62541B4C1001CB8D9 /* AddGoalInteractorTest.swift */; };
 		298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337BE2541B845001CB8D9 /* MockGoalService.swift */; };
 		298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 298337D72542AAC7001CB8D9 /* HGCircularSlider */; };
 		298337DE25441173001CB8D9 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337DD25441173001CB8D9 /* TaskView.swift */; };
@@ -41,12 +41,12 @@
 		29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2997605F253D96A200CDD568 /* LaunchScreen.storyboard */; };
 		2997606C253D96A200CDD568 /* OdysseiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997606B253D96A200CDD568 /* OdysseiaTests.swift */; };
 		29976077253D96A200CDD568 /* OdysseiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976076253D96A200CDD568 /* OdysseiaUITests.swift */; };
-		29976097253D96E300CDD568 /* GoalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608D253D96E300CDD568 /* GoalPresenter.swift */; };
+		29976097253D96E300CDD568 /* GoalListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608D253D96E300CDD568 /* GoalListPresenter.swift */; };
 		29976098253D96E300CDD568 /* GoalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608F253D96E300CDD568 /* GoalListViewController.swift */; };
 		29976099253D96E300CDD568 /* GoalListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29976090253D96E300CDD568 /* GoalListViewController.storyboard */; };
-		2997609A253D96E300CDD568 /* GoalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976092253D96E300CDD568 /* GoalInteractor.swift */; };
-		2997609B253D96E300CDD568 /* GoalInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976094253D96E300CDD568 /* GoalInteractorOutput.swift */; };
-		2997609C253D96E300CDD568 /* GoalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976096253D96E300CDD568 /* GoalRouter.swift */; };
+		2997609A253D96E300CDD568 /* GoalListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976092253D96E300CDD568 /* GoalListInteractor.swift */; };
+		2997609B253D96E300CDD568 /* GoalListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976094253D96E300CDD568 /* GoalListInteractorOutput.swift */; };
+		2997609C253D96E300CDD568 /* GoalListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976096253D96E300CDD568 /* GoalListRouter.swift */; };
 		299760A2253D96F900CDD568 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299760A1253D96F900CDD568 /* Extension.swift */; };
 		299D7614253EB841006985FD /* GoalListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D7613253EB841006985FD /* GoalListCollectionCell.swift */; };
 		299D761B253ECC57006985FD /* GoalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D761A253ECC57006985FD /* GoalDetailViewController.swift */; };
@@ -64,21 +64,31 @@
 		29B198D3254927160086B21D /* BottomHalfModal in Frameworks */ = {isa = PBXBuildFile; productRef = 29B198D2254927160086B21D /* BottomHalfModal */; };
 		29B198DB254928D90086B21D /* TaskInputModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B198DA254928D90086B21D /* TaskInputModalViewController.swift */; };
 		29B198E0254939100086B21D /* TaskInputModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29B198DF254939100086B21D /* TaskInputModalViewController.xib */; };
-		29FB83F62547A7F800E0B387 /* AddGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB83F52547A7F800E0B387 /* AddGoalViewController.storyboard */; };
+		29D67F8C254C073C00A6E396 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */; };
+		29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */; };
+		29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */; };
+		29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */; };
 		29FB84032547A85D00E0B387 /* AddGoalNameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */; };
-		29FB84112547CC0200E0B387 /* AddTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB84102547CC0200E0B387 /* AddTaskViewController.storyboard */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
+		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
+		2F49841CECE1D441E9B7302A /* EditTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F29B0F14B9FFAFBC29F430 /* EditTaskViewController.storyboard */; };
+		5433577822706E6E4D26A1CA /* EditTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24B0DEE5E333B843DB2019 /* EditTaskRouter.swift */; };
 		6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */; };
+		716CB1F008A9E38BE9366A7F /* EditTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772246A719E6AA22508BC264 /* EditTaskViewTests.swift */; };
 		7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */; };
 		7D5782F4FF379C023F0EB819 /* AddTaskInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */; };
+		8276F3B044165564D9EA940D /* EditTaskInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B70505EAE2815B54CDF35 /* EditTaskInteractorTests.swift */; };
 		912C0E341BB3295DC5F8AA1B /* AddTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C9C45CD6FBED72AF5954F /* AddTaskViewTests.swift */; };
+		A15496138B32027A29C88ED0 /* EditTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92799FDBA86D0E1B90A00F4 /* EditTaskPresenter.swift */; };
+		A6C7FA0C899BC78349C8D297 /* EditTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */; };
 		B396BC7E75984A86F2A84969 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794871EE74CF19196C409A51 /* AddTaskViewController.swift */; };
 		C4B155383D956F46C39C6D3D /* AddGoalNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */; };
-		DA7D765E2976E0D99B129A6C /* AsapRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C47D4F601DF7C4A31BBDFAF /* AsapRouterTests.swift */; };
+		D186C9C46FFAF32C32919C6E /* EditTaskRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0EE8220CA42F3F7B6AC356 /* EditTaskRouterTests.swift */; };
+		D4391EAE8E92214833C98C20 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430410713F76BC9E6A19F1B /* EditTaskViewController.swift */; };
 		E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */; };
-		E8F60B35D491C5E4536AAB91 /* AsapInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB091323DBECC8A77FB2956 /* AsapInteractorTests.swift */; };
 		F03277B2A7935E5EE21703EE /* AddTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F45DC0B51C7F550CA4798D8 /* AddTaskPresenter.swift */; };
 		F90E7D81DE7987F0F077D31F /* AddGoalNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD23B7AE9ED9C8E2FC06E5BA /* AddGoalNamePresenter.swift */; };
+		FE37061BF901EBB78B547BDE /* EditTaskInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC81CD3D74368FAF6C69AA /* EditTaskInteractorOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,24 +115,27 @@
 		17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskRouter.swift; sourceTree = "<group>"; };
 		290B5C4A253F1537009D54B1 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
 		290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailInteractorOutput.swift; sourceTree = "<group>"; };
+		291B746925541C430042DFB3 /* TaskAchievementCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAchievementCircle.swift; sourceTree = "<group>"; };
+		291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalAchievementCircle.swift; sourceTree = "<group>"; };
 		2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		2954E9592540561200E89510 /* GoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNavigationController.swift; sourceTree = "<group>"; };
 		2954E9682541251A00E89510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2954E96D254125C600E89510 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2954E96E254125C700E89510 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		295527D7253E5DD5009AFE97 /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
-		295527DD253E5E87009AFE97 /* AddGoalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalPresenter.swift; sourceTree = "<group>"; };
-		295527E7253E5EA3009AFE97 /* AddGoalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalInteractor.swift; sourceTree = "<group>"; };
-		295527EF253E5EA9009AFE97 /* AddGoalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalRouter.swift; sourceTree = "<group>"; };
-		295527FB253E6BD5009AFE97 /* AddGoalInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalInteractorOutput.swift; sourceTree = "<group>"; };
 		2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainerProvider.swift; sourceTree = "<group>"; };
 		29552818253E779C009AFE97 /* GoalServicer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalServicer.swift; sourceTree = "<group>"; };
 		29552827253E8052009AFE97 /* TemporaryGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryGoal.swift; sourceTree = "<group>"; };
 		2959D0662549673800A3DC28 /* AddTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskInteractor.swift; sourceTree = "<group>"; };
 		2959D06B2549679500A3DC28 /* AddTaskInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskInteractorOutput.swift; sourceTree = "<group>"; };
+		2959D093254A652000A3DC28 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		2959D09B254A7C2700A3DC28 /* AddGoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalNavigationController.swift; sourceTree = "<group>"; };
+		2959D0A0254A83DC00A3DC28 /* GoalListRouterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListRouterOutput.swift; sourceTree = "<group>"; };
+		2959D0BD254A985C00A3DC28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddTaskViewController.storyboard; sourceTree = "<group>"; };
+		2959D0C3254A986000A3DC28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddTaskViewController.strings; sourceTree = "<group>"; };
+		2959D0C5254A986200A3DC28 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AddTaskViewController.strings; sourceTree = "<group>"; };
+		296412432552404D00CA732A /* EditTaskPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterOutput.swift; sourceTree = "<group>"; };
 		297795DB254842B000AD7E2D /* AddTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCell.swift; sourceTree = "<group>"; };
 		29833773254140F7001CB8D9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
-		298337A62541B4C1001CB8D9 /* AddGoalInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalInteractorTest.swift; sourceTree = "<group>"; };
 		298337BE2541B845001CB8D9 /* MockGoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGoalService.swift; sourceTree = "<group>"; };
 		298337DD25441173001CB8D9 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		298337E225441188001CB8D9 /* TaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskView.xib; sourceTree = "<group>"; };
@@ -138,12 +151,12 @@
 		29976072253D96A200CDD568 /* OdysseiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29976076253D96A200CDD568 /* OdysseiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaUITests.swift; sourceTree = "<group>"; };
 		29976078253D96A200CDD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2997608D253D96E300CDD568 /* GoalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalPresenter.swift; sourceTree = "<group>"; };
+		2997608D253D96E300CDD568 /* GoalListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListPresenter.swift; sourceTree = "<group>"; };
 		2997608F253D96E300CDD568 /* GoalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListViewController.swift; sourceTree = "<group>"; };
 		29976090253D96E300CDD568 /* GoalListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GoalListViewController.storyboard; sourceTree = "<group>"; };
-		29976092253D96E300CDD568 /* GoalInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalInteractor.swift; sourceTree = "<group>"; };
-		29976094253D96E300CDD568 /* GoalInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalInteractorOutput.swift; sourceTree = "<group>"; };
-		29976096253D96E300CDD568 /* GoalRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalRouter.swift; sourceTree = "<group>"; };
+		29976092253D96E300CDD568 /* GoalListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListInteractor.swift; sourceTree = "<group>"; };
+		29976094253D96E300CDD568 /* GoalListInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListInteractorOutput.swift; sourceTree = "<group>"; };
+		29976096253D96E300CDD568 /* GoalListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListRouter.swift; sourceTree = "<group>"; };
 		299760A1253D96F900CDD568 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		299D7613253EB841006985FD /* GoalListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListCollectionCell.swift; sourceTree = "<group>"; };
 		299D761A253ECC57006985FD /* GoalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewController.swift; sourceTree = "<group>"; };
@@ -160,23 +173,31 @@
 		29B13478253D97E800C273F1 /* Goal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goal.xcdatamodel; sourceTree = "<group>"; };
 		29B198DA254928D90086B21D /* TaskInputModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputModalViewController.swift; sourceTree = "<group>"; };
 		29B198DF254939100086B21D /* TaskInputModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskInputModalViewController.xib; sourceTree = "<group>"; };
-		29FB83F52547A7F800E0B387 /* AddGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddGoalViewController.storyboard; sourceTree = "<group>"; };
+		29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
 		29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddGoalNameViewController.storyboard; sourceTree = "<group>"; };
-		29FB84102547CC0200E0B387 /* AddTaskViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTaskViewController.storyboard; sourceTree = "<group>"; };
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
+		49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractor.swift; sourceTree = "<group>"; };
+		6430410713F76BC9E6A19F1B /* EditTaskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameRouterTests.swift; sourceTree = "<group>"; };
-		6C47D4F601DF7C4A31BBDFAF /* AsapRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsapRouterTests.swift; sourceTree = "<group>"; };
-		6F377FAD742C77C846A29855 /* AsapViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsapViewTests.swift; sourceTree = "<group>"; };
+		6D24B0DEE5E333B843DB2019 /* EditTaskRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskRouter.swift; sourceTree = "<group>"; };
 		6F45DC0B51C7F550CA4798D8 /* AddTaskPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskPresenter.swift; sourceTree = "<group>"; };
+		772246A719E6AA22508BC264 /* EditTaskViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskViewTests.swift; sourceTree = "<group>"; };
 		794871EE74CF19196C409A51 /* AddTaskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		8E6B70505EAE2815B54CDF35 /* EditTaskInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractorTests.swift; sourceTree = "<group>"; };
 		8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameViewTests.swift; sourceTree = "<group>"; };
 		925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNamePresenterTests.swift; sourceTree = "<group>"; };
-		958AEC0D1ED177430EFC99DA /* AsapPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsapPresenterTests.swift; sourceTree = "<group>"; };
 		9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskInteractorTests.swift; sourceTree = "<group>"; };
-		BAB091323DBECC8A77FB2956 /* AsapInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsapInteractorTests.swift; sourceTree = "<group>"; };
+		A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterTests.swift; sourceTree = "<group>"; };
+		B6F29B0F14B9FFAFBC29F430 /* EditTaskViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = EditTaskViewController.storyboard; sourceTree = "<group>"; };
+		B92799FDBA86D0E1B90A00F4 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
+		BADC81CD3D74368FAF6C69AA /* EditTaskInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractorOutput.swift; sourceTree = "<group>"; };
 		BD6C9C45CD6FBED72AF5954F /* AddTaskViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskViewTests.swift; sourceTree = "<group>"; };
 		CDB5626CF0488460640D40A0 /* AddTaskRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskRouterTests.swift; sourceTree = "<group>"; };
 		DD23B7AE9ED9C8E2FC06E5BA /* AddGoalNamePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNamePresenter.swift; sourceTree = "<group>"; };
+		ED0EE8220CA42F3F7B6AC356 /* EditTaskRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B198D3254927160086B21D /* BottomHalfModal in Frameworks */,
+				291B74642552EC710042DFB3 /* Hero in Frameworks */,
 				298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,15 +228,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0170338343CCDFDF714CECE2 /* Asap */ = {
+		0B5355FA0E81414A22BF6FE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				30C68FEF3A4051C2CF95BC4D /* View */,
-				E68D4C091FE6812078824851 /* Interactor */,
-				56C36F0BBB78F1BEC92545A1 /* Presenter */,
-				6902105868F20124AE266CFC /* Router */,
+				6430410713F76BC9E6A19F1B /* EditTaskViewController.swift */,
+				B6F29B0F14B9FFAFBC29F430 /* EditTaskViewController.storyboard */,
 			);
-			path = Asap;
+			path = View;
 			sourceTree = "<group>";
 		};
 		290B5C49253F1503009D54B1 /* Resources */ = {
@@ -226,6 +246,7 @@
 				290B5C4A253F1537009D54B1 /* Resources.xcassets */,
 				2997605D253D96A200CDD568 /* Assets.xcassets */,
 				2954E9692541251A00E89510 /* Localizable.strings */,
+				2959D093254A652000A3DC28 /* Constraints.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -246,45 +267,22 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		291B746825541C170042DFB3 /* CircleView */ = {
+			isa = PBXGroup;
+			children = (
+				291B746925541C430042DFB3 /* TaskAchievementCircle.swift */,
+				291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */,
+			);
+			path = CircleView;
+			sourceTree = "<group>";
+		};
 		2954E95E25405CBA00E89510 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				2980AAA2254BC89B00B70A01 /* Entity */,
 				2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		295527DC253E5E12009AFE97 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				295527DD253E5E87009AFE97 /* AddGoalPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		295527E5253E5E8E009AFE97 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				295527FA253E6BCA009AFE97 /* Output */,
-				295527E7253E5EA3009AFE97 /* AddGoalInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		295527E6253E5E93009AFE97 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				295527EF253E5EA9009AFE97 /* AddGoalRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		295527FA253E6BCA009AFE97 /* Output */ = {
-			isa = PBXGroup;
-			children = (
-				295527FB253E6BD5009AFE97 /* AddGoalInteractorOutput.swift */,
-			);
-			path = Output;
 			sourceTree = "<group>";
 		};
 		29552826253E8032009AFE97 /* Entiry */ = {
@@ -304,6 +302,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		296412422552404000CA732A /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				296412432552404D00CA732A /* EditTaskPresenterOutput.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
 		297795DA2548428E00AD7E2D /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,31 +318,25 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		2980AAA2254BC89B00B70A01 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */,
+				29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */,
+				29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */,
+				29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		298337A32541B35F001CB8D9 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				298337A42541B371001CB8D9 /* AddGoal */,
 				CE43A372CB41AE1600C8BEBF /* AddGoalName */,
 				956D56AD9BC7A7F214AD8F66 /* AddTask */,
-				0170338343CCDFDF714CECE2 /* Asap */,
+				78193783AEF073ABB774B037 /* EditTask */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		298337A42541B371001CB8D9 /* AddGoal */ = {
-			isa = PBXGroup;
-			children = (
-				298337A52541B488001CB8D9 /* Interactor */,
-			);
-			path = AddGoal;
-			sourceTree = "<group>";
-		};
-		298337A52541B488001CB8D9 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				298337A62541B4C1001CB8D9 /* AddGoalInteractorTest.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		298337BD2541B836001CB8D9 /* CoreData */ = {
@@ -417,10 +417,10 @@
 			children = (
 				299D7648253EDB8B006985FD /* EditGoal */,
 				299D7618253EC9B0006985FD /* GoalDetail */,
-				29B13495253DB0D900C273F1 /* AddGoal */,
 				2997608B253D96E300CDD568 /* GoalList */,
 				67806E344036324E04D9591A /* AddGoalName */,
 				E982E9AC6CBA1613F8E8A628 /* AddTask */,
+				9341D07E30977E9C817D1561 /* EditTask */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -440,7 +440,7 @@
 		2997608C253D96E300CDD568 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				2997608D253D96E300CDD568 /* GoalPresenter.swift */,
+				2997608D253D96E300CDD568 /* GoalListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -458,7 +458,7 @@
 		29976091253D96E300CDD568 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				29976092253D96E300CDD568 /* GoalInteractor.swift */,
+				29976092253D96E300CDD568 /* GoalListInteractor.swift */,
 				29976093253D96E300CDD568 /* Output */,
 			);
 			path = Interactor;
@@ -467,7 +467,7 @@
 		29976093253D96E300CDD568 /* Output */ = {
 			isa = PBXGroup;
 			children = (
-				29976094253D96E300CDD568 /* GoalInteractorOutput.swift */,
+				29976094253D96E300CDD568 /* GoalListInteractorOutput.swift */,
 			);
 			path = Output;
 			sourceTree = "<group>";
@@ -475,7 +475,8 @@
 		29976095253D96E300CDD568 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				29976096253D96E300CDD568 /* GoalRouter.swift */,
+				29976096253D96E300CDD568 /* GoalListRouter.swift */,
+				2959D0A0254A83DC00A3DC28 /* GoalListRouterOutput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -503,6 +504,7 @@
 		299D7619253ECC44006985FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				291B746825541C170042DFB3 /* CircleView */,
 				298337DC25441117001CB8D9 /* TaskView */,
 				299D761A253ECC57006985FD /* GoalDetailViewController.swift */,
 				299D7636253ECFA1006985FD /* GoalDetailViewController.storyboard */,
@@ -596,26 +598,6 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
-		29B13495253DB0D900C273F1 /* AddGoal */ = {
-			isa = PBXGroup;
-			children = (
-				295527E6253E5E93009AFE97 /* Router */,
-				295527E5253E5E8E009AFE97 /* Interactor */,
-				295527DC253E5E12009AFE97 /* Presenter */,
-				29B13496253DB0E300C273F1 /* View */,
-			);
-			path = AddGoal;
-			sourceTree = "<group>";
-		};
-		29B13496253DB0E300C273F1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				295527D7253E5DD5009AFE97 /* AddGoalViewController.swift */,
-				29FB83F52547A7F800E0B387 /* AddGoalViewController.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		29FB841B2548EBC400E0B387 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,12 +606,21 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		30C68FEF3A4051C2CF95BC4D /* View */ = {
+		3382E8C8BD866F4DF0DB735F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				6F377FAD742C77C846A29855 /* AsapViewTests.swift */,
+				BADC81CD3D74368FAF6C69AA /* EditTaskInteractorOutput.swift */,
+				49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */,
 			);
-			path = View;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		33839CFB547CF3F20406FCF6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				ED0EE8220CA42F3F7B6AC356 /* EditTaskRouterTests.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		4EFA8EB208345F4A30F83653 /* Presenter */ = {
@@ -648,10 +639,10 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		56C36F0BBB78F1BEC92545A1 /* Presenter */ = {
+		5299DAB3F3420DD2E8D70F10 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				958AEC0D1ED177430EFC99DA /* AsapPresenterTests.swift */,
+				A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -660,6 +651,14 @@
 			isa = PBXGroup;
 			children = (
 				8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6589D3B02848F6EEFA53D8FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				772246A719E6AA22508BC264 /* EditTaskViewTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -674,14 +673,6 @@
 			path = AddGoalName;
 			sourceTree = "<group>";
 		};
-		6902105868F20124AE266CFC /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				6C47D4F601DF7C4A31BBDFAF /* AsapRouterTests.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		765D0700B3756BCE138AEF77 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,12 +681,23 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		78193783AEF073ABB774B037 /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				6589D3B02848F6EEFA53D8FD /* View */,
+				8E2F888565361C82B9B58213 /* Interactor */,
+				5299DAB3F3420DD2E8D70F10 /* Presenter */,
+				33839CFB547CF3F20406FCF6 /* Router */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
 		7ED89A13CD8B6157EEA473DD /* View */ = {
 			isa = PBXGroup;
 			children = (
 				297795DA2548428E00AD7E2D /* SubViews */,
 				794871EE74CF19196C409A51 /* AddTaskViewController.swift */,
-				29FB84102547CC0200E0B387 /* AddTaskViewController.storyboard */,
+				2959D0BE254A985C00A3DC28 /* AddTaskViewController.storyboard */,
 				29B198DA254928D90086B21D /* TaskInputModalViewController.swift */,
 				29B198DF254939100086B21D /* TaskInputModalViewController.xib */,
 			);
@@ -708,6 +710,25 @@
 				9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8E2F888565361C82B9B58213 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8E6B70505EAE2815B54CDF35 /* EditTaskInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9341D07E30977E9C817D1561 /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				0B5355FA0E81414A22BF6FE9 /* View */,
+				F1EB66454FA3C91E6825ADC9 /* Presenter */,
+				3382E8C8BD866F4DF0DB735F /* Interactor */,
+				E111ADD320E67193F5F0C50D /* Router */,
+			);
+			path = EditTask;
 			sourceTree = "<group>";
 		};
 		956D56AD9BC7A7F214AD8F66 /* AddTask */ = {
@@ -766,6 +787,7 @@
 			children = (
 				29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */,
 				06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */,
+				2959D09B254A7C2700A3DC28 /* AddGoalNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -788,12 +810,12 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		E68D4C091FE6812078824851 /* Interactor */ = {
+		E111ADD320E67193F5F0C50D /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				BAB091323DBECC8A77FB2956 /* AsapInteractorTests.swift */,
+				6D24B0DEE5E333B843DB2019 /* EditTaskRouter.swift */,
 			);
-			path = Interactor;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		E982E9AC6CBA1613F8E8A628 /* AddTask */ = {
@@ -806,6 +828,15 @@
 				A386FEEBC6B02D745762271E /* Router */,
 			);
 			path = AddTask;
+			sourceTree = "<group>";
+		};
+		F1EB66454FA3C91E6825ADC9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				296412422552404000CA732A /* Output */,
+				B92799FDBA86D0E1B90A00F4 /* EditTaskPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -828,6 +859,7 @@
 			packageProductDependencies = (
 				298337D72542AAC7001CB8D9 /* HGCircularSlider */,
 				29B198D2254927160086B21D /* BottomHalfModal */,
+				291B74632552EC710042DFB3 /* Hero */,
 			);
 			productName = Goal;
 			productReference = 2997604E253D96A000CDD568 /* Odysseia.app */;
@@ -905,6 +937,7 @@
 			packageReferences = (
 				298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */,
 				29B198D1254927160086B21D /* XCRemoteSwiftPackageReference "BottomHalfModal" */,
+				291B74622552EC710042DFB3 /* XCRemoteSwiftPackageReference "Hero" */,
 			);
 			productRefGroup = 2997604F253D96A000CDD568 /* Products */;
 			projectDirPath = "";
@@ -923,7 +956,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B198E0254939100086B21D /* TaskInputModalViewController.xib in Resources */,
-				29FB84112547CC0200E0B387 /* AddTaskViewController.storyboard in Resources */,
+				2959D0BC254A985C00A3DC28 /* AddTaskViewController.storyboard in Resources */,
 				29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */,
 				290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */,
 				298337E325441188001CB8D9 /* TaskView.xib in Resources */,
@@ -932,8 +965,8 @@
 				2954E9672541251A00E89510 /* Localizable.strings in Resources */,
 				299D7637253ECFA1006985FD /* GoalDetailViewController.storyboard in Resources */,
 				29976099253D96E300CDD568 /* GoalListViewController.storyboard in Resources */,
-				29FB83F62547A7F800E0B387 /* AddGoalViewController.storyboard in Resources */,
 				299D7656253EDBD1006985FD /* EditGoalViewController.storyboard in Resources */,
+				2F49841CECE1D441E9B7302A /* EditTaskViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,15 +1012,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */,
+				29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */,
+				2959D094254A652000A3DC28 /* Constraints.swift in Sources */,
+				29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */,
+				29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */,
 				299D7660253EDC81006985FD /* EditGoalInteractor.swift in Sources */,
-				295527F0253E5EA9009AFE97 /* AddGoalRouter.swift in Sources */,
 				2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */,
+				29D67F8C254C073C00A6E396 /* Task+CoreDataProperties.swift in Sources */,
 				299D7626253ECD4C006985FD /* GoalDetailPresenter.swift in Sources */,
 				2955280F253E76D9009AFE97 /* PersistentContainerProvider.swift in Sources */,
-				295527E8253E5EA3009AFE97 /* AddGoalInteractor.swift in Sources */,
+				291B746F25541C780042DFB3 /* GoalAchievementCircle.swift in Sources */,
 				29B13479253D97E800C273F1 /* Goal.xcdatamodeld in Sources */,
 				299D7666253EDCB1006985FD /* EditGoalInteractorOutput.swift in Sources */,
-				2997609C253D96E300CDD568 /* GoalRouter.swift in Sources */,
+				2997609C253D96E300CDD568 /* GoalListRouter.swift in Sources */,
 				299D764E253EDBC3006985FD /* EditGoalViewController.swift in Sources */,
 				2959D0672549673800A3DC28 /* AddTaskInteractor.swift in Sources */,
 				29976052253D96A000CDD568 /* AppDelegate.swift in Sources */,
@@ -995,23 +1032,24 @@
 				299760A2253D96F900CDD568 /* Extension.swift in Sources */,
 				299D766E253EDCE7006985FD /* EditGoalRouter.swift in Sources */,
 				297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */,
-				2997609B253D96E300CDD568 /* GoalInteractorOutput.swift in Sources */,
+				2997609B253D96E300CDD568 /* GoalListInteractorOutput.swift in Sources */,
 				29976054253D96A000CDD568 /* SceneDelegate.swift in Sources */,
 				29552828253E8052009AFE97 /* TemporaryGoal.swift in Sources */,
-				295527D8253E5DD5009AFE97 /* AddGoalViewController.swift in Sources */,
-				295527DE253E5E87009AFE97 /* AddGoalPresenter.swift in Sources */,
 				299D7614253EB841006985FD /* GoalListCollectionCell.swift in Sources */,
-				29976097253D96E300CDD568 /* GoalPresenter.swift in Sources */,
+				2959D0A1254A83DC00A3DC28 /* GoalListRouterOutput.swift in Sources */,
+				29976097253D96E300CDD568 /* GoalListPresenter.swift in Sources */,
+				296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */,
 				2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */,
 				299D763E253ED49F006985FD /* GoalDetailRouter.swift in Sources */,
-				295527FC253E6BD5009AFE97 /* AddGoalInteractorOutput.swift in Sources */,
 				29552819253E779C009AFE97 /* GoalServicer.swift in Sources */,
 				298337DE25441173001CB8D9 /* TaskView.swift in Sources */,
 				299D765B253EDC31006985FD /* EditGoalPresenter.swift in Sources */,
+				291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */,
 				299D761B253ECC57006985FD /* GoalDetailViewController.swift in Sources */,
 				299D762C253ECDF8006985FD /* GoalDetailInteractor.swift in Sources */,
-				2997609A253D96E300CDD568 /* GoalInteractor.swift in Sources */,
+				2997609A253D96E300CDD568 /* GoalListInteractor.swift in Sources */,
 				29833775254140F7001CB8D9 /* Strings+Generated.swift in Sources */,
+				2959D09C254A7C2700A3DC28 /* AddGoalNavigationController.swift in Sources */,
 				29B198DB254928D90086B21D /* TaskInputModalViewController.swift in Sources */,
 				C4B155383D956F46C39C6D3D /* AddGoalNameViewController.swift in Sources */,
 				F90E7D81DE7987F0F077D31F /* AddGoalNamePresenter.swift in Sources */,
@@ -1021,6 +1059,11 @@
 				29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */,
 				05BE5317C6B3B6C3081C2919 /* AddTaskRouter.swift in Sources */,
 				2959D06C2549679500A3DC28 /* AddTaskInteractorOutput.swift in Sources */,
+				D4391EAE8E92214833C98C20 /* EditTaskViewController.swift in Sources */,
+				A15496138B32027A29C88ED0 /* EditTaskPresenter.swift in Sources */,
+				FE37061BF901EBB78B547BDE /* EditTaskInteractorOutput.swift in Sources */,
+				A6C7FA0C899BC78349C8D297 /* EditTaskInteractor.swift in Sources */,
+				5433577822706E6E4D26A1CA /* EditTaskRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,7 +1073,6 @@
 			files = (
 				298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */,
 				2997606C253D96A200CDD568 /* OdysseiaTests.swift in Sources */,
-				298337A72541B4C1001CB8D9 /* AddGoalInteractorTest.swift in Sources */,
 				7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */,
 				E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */,
 				0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */,
@@ -1038,10 +1080,10 @@
 				7D5782F4FF379C023F0EB819 /* AddTaskInteractorTests.swift in Sources */,
 				6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */,
 				0A79080A4981356A6908510F /* AddTaskRouterTests.swift in Sources */,
-				1D87509790F62302F586FA48 /* AsapViewTests.swift in Sources */,
-				E8F60B35D491C5E4536AAB91 /* AsapInteractorTests.swift in Sources */,
-				016F22FB06656F9DB595306E /* AsapPresenterTests.swift in Sources */,
-				DA7D765E2976E0D99B129A6C /* AsapRouterTests.swift in Sources */,
+				716CB1F008A9E38BE9366A7F /* EditTaskViewTests.swift in Sources */,
+				8276F3B044165564D9EA940D /* EditTaskInteractorTests.swift in Sources */,
+				2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */,
+				D186C9C46FFAF32C32919C6E /* EditTaskRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1076,6 +1118,16 @@
 				2954E96E254125C700E89510 /* ja */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2959D0BE254A985C00A3DC28 /* AddTaskViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2959D0BD254A985C00A3DC28 /* Base */,
+				2959D0C3254A986000A3DC28 /* en */,
+				2959D0C5254A986200A3DC28 /* ja */,
+			);
+			name = AddTaskViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		2997605F253D96A200CDD568 /* LaunchScreen.storyboard */ = {
@@ -1372,6 +1424,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		291B74622552EC710042DFB3 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 		298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/HamzaGhazouani/HGCircularSlider";
@@ -1391,6 +1451,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		291B74632552EC710042DFB3 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 291B74622552EC710042DFB3 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
 		298337D72542AAC7001CB8D9 /* HGCircularSlider */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */;

@@ -67,3 +67,14 @@ public extension StoryboardInstantiatable where Self: UIViewController {
         }
     }
 }
+
+extension UIAlertController {
+    class func errorAlert(msg: String) -> UIAlertController {
+        let alert = UIAlertController(title: nil,
+                                      message: msg,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: L10n.Localizable.ok,
+                                      style: .default))
+        return alert
+    }
+}

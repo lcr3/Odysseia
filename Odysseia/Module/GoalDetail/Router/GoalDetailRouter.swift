@@ -9,10 +9,10 @@ import UIKit
 
 protocol GoalDetailWireframe: AnyObject {
     func showEdit(goal: Goal)
+    func showEdit(task: Task, output: EditTaskPresenterOutput)
 }
 
 class GoalDetailRouter {
-    // 画面遷移のためにViewControllerが必要。initで受け取る
     private unowned let viewController: UIViewController
 
     init(viewController: UIViewController) {
@@ -24,7 +24,6 @@ class GoalDetailRouter {
         let view = GoalDetailViewController.instantiate()
         let router = GoalDetailRouter(viewController: view)
         let interector = GoalDetailInteractor()
-        // 生成し、initの引数で渡す
         let presenter = GoalDetailPresenter(view: view,
                                             router: router,
                                             interactor: interector,
@@ -42,5 +41,10 @@ extension GoalDetailRouter: GoalDetailWireframe {
         let nav = GoalNavigationController(rootViewController: editView)
         editView.presentationController?.delegate = viewController as? UIAdaptivePresentationControllerDelegate
         viewController.navigationController?.present(nav, animated: true)
+    }
+
+    func showEdit(task: Task, output: EditTaskPresenterOutput) {
+        let editView = EditTaskRouter.assembleModules(task: task, output: output)
+        viewController.navigationController?.pushViewController(editView, animated: true)
     }
 }

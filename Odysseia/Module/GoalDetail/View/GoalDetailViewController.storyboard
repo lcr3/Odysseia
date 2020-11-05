@@ -52,7 +52,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="afk-6f-l6u" userLabel="DaysStackView">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="460.5"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Days" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-aE-U6E">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Days" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-aE-U6E">
                                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="qBg-cb-ExX"/>
@@ -132,7 +132,7 @@
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-A9-2dD">
                                                         <rect key="frame" x="16" y="0.0" width="382" height="60"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -173,11 +173,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="achievementCircleArea" destination="X6g-dJ-sWI" id="qzk-T6-UYs"/>
                         <outlet property="contentsStackView" destination="uJU-nL-Ar9" id="2An-ka-udn"/>
-                        <outlet property="percentLabel" destination="hBN-05-DFd" id="ZW9-Yp-UT8"/>
-                        <outlet property="progressViewArea" destination="X6g-dJ-sWI" id="Upi-dM-Xq6"/>
+                        <outlet property="deadlineDaysLabel" destination="t7d-aE-U6E" id="r9d-DA-0m7"/>
+                        <outlet property="percentLabel" destination="hBN-05-DFd" id="imm-cA-biA"/>
                         <outlet property="scrollView" destination="pfP-Tq-M5F" id="ATp-8R-vni"/>
                         <outlet property="taskStackView" destination="I5c-qV-SIK" id="kON-S8-fZ8"/>
+                        <outlet property="titleField" destination="3Qc-y9-3Pr" id="CzW-qk-0Om"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7M-Ou-seo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

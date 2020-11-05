@@ -9,7 +9,7 @@ import UIKit
 
 protocol AddGoalNameWireframe: AnyObject {
     // Presenter -> Router
-    func showAddTask(name: String)
+    func showAddTask(goal: TemporaryGoal)
 }
 
 class AddGoalNameRouter {
@@ -30,8 +30,8 @@ class AddGoalNameRouter {
 }
 
 extension AddGoalNameRouter: AddGoalNameWireframe {
-    func showAddTask(name: String) {
-        let addTaskView = AddTaskRouter.assembleModules()
+    func showAddTask(goal: TemporaryGoal) {
+        let addTaskView = AddTaskRouter.assembleModules(goal: goal)
         viewController.navigationController?.pushViewController(addTaskView, animated: true)
     }
 }

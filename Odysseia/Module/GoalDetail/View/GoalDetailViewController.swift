@@ -6,103 +6,90 @@
 //  Copyright © 2020 lcr. All rights reserved.
 //
 
+import Hero
 import UIKit
-import HGCircularSlider
 
 protocol GoalDetailView: AnyObject {
-    func setGoal()
+    func updateViews()
 }
 
 class GoalDetailViewController: UIViewController, StoryboardInstantiatable {
     static var instantiateType: StoryboardInstantiateType { .initial }
     var presenter: GoalDetailPresentation!
-    var progressView = CircularSlider()
-    @IBOutlet weak var titleField: UILabel!
-    @IBOutlet weak var detailField: UILabel!
-    @IBOutlet weak var percentLabel: UILabel!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var contentsStackView: UIStackView!
-    @IBOutlet weak var taskStackView: UIStackView!
-    @IBOutlet weak var progressViewArea: UIView!
+
+    private var achievementCircle = GoalAchievementCircle()
+    private var taskViews: [TaskView] = []
+
+    @IBOutlet private weak var titleField: UILabel!
+    @IBOutlet private weak var percentLabel: UILabel!
+    @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet private weak var contentsStackView: UIStackView!
+    @IBOutlet private weak var taskStackView: UIStackView!
+    @IBOutlet private weak var achievementCircleArea: UIView!
+    @IBOutlet private weak var deadlineDaysLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let editBarItem = UIBarButtonItem(title: L10n.Localizable.editButtonText, style: .done, target: self, action: #selector(editBarButtonTapped(_:)))
-        navigationItem.rightBarButtonItems = [editBarItem]
-        setGoal()
 
+        titleField.text = presenter.goal.title
+        deadlineDaysLabel.text = "\(presenter.goal.deadlineDays()) Days"
+        percentLabel.text = "\(presenter.goal.achievementRate()) %"
+
+        let frame = CGRect(x: (achievementCircleArea.frame.width - GoalAchievementCircle.width) / 2,
+                           y: 0,
+                           width: GoalAchievementCircle.width,
+                           height: GoalAchievementCircle.height)
+        achievementCircle = GoalAchievementCircle(frame: frame,
+                                                  achievement: presenter.goal.achievement())
+        achievementCircleArea.addSubview(achievementCircle)
+
+        for (index, task) in presenter.goal.getTasks().enumerated() {
+            let frame = CGRect(x: TaskView.xMergin,
+                               y: (index * TaskView.height) + (index * TaskView.xMergin),
+                               width: Int(self.taskStackView.frame.width) - TaskView.xMergin * 2,
+                               height: TaskView.height)
+            let taskView = TaskView.make(delegate: self, task: task, index: index)
+            taskView.frame = frame
+            taskView.hero.id = "taskView"
+            taskStackView.addSubview(taskView)
+            taskViews.append(taskView)
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let frame = CGRect(x: (progressViewArea.frame.width - 240) / 2, y: 0, width: 240, height: 240)
-        progressView = CircularSlider(frame: frame)
-        progressView.backgroundColor = .clear
-        progressView.minimumValue = 0
-        progressView.maximumValue = 5
-        //        progressView.tintColor = Asset.mars.color
-        progressView.diskFillColor = .clear
-        progressView.diskColor = .clear
-        progressView.trackColor = .red
-        progressView.trackFillColor = Asset.venus.color
-        progressView.backtrackLineWidth = 50
-        progressView.trackShadowColor = .black
-        progressView.trackShadowOffset = CGPoint(x: 100, y: 100)
-
-        progressView.endPointValue = 2
-        progressView.isUserInteractionEnabled = false
-        progressView.lineWidth = 25
-        progressView.trackColor = .clear
-        // to remove padding, for more details see issue #25
-        progressView.thumbLineWidth = 0.0
-        progressView.thumbRadius = 0.0
-        progressViewArea.addSubview(progressView)
-
-        let tasks = ["a", "i", "u"]
-        for (index, task) in tasks.enumerated() {
-
-            let taskView = TaskView(frame: CGRect(x: 0,
-                                                  y: index * 120,
-                                                  width: Int(self.taskStackView.frame.width),
-                                                  height: 120))
-            let circle = CircularSlider(frame: CGRect(x: 0,
-                                                      y: 0,
-                                                      width: taskView.circleArea.frame.width,
-                                                      height: taskView.circleArea.frame.height))
-            //            taskView.setTask()
-            taskView.addSubview(circle)
-            taskStackView.addSubview(taskView)
-        }
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
-        print(contentsStackView.bounds.height)
-        print(scrollView.contentSize)
-        //        scrollView.contentSize = contentsStackView.bounds.size
-        scrollView.contentSize = CGSize(width: 414, height: 1000)
-
-        print(scrollView.contentSize)
-        //        scrollView.flashScrollIndicators()
-
+        // TODO fix height value
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: 1000)
     }
 
     @objc func editBarButtonTapped(_ sender: UIBarButtonItem) {
-        //        print(contentsStackView.frame)
-        progressView.endPointValue += CGFloat(0.5)
-        //        presenter.editButtonTouched()
+        presenter.editButtonTouched()
     }
 }
 
 extension GoalDetailViewController: GoalDetailView {
-    func setGoal() {
-        //        titleField.text = presenter.goal.title
-        //        detailField.text = presenter.goal.detail
+    func updateViews() {
+        titleField.text = presenter.goal.title
+        achievementCircle.endPointValue = CGFloat(presenter.goal.achievement().reachCount)
+        percentLabel.text = "\(presenter.goal.achievementRate()) %"
+        for (index, taskView) in taskViews.enumerated() {
+            taskView.set(task: presenter.goal.getTask(index: index))
+        }
     }
 }
 
 extension GoalDetailViewController: UIAdaptivePresentationControllerDelegate {
     func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
         presenter.loadGoal()
+    }
+}
+
+extension GoalDetailViewController: TaskViewDelegate {
+    func taskTouched(index: Int) {
+        presenter.taskTouched(index: index)
     }
 }

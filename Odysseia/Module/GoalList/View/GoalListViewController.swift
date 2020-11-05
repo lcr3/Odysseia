@@ -1,6 +1,6 @@
 //
 //  GoalListViewController.swift
-//  CoreDataSampleTest
+//  OdysseiaTest
 //
 //  Created by lcr on 2020/10/19.
 //
@@ -97,11 +97,5 @@ extension GoalListViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         collectionViewInset
-    }
-}
-
-extension GoalListViewController: UIAdaptivePresentationControllerDelegate {
-    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
-        presenter.loadGoals()
     }
 }

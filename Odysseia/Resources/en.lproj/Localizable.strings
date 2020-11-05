@@ -5,12 +5,25 @@
   Created by lcr on 2020/10/22.
   
 */
-
+"Ok" = "OK";
+"Cancel" = "Cancel";
+"Delete" = "Delete";
 "doneButtonText" = "Done";
 "addButtonText" = "Add";
 "editButtonText" = "Edit";
-"AddGoalErrorMessage" = "Failed to add data.";
-"EditGoalErrorMessage" = "Failed to edit data";
-"UpdateGoalErrorMessage" = "Failed to update data";
-"GetGoalErrorMessage" = "Failed to get data";
-"DeleteGoalErrorMessage" = "Failed to delete data";
+// GoalSevice
+"AddGoalErrorMsg" = "Failed to add data.";
+"EditGoalErrorMsg" = "Failed to edit data.";
+"UpdateGoalErrorMsg" = "Failed to update data.";
+"GetGoalErrorMsg" = "Failed to get data.";
+"DeleteGoalErrorMsg" = "Failed to delete data.";
+// AddGoalNamePresenter
+"GoalTitleNilMsg" = "Please input goal title.";
+"DeadlineYearNilMsg" = "Please set a deadline year.";
+"DeadlineYearUnknownMsg" = "The deadline year is invalid.";
+// AddTaskPresenter
+"AddTaskNilMsg" = "Please set numerical target.";
+// AddTaskInput
+"AddTaskTitleNilMsg" = "Please enter the title of the numerical target.";
+"AddTaskTargetLevelNilMsg" = "Please enter the number of times you want to achieve the numerical goal.";
+"AddTaskDeleteMsg" = "Do you want to delete the numerical target?";

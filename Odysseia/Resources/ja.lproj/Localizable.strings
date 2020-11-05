@@ -5,12 +5,25 @@
   Created by lcr on 2020/10/22.
   
 */
-
+"Ok" = "OK";
+"Cancel" = "キャンセル";
+"Delete" = "削除";
 "doneButtonText" = "完了";
 "addButtonText" = "追加";
 "editButtonText" = "編集";
-"AddGoalErrorMessage" = "データの追加に失敗しました";
-"EditGoalErrorMessage" = "データの編集に失敗しました";
-"UpdateGoalErrorMessage" = "データの更新に失敗しました";
-"GetGoalErrorMessage" = "データの取得に失敗しました";
-"DeleteGoalErrorMessage" = "データの削除に失敗しました";
+// GoalSevice
+"AddGoalErrorMsg" = "データの追加に失敗しました";
+"EditGoalErrorMsg" = "データの編集に失敗しました";
+"UpdateGoalErrorMsg" = "データの更新に失敗しました";
+"GetGoalErrorMsg" = "データの取得に失敗しました";
+"DeleteGoalErrorMsg" = "データの削除に失敗しました";
+// AddGoalNamePresenter
+"GoalTitleNilMsg" = "目標を入力して下さい";
+"DeadlineYearNilMsg" = "目標締め切り年度を設定してください";
+"DeadlineYearUnknownMsg" = "目標締め切り年度が不正です";
+// AddTaskPresenter
+"AddTaskNilMsg" = "数値目標を設定してください";
+// AddTaskInput
+"AddTaskTitleNilMsg" = "数値目標のタイトルを入力してください";
+"AddTaskTargetLevelNilMsg" = "数値目標の達成したい回数を入力してください";
+"AddTaskDeleteMsg" = "数値目標を削除しますか？";

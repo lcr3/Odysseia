@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Goal for 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m9-9t-taG">
-                                <rect key="frame" x="16" y="60" width="382" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Goal for" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m9-9t-taG">
+                                <rect key="frame" x="16" y="60" width="226.5" height="33.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -42,16 +42,26 @@
                                     <action selector="nextButtonTouched:" destination="Ikm-se-056" eventType="touchUpInside" id="a4m-DG-We3"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2020" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qn6-mx-jtP">
+                                <rect key="frame" x="258.5" y="60" width="85" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Koe-ha-rSt"/>
+                                </constraints>
+                                <color key="textColor" name="venus"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7KI-gn-F8m"/>
                         <color key="backgroundColor" name="astro"/>
                         <constraints>
                             <constraint firstItem="7KI-gn-F8m" firstAttribute="trailing" secondItem="9s2-We-L34" secondAttribute="trailing" constant="16" id="47Y-tO-S51"/>
                             <constraint firstItem="9s2-We-L34" firstAttribute="leading" secondItem="7KI-gn-F8m" secondAttribute="leading" constant="16" id="4tE-Fl-JJd"/>
+                            <constraint firstItem="Qn6-mx-jtP" firstAttribute="top" secondItem="7KI-gn-F8m" secondAttribute="top" constant="16" id="8K3-me-zTE"/>
                             <constraint firstItem="8m9-9t-taG" firstAttribute="top" secondItem="7KI-gn-F8m" secondAttribute="top" constant="16" id="NRt-o6-qxh"/>
                             <constraint firstItem="WWS-TB-Bhg" firstAttribute="centerX" secondItem="7AK-mS-Vv8" secondAttribute="centerX" id="T2D-BI-xKW"/>
                             <constraint firstItem="9s2-We-L34" firstAttribute="top" secondItem="8m9-9t-taG" secondAttribute="bottom" constant="16" id="UuZ-kP-4NO"/>
-                            <constraint firstItem="7KI-gn-F8m" firstAttribute="trailing" secondItem="8m9-9t-taG" secondAttribute="trailing" constant="16" id="Uxq-bd-m2x"/>
+                            <constraint firstItem="Qn6-mx-jtP" firstAttribute="leading" secondItem="8m9-9t-taG" secondAttribute="trailing" constant="16" id="VOX-Dx-nTi"/>
                             <constraint firstItem="8m9-9t-taG" firstAttribute="leading" secondItem="7KI-gn-F8m" secondAttribute="leading" constant="16" id="Vrs-qQ-fjF"/>
                             <constraint firstItem="WWS-TB-Bhg" firstAttribute="top" secondItem="9s2-We-L34" secondAttribute="bottom" constant="32" id="ho5-Ag-gsd"/>
                         </constraints>
@@ -59,6 +69,7 @@
                     <connections>
                         <outlet property="goalTitleField" destination="9s2-We-L34" id="XHv-6a-ljX"/>
                         <outlet property="nextButton" destination="WWS-TB-Bhg" id="rgp-ZJ-Jy3"/>
+                        <outlet property="targetDedlineField" destination="Qn6-mx-jtP" id="Nlm-Yo-Mb8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RsQ-u7-ITD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
