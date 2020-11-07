@@ -27,3 +27,8 @@
 "AddTaskTitleNilMsg" = "Please enter the title of the numerical target.";
 "AddTaskTargetLevelNilMsg" = "Please enter the number of times you want to achieve the numerical goal.";
 "AddTaskDeleteMsg" = "Do you want to delete the numerical target?";
+// Notification
+"NotificationTitle" = "🌎";
+"NewYearRemindNotifyMsg" = "Have you set your goals for this year?🌕";
+"halfYearRemindNotifyMsg" = "The second half of the year, check your goals!🌓";
+"monthlyRemindNotifyMsg" = "How are you making progress on your goals?🌑";

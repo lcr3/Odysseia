@@ -30,6 +30,7 @@ internal enum Asset {
     }
     internal static let astro = ColorAsset(name: "astro")
     internal static let earth = ColorAsset(name: "earth")
+    internal static let launcherBlack = ImageAsset(name: "launcher_black")
     internal static let mars = ColorAsset(name: "mars")
     internal static let mercury = ColorAsset(name: "mercury")
     internal static let moon = ColorAsset(name: "moon")

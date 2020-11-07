@@ -16,6 +16,8 @@
 		291B74642552EC710042DFB3 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 291B74632552EC710042DFB3 /* Hero */; };
 		291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746925541C430042DFB3 /* TaskAchievementCircle.swift */; };
 		291B746F25541C780042DFB3 /* GoalAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */; };
+		291B74892554EA080042DFB3 /* NotificationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B74882554EA080042DFB3 /* NotificationStore.swift */; };
+		291B748F2555766B0042DFB3 /* NotificationStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B748E2555766B0042DFB3 /* NotificationStoreTests.swift */; };
 		2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
 		2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954E9592540561200E89510 /* GoalNavigationController.swift */; };
 		2954E9672541251A00E89510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
@@ -117,6 +119,8 @@
 		290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailInteractorOutput.swift; sourceTree = "<group>"; };
 		291B746925541C430042DFB3 /* TaskAchievementCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAchievementCircle.swift; sourceTree = "<group>"; };
 		291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalAchievementCircle.swift; sourceTree = "<group>"; };
+		291B74882554EA080042DFB3 /* NotificationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStore.swift; sourceTree = "<group>"; };
+		291B748E2555766B0042DFB3 /* NotificationStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStoreTests.swift; sourceTree = "<group>"; };
 		2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		2954E9592540561200E89510 /* GoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNavigationController.swift; sourceTree = "<group>"; };
 		2954E9682541251A00E89510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -276,6 +280,14 @@
 			path = CircleView;
 			sourceTree = "<group>";
 		};
+		291B748D255576520042DFB3 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				291B748E2555766B0042DFB3 /* NotificationStoreTests.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		2954E95E25405CBA00E89510 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				2954E95E25405CBA00E89510 /* CoreData */,
+				29ECE039255690A400F03077 /* Store */,
 				2910BDA825403CD100E0D56A /* Service */,
 				290B5C49253F1503009D54B1 /* Resources */,
 				299760A0253D96EC00CDD568 /* Util */,
@@ -395,6 +408,7 @@
 		2997606A253D96A200CDD568 /* OdysseiaTests */ = {
 			isa = PBXGroup;
 			children = (
+				291B748D255576520042DFB3 /* Store */,
 				298337BD2541B836001CB8D9 /* CoreData */,
 				298337A32541B35F001CB8D9 /* Module */,
 				2997606B253D96A200CDD568 /* OdysseiaTests.swift */,
@@ -596,6 +610,14 @@
 				299D7613253EB841006985FD /* GoalListCollectionCell.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		29ECE039255690A400F03077 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				291B74882554EA080042DFB3 /* NotificationStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		29FB841B2548EBC400E0B387 /* Entity */ = {
@@ -1011,6 +1033,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291B74892554EA080042DFB3 /* NotificationStore.swift in Sources */,
 				290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */,
 				29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */,
 				2959D094254A652000A3DC28 /* Constraints.swift in Sources */,
@@ -1073,6 +1096,7 @@
 			files = (
 				298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */,
 				2997606C253D96A200CDD568 /* OdysseiaTests.swift in Sources */,
+				291B748F2555766B0042DFB3 /* NotificationStoreTests.swift in Sources */,
 				7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */,
 				E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */,
 				0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */,

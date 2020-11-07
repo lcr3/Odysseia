@@ -45,6 +45,14 @@ internal enum L10n {
         internal static let getGoalErrorMsg = L10n.tr("Localizable", "GetGoalErrorMsg")
         /// 目標を入力して下さい
         internal static let goalTitleNilMsg = L10n.tr("Localizable", "GoalTitleNilMsg")
+        /// 今年も後半戦、目標を確認しましょう🌓
+        internal static let halfYearRemindNotifyMsg = L10n.tr("Localizable", "halfYearRemindNotifyMsg")
+        /// 目標の進捗はいかがですか?🌑
+        internal static let monthlyRemindNotifyMsg = L10n.tr("Localizable", "monthlyRemindNotifyMsg")
+        /// 今年の目標設定はお済みですか?🌕
+        internal static let newYearRemindNotifyMsg = L10n.tr("Localizable", "NewYearRemindNotifyMsg")
+        /// 🌏
+        internal static let notificationTitle = L10n.tr("Localizable", "NotificationTitle")
         /// OK
         internal static let ok = L10n.tr("Localizable", "Ok")
         /// データの更新に失敗しました
