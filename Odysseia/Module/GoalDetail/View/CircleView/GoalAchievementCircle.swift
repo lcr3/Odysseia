@@ -29,7 +29,7 @@ final class GoalAchievementCircle: CircularSlider {
         thumbRadius = 0.0
     }
 
-    func setAchievementachievement(achievement: Achievement) {
+    func setAchievement(achievement: Achievement) {
         maximumValue = CGFloat(achievement.targetCount)
         endPointValue = CGFloat(achievement.reachCount)
     }

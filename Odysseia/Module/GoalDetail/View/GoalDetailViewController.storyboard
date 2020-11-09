@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="La9-Vk-w77">
-                                        <rect key="frame" x="1" y="0.0" width="414" height="852"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6g-dJ-sWI">
                                                 <rect key="frame" x="0.0" y="110" width="414" height="240"/>
@@ -69,7 +69,7 @@
                                                     <constraint firstAttribute="height" constant="216" id="XBj-6B-vWl"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999 Days" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-aE-U6E">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999 Days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-aE-U6E">
                                                 <rect key="frame" x="310" y="16" width="96" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="96" id="n1w-mi-Rm8"/>
@@ -80,7 +80,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Morning Challenge" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qc-y9-3Pr">
-                                                <rect key="frame" x="8" y="8" width="294" height="86"/>
+                                                <rect key="frame" x="16" y="8" width="286" height="86"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="86" id="aXz-fl-bZ1"/>
@@ -100,7 +100,7 @@
                                             <constraint firstItem="3Qc-y9-3Pr" firstAttribute="top" secondItem="La9-Vk-w77" secondAttribute="top" constant="8" id="VGh-pC-TBu"/>
                                             <constraint firstAttribute="trailing" secondItem="uJU-nL-Ar9" secondAttribute="trailing" id="X0f-Zf-Ikg"/>
                                             <constraint firstItem="X6g-dJ-sWI" firstAttribute="top" secondItem="3Qc-y9-3Pr" secondAttribute="bottom" constant="16" id="arV-ja-XjT"/>
-                                            <constraint firstItem="3Qc-y9-3Pr" firstAttribute="leading" secondItem="La9-Vk-w77" secondAttribute="leading" constant="8" id="dQU-zX-UUv"/>
+                                            <constraint firstItem="3Qc-y9-3Pr" firstAttribute="leading" secondItem="La9-Vk-w77" secondAttribute="leading" constant="16" id="dQU-zX-UUv"/>
                                             <constraint firstItem="X6g-dJ-sWI" firstAttribute="leading" secondItem="La9-Vk-w77" secondAttribute="leading" id="hJh-Me-avd"/>
                                             <constraint firstItem="uJU-nL-Ar9" firstAttribute="top" secondItem="LMW-A9-2dD" secondAttribute="bottom" constant="8" id="jcI-Wt-VNh"/>
                                             <constraint firstItem="t7d-aE-U6E" firstAttribute="top" secondItem="La9-Vk-w77" secondAttribute="top" constant="16" id="rlg-Vk-FEQ"/>

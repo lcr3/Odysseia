@@ -27,4 +27,8 @@ extension Task: Identifiable {
         let part = reachCount / targetCount * 100
         return Int(part)
     }
+
+    func isDone() -> Bool {
+        reachCount == targetCount
+    }
 }

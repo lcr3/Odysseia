@@ -54,6 +54,15 @@ extension Goal: Identifiable {
         return arrayTasks
     }
 
+    func isAllTasksDone() -> Bool {
+        for task in getTasks() {
+            if !task.isDone() {
+                return false
+            }
+        }
+        return true
+    }
+
     func achievementRate() -> Int {
         var reachCount: Float = 0
         var targetCount: Float = 0

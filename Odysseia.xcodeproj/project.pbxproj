@@ -70,6 +70,8 @@
 		29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */; };
 		29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */; };
 		29ECE0432557DCCB00F03077 /* TaskInputModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ECE0452557DCCB00F03077 /* TaskInputModalViewController.xib */; };
+		29EF366F2558F9C700E0E669 /* Confetti.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 29EF366E2558F9C700E0E669 /* Confetti.scnp */; };
+		29EF367A25592C1800E0E669 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF367925592C1800E0E669 /* ConfettiView.swift */; };
 		29FB84032547A85D00E0B387 /* AddGoalNameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
@@ -185,6 +187,8 @@
 		29ECE0442557DCCB00F03077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TaskInputModalViewController.xib; sourceTree = "<group>"; };
 		29ECE04A2557DCEB00F03077 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TaskInputModalViewController.strings; sourceTree = "<group>"; };
 		29ECE04C2557DCED00F03077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TaskInputModalViewController.strings; sourceTree = "<group>"; };
+		29EF366E2558F9C700E0E669 /* Confetti.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Confetti.scnp; sourceTree = "<group>"; };
+		29EF367925592C1800E0E669 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddGoalNameViewController.storyboard; sourceTree = "<group>"; };
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
 		49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractor.swift; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 		0B5355FA0E81414A22BF6FE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				29EF366D2558F99000E0E669 /* Subview */,
 				6430410713F76BC9E6A19F1B /* EditTaskViewController.swift */,
 				295B39C52558CE9400A21E21 /* EditTaskViewController.storyboard */,
 			);
@@ -622,6 +627,15 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		29EF366D2558F99000E0E669 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				29EF366E2558F9C700E0E669 /* Confetti.scnp */,
+				29EF367925592C1800E0E669 /* ConfettiView.swift */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
 		29FB841B2548EBC400E0B387 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -989,6 +1003,7 @@
 				29976099253D96E300CDD568 /* GoalListViewController.storyboard in Resources */,
 				299D7656253EDBD1006985FD /* EditGoalViewController.storyboard in Resources */,
 				295B39C32558CE9400A21E21 /* EditTaskViewController.storyboard in Resources */,
+				29EF366F2558F9C700E0E669 /* Confetti.scnp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1066,6 +1081,7 @@
 				299D763E253ED49F006985FD /* GoalDetailRouter.swift in Sources */,
 				29552819253E779C009AFE97 /* GoalServicer.swift in Sources */,
 				298337DE25441173001CB8D9 /* TaskView.swift in Sources */,
+				29EF367A25592C1800E0E669 /* ConfettiView.swift in Sources */,
 				299D765B253EDC31006985FD /* EditGoalPresenter.swift in Sources */,
 				291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */,
 				299D761B253ECC57006985FD /* GoalDetailViewController.swift in Sources */,

@@ -102,6 +102,19 @@ extension GoalServicer: GoalService {
     }
 
     func update(task: Task) throws -> Task {
+        if task.isDone() && task.reachDate == nil {
+            task.reachDate = Date()
+        } else if task.isDone() && task.reachDate != nil {
+            task.reachDate = nil
+        }
+        guard let goal = task.goal else {
+            return task
+        }
+        if goal.isAllTasksDone() && goal.reatchDate == nil {
+            goal.reatchDate = Date()
+        } else if goal.isAllTasksDone() && goal.reatchDate != nil {
+            goal.reatchDate = nil
+        }
         do {
             try managedContext.save()
         } catch {

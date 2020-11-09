@@ -6,6 +6,7 @@
 //  Copyright © 2020 lcr. All rights reserved.
 //
 
+import SceneKit
 import UIKit
 
 protocol GoalDetailView: AnyObject {
@@ -19,6 +20,7 @@ class GoalDetailViewController: UIViewController, StoryboardInstantiatable {
     //    private var achievementCircle = GoalAchievementCircle()
     @IBOutlet weak var achievementCircle: GoalAchievementCircle!
 
+    private var confettiView = ConfettiView.make()
     private var taskViews: [TaskView] = []
 
     @IBOutlet private weak var titleField: UILabel!
@@ -37,7 +39,8 @@ class GoalDetailViewController: UIViewController, StoryboardInstantiatable {
         titleField.text = presenter.goal.title
         deadlineDaysLabel.text = "\(presenter.goal.deadlineDays()) Days"
         percentLabel.text = "\(presenter.goal.achievementRate()) %"
-        achievementCircle.setAchievementachievement(achievement: presenter.goal.achievement())
+        achievementCircle.setAchievement(achievement: presenter.goal.achievement())
+        view.addSubview(confettiView)
         for (index, task) in presenter.goal.getTasks().enumerated() {
             let frame = CGRect(x: TaskView.xMergin,
                                y: (index * TaskView.height) + (index * TaskView.xMergin),
@@ -48,6 +51,7 @@ class GoalDetailViewController: UIViewController, StoryboardInstantiatable {
             taskStackView.addSubview(taskView)
             taskViews.append(taskView)
         }
+        checkGoalState()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -62,7 +66,15 @@ class GoalDetailViewController: UIViewController, StoryboardInstantiatable {
     }
 
     @objc func editBarButtonTapped(_ sender: UIBarButtonItem) {
-        presenter.editButtonTouched()
+        //        presenter.editButtonTouched()
+    }
+
+    private func checkGoalState() {
+        if presenter.goal.isAllTasksDone() {
+            confettiView.startAnimation()
+        } else {
+            confettiView.stopAnimation()
+        }
     }
 }
 
@@ -74,6 +86,7 @@ extension GoalDetailViewController: GoalDetailView {
         for (index, taskView) in taskViews.enumerated() {
             taskView.set(task: presenter.goal.getTask(index: index))
         }
+        checkGoalState()
     }
 }
 
