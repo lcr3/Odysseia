@@ -13,5 +13,6 @@ class GoalNavigationController: UINavigationController {
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
         navigationBar.isTranslucent = true
+        navigationBar.tintColor = Asset.venus.color
     }
 }

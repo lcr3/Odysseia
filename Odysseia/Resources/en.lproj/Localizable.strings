@@ -21,6 +21,8 @@
 "GoalTitleNilMsg" = "Please input goal title.";
 "DeadlineYearNilMsg" = "Please set a deadline year.";
 "DeadlineYearUnknownMsg" = "The deadline year is invalid.";
+// AddTaskViewController
+"AddTaskViewControllerTitle" = "Set numerical task";
 // AddTaskPresenter
 "AddTaskNilMsg" = "Please set numerical target.";
 // AddTaskInput

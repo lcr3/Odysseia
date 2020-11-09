@@ -94,7 +94,9 @@ class TaskInputModalViewController: UIViewController {
         let titleToolbar = UIToolbar()
         titleToolbar.frame = toolbarFrame
         let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneInputTitle))
-        titleToolbar.setItems([doneItem], animated: true)
+        let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        doneItem.tintColor = Asset.venus.color
+        titleToolbar.items = [spacer, doneItem]
         titleField.inputAccessoryView = titleToolbar
     }
 
@@ -106,7 +108,9 @@ class TaskInputModalViewController: UIViewController {
         let targetLevelToolbar = UIToolbar()
         targetLevelToolbar.frame = toolbarFrame
         let doneButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(donePicker))
-        targetLevelToolbar.setItems([doneButtonItem], animated: true)
+        let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        doneButtonItem.tintColor = Asset.venus.color
+        targetLevelToolbar.items = [spacer, doneButtonItem]
         targetLevelField.inputAccessoryView = targetLevelToolbar
     }
 
@@ -132,11 +136,13 @@ extension TaskInputModalViewController: UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         taskReachMaxCount
     }
+
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        String(row)
+        String(row + 1)
     }
+
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        targetLevelField.text = String(row)
+        targetLevelField.text = String(row + 1)
     }
 }
 

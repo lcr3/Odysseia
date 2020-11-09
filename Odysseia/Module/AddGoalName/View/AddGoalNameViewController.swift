@@ -32,6 +32,11 @@ class AddGoalNameViewController: UIViewController, StoryboardInstantiatable {
         super.viewDidLoad()
         recentYears = getRecentYears()
         setViews()
+        guard let defaultYear = recentYears.first else {
+            return
+        }
+        targetDedlineField.text = String(defaultYear)
+        presenter.updateDedline(year: defaultYear)
     }
 
     // MARK: Action

@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "BAV-Xd-XUZ"; */
+"BAV-Xd-XUZ.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Count"; ObjectID = "RLI-Q9-M5Y"; */
+"RLI-Q9-M5Y.text" = "Count";
+
+/* Class = "UIButton"; normalTitle = "＋"; ObjectID = "Tdi-9f-ibK"; */
+"Tdi-9f-ibK.normalTitle" = "＋";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "e9b-r5-oD7"; */
+"e9b-r5-oD7.normalTitle" = "-";
+
+/* Class = "UILabel"; text = "999/999"; ObjectID = "joX-A2-8aa"; */
+"joX-A2-8aa.text" = "999/999";
+
+/* Class = "UILabel"; text = "Task Edit"; ObjectID = "pBI-XH-kVO"; */
+"pBI-XH-kVO.text" = "Task Edit";
+
+/* Class = "UITextField"; text = "コンテンツマーケット"; ObjectID = "qAN-e6-UwH"; */
+"qAN-e6-UwH.text" = "コンテンツマーケット";
+
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "tvl-bi-BJz"; */
+"tvl-bi-BJz.normalTitle" = "Update";

@@ -34,7 +34,6 @@ class AddTaskViewController: UIViewController, StoryboardInstantiatable {
         let dataSouce = UICollectionViewDiffableDataSource<TaskSection, TemporaryTask>(collectionView: collectionView) { collectionView, indexPath, task -> UICollectionViewCell? in
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AddTaskCell.className, for: indexPath) as? AddTaskCell {
                 cell.setCell(task: task)
-
                 return cell
             }
             return UICollectionViewCell()
@@ -47,6 +46,13 @@ class AddTaskViewController: UIViewController, StoryboardInstantiatable {
         super.viewDidLoad()
         collectionView.dataSource = dataSource
         collectionView.delegate = self
+
+        title = L10n.Localizable.addTaskViewControllerTitle
+        let addBarItem = UIBarButtonItem(title: L10n.Localizable.addButtonText, style: .done, target: self, action: #selector(addBarButtonTapped(_:)))
+        addBarItem.image = UIImage(systemName: "plus")
+        addBarItem.tintColor = Asset.venus.color
+        navigationItem.rightBarButtonItems = [addBarItem]
+        navigationController?.navigationBar.tintColor = Asset.venus.color
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -58,10 +64,17 @@ class AddTaskViewController: UIViewController, StoryboardInstantiatable {
         let vc = TaskInputModalViewController(delegate: self)
         let nav = BottomHalfModalNavigationController(rootViewController: vc)
         presentBottomHalfModal(nav, animated: true, completion: nil)
-
     }
+
     @IBAction func nextButtonTouched(_ sender: Any) {
         presenter.doneButtonTouched()
+    }
+
+    @objc func addBarButtonTapped(_ sender: UIBarButtonItem) {
+        let vc = TaskInputModalViewController(delegate: self)
+        let nav = BottomHalfModalNavigationController(rootViewController: vc)
+        nav.navigationBar.tintColor = Asset.venus.color
+        presentBottomHalfModal(nav, animated: true, completion: nil)
     }
 }
 

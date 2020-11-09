@@ -13,7 +13,6 @@
 		23FCC9F67139A893CB708D22 /* AddGoalNameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */; };
 		290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B5C4A253F1537009D54B1 /* Resources.xcassets */; };
 		290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */; };
-		291B74642552EC710042DFB3 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 291B74632552EC710042DFB3 /* Hero */; };
 		291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746925541C430042DFB3 /* TaskAchievementCircle.swift */; };
 		291B746F25541C780042DFB3 /* GoalAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */; };
 		291B74892554EA080042DFB3 /* NotificationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B74882554EA080042DFB3 /* NotificationStore.swift */; };
@@ -30,6 +29,7 @@
 		2959D09C254A7C2700A3DC28 /* AddGoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D09B254A7C2700A3DC28 /* AddGoalNavigationController.swift */; };
 		2959D0A1254A83DC00A3DC28 /* GoalListRouterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D0A0254A83DC00A3DC28 /* GoalListRouterOutput.swift */; };
 		2959D0BC254A985C00A3DC28 /* AddTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2959D0BE254A985C00A3DC28 /* AddTaskViewController.storyboard */; };
+		295B39C32558CE9400A21E21 /* EditTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295B39C52558CE9400A21E21 /* EditTaskViewController.storyboard */; };
 		296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296412432552404D00CA732A /* EditTaskPresenterOutput.swift */; };
 		297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297795DB254842B000AD7E2D /* AddTaskCell.swift */; };
 		29833775254140F7001CB8D9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29833773254140F7001CB8D9 /* Strings+Generated.swift */; };
@@ -65,15 +65,14 @@
 		29B13479253D97E800C273F1 /* Goal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29B13477253D97E800C273F1 /* Goal.xcdatamodeld */; };
 		29B198D3254927160086B21D /* BottomHalfModal in Frameworks */ = {isa = PBXBuildFile; productRef = 29B198D2254927160086B21D /* BottomHalfModal */; };
 		29B198DB254928D90086B21D /* TaskInputModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B198DA254928D90086B21D /* TaskInputModalViewController.swift */; };
-		29B198E0254939100086B21D /* TaskInputModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29B198DF254939100086B21D /* TaskInputModalViewController.xib */; };
 		29D67F8C254C073C00A6E396 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */; };
 		29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */; };
 		29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */; };
 		29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */; };
+		29ECE0432557DCCB00F03077 /* TaskInputModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ECE0452557DCCB00F03077 /* TaskInputModalViewController.xib */; };
 		29FB84032547A85D00E0B387 /* AddGoalNameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
-		2F49841CECE1D441E9B7302A /* EditTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F29B0F14B9FFAFBC29F430 /* EditTaskViewController.storyboard */; };
 		5433577822706E6E4D26A1CA /* EditTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24B0DEE5E333B843DB2019 /* EditTaskRouter.swift */; };
 		6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */; };
 		716CB1F008A9E38BE9366A7F /* EditTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772246A719E6AA22508BC264 /* EditTaskViewTests.swift */; };
@@ -137,6 +136,9 @@
 		2959D0BD254A985C00A3DC28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddTaskViewController.storyboard; sourceTree = "<group>"; };
 		2959D0C3254A986000A3DC28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddTaskViewController.strings; sourceTree = "<group>"; };
 		2959D0C5254A986200A3DC28 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/AddTaskViewController.strings; sourceTree = "<group>"; };
+		295B39C42558CE9400A21E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditTaskViewController.storyboard; sourceTree = "<group>"; };
+		295B39CA2558CE9900A21E21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditTaskViewController.strings; sourceTree = "<group>"; };
+		295B39CC2558CE9E00A21E21 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/EditTaskViewController.strings; sourceTree = "<group>"; };
 		296412432552404D00CA732A /* EditTaskPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterOutput.swift; sourceTree = "<group>"; };
 		297795DB254842B000AD7E2D /* AddTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCell.swift; sourceTree = "<group>"; };
 		29833773254140F7001CB8D9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
@@ -176,11 +178,13 @@
 		299D766D253EDCE7006985FD /* EditGoalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalRouter.swift; sourceTree = "<group>"; };
 		29B13478253D97E800C273F1 /* Goal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goal.xcdatamodel; sourceTree = "<group>"; };
 		29B198DA254928D90086B21D /* TaskInputModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputModalViewController.swift; sourceTree = "<group>"; };
-		29B198DF254939100086B21D /* TaskInputModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskInputModalViewController.xib; sourceTree = "<group>"; };
 		29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
 		29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		29ECE0442557DCCB00F03077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TaskInputModalViewController.xib; sourceTree = "<group>"; };
+		29ECE04A2557DCEB00F03077 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TaskInputModalViewController.strings; sourceTree = "<group>"; };
+		29ECE04C2557DCED00F03077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TaskInputModalViewController.strings; sourceTree = "<group>"; };
 		29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddGoalNameViewController.storyboard; sourceTree = "<group>"; };
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
 		49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractor.swift; sourceTree = "<group>"; };
@@ -195,7 +199,6 @@
 		925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNamePresenterTests.swift; sourceTree = "<group>"; };
 		9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskInteractorTests.swift; sourceTree = "<group>"; };
 		A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterTests.swift; sourceTree = "<group>"; };
-		B6F29B0F14B9FFAFBC29F430 /* EditTaskViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = EditTaskViewController.storyboard; sourceTree = "<group>"; };
 		B92799FDBA86D0E1B90A00F4 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
 		BADC81CD3D74368FAF6C69AA /* EditTaskInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractorOutput.swift; sourceTree = "<group>"; };
 		BD6C9C45CD6FBED72AF5954F /* AddTaskViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskViewTests.swift; sourceTree = "<group>"; };
@@ -210,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B198D3254927160086B21D /* BottomHalfModal in Frameworks */,
-				291B74642552EC710042DFB3 /* Hero in Frameworks */,
 				298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				6430410713F76BC9E6A19F1B /* EditTaskViewController.swift */,
-				B6F29B0F14B9FFAFBC29F430 /* EditTaskViewController.storyboard */,
+				295B39C52558CE9400A21E21 /* EditTaskViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -721,7 +723,7 @@
 				794871EE74CF19196C409A51 /* AddTaskViewController.swift */,
 				2959D0BE254A985C00A3DC28 /* AddTaskViewController.storyboard */,
 				29B198DA254928D90086B21D /* TaskInputModalViewController.swift */,
-				29B198DF254939100086B21D /* TaskInputModalViewController.xib */,
+				29ECE0452557DCCB00F03077 /* TaskInputModalViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -881,7 +883,6 @@
 			packageProductDependencies = (
 				298337D72542AAC7001CB8D9 /* HGCircularSlider */,
 				29B198D2254927160086B21D /* BottomHalfModal */,
-				291B74632552EC710042DFB3 /* Hero */,
 			);
 			productName = Goal;
 			productReference = 2997604E253D96A000CDD568 /* Odysseia.app */;
@@ -959,7 +960,6 @@
 			packageReferences = (
 				298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */,
 				29B198D1254927160086B21D /* XCRemoteSwiftPackageReference "BottomHalfModal" */,
-				291B74622552EC710042DFB3 /* XCRemoteSwiftPackageReference "Hero" */,
 			);
 			productRefGroup = 2997604F253D96A000CDD568 /* Products */;
 			projectDirPath = "";
@@ -977,7 +977,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B198E0254939100086B21D /* TaskInputModalViewController.xib in Resources */,
+				29ECE0432557DCCB00F03077 /* TaskInputModalViewController.xib in Resources */,
 				2959D0BC254A985C00A3DC28 /* AddTaskViewController.storyboard in Resources */,
 				29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */,
 				290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */,
@@ -988,7 +988,7 @@
 				299D7637253ECFA1006985FD /* GoalDetailViewController.storyboard in Resources */,
 				29976099253D96E300CDD568 /* GoalListViewController.storyboard in Resources */,
 				299D7656253EDBD1006985FD /* EditGoalViewController.storyboard in Resources */,
-				2F49841CECE1D441E9B7302A /* EditTaskViewController.storyboard in Resources */,
+				295B39C32558CE9400A21E21 /* EditTaskViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,6 +1154,16 @@
 			name = AddTaskViewController.storyboard;
 			sourceTree = "<group>";
 		};
+		295B39C52558CE9400A21E21 /* EditTaskViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				295B39C42558CE9400A21E21 /* Base */,
+				295B39CA2558CE9900A21E21 /* en */,
+				295B39CC2558CE9E00A21E21 /* ja */,
+			);
+			name = EditTaskViewController.storyboard;
+			sourceTree = "<group>";
+		};
 		2997605F253D96A200CDD568 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1161,6 +1171,16 @@
 				2954E96D254125C600E89510 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		29ECE0452557DCCB00F03077 /* TaskInputModalViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29ECE0442557DCCB00F03077 /* Base */,
+				29ECE04A2557DCEB00F03077 /* en */,
+				29ECE04C2557DCED00F03077 /* ja */,
+			);
+			name = TaskInputModalViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1448,14 +1468,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		291B74622552EC710042DFB3 /* XCRemoteSwiftPackageReference "Hero" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/HeroTransitions/Hero";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
 		298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/HamzaGhazouani/HGCircularSlider";
@@ -1475,11 +1487,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		291B74632552EC710042DFB3 /* Hero */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 291B74622552EC710042DFB3 /* XCRemoteSwiftPackageReference "Hero" */;
-			productName = Hero;
-		};
 		298337D72542AAC7001CB8D9 /* HGCircularSlider */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */;

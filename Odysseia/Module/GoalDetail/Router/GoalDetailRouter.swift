@@ -45,6 +45,9 @@ extension GoalDetailRouter: GoalDetailWireframe {
 
     func showEdit(task: Task, output: EditTaskPresenterOutput) {
         let editView = EditTaskRouter.assembleModules(task: task, output: output)
-        viewController.navigationController?.pushViewController(editView, animated: true)
+        editView.modalTransitionStyle = .crossDissolve
+        editView.modalPresentationStyle = .overFullScreen
+        editView.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        viewController.present(editView, animated: true)
     }
 }

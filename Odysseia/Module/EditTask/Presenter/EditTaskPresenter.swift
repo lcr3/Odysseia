@@ -12,7 +12,8 @@ protocol EditTaskPresentation: AnyObject {
     func viewDidLoad()
     func incrementButtonTouched()
     func decrementButtonTouched()
-    func doneButtonTouched()
+    func updateButtonTouched()
+    func updateTitle(title: String)
 }
 
 class EditTaskPresenter {
@@ -63,7 +64,15 @@ extension EditTaskPresenter: EditTaskPresentation {
         view?.setReachCount(text: "\(editReachCount) / \(editTargetCount)")
     }
 
-    func doneButtonTouched() {
+    func updateTitle(title: String) {
+        editTitle = title
+    }
+
+    func updateButtonTouched() {
+        if editTitle.isEmpty {
+            faildUpdate(msg: L10n.Localizable.addTaskTitleNilMsg)
+            return
+        }
         task.title = editTitle
         task.reachCount = Int16(editReachCount)
         task.targetCount = Int16(editTargetCount)

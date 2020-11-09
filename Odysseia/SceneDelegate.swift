@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             let rootView = GoalListRouter.assembleModules()
             let nav = GoalNavigationController(rootViewController: rootView)
-            nav.hero.isEnabled = true
             window.rootViewController = nav
             window.makeKeyAndVisible()
         }

@@ -42,7 +42,10 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         super.viewDidLoad()
         collectionView.dataSource = dataSource
         collectionView.delegate = self
+
         let addBarItem = UIBarButtonItem(title: L10n.Localizable.addButtonText, style: .done, target: self, action: #selector(addBarButtonTapped(_:)))
+        addBarItem.image = UIImage(systemName: "plus")
+
         navigationItem.rightBarButtonItems = [addBarItem]
     }
 
@@ -72,6 +75,14 @@ extension GoalListViewController: GoalListView {
 extension GoalListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter.goalCellTouched(row: indexPath.row)
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        } else {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+        }
     }
 }
 

@@ -19,6 +19,7 @@ class TaskView: UIView {
     weak var delegate: TaskViewDelegate?
     private var index = 0
 
+    @IBOutlet weak var goalEmojiLabel: UILabel!
     @IBOutlet weak var achievementCircle: TaskAchievementCircle!
     @IBOutlet weak var targetCountLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -52,6 +53,20 @@ class TaskView: UIView {
         titleLabel.text = task.title
         targetCountLabel.text = "\(task.reachCount) / \(task.targetCount)"
         achievementCircle.setCircle(task: task)
+        //        goalEmojiLabel.isHidden = task.reachCount != task.targetCount
+        if task.reachCount == 0 {
+            goalEmojiLabel.text = "⏳"
+            goalEmojiLabel.isHidden = false
+            achievementCircle.isHidden = true
+        } else if task.reachCount != task.targetCount {
+            goalEmojiLabel.text = ""
+            goalEmojiLabel.isHidden = true
+            achievementCircle.isHidden = false
+        } else {
+            goalEmojiLabel.text = "🎊"
+            goalEmojiLabel.isHidden = false
+            achievementCircle.isHidden = true
+        }
     }
 
     @IBAction func taskViewtouched(_ sender: Any) {

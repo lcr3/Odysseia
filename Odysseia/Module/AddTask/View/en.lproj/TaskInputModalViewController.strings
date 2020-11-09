@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "input target level"; ObjectID = "0an-X9-9D4"; */
+"0an-X9-9D4.placeholder" = "Please enter a numerical target.";
+
+/* Class = "UITextField"; placeholder = "input title"; ObjectID = "4ma-p0-p7S"; */
+"4ma-p0-p7S.placeholder" = "Please enter the title of the task.";
+
+/* Class = "UILabel"; text = "TargetLevel"; ObjectID = "G0q-UF-jgG"; */
+"G0q-UF-jgG.text" = "Number of times achieved";
+
+/* Class = "UILabel"; text = "TaskTitle"; ObjectID = "vgm-bC-TkT"; */
+"vgm-bC-TkT.text" = "Task Title";

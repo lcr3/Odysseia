@@ -3,16 +3,16 @@
 "GUl-aI-NOn.text" = "Label";
 
 /* Class = "UILabel"; text = "Add Tasks"; ObjectID = "TA6-CS-gT7"; */
-"TA6-CS-gT7.text" = "Add Tasks";
+"TA6-CS-gT7.text" = "Set numerical targets";
 
 /* Class = "UILabel"; text = "TargetLevel:"; ObjectID = "TyJ-JC-TK2"; */
-"TyJ-JC-TK2.text" = "TargetLevel:";
+"TyJ-JC-TK2.text" = "Frequency:";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Xif-Dh-MBP"; */
-"Xif-Dh-MBP.text" = "0";
+"Xif-Dh-MBP.text" = "1";
 
 /* Class = "UIButton"; normalTitle = "＋"; ObjectID = "qey-Uf-pc7"; */
 "qey-Uf-pc7.normalTitle" = "＋";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "woo-Q6-tJu"; */
-"woo-Q6-tJu.normalTitle" = "Set Goal 🎉";
+"woo-Q6-tJu.normalTitle" = "Add Goal 🎉";

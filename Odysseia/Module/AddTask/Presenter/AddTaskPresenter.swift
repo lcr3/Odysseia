@@ -46,7 +46,7 @@ extension AddTaskPresenter: AddTaskPresentation {
     }
 
     func doneButtonTouched() {
-        if tasks.count == taskMinCount {
+        if tasks.isEmpty {
             view?.validationError(msg: L10n.Localizable.addTaskNilMsg)
             return
         }

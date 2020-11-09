@@ -5,7 +5,6 @@
 //  Created by lcr on 02/11/2020.
 //
 
-import Hero
 import UIKit
 
 protocol EditTaskView: AnyObject {
@@ -21,16 +20,25 @@ class EditTaskViewController: UIViewController, StoryboardInstantiatable {
 
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var targetCountLabel: UILabel!
+    @IBOutlet weak var popupView: UIView!
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        view.hero.id = "taskView"
-        hero.isEnabled = true
         presenter.viewDidLoad()
+        titleField.delegate = self
         titleField.text = presenter.task.title
         targetCountLabel.text = "\(presenter.task.reachCount) / \(presenter.task.targetCount)"
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        titleField.endEditing(true)
     }
 
     // MARK: Action
@@ -42,8 +50,12 @@ class EditTaskViewController: UIViewController, StoryboardInstantiatable {
         presenter.decrementButtonTouched()
     }
 
-    @IBAction func doneButtonTouched(_ sender: Any) {
-        presenter.doneButtonTouched()
+    @IBAction func cancelButtonTouched(_ sender: Any) {
+        dismiss(animated: true)
+    }
+
+    @IBAction func updateButtonTouched(_ sender: Any) {
+        presenter.updateButtonTouched()
     }
 }
 
@@ -55,5 +67,17 @@ extension EditTaskViewController: EditTaskView {
 
     func setReachCount(text: String) {
         targetCountLabel.text = text
+    }
+}
+
+extension EditTaskViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        presenter.updateTitle(title: string)
+        return true
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        titleField.endEditing(true)
+        return false
     }
 }
