@@ -7,6 +7,18 @@
 
 import UIKit
 
+final class GoalListSectionHeader: UICollectionReusableView {
+    @IBOutlet weak var sectionLabel: UILabel!
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+}
+
 enum GoalSection: Int, CaseIterable {
     case goal
 }
@@ -26,7 +38,6 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
     var presenter: GoalListPresentation!
     private let collectionCellHeight: CGFloat = 110
     private let collectionViewMargin: CGFloat = 16
-    private let collectionViewInset = UIEdgeInsets(top: 10, left: 2.0, bottom: 2.0, right: 2.0)
     private lazy var dataSource: UICollectionViewDiffableDataSource<GoalSection, Goal> = {
         let dataSouce = UICollectionViewDiffableDataSource<GoalSection, Goal>(collectionView: collectionView) { collectionView, indexPath, item -> UICollectionViewCell? in
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GoalListCollectionCell.className, for: indexPath) as? GoalListCollectionCell {
@@ -43,10 +54,26 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         collectionView.dataSource = dataSource
         collectionView.delegate = self
 
+        // TODO リファクタ
         let addBarItem = UIBarButtonItem(title: L10n.Localizable.addButtonText, style: .done, target: self, action: #selector(addBarButtonTapped(_:)))
         addBarItem.image = UIImage(systemName: "plus")
 
         navigationItem.rightBarButtonItems = [addBarItem]
+
+        dataSource.supplementaryViewProvider = { (
+            collectionView: UICollectionView,
+            kind: String,
+            indexPath: IndexPath) -> UICollectionReusableView? in
+            if kind == UICollectionView.elementKindSectionHeader {
+                guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: GoalListSectionHeader.className, for: indexPath) as? GoalListSectionHeader else {
+                    fatalError("")
+                }
+                return header
+            }
+            return UICollectionReusableView()
+        }
+        let logPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(cellLongPress))
+        collectionView.addGestureRecognizer(logPressGesture)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +83,13 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
 
     @objc func addBarButtonTapped(_ sender: UIBarButtonItem) {
         presenter.addButtonTouched()
+    }
+
+    @objc func cellLongPress(gesture: UILongPressGestureRecognizer) {
+        if gesture.state != .ended { return }
+        let pressPoint = gesture.location(in: collectionView)
+        guard let indexPath = collectionView.indexPathForItem(at: pressPoint) else { return }
+        // TODO showdeletealert
     }
 }
 
@@ -76,14 +110,6 @@ extension GoalListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter.goalCellTouched(row: indexPath.row)
     }
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
-            navigationController?.setNavigationBarHidden(true, animated: true)
-        } else {
-            navigationController?.setNavigationBarHidden(false, animated: true)
-        }
-    }
 }
 
 extension GoalListViewController: UICollectionViewDataSource {
@@ -98,15 +124,24 @@ extension GoalListViewController: UICollectionViewDataSource {
         }
         return UICollectionViewCell()
     }
+
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: GoalListSectionHeader.className, for: indexPath) as? GoalListSectionHeader else {
+            fatalError("Could not find proper header")
+        }
+
+        if kind == UICollectionView.elementKindSectionHeader {
+            header.sectionLabel.text = "section \(indexPath.section)"
+            return header
+        }
+
+        return UICollectionReusableView()
+    }
 }
 
 extension GoalListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width - collectionViewMargin
         return CGSize(width: width, height: collectionCellHeight)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        collectionViewInset
     }
 }

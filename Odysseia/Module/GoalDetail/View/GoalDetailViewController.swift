@@ -28,7 +28,6 @@ class GoalDetailViewController: UIViewController, StoryboardInstantiatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.delegate = self
         titleField.text = presenter.goal.title
         deadlineDaysLabel.text = "\(presenter.goal.deadlineDays()) Days"
         achievementCircle.setAchievement(achievement: presenter.goal.achievement())
@@ -68,16 +67,6 @@ extension GoalDetailViewController: GoalDetailView {
             taskView.set(task: presenter.goal.getTask(index: index))
         }
         checkGoalState()
-    }
-}
-
-extension GoalDetailViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
-            navigationController?.setNavigationBarHidden(true, animated: true)
-        } else {
-            navigationController?.setNavigationBarHidden(false, animated: true)
-        }
     }
 }
 

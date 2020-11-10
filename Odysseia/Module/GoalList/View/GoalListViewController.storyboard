@@ -20,41 +20,89 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WGH-8U-Ba9">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" name="astro"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q3a-Ep-OPK">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="Q3a-Ep-OPK">
                                     <size key="itemSize" width="414" height="110"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoalListCollectionCell" id="Eml-8n-Gp4" customClass="GoalListCollectionCell" customModule="Odysseia" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UGN-as-Rhr">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3d-FD-hqL">
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9D7-qX-fsJ">
                                                     <rect key="frame" x="16" y="0.0" width="382" height="110"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Nb-rk-jHy">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="110"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="J3d-FD-hqL">
+                                                                    <rect key="frame" x="16" y="0.0" width="350" height="110"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" name="moon"/>
+                                                            <constraints>
+                                                                <constraint firstItem="J3d-FD-hqL" firstAttribute="top" secondItem="2Nb-rk-jHy" secondAttribute="top" id="WZG-q4-X1l"/>
+                                                                <constraint firstAttribute="trailing" secondItem="J3d-FD-hqL" secondAttribute="trailing" constant="16" id="Yuc-VP-9Hy"/>
+                                                                <constraint firstAttribute="bottom" secondItem="J3d-FD-hqL" secondAttribute="bottom" id="ZRt-56-c9K"/>
+                                                                <constraint firstItem="J3d-FD-hqL" firstAttribute="leading" secondItem="2Nb-rk-jHy" secondAttribute="leading" constant="16" id="m9Q-lw-HRl"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="28"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="J3d-FD-hqL" secondAttribute="bottom" id="00X-Hy-8br"/>
-                                                <constraint firstAttribute="trailing" secondItem="J3d-FD-hqL" secondAttribute="trailing" constant="16" id="GSz-6x-j1k"/>
-                                                <constraint firstItem="J3d-FD-hqL" firstAttribute="top" secondItem="UGN-as-Rhr" secondAttribute="top" id="NVs-5q-jcn"/>
-                                                <constraint firstItem="J3d-FD-hqL" firstAttribute="leading" secondItem="UGN-as-Rhr" secondAttribute="leading" constant="16" id="hRR-VN-bsj"/>
+                                                <constraint firstItem="9D7-qX-fsJ" firstAttribute="leading" secondItem="UGN-as-Rhr" secondAttribute="leading" constant="16" id="BD5-9E-BQM"/>
+                                                <constraint firstItem="9D7-qX-fsJ" firstAttribute="top" secondItem="UGN-as-Rhr" secondAttribute="top" id="NIl-Uv-9fv"/>
+                                                <constraint firstAttribute="trailing" secondItem="9D7-qX-fsJ" secondAttribute="trailing" constant="16" id="i1J-jh-198"/>
+                                                <constraint firstAttribute="bottom" secondItem="9D7-qX-fsJ" secondAttribute="bottom" id="onI-FY-Od7"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <gestureRecognizers/>
                                         <size key="customSize" width="414" height="110"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="titleLabel" destination="J3d-FD-hqL" id="oNN-1v-qJ0"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoalListSectionHeader" id="Ln3-lg-ZgH" customClass="GoalListSectionHeader" customModule="Odysseia" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb0-Yb-Zic">
+                                            <rect key="frame" x="16" y="0.0" width="67" height="50"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="zb0-Yb-Zic" secondAttribute="bottom" id="Tk7-ko-29o"/>
+                                        <constraint firstItem="zb0-Yb-Zic" firstAttribute="leading" secondItem="Ln3-lg-ZgH" secondAttribute="leading" constant="16" id="gat-0Y-CXd"/>
+                                        <constraint firstItem="zb0-Yb-Zic" firstAttribute="top" secondItem="Ln3-lg-ZgH" secondAttribute="top" id="s0o-sR-c7J"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="sectionLabel" destination="zb0-Yb-Zic" id="6AJ-RT-vPC"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D5T-Pf-aEy"/>
@@ -71,6 +119,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bf2-Kn-RsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="mMt-au-x9j"/>
             </objects>
             <point key="canvasLocation" x="-71.014492753623188" y="4.6875"/>
         </scene>
@@ -78,6 +127,9 @@
     <resources>
         <namedColor name="astro">
             <color red="0.125" green="0.14100000262260437" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="moon">
+            <color red="1" green="0.79199999570846558" blue="0.059000000357627869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

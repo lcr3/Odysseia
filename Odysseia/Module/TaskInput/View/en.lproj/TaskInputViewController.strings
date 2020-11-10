@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "06K-j4-hAg"; */
+"06K-j4-hAg.normalTitle" = "-";
+
+/* Class = "UITextField"; placeholder = "Set task title"; ObjectID = "5Zm-Yw-43H"; */
+"5Zm-Yw-43H.placeholder" = "Enter your action against the target";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "AHA-7T-VXO"; */
+"AHA-7T-VXO.normalTitle" = "Add";
+
+/* Class = "UIButton"; normalTitle = "＋"; ObjectID = "IhS-pG-Eaq"; */
+"IhS-pG-Eaq.normalTitle" = "＋";
+
+/* Class = "UILabel"; text = "Add New Task"; ObjectID = "PCm-Ls-JAb"; */
+"PCm-Ls-JAb.text" = "Add New Task";
+
+/* Class = "UILabel"; text = "Target times"; ObjectID = "dnl-nM-rg4"; */
+"dnl-nM-rg4.text" = "Target times";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "qiS-8d-dgJ"; */
+"qiS-8d-dgJ.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "wny-uf-iDu"; */
+"wny-uf-iDu.text" = "1";
+
+/* Class = "UILabel"; text = "※ Set a specific number of accomplishments"; ObjectID = "xFJ-q2-5cf"; */
+"xFJ-q2-5cf.text" = "※ Please enter the number of actions";

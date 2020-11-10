@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xSC-P0-MMu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task Input View Controller-->
+        <scene sceneID="ClU-Xx-2gk">
+            <objects>
+                <viewController id="xSC-P0-MMu" customClass="TaskInputViewController" customModule="Odysseia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dDS-aM-8tK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iap-5Q-Mb3">
+                                <rect key="frame" x="16" y="268" width="382" height="360"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Set task title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zm-Yw-43H">
+                                        <rect key="frame" x="16" y="62" width="350" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="loF-9V-NsY"/>
+                                        </constraints>
+                                        <color key="textColor" name="mercury"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target times" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-nM-rg4">
+                                        <rect key="frame" x="16" y="122" width="102" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiS-8d-dgJ">
+                                        <rect key="frame" x="110" y="300" width="120" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="aaZ-dC-eHi"/>
+                                            <constraint firstAttribute="height" constant="44" id="wGN-56-cOs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelButtonTouched:" destination="xSC-P0-MMu" eventType="touchUpInside" id="zgJ-0V-WRf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCm-Ls-JAb">
+                                        <rect key="frame" x="16" y="16" width="164" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHA-7T-VXO">
+                                        <rect key="frame" x="246" y="300" width="120" height="44"/>
+                                        <color key="backgroundColor" name="venus"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="gwS-ii-5s9"/>
+                                            <constraint firstAttribute="width" constant="120" id="mcL-7t-cb5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addTaskButtonTouched:" destination="xSC-P0-MMu" eventType="touchUpInside" id="Lvw-bR-mDF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06K-j4-hAg">
+                                        <rect key="frame" x="139" y="117" width="30" height="30"/>
+                                        <color key="backgroundColor" name="venus"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="glP-qP-MZK"/>
+                                            <constraint firstAttribute="width" constant="30" id="x2Z-HZ-XTg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="decrementButtonTouched:" destination="xSC-P0-MMu" eventType="touchUpInside" id="Ymb-Dq-jc1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wny-uf-iDu">
+                                        <rect key="frame" x="185" y="117" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="da1-Hj-q5w"/>
+                                            <constraint firstAttribute="width" constant="70" id="z7j-Wd-IUF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhS-pG-Eaq">
+                                        <rect key="frame" x="271" y="117" width="30" height="30"/>
+                                        <color key="backgroundColor" name="venus"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="0bK-uD-Nuw"/>
+                                            <constraint firstAttribute="height" constant="30" id="2Qh-og-Dcy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="＋">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="incrementButtonTouched:" destination="xSC-P0-MMu" eventType="touchUpInside" id="7RG-RZ-d39"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※ Set a specific number of accomplishments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFJ-q2-5cf">
+                                        <rect key="frame" x="32" y="153" width="334" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="astro"/>
+                                <constraints>
+                                    <constraint firstItem="dnl-nM-rg4" firstAttribute="leading" secondItem="Iap-5Q-Mb3" secondAttribute="leading" constant="16" id="066-iD-dYX"/>
+                                    <constraint firstItem="xFJ-q2-5cf" firstAttribute="leading" secondItem="Iap-5Q-Mb3" secondAttribute="leading" constant="32" id="0Fj-AQ-3MF"/>
+                                    <constraint firstItem="xFJ-q2-5cf" firstAttribute="top" secondItem="06K-j4-hAg" secondAttribute="bottom" constant="6" id="1iu-8O-SQ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="xFJ-q2-5cf" secondAttribute="trailing" constant="16" id="4ur-YS-CN3"/>
+                                    <constraint firstItem="wny-uf-iDu" firstAttribute="leading" secondItem="06K-j4-hAg" secondAttribute="trailing" constant="16" id="6HA-Wr-nkI"/>
+                                    <constraint firstItem="PCm-Ls-JAb" firstAttribute="top" secondItem="Iap-5Q-Mb3" secondAttribute="top" constant="16" id="6Kb-hz-njw"/>
+                                    <constraint firstItem="wny-uf-iDu" firstAttribute="top" secondItem="5Zm-Yw-43H" secondAttribute="bottom" constant="11" id="7CF-6f-C6Q"/>
+                                    <constraint firstItem="5Zm-Yw-43H" firstAttribute="leading" secondItem="Iap-5Q-Mb3" secondAttribute="leading" constant="16" id="9bB-kT-Aud"/>
+                                    <constraint firstItem="06K-j4-hAg" firstAttribute="top" secondItem="5Zm-Yw-43H" secondAttribute="bottom" constant="11" id="H7B-VN-iFF"/>
+                                    <constraint firstItem="IhS-pG-Eaq" firstAttribute="leading" secondItem="wny-uf-iDu" secondAttribute="trailing" constant="16" id="N2N-zM-WAT"/>
+                                    <constraint firstAttribute="height" constant="360" id="Nv4-Et-Toi"/>
+                                    <constraint firstItem="06K-j4-hAg" firstAttribute="leading" secondItem="dnl-nM-rg4" secondAttribute="trailing" constant="21" id="VGr-HJ-nTE"/>
+                                    <constraint firstAttribute="bottom" secondItem="AHA-7T-VXO" secondAttribute="bottom" constant="16" id="bzX-xh-ld9"/>
+                                    <constraint firstItem="PCm-Ls-JAb" firstAttribute="leading" secondItem="Iap-5Q-Mb3" secondAttribute="leading" constant="16" id="dmK-Jf-odv"/>
+                                    <constraint firstItem="dnl-nM-rg4" firstAttribute="top" secondItem="5Zm-Yw-43H" secondAttribute="bottom" constant="16" id="eKh-lS-cXv"/>
+                                    <constraint firstItem="IhS-pG-Eaq" firstAttribute="top" secondItem="5Zm-Yw-43H" secondAttribute="bottom" constant="11" id="jFH-Ua-kHC"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Zm-Yw-43H" secondAttribute="trailing" constant="16" id="ofl-1A-2F9"/>
+                                    <constraint firstAttribute="trailing" secondItem="AHA-7T-VXO" secondAttribute="trailing" constant="16" id="pSh-6T-6Pr"/>
+                                    <constraint firstItem="5Zm-Yw-43H" firstAttribute="top" secondItem="PCm-Ls-JAb" secondAttribute="bottom" constant="16" id="sPq-ux-0OU"/>
+                                    <constraint firstItem="AHA-7T-VXO" firstAttribute="leading" secondItem="qiS-8d-dgJ" secondAttribute="trailing" constant="16" id="u8a-C5-wtb"/>
+                                    <constraint firstAttribute="bottom" secondItem="qiS-8d-dgJ" secondAttribute="bottom" constant="16" id="xVU-SD-ekJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="01F-D3-Xgb"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="01F-D3-Xgb" firstAttribute="trailing" secondItem="Iap-5Q-Mb3" secondAttribute="trailing" constant="16" id="H1q-Fl-hbJ"/>
+                            <constraint firstItem="Iap-5Q-Mb3" firstAttribute="leading" secondItem="01F-D3-Xgb" secondAttribute="leading" constant="16" id="NFk-Nt-Psw"/>
+                            <constraint firstItem="Iap-5Q-Mb3" firstAttribute="centerY" secondItem="dDS-aM-8tK" secondAttribute="centerY" id="zRj-24-jTS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popupView" destination="Iap-5Q-Mb3" id="wH8-rl-82E"/>
+                        <outlet property="targetCountLabel" destination="wny-uf-iDu" id="fsl-6c-wmp"/>
+                        <outlet property="titleField" destination="5Zm-Yw-43H" id="NUp-eh-3bw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXC-ql-pvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="52.901785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="astro">
+            <color red="0.125" green="0.14100000262260437" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mercury">
+            <color red="0.41200000047683716" green="0.43500000238418579" blue="0.5220000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="venus">
+            <color red="0.94900000095367432" green="0.52499997615814209" blue="0.39599999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

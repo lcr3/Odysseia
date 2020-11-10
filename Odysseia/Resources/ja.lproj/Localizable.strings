@@ -17,18 +17,18 @@
 "UpdateGoalErrorMsg" = "データの更新に失敗しました";
 "GetGoalErrorMsg" = "データの取得に失敗しました";
 "DeleteGoalErrorMsg" = "データの削除に失敗しました";
+// GoalDetailView
+"GoalDetailDate" = " Days left";
 // AddGoalNamePresenter
 "GoalTitleNilMsg" = "目標を入力して下さい";
 "DeadlineYearNilMsg" = "目標締め切り年度を設定してください";
 "DeadlineYearUnknownMsg" = "目標締め切り年度が不正です";
-// AddTaskViewController
-"AddTaskViewControllerTitle" = "数値目標を設定";
 // AddTaskPresenter
-"AddTaskNilMsg" = "数値目標を設定してください";
+"AddTaskNilMsg" = "アクションを設定してください";
 // AddTaskInput
-"AddTaskTitleNilMsg" = "数値目標のタイトルを入力してください";
-"AddTaskTargetLevelNilMsg" = "数値目標の達成したい回数を入力してください";
-"AddTaskDeleteMsg" = "数値目標を削除しますか？";
+"AddTaskTitleNilMsg" = "アクションのタイトルを入力してください";
+"AddTaskTargetLevelNilMsg" = "アクションの達成回数を入力してください";
+"AddTaskDeleteMsg" = "アクションを削除しますか？";
 // Notification
 "NotificationTitle" = "🌏";
 "NewYearRemindNotifyMsg" = "今年の目標設定はお済みですか?🌕";

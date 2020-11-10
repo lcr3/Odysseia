@@ -17,12 +17,12 @@
 "UpdateGoalErrorMsg" = "Failed to update data.";
 "GetGoalErrorMsg" = "Failed to get data.";
 "DeleteGoalErrorMsg" = "Failed to delete data.";
+// GoalDetailView
+"GoalDetailDate" = " Days left";
 // AddGoalNamePresenter
 "GoalTitleNilMsg" = "Please input goal title.";
 "DeadlineYearNilMsg" = "Please set a deadline year.";
 "DeadlineYearUnknownMsg" = "The deadline year is invalid.";
-// AddTaskViewController
-"AddTaskViewControllerTitle" = "Set numerical task";
 // AddTaskPresenter
 "AddTaskNilMsg" = "Please set numerical target.";
 // AddTaskInput

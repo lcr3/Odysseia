@@ -10,8 +10,9 @@ protocol AddTaskPresentation: AnyObject {
 
     // View -> Presenter
     func taskCellTouched(row: Int)
-    func addNewTask(title: String, targetLevel: Int)
+    func addTaskButtonTouched()
     func doneButtonTouched()
+    func backButtonTouched()
     func deleteButtonTouched(row: Int)
 }
 
@@ -32,13 +33,17 @@ class AddTaskPresenter {
         self.goal = goal
         tasks = []
     }
-}
 
-extension AddTaskPresenter: AddTaskPresentation {
-    func addNewTask(title: String, targetLevel: Int) {
+    private func addNewTask(title: String, targetLevel: Int) {
         let newTask = TemporaryTask(title: title, targetCount: targetLevel)
         tasks.append(newTask)
         view?.reload(tasks: tasks)
+    }
+}
+
+extension AddTaskPresenter: AddTaskPresentation {
+    func addTaskButtonTouched() {
+        router.showAddTaskInput(outut: self)
     }
 
     func taskCellTouched(row: Int) {
@@ -54,6 +59,10 @@ extension AddTaskPresenter: AddTaskPresentation {
                            tasks: tasks)
     }
 
+    func backButtonTouched() {
+        router.back()
+    }
+
     func deleteButtonTouched(row: Int) {
         tasks.remove(at: row)
         view?.reload(tasks: tasks)
@@ -66,5 +75,11 @@ extension AddTaskPresenter: AddTaskInteractorOutput {
     }
 
     func failedAddGoal(msg: String) {
+    }
+}
+
+extension AddTaskPresenter: TaskInputPresenterOutput {
+    func successAddTask(title: String, targetLevel: Int) {
+        addNewTask(title: title, targetLevel: targetLevel)
     }
 }

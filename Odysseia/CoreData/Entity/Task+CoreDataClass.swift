@@ -10,5 +10,6 @@ import CoreData
 
 @objc(Task)
 public class Task: NSManagedObject {
-
+    public static let maxTargetCount = 999
+    public static let minTargetCount = 1
 }

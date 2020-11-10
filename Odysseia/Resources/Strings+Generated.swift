@@ -17,16 +17,14 @@ internal enum L10n {
     internal static let addButtonText = L10n.tr("Localizable", "addButtonText")
     /// データの追加に失敗しました
     internal static let addGoalErrorMsg = L10n.tr("Localizable", "AddGoalErrorMsg")
-    /// 数値目標を削除しますか？
+    /// アクションを削除しますか？
     internal static let addTaskDeleteMsg = L10n.tr("Localizable", "AddTaskDeleteMsg")
-    /// 数値目標を設定してください
+    /// アクションを設定してください
     internal static let addTaskNilMsg = L10n.tr("Localizable", "AddTaskNilMsg")
-    /// 数値目標の達成したい回数を入力してください
+    /// アクションの達成回数を入力してください
     internal static let addTaskTargetLevelNilMsg = L10n.tr("Localizable", "AddTaskTargetLevelNilMsg")
-    /// 数値目標のタイトルを入力してください
+    /// アクションのタイトルを入力してください
     internal static let addTaskTitleNilMsg = L10n.tr("Localizable", "AddTaskTitleNilMsg")
-    /// 数値目標を設定
-    internal static let addTaskViewControllerTitle = L10n.tr("Localizable", "AddTaskViewControllerTitle")
     /// キャンセル
     internal static let cancel = L10n.tr("Localizable", "Cancel")
     /// 目標締め切り年度を設定してください
@@ -45,6 +43,8 @@ internal enum L10n {
     internal static let editGoalErrorMsg = L10n.tr("Localizable", "EditGoalErrorMsg")
     /// データの取得に失敗しました
     internal static let getGoalErrorMsg = L10n.tr("Localizable", "GetGoalErrorMsg")
+    ///  Days left
+    internal static let goalDetailDate = L10n.tr("Localizable", "GoalDetailDate")
     /// 目標を入力して下さい
     internal static let goalTitleNilMsg = L10n.tr("Localizable", "GoalTitleNilMsg")
     /// 今年も後半戦、目標を確認しましょう🌓

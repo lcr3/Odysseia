@@ -3,7 +3,7 @@
 "BAV-Xd-XUZ.normalTitle" = "Cancel";
 
 /* Class = "UILabel"; text = "Count"; ObjectID = "RLI-Q9-M5Y"; */
-"RLI-Q9-M5Y.text" = "Count";
+"RLI-Q9-M5Y.text" = "Target times";
 
 /* Class = "UIButton"; normalTitle = "＋"; ObjectID = "Tdi-9f-ibK"; */
 "Tdi-9f-ibK.normalTitle" = "＋";
@@ -15,10 +15,9 @@
 "joX-A2-8aa.text" = "999/999";
 
 /* Class = "UILabel"; text = "Task Edit"; ObjectID = "pBI-XH-kVO"; */
-"pBI-XH-kVO.text" = "Task Edit";
-
-/* Class = "UITextField"; text = "コンテンツマーケット"; ObjectID = "qAN-e6-UwH"; */
-"qAN-e6-UwH.text" = "コンテンツマーケット";
+"pBI-XH-kVO.text" = "Edit Task";
 
 /* Class = "UIButton"; normalTitle = "Update"; ObjectID = "tvl-bi-BJz"; */
 "tvl-bi-BJz.normalTitle" = "Update";
+
+"VW1-Qz-agh.text" = "※ Set a specific number of accomplishments";

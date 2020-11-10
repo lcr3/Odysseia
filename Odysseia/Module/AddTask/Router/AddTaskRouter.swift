@@ -10,6 +10,8 @@ import UIKit
 protocol AddTaskWireframe: AnyObject {
     // Presenter -> Router
     func dismiss()
+    func back()
+    func showAddTaskInput(outut: TaskInputPresenterOutput)
 }
 
 class AddTaskRouter {
@@ -39,5 +41,17 @@ extension AddTaskRouter: AddTaskWireframe {
             return
         }
         addGoalNav.dismissSuccessAddGoal()
+    }
+
+    func back() {
+        viewController.navigationController?.popViewController(animated: true)
+    }
+
+    func showAddTaskInput(outut: TaskInputPresenterOutput) {
+        let addTaskInputView = TaskInputRouter.assembleModules(output: outut)
+        addTaskInputView.modalTransitionStyle = .crossDissolve
+        addTaskInputView.modalPresentationStyle = .overFullScreen
+        addTaskInputView.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        viewController.present(addTaskInputView, animated: true)
     }
 }

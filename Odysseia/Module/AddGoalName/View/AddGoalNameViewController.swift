@@ -35,8 +35,9 @@ class AddGoalNameViewController: UIViewController, StoryboardInstantiatable {
         guard let defaultYear = recentYears.first else {
             return
         }
-        targetDedlineField.text = String(defaultYear)
+        targetDedlineField.text = "\(defaultYear) 12/31 0:00"
         presenter.updateDedline(year: defaultYear)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     // MARK: Action
@@ -46,6 +47,10 @@ class AddGoalNameViewController: UIViewController, StoryboardInstantiatable {
             return
         }
         presenter.nextButtonTouched(title: title)
+    }
+
+    @IBAction func cancelButtonTouched(_ sender: Any) {
+        dismiss(animated: true)
     }
 
     @objc func donePicker() {
@@ -71,7 +76,8 @@ class AddGoalNameViewController: UIViewController, StoryboardInstantiatable {
         let doneButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
                                              target: self,
                                              action: #selector(donePicker))
-        targetDedlineToolbar.setItems([doneButtonItem], animated: true)
+        let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        targetDedlineToolbar.setItems([space, doneButtonItem], animated: true)
         targetDedlineField.inputAccessoryView = targetDedlineToolbar
     }
 }
@@ -92,9 +98,18 @@ extension AddGoalNameViewController: UITextFieldDelegate {
         presenter.updateGoal(name: string)
         return true
     }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return false
+    }
 }
 
 extension AddGoalNameViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        targetDedlineField.text = "\(recentYears[row]) 12/31 0:00"
+        presenter.updateDedline(year: recentYears[row])
+    }
 }
 
 extension AddGoalNameViewController: UIPickerViewDataSource {
@@ -107,11 +122,6 @@ extension AddGoalNameViewController: UIPickerViewDataSource {
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        String(recentYears[row])
-    }
-
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        targetDedlineField.text = String(recentYears[row])
-        presenter.updateDedline(year: recentYears[row])
+        "\(recentYears[row])"
     }
 }

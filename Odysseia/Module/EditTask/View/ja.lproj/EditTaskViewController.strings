@@ -3,7 +3,7 @@
 "BAV-Xd-XUZ.normalTitle" = "キャンセル";
 
 /* Class = "UILabel"; text = "Count"; ObjectID = "RLI-Q9-M5Y"; */
-"RLI-Q9-M5Y.text" = "回数";
+"RLI-Q9-M5Y.text" = "達成回数";
 
 /* Class = "UIButton"; normalTitle = "＋"; ObjectID = "Tdi-9f-ibK"; */
 "Tdi-9f-ibK.normalTitle" = "＋";
@@ -15,10 +15,9 @@
 "joX-A2-8aa.text" = "999/999";
 
 /* Class = "UILabel"; text = "Task Edit"; ObjectID = "pBI-XH-kVO"; */
-"pBI-XH-kVO.text" = "数値目標編集";
-
-/* Class = "UITextField"; text = "コンテンツマーケット"; ObjectID = "qAN-e6-UwH"; */
-"qAN-e6-UwH.text" = "コンテンツマーケット";
+"pBI-XH-kVO.text" = "アクションを編集";
 
 /* Class = "UIButton"; normalTitle = "Update"; ObjectID = "tvl-bi-BJz"; */
 "tvl-bi-BJz.normalTitle" = "更新";
+
+"VW1-Qz-agh.text" = "※ 何回達成するか入力して下さい";

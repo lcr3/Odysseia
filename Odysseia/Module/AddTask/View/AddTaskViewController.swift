@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import BottomHalfModal
 
 enum TaskSection: Int, CaseIterable {
     case task
@@ -25,9 +24,7 @@ class AddTaskViewController: UIViewController, StoryboardInstantiatable {
     var presenter: AddTaskPresentation!
 
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var nextButton: UIButton!
 
-    private let collectionCellHeight: CGFloat = 110
     private let collectionViewMargin: CGFloat = 16
     private let collectionViewInset = UIEdgeInsets(top: 10, left: 2.0, bottom: 2.0, right: 2.0)
     private lazy var dataSource: UICollectionViewDiffableDataSource<TaskSection, TemporaryTask> = {
@@ -46,35 +43,18 @@ class AddTaskViewController: UIViewController, StoryboardInstantiatable {
         super.viewDidLoad()
         collectionView.dataSource = dataSource
         collectionView.delegate = self
-
-        title = L10n.Localizable.addTaskViewControllerTitle
-        let addBarItem = UIBarButtonItem(title: L10n.Localizable.addButtonText, style: .done, target: self, action: #selector(addBarButtonTapped(_:)))
-        addBarItem.image = UIImage(systemName: "plus")
-        addBarItem.tintColor = Asset.venus.color
-        navigationItem.rightBarButtonItems = [addBarItem]
-        navigationController?.navigationBar.tintColor = Asset.venus.color
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        //        presenter.loadGoals()
     }
 
     @IBAction func addTaskButtonTouched(_ sender: Any) {
-        let vc = TaskInputModalViewController(delegate: self)
-        let nav = BottomHalfModalNavigationController(rootViewController: vc)
-        presentBottomHalfModal(nav, animated: true, completion: nil)
+        presenter.addTaskButtonTouched()
     }
 
-    @IBAction func nextButtonTouched(_ sender: Any) {
+    @IBAction func addGoalButtonTouched(_ sender: Any) {
         presenter.doneButtonTouched()
     }
 
-    @objc func addBarButtonTapped(_ sender: UIBarButtonItem) {
-        let vc = TaskInputModalViewController(delegate: self)
-        let nav = BottomHalfModalNavigationController(rootViewController: vc)
-        nav.navigationBar.tintColor = Asset.venus.color
-        presentBottomHalfModal(nav, animated: true, completion: nil)
+    @IBAction func backButtonTouched(_ sender: Any) {
+        presenter.backButtonTouched()
     }
 }
 
@@ -128,16 +108,10 @@ extension AddTaskViewController: UICollectionViewDataSource {
 extension AddTaskViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width - collectionViewMargin
-        return CGSize(width: width, height: collectionCellHeight)
+        return CGSize(width: width, height: AddTaskCell.height)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         collectionViewInset
-    }
-}
-
-extension AddTaskViewController: TaskInputDelegate {
-    func scceseAdd(title: String, targetLevel: Int) {
-        presenter.addNewTask(title: title, targetLevel: targetLevel)
     }
 }

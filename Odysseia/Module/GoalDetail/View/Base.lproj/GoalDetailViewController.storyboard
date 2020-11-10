@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-TB-h1C">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="635"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="651"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2PJ-qN-KzT" userLabel="60">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -38,14 +38,14 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Morning Challenge" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BOR-29-5D3">
-                                                        <rect key="frame" x="16" y="0.0" width="298" height="70"/>
+                                                        <rect key="frame" x="16" y="0.0" width="282" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999 Days" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="rKH-za-RIS">
-                                                        <rect key="frame" x="314" y="0.0" width="100" height="70"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999 Days" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="rKH-za-RIS">
+                                                        <rect key="frame" x="298" y="0.0" width="100" height="70"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="s1R-gF-GXE"/>
                                                         </constraints>
@@ -53,6 +53,13 @@
                                                         <color key="textColor" name="venus"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTB-Zt-Rdq" userLabel="16">
+                                                        <rect key="frame" x="398" y="0.0" width="16" height="70"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="16" id="iEn-dv-XY9"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="KJ9-VI-HZc"/>
@@ -112,8 +119,15 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBX-Qn-0Zp" userLabel="16">
+                                                <rect key="frame" x="0.0" y="435" width="414" height="16"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="EsW-oU-TDM"/>
+                                                </constraints>
+                                            </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="l1m-eM-rQa">
-                                                <rect key="frame" x="0.0" y="435" width="414" height="200"/>
+                                                <rect key="frame" x="0.0" y="451" width="414" height="200"/>
                                             </stackView>
                                         </subviews>
                                     </stackView>
