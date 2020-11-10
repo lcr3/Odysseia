@@ -70,8 +70,10 @@
 		29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */; };
 		29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */; };
 		29ECE0432557DCCB00F03077 /* TaskInputModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ECE0452557DCCB00F03077 /* TaskInputModalViewController.xib */; };
-		29EF366F2558F9C700E0E669 /* Confetti.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 29EF366E2558F9C700E0E669 /* Confetti.scnp */; };
-		29EF367A25592C1800E0E669 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF367925592C1800E0E669 /* ConfettiView.swift */; };
+		29EF3687255A1DA000E0E669 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3683255A1D9F00E0E669 /* StarView.swift */; };
+		29EF3688255A1DA000E0E669 /* StarsParticles.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3684255A1DA000E0E669 /* StarsParticles.scnp */; };
+		29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3686255A1DA000E0E669 /* ConfettiView.swift */; };
+		29EF3691255A3A3E00E0E669 /* SceneKit.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3690255A3A3E00E0E669 /* SceneKit.scnassets */; };
 		29FB84032547A85D00E0B387 /* AddGoalNameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
@@ -187,8 +189,10 @@
 		29ECE0442557DCCB00F03077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TaskInputModalViewController.xib; sourceTree = "<group>"; };
 		29ECE04A2557DCEB00F03077 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TaskInputModalViewController.strings; sourceTree = "<group>"; };
 		29ECE04C2557DCED00F03077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TaskInputModalViewController.strings; sourceTree = "<group>"; };
-		29EF366E2558F9C700E0E669 /* Confetti.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Confetti.scnp; sourceTree = "<group>"; };
-		29EF367925592C1800E0E669 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		29EF3683255A1D9F00E0E669 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		29EF3684255A1DA000E0E669 /* StarsParticles.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = StarsParticles.scnp; sourceTree = "<group>"; };
+		29EF3686255A1DA000E0E669 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		29EF3690255A3A3E00E0E669 /* SceneKit.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = SceneKit.scnassets; sourceTree = "<group>"; };
 		29FB84022547A85D00E0B387 /* AddGoalNameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddGoalNameViewController.storyboard; sourceTree = "<group>"; };
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
 		49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractor.swift; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 		290B5C49253F1503009D54B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				29EF3690255A3A3E00E0E669 /* SceneKit.scnassets */,
 				29833773254140F7001CB8D9 /* Strings+Generated.swift */,
 				2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */,
 				2997605F253D96A200CDD568 /* LaunchScreen.storyboard */,
@@ -525,6 +530,7 @@
 		299D7619253ECC44006985FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				29EF3681255A1D9F00E0E669 /* Subview */,
 				291B746825541C170042DFB3 /* CircleView */,
 				298337DC25441117001CB8D9 /* TaskView */,
 				299D761A253ECC57006985FD /* GoalDetailViewController.swift */,
@@ -630,10 +636,34 @@
 		29EF366D2558F99000E0E669 /* Subview */ = {
 			isa = PBXGroup;
 			children = (
-				29EF366E2558F9C700E0E669 /* Confetti.scnp */,
-				29EF367925592C1800E0E669 /* ConfettiView.swift */,
 			);
 			path = Subview;
+			sourceTree = "<group>";
+		};
+		29EF3681255A1D9F00E0E669 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				29EF3682255A1D9F00E0E669 /* Star */,
+				29EF3685255A1DA000E0E669 /* Confetti */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+		29EF3682255A1D9F00E0E669 /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				29EF3683255A1D9F00E0E669 /* StarView.swift */,
+				29EF3684255A1DA000E0E669 /* StarsParticles.scnp */,
+			);
+			path = Star;
+			sourceTree = "<group>";
+		};
+		29EF3685255A1DA000E0E669 /* Confetti */ = {
+			isa = PBXGroup;
+			children = (
+				29EF3686255A1DA000E0E669 /* ConfettiView.swift */,
+			);
+			path = Confetti;
 			sourceTree = "<group>";
 		};
 		29FB841B2548EBC400E0B387 /* Entity */ = {
@@ -993,6 +1023,7 @@
 			files = (
 				29ECE0432557DCCB00F03077 /* TaskInputModalViewController.xib in Resources */,
 				2959D0BC254A985C00A3DC28 /* AddTaskViewController.storyboard in Resources */,
+				29EF3688255A1DA000E0E669 /* StarsParticles.scnp in Resources */,
 				29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */,
 				290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */,
 				298337E325441188001CB8D9 /* TaskView.xib in Resources */,
@@ -1003,7 +1034,7 @@
 				29976099253D96E300CDD568 /* GoalListViewController.storyboard in Resources */,
 				299D7656253EDBD1006985FD /* EditGoalViewController.storyboard in Resources */,
 				295B39C32558CE9400A21E21 /* EditTaskViewController.storyboard in Resources */,
-				29EF366F2558F9C700E0E669 /* Confetti.scnp in Resources */,
+				29EF3691255A3A3E00E0E669 /* SceneKit.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1056,6 +1087,7 @@
 				29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */,
 				299D7660253EDC81006985FD /* EditGoalInteractor.swift in Sources */,
 				2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */,
+				29EF3687255A1DA000E0E669 /* StarView.swift in Sources */,
 				29D67F8C254C073C00A6E396 /* Task+CoreDataProperties.swift in Sources */,
 				299D7626253ECD4C006985FD /* GoalDetailPresenter.swift in Sources */,
 				2955280F253E76D9009AFE97 /* PersistentContainerProvider.swift in Sources */,
@@ -1075,13 +1107,13 @@
 				29552828253E8052009AFE97 /* TemporaryGoal.swift in Sources */,
 				299D7614253EB841006985FD /* GoalListCollectionCell.swift in Sources */,
 				2959D0A1254A83DC00A3DC28 /* GoalListRouterOutput.swift in Sources */,
+				29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */,
 				29976097253D96E300CDD568 /* GoalListPresenter.swift in Sources */,
 				296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */,
 				2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */,
 				299D763E253ED49F006985FD /* GoalDetailRouter.swift in Sources */,
 				29552819253E779C009AFE97 /* GoalServicer.swift in Sources */,
 				298337DE25441173001CB8D9 /* TaskView.swift in Sources */,
-				29EF367A25592C1800E0E669 /* ConfettiView.swift in Sources */,
 				299D765B253EDC31006985FD /* EditGoalPresenter.swift in Sources */,
 				291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */,
 				299D761B253ECC57006985FD /* GoalDetailViewController.swift in Sources */,

@@ -11,6 +11,7 @@ import UIKit
 final class GoalAchievementCircle: CircularSlider {
     static let width: CGFloat = 240
     static let height: CGFloat = 240
+    var parcentLabel = UILabel()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,11 +28,7 @@ final class GoalAchievementCircle: CircularSlider {
         trackColor = .clear
         thumbLineWidth = 0.0
         thumbRadius = 0.0
-    }
-
-    func setAchievement(achievement: Achievement) {
-        maximumValue = CGFloat(achievement.targetCount)
-        endPointValue = CGFloat(achievement.reachCount)
+        setParcentLabel()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -49,5 +46,24 @@ final class GoalAchievementCircle: CircularSlider {
         trackColor = .clear
         thumbLineWidth = 0.0
         thumbRadius = 0.0
+        setParcentLabel()
+    }
+
+    func setAchievement(achievement: Achievement) {
+        maximumValue = CGFloat(achievement.targetCount)
+        endPointValue = CGFloat(achievement.reachCount)
+        parcentLabel.text = "\(achievement.rate()) %"
+    }
+
+    private func setParcentLabel() {
+        parcentLabel.frame = CGRect(x: 0,
+                                    y: 0,
+                                    width: frame.size.width,
+                                    height: frame.size.height)
+        parcentLabel.textAlignment = .center
+        parcentLabel.backgroundColor = .clear
+        addSubview(parcentLabel)
+        parcentLabel.font = UIFont.boldSystemFont(ofSize: 35.0)
+        parcentLabel.textColor = .white
     }
 }

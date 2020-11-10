@@ -13,9 +13,6 @@ protocol TaskViewDelegate: AnyObject {
 }
 
 class TaskView: UIView {
-    static let height = 120
-    static let xMergin = 16
-
     weak var delegate: TaskViewDelegate?
     private var index = 0
 
@@ -28,16 +25,11 @@ class TaskView: UIView {
         guard let view = UINib(nibName: TaskView.className, bundle: nil)
                 .instantiate(withOwner: nil, options: nil)
                 .first as? TaskView else {
-            fatalError("Faild task view")
+            fatalError("Faild load task view")
         }
-        //        view.frame = frame
         view.delegate = delegate
         view.index = index
         view.set(task: task)
-        view.layer.borderWidth = 1.0
-        view.layer.borderColor = UIColor.black.cgColor
-        view.layer.cornerRadius = CGFloat(TaskView.height / 4)
-
         return view
     }
 
@@ -49,11 +41,14 @@ class TaskView: UIView {
         super.awakeFromNib()
     }
 
+    @IBAction func taskViewtouched(_ sender: Any) {
+        delegate?.taskTouched(index: index)
+    }
+
     func set(task: Task) {
         titleLabel.text = task.title
         targetCountLabel.text = "\(task.reachCount) / \(task.targetCount)"
         achievementCircle.setCircle(task: task)
-        //        goalEmojiLabel.isHidden = task.reachCount != task.targetCount
         if task.reachCount == 0 {
             goalEmojiLabel.text = "⏳"
             goalEmojiLabel.isHidden = false
@@ -67,9 +62,5 @@ class TaskView: UIView {
             goalEmojiLabel.isHidden = false
             achievementCircle.isHidden = true
         }
-    }
-
-    @IBAction func taskViewtouched(_ sender: Any) {
-        delegate?.taskTouched(index: index)
     }
 }

@@ -32,7 +32,7 @@ class ConfettiView: SCNView {
     }
 
     private func addAnimation() {
-        if let confetti = SCNParticleSystem(named: "Confetti.scnp", inDirectory: "") {
+        if let confetti = SCNParticleSystem(named: "Confetti.scnp", inDirectory: "SceneKit.scnassets") {
             confetti.loops = false
             let confettiScene = SCNScene()
             let cameraNode = SCNNode()
