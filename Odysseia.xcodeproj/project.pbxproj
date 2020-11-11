@@ -18,6 +18,7 @@
 		291B746F25541C780042DFB3 /* GoalAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */; };
 		291B74892554EA080042DFB3 /* NotificationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B74882554EA080042DFB3 /* NotificationStore.swift */; };
 		291B748F2555766B0042DFB3 /* NotificationStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B748E2555766B0042DFB3 /* NotificationStoreTests.swift */; };
+		29248085255C1191003D09CB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29248084255C1191003D09CB /* CloudKit.framework */; };
 		2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
 		2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954E9592540561200E89510 /* GoalNavigationController.swift */; };
 		2954E9672541251A00E89510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
@@ -130,6 +131,8 @@
 		291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalAchievementCircle.swift; sourceTree = "<group>"; };
 		291B74882554EA080042DFB3 /* NotificationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStore.swift; sourceTree = "<group>"; };
 		291B748E2555766B0042DFB3 /* NotificationStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStoreTests.swift; sourceTree = "<group>"; };
+		2924807F255C1188003D09CB /* Odysseia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Odysseia.entitlements; sourceTree = "<group>"; };
+		29248084255C1191003D09CB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		2954E9592540561200E89510 /* GoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNavigationController.swift; sourceTree = "<group>"; };
 		2954E9682541251A00E89510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */,
+				29248085255C1191003D09CB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +324,14 @@
 				291B748E2555766B0042DFB3 /* NotificationStoreTests.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		29248083255C1191003D09CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29248084255C1191003D09CB /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2954E95E25405CBA00E89510 /* CoreData */ = {
@@ -410,6 +422,7 @@
 				2997606A253D96A200CDD568 /* OdysseiaTests */,
 				29976075253D96A200CDD568 /* OdysseiaUITests */,
 				2997604F253D96A000CDD568 /* Products */,
+				29248083255C1191003D09CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -426,6 +439,7 @@
 		29976050253D96A000CDD568 /* Odysseia */ = {
 			isa = PBXGroup;
 			children = (
+				2924807F255C1188003D09CB /* Odysseia.entitlements */,
 				2954E95E25405CBA00E89510 /* CoreData */,
 				29ECE039255690A400F03077 /* Store */,
 				2910BDA825403CD100E0D56A /* Service */,
@@ -1342,10 +1356,133 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		29248095255C1AAF003D09CB /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = .adhoc;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "ADHOC=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-D ADHOC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lcr.odysseia${BUNDLE_ID_SUFFIX}";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		29248096255C1AAF003D09CB /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = Odysseia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
+		29248097255C1AAF003D09CB /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Odysseia.app/Odysseia";
+			};
+			name = AdHoc;
+		};
+		29248098255C1AAF003D09CB /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Goal;
+			};
+			name = AdHoc;
+		};
 		29976079253D96A200CDD568 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = .debug;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1398,6 +1535,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lcr.odysseia${BUNDLE_ID_SUFFIX}";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1408,6 +1547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1453,6 +1593,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lcr.odysseia${BUNDLE_ID_SUFFIX}";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -1465,6 +1606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = Odysseia/Info.plist;
@@ -1484,6 +1626,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = Odysseia/Info.plist;
@@ -1590,6 +1733,7 @@
 			buildConfigurations = (
 				29976079253D96A200CDD568 /* Debug */,
 				2997607A253D96A200CDD568 /* Release */,
+				29248095255C1AAF003D09CB /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1599,6 +1743,7 @@
 			buildConfigurations = (
 				2997607C253D96A200CDD568 /* Debug */,
 				2997607D253D96A200CDD568 /* Release */,
+				29248096255C1AAF003D09CB /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1608,6 +1753,7 @@
 			buildConfigurations = (
 				2997607F253D96A200CDD568 /* Debug */,
 				29976080253D96A200CDD568 /* Release */,
+				29248097255C1AAF003D09CB /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1617,6 +1763,7 @@
 			buildConfigurations = (
 				29976082253D96A200CDD568 /* Debug */,
 				29976083253D96A200CDD568 /* Release */,
+				29248098255C1AAF003D09CB /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
