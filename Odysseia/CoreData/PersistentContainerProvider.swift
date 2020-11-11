@@ -10,8 +10,8 @@ import CoreData
 class PersistentContainerProvider {
     private init() {}
 
-    private static let persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "Goal")
+    private static let persistentContainer: NSPersistentCloudKitContainer = {
+        let container = NSPersistentCloudKitContainer(name: "Goal")
         container.loadPersistentStores(completionHandler: { _, error in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
@@ -20,7 +20,7 @@ class PersistentContainerProvider {
         return container
     }()
 
-    public static func getInstance() -> NSPersistentContainer {
+    public static func getInstance() -> NSPersistentCloudKitContainer {
         persistentContainer
     }
 }
