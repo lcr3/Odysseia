@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xSC-P0-MMu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Goal Delete Alert View Controller-->
+        <scene sceneID="ClU-Xx-2gk">
+            <objects>
+                <viewController id="xSC-P0-MMu" customClass="GoalDeleteAlertViewController" customModule="Odysseia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dDS-aM-8tK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nh8-Nv-K2d">
+                                <rect key="frame" x="16" y="328" width="382" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDk-p7-pcA">
+                                        <rect key="frame" x="110" y="180" width="120" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="CpO-3A-UEW"/>
+                                            <constraint firstAttribute="height" constant="44" id="ciM-6a-JhZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="negativeButtonTouched:" destination="xSC-P0-MMu" eventType="touchUpInside" id="qmL-xB-TXr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Alert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBT-vn-h8W">
+                                        <rect key="frame" x="16" y="16" width="350" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ZPg-m7-nTu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wq-99-AhJ">
+                                        <rect key="frame" x="246" y="180" width="120" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="CGv-PG-Ntv"/>
+                                            <constraint firstAttribute="height" constant="44" id="XF3-Yp-yBX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Delete">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="positiveButtonTouched:" destination="xSC-P0-MMu" eventType="touchUpInside" id="RGu-BE-gey"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to delete the goal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgE-rJ-foV">
+                                        <rect key="frame" x="16" y="66" width="350" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Task Name&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THN-Cj-Qta">
+                                        <rect key="frame" x="16" y="103" width="350" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="astro"/>
+                                <constraints>
+                                    <constraint firstItem="5Wq-99-AhJ" firstAttribute="leading" secondItem="pDk-p7-pcA" secondAttribute="trailing" constant="16" id="48i-s0-V7o"/>
+                                    <constraint firstItem="THN-Cj-Qta" firstAttribute="leading" secondItem="Nh8-Nv-K2d" secondAttribute="leading" constant="16" id="6zM-NW-n7q"/>
+                                    <constraint firstItem="LBT-vn-h8W" firstAttribute="top" secondItem="Nh8-Nv-K2d" secondAttribute="top" constant="16" id="HaR-hO-fse"/>
+                                    <constraint firstAttribute="trailing" secondItem="IgE-rJ-foV" secondAttribute="trailing" constant="16" id="J92-LF-MOv"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Wq-99-AhJ" secondAttribute="bottom" constant="16" id="Ock-4G-Vel"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Wq-99-AhJ" secondAttribute="trailing" constant="16" id="Q7P-5G-11m"/>
+                                    <constraint firstAttribute="trailing" secondItem="LBT-vn-h8W" secondAttribute="trailing" constant="16" id="ZOX-Rh-xft"/>
+                                    <constraint firstItem="LBT-vn-h8W" firstAttribute="leading" secondItem="Nh8-Nv-K2d" secondAttribute="leading" constant="16" id="cd7-p5-Pgw"/>
+                                    <constraint firstAttribute="height" constant="240" id="hA9-WB-SZD"/>
+                                    <constraint firstItem="IgE-rJ-foV" firstAttribute="top" secondItem="LBT-vn-h8W" secondAttribute="bottom" constant="20" id="pKE-N0-QGV"/>
+                                    <constraint firstItem="IgE-rJ-foV" firstAttribute="leading" secondItem="Nh8-Nv-K2d" secondAttribute="leading" constant="16" id="pno-uo-CzE"/>
+                                    <constraint firstAttribute="bottom" secondItem="pDk-p7-pcA" secondAttribute="bottom" constant="16" id="uEk-QI-UgE"/>
+                                    <constraint firstItem="THN-Cj-Qta" firstAttribute="top" secondItem="IgE-rJ-foV" secondAttribute="bottom" constant="16" id="z9g-ff-q9E"/>
+                                    <constraint firstAttribute="trailing" secondItem="THN-Cj-Qta" secondAttribute="trailing" constant="16" id="zFS-2h-D39"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="01F-D3-Xgb"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nh8-Nv-K2d" firstAttribute="leading" secondItem="01F-D3-Xgb" secondAttribute="leading" constant="16" id="ewY-1j-xrb"/>
+                            <constraint firstItem="Nh8-Nv-K2d" firstAttribute="centerY" secondItem="dDS-aM-8tK" secondAttribute="centerY" id="oaj-iU-g5L"/>
+                            <constraint firstItem="01F-D3-Xgb" firstAttribute="trailing" secondItem="Nh8-Nv-K2d" secondAttribute="trailing" constant="16" id="s60-HQ-0rt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="taskNameLabel" destination="THN-Cj-Qta" id="FWR-E0-HXT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXC-ql-pvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="53"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="astro">
+            <color red="0.125" green="0.14100000262260437" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

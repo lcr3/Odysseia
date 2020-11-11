@@ -12,7 +12,7 @@ protocol GoalService {
     func add(goal: TemporaryGoal) throws -> Goal
     func add(goal: TemporaryGoal, tasks: [TemporaryTask]) throws -> Goal
     func update(goal: Goal) throws -> Goal
-    func delete(id: String) throws
+    func delete(goal: Goal) throws
     func get(objectId: NSManagedObjectID) throws -> Goal
     func getAll() throws -> [Goal]
 
@@ -64,8 +64,13 @@ extension GoalServicer: GoalService {
         return newGoal
     }
 
-    func delete(id: String) throws {
-        throw GoalServiceError.deleteGoalError(msg: L10n.Localizable.deleteGoalErrorMsg)
+    func delete(goal: Goal) throws {
+        managedContext.delete(goal)
+        do {
+            try managedContext.save()
+        } catch {
+            throw GoalServiceError.deleteGoalError(msg: L10n.Localizable.deleteGoalErrorMsg)
+        }
     }
 
     func update(goal: Goal) throws -> Goal {

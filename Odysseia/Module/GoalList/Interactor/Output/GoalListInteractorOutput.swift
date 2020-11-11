@@ -4,7 +4,6 @@
 //
 //  Created by lcr on 2020/10/19.
 //
-import Foundation
 
 protocol GoalListInteractorOutput: AnyObject {
     // Interactor -> Output

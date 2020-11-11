@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "5Wq-99-AhJ"; */
+"5Wq-99-AhJ.normalTitle" = "Delete";
+
+/* Class = "UILabel"; text = "Do you want to delete the goal?"; ObjectID = "IgE-rJ-foV"; */
+"IgE-rJ-foV.text" = "Do you want to delete the goal?";
+
+/* Class = "UILabel"; text = "Delete Alert"; ObjectID = "LBT-vn-h8W"; */
+"LBT-vn-h8W.text" = "Delete Alert";
+
+/* Class = "UILabel"; text = "\"Task Name\""; ObjectID = "THN-Cj-Qta"; */
+"THN-Cj-Qta.text" = "\"Task Name\"";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "pDk-p7-pcA"; */
+"pDk-p7-pcA.normalTitle" = "Cancel";

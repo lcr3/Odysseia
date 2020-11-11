@@ -11,6 +11,7 @@ protocol GoalListPresentation: AnyObject {
     func loadGoals()
     func addButtonTouched()
     func goalCellTouched(row: Int)
+    func cellLongPress(row: Int)
 }
 
 class GoalListPresenter {
@@ -33,9 +34,15 @@ extension GoalListPresenter: GoalListPresentation {
     func addButtonTouched() {
         router.showAddGoal()
     }
+
     func goalCellTouched(row: Int) {
         router.showDetail(goal: goals[row])
     }
+
+    func cellLongPress(row: Int) {
+        router.showDeleteAlert(goal: goals[row], output: self)
+    }
+
     func loadGoals() {
         interactor.loadGoalList()
     }
@@ -54,6 +61,12 @@ extension GoalListPresenter: GoalListInteractorOutput {
 
 extension GoalListPresenter: GoalListRouterOutput {
     func successAddGoal() {
+        interactor.loadGoalList()
+    }
+}
+
+extension GoalListPresenter: GoalDeleteAlertPresenterOutput {
+    func successDeleteGoal() {
         interactor.loadGoalList()
     }
 }

@@ -19,7 +19,7 @@ extension Goal {
     @NSManaged public var isReach: Bool
     @NSManaged public var planet: Int16
     @NSManaged public var reatchDate: Date?
-    @NSManaged public var title: String?
+    @NSManaged public var title: String
     @NSManaged public var tasks: NSSet?
 
 }

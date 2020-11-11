@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "5Wq-99-AhJ"; */
+"5Wq-99-AhJ.normalTitle" = "削除";
+
+/* Class = "UILabel"; text = "Do you want to delete the goal?"; ObjectID = "IgE-rJ-foV"; */
+"IgE-rJ-foV.text" = "以下のゴールを削除しますか?";
+
+/* Class = "UILabel"; text = "Delete Alert"; ObjectID = "LBT-vn-h8W"; */
+"LBT-vn-h8W.text" = "削除";
+
+/* Class = "UILabel"; text = "\"Task Name\""; ObjectID = "THN-Cj-Qta"; */
+"THN-Cj-Qta.text" = "\"Task Name\"";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "pDk-p7-pcA"; */
+"pDk-p7-pcA.normalTitle" = "キャンセル";

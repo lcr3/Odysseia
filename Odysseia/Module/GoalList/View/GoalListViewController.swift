@@ -89,7 +89,7 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         if gesture.state != .ended { return }
         let pressPoint = gesture.location(in: collectionView)
         guard let indexPath = collectionView.indexPathForItem(at: pressPoint) else { return }
-        // TODO showdeletealert
+        presenter.cellLongPress(row: indexPath.item)
     }
 }
 

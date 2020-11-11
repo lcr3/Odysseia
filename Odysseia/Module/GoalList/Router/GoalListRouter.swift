@@ -10,7 +10,7 @@ import UIKit
 protocol GoalListWireframe: AnyObject {
     func showDetail(goal: Goal)
     func showAddGoal()
-
+    func showDeleteAlert(goal: Goal, output: GoalDeleteAlertPresenterOutput)
     var output: GoalListRouterOutput? { get }
 }
 
@@ -46,6 +46,15 @@ extension GoalListRouter: GoalListWireframe {
         let addGoalView = AddGoalNameRouter.assembleModules()
         let nav = AddGoalNavigationController(rootVc: addGoalView, delegate: self)
         viewController.navigationController?.present(nav, animated: true)
+    }
+
+    func showDeleteAlert(goal: Goal, output: GoalDeleteAlertPresenterOutput) {
+        let deleteAlertView = GoalDeleteAlertRouter.assembleModules(goal: goal,
+                                                                    output: output)
+        deleteAlertView.modalTransitionStyle = .crossDissolve
+        deleteAlertView.modalPresentationStyle = .overFullScreen
+        deleteAlertView.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        viewController.present(deleteAlertView, animated: true)
     }
 }
 
