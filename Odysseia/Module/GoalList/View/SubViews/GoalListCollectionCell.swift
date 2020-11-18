@@ -16,5 +16,6 @@ class GoalListCollectionCell: UICollectionViewCell {
 
     func setCell(goal: Goal) {
         titleLabel.text = goal.title
+        backgroundColor = goal.isReach() ? Asset.earth.color: Asset.moon.color
     }
 }

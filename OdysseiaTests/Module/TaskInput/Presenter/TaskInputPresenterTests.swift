@@ -20,18 +20,18 @@ class TaskInputPresenterTest: XCTestCase {
         super.tearDown()
     }
 
-    class MockInteractor: TaskInputUseCase {
-
-    }
-
-    class MockRouter: TaskInputWireFrame {
-
-    }
-
-    class MockViewController: TaskInputView {
-
-        func setupInitialState() {
-
-        }
-    }
+    //    class MockInteractor: TaskInputUseCase {
+    //
+    //    }
+    //
+    //    class MockRouter: TaskInputWireFrame {
+    //
+    //    }
+    //
+    //    class MockViewController: TaskInputView {
+    //
+    //        func setupInitialState() {
+    //
+    //        }
+    //    }
 }

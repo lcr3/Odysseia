@@ -3,7 +3,6 @@
     <entity name="Goal" representedClassName="Goal" syncable="YES">
         <attribute name="deadlineDate" attributeType="Date" defaultDateTimeInterval="631119540" usesScalarValueType="NO"/>
         <attribute name="detail" attributeType="String" maxValueString="500" defaultValueString=""/>
-        <attribute name="isReach" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="planet" attributeType="Integer 16" minValueString="0" maxValueString="9" defaultValueString="1" usesScalarValueType="YES"/>
         <attribute name="reatchDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" attributeType="String" maxValueString="50" defaultValueString=""/>
@@ -17,7 +16,7 @@
         <relationship name="goal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goal" inverseName="tasks" inverseEntity="Goal"/>
     </entity>
     <elements>
-        <element name="Goal" positionX="-63" positionY="-17" width="128" height="148"/>
+        <element name="Goal" positionX="-63" positionY="-17" width="128" height="119"/>
         <element name="Task" positionX="142.8417358398438" positionY="-14.88092041015625" width="128" height="118"/>
     </elements>
 </model>

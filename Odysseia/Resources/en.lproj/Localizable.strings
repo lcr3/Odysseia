@@ -21,6 +21,7 @@
 "GoalDetailDate" = " Days left";
 // AddGoalNamePresenter
 "GoalTitleNilMsg" = "Please input goal title.";
+"GoalTitleMaxLengthMsg" ="Enter your goal in 50 characters.";
 "DeadlineYearNilMsg" = "Please set a deadline year.";
 "DeadlineYearUnknownMsg" = "The deadline year is invalid.";
 // AddTaskPresenter

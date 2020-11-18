@@ -16,7 +16,6 @@ extension Goal {
 
     @NSManaged public var deadlineDate: Date
     @NSManaged public var detail: String?
-    @NSManaged public var isReach: Bool
     @NSManaged public var planet: Int16
     @NSManaged public var reatchDate: Date?
     @NSManaged public var title: String
@@ -88,6 +87,10 @@ extension Goal: Identifiable {
         let retInterval = deadlineDate.timeIntervalSince(Date())
         let ret = retInterval / 86400
         return Int(floor(ret))
+    }
+
+    func isReach() -> Bool {
+        reatchDate != nil
     }
 }
 

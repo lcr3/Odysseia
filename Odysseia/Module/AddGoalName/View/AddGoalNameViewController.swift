@@ -42,10 +42,7 @@ class AddGoalNameViewController: UIViewController, StoryboardInstantiatable {
 
     // MARK: Action
     @IBAction func nextButtonTouched(_ sender: Any) {
-        guard let title = goalTitleField.text else {
-            // error
-            return
-        }
+        guard let title = goalTitleField.text else { return }
         presenter.nextButtonTouched(title: title)
     }
 

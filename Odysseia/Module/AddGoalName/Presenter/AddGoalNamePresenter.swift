@@ -30,8 +30,12 @@ class AddGoalNamePresenter {
 
 extension AddGoalNamePresenter: AddGoalNamePresentation {
     func nextButtonTouched(title: String) {
-        if title.isEmpty || title.count > maxNameCount {
+        if title.isEmpty {
             validationError(msg: L10n.Localizable.goalTitleNilMsg)
+            return
+        }
+        if title.count > maxNameCount {
+            validationError(msg: L10n.Localizable.goalTitleMaxLengthMsg)
             return
         }
         guard let deadlineYear = deadlineYear else {

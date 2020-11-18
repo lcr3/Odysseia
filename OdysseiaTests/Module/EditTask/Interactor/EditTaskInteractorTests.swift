@@ -19,7 +19,7 @@ class EditTaskInteractorTests: XCTestCase {
         super.tearDown()
     }
 
-    class MockPresenter: EditTaskInteractorOutput {
-
-    }
+    //    class MockPresenter: EditTaskInteractorOutput {
+    //
+    //    }
 }

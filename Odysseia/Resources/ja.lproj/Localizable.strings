@@ -21,6 +21,7 @@
 "GoalDetailDate" = " Days left";
 // AddGoalNamePresenter
 "GoalTitleNilMsg" = "目標を入力して下さい";
+"GoalTitleMaxLengthMsg" = "目標は50文字以内で入力して下さい";
 "DeadlineYearNilMsg" = "目標締め切り年度を設定してください";
 "DeadlineYearUnknownMsg" = "目標締め切り年度が不正です";
 // AddTaskPresenter

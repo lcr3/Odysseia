@@ -23,6 +23,7 @@
 		2924806C255C0227003D09CB /* GoalDeleteAlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2924806E255C0227003D09CB /* GoalDeleteAlertViewController.storyboard */; };
 		29248085255C1191003D09CB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29248084255C1191003D09CB /* CloudKit.framework */; };
 		292480CE255C3439003D09CB /* GoalDeleteAlertInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292480CD255C3439003D09CB /* GoalDeleteAlertInteractorOutput.swift */; };
+		292480DB255D55BE003D09CB /* XCTxContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292480DA255D55BE003D09CB /* XCTxContext.swift */; };
 		293D0D06255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293D0D05255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift */; };
 		2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
 		2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954E9592540561200E89510 /* GoalNavigationController.swift */; };
@@ -78,6 +79,10 @@
 		29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */; };
 		29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */; };
 		29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */; };
+		29D69A88255ED65C004C4606 /* MockGoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D69A87255ED65C004C4606 /* MockGoalList.swift */; };
+		29D69A90255ED88E004C4606 /* GoalListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D69A8F255ED88E004C4606 /* GoalListViewTests.swift */; };
+		29D69A99255EDB01004C4606 /* MockAddGoaName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D69A98255EDB01004C4606 /* MockAddGoaName.swift */; };
+		29D69AA1255EDDF6004C4606 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D69AA0255EDDF6004C4606 /* TestHelper.swift */; };
 		29EF3687255A1DA000E0E669 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3683255A1D9F00E0E669 /* StarView.swift */; };
 		29EF3688255A1DA000E0E669 /* StarsParticles.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3684255A1DA000E0E669 /* StarsParticles.scnp */; };
 		29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3686255A1DA000E0E669 /* ConfettiView.swift */; };
@@ -148,6 +153,7 @@
 		2924807F255C1188003D09CB /* Odysseia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Odysseia.entitlements; sourceTree = "<group>"; };
 		29248084255C1191003D09CB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		292480CD255C3439003D09CB /* GoalDeleteAlertInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertInteractorOutput.swift; sourceTree = "<group>"; };
+		292480DA255D55BE003D09CB /* XCTxContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTxContext.swift; sourceTree = "<group>"; };
 		293D0D05255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertInteractor.swift; sourceTree = "<group>"; };
 		2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		2954E9592540561200E89510 /* GoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNavigationController.swift; sourceTree = "<group>"; };
@@ -220,6 +226,10 @@
 		29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
 		29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		29D69A87255ED65C004C4606 /* MockGoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGoalList.swift; sourceTree = "<group>"; };
+		29D69A8F255ED88E004C4606 /* GoalListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListViewTests.swift; sourceTree = "<group>"; };
+		29D69A98255EDB01004C4606 /* MockAddGoaName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddGoaName.swift; sourceTree = "<group>"; };
+		29D69AA0255EDDF6004C4606 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		29EF3683255A1D9F00E0E669 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		29EF3684255A1DA000E0E669 /* StarsParticles.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = StarsParticles.scnp; sourceTree = "<group>"; };
 		29EF3686255A1DA000E0E669 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
@@ -380,6 +390,15 @@
 			path = Output;
 			sourceTree = "<group>";
 		};
+		292480D9255D55A5003D09CB /* TestHelper */ = {
+			isa = PBXGroup;
+			children = (
+				292480DA255D55BE003D09CB /* XCTxContext.swift */,
+				29D69AA0255EDDF6004C4606 /* TestHelper.swift */,
+			);
+			path = TestHelper;
+			sourceTree = "<group>";
+		};
 		293D0D01255BF19900F38522 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +464,7 @@
 		298337A32541B35F001CB8D9 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				29D69A78255ED462004C4606 /* GoalList */,
 				CE43A372CB41AE1600C8BEBF /* AddGoalName */,
 				956D56AD9BC7A7F214AD8F66 /* AddTask */,
 				78193783AEF073ABB774B037 /* EditTask */,
@@ -513,6 +533,7 @@
 		2997606A253D96A200CDD568 /* OdysseiaTests */ = {
 			isa = PBXGroup;
 			children = (
+				292480D9255D55A5003D09CB /* TestHelper */,
 				291B748D255576520042DFB3 /* Store */,
 				298337BD2541B836001CB8D9 /* CoreData */,
 				298337A32541B35F001CB8D9 /* Module */,
@@ -734,6 +755,39 @@
 				299D7613253EB841006985FD /* GoalListCollectionCell.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		29D69A78255ED462004C4606 /* GoalList */ = {
+			isa = PBXGroup;
+			children = (
+				29D69A86255ED64B004C4606 /* Mock */,
+				29D69A85255ED629004C4606 /* View */,
+			);
+			path = GoalList;
+			sourceTree = "<group>";
+		};
+		29D69A85255ED629004C4606 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29D69A8F255ED88E004C4606 /* GoalListViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29D69A86255ED64B004C4606 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29D69A87255ED65C004C4606 /* MockGoalList.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		29D69A97255EDAF6004C4606 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29D69A98255EDB01004C4606 /* MockAddGoaName.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		29ECE039255690A400F03077 /* Store */ = {
@@ -1030,6 +1084,7 @@
 		CE43A372CB41AE1600C8BEBF /* AddGoalName */ = {
 			isa = PBXGroup;
 			children = (
+				29D69A97255EDAF6004C4606 /* Mock */,
 				63DDA7E8669FD281A079D67D /* View */,
 				D71395C61B6F667EB6D69EB0 /* Presenter */,
 				9D0AE5CB0F5638BF76CA83DB /* Router */,
@@ -1370,16 +1425,21 @@
 			files = (
 				298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */,
 				2997606C253D96A200CDD568 /* OdysseiaTests.swift in Sources */,
+				29D69A99255EDB01004C4606 /* MockAddGoaName.swift in Sources */,
 				291B748F2555766B0042DFB3 /* NotificationStoreTests.swift in Sources */,
+				292480DB255D55BE003D09CB /* XCTxContext.swift in Sources */,
 				7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */,
 				E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */,
+				29D69A90255ED88E004C4606 /* GoalListViewTests.swift in Sources */,
 				0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */,
+				29D69A88255ED65C004C4606 /* MockGoalList.swift in Sources */,
 				912C0E341BB3295DC5F8AA1B /* AddTaskViewTests.swift in Sources */,
 				7D5782F4FF379C023F0EB819 /* AddTaskInteractorTests.swift in Sources */,
 				6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */,
 				0A79080A4981356A6908510F /* AddTaskRouterTests.swift in Sources */,
 				716CB1F008A9E38BE9366A7F /* EditTaskViewTests.swift in Sources */,
 				8276F3B044165564D9EA940D /* EditTaskInteractorTests.swift in Sources */,
+				29D69AA1255EDDF6004C4606 /* TestHelper.swift in Sources */,
 				2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */,
 				D186C9C46FFAF32C32919C6E /* EditTaskRouterTests.swift in Sources */,
 				CB3077A286FA70EC5C8501C1 /* TaskInputViewTests.swift in Sources */,

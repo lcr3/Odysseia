@@ -19,18 +19,18 @@ class AddTaskPresenterTest: XCTestCase {
         super.tearDown()
     }
 
-    class MockInteractor: AddTaskInteractorInput {
-
-    }
-
-    class MockRouter: AddTaskRouterInput {
-
-    }
-
-    class MockViewController: AddTaskViewInput {
-
-        func setupInitialState() {
-
-        }
-    }
+    //    class MockInteractor: AddTaskInteractorInput {
+    //
+    //    }
+    //
+    //    class MockRouter: AddTaskRouterInput {
+    //
+    //    }
+    //
+    //    class MockViewController: AddTaskViewInput {
+    //
+    //        func setupInitialState() {
+    //
+    //        }
+    //    }
 }

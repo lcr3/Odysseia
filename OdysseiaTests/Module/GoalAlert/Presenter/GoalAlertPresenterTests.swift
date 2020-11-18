@@ -20,14 +20,14 @@ class GoalDeleteAlertPresenterTest: XCTestCase {
         super.tearDown()
     }
 
-    class MockRouter: GoalDeleteAlertWireFrame {
-
-    }
-
-    class MockViewController: GoalDeleteAlertView {
-
-        func setupInitialState() {
-
-        }
-    }
+    //    class MockRouter: GoalDeleteAlertWireFrame {
+    //
+    //    }
+    //
+    //    class MockViewController: GoalDeleteAlertView {
+    //
+    //        func setupInitialState() {
+    //
+    //        }
+    //    }
 }
