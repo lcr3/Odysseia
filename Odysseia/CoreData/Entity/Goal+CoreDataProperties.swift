@@ -15,7 +15,7 @@ extension Goal {
     }
 
     @NSManaged public var deadlineDate: Date
-    @NSManaged public var detail: String?
+    @NSManaged public var detail: String
     @NSManaged public var planet: Int16
     @NSManaged public var reatchDate: Date?
     @NSManaged public var title: String

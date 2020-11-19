@@ -9,7 +9,7 @@ import SceneKit
 
 class StarView: SCNView {
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: frame, options: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {

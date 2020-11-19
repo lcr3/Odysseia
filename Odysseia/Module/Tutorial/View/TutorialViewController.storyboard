@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SYL-FR-hiq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="Z4E-ZE-kUU">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="tO3-oo-d7W" customClass="FirstViewController" customModule="Odysseia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gul-J3-UJQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYx-W6-anj">
+                                <rect key="frame" x="86" y="425.5" width="242" height="45.5"/>
+                                <string key="text">有意義な1年を過ごすために
+目標を立てましょう</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kYv-rN-p33"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cYx-W6-anj" firstAttribute="centerY" secondItem="gul-J3-UJQ" secondAttribute="centerY" id="cOJ-fU-XsJ"/>
+                            <constraint firstItem="cYx-W6-anj" firstAttribute="centerX" secondItem="gul-J3-UJQ" secondAttribute="centerX" id="miR-VI-rTL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6v-Ph-T1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="53"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="TGN-mE-gVt">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="SYL-FR-hiq" customClass="TutorialViewController" customModule="Odysseia" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVl-gw-4jd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136" y="53"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="qgx-PB-DeW">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="wGL-5v-PC0" customClass="SecondViewController" customModule="Odysseia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KAt-fq-1vK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="説明もんごん" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaM-0L-3T3">
+                                <rect key="frame" x="149" y="436.5" width="116.5" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mfS-n3-RK1"/>
+                        <constraints>
+                            <constraint firstItem="QaM-0L-3T3" firstAttribute="centerY" secondItem="KAt-fq-1vK" secondAttribute="centerY" id="1Fz-JG-Jk6"/>
+                            <constraint firstItem="QaM-0L-3T3" firstAttribute="centerX" secondItem="KAt-fq-1vK" secondAttribute="centerX" id="uqG-oI-v9e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4QD-Fv-nNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="53"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="5Oz-c8-ASJ">
+            <objects>
+                <viewController storyboardIdentifier="ThirdViewController" id="9eW-iz-ok9" customClass="ThirdViewController" customModule="Odysseia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Rm-NW-gbq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R2-Ws-MYf">
+                                <rect key="frame" x="117" y="426" width="180" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="0QP-4q-uzm"/>
+                                    <constraint firstAttribute="height" constant="44" id="15C-ns-llZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="ゴールを設定する🚀">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonTouched:" destination="9eW-iz-ok9" eventType="touchUpInside" id="x9E-4s-0jX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SNa-tX-Q6T"/>
+                        <constraints>
+                            <constraint firstItem="5R2-Ws-MYf" firstAttribute="centerY" secondItem="4Rm-NW-gbq" secondAttribute="centerY" id="7rW-6l-dbn"/>
+                            <constraint firstItem="5R2-Ws-MYf" firstAttribute="centerX" secondItem="4Rm-NW-gbq" secondAttribute="centerX" id="NhQ-vQ-eqb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dk-Ri-vTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952" y="53"/>
+        </scene>
+    </scenes>
+</document>
