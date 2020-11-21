@@ -54,12 +54,8 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         collectionView.dataSource = dataSource
         collectionView.delegate = self
 
+        setBarButtonItems()
         // TODO リファクタ
-        let addBarItem = UIBarButtonItem(title: L10n.Localizable.addButtonText, style: .done, target: self, action: #selector(addBarButtonTapped(_:)))
-        addBarItem.image = UIImage(systemName: "plus")
-
-        navigationItem.rightBarButtonItems = [addBarItem]
-
         dataSource.supplementaryViewProvider = { (
             collectionView: UICollectionView,
             kind: String,
@@ -81,8 +77,12 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         presenter.loadGoals()
     }
 
-    @objc func addBarButtonTapped(_ sender: UIBarButtonItem) {
+    @objc func addBarButtonTouched(_ sender: UIBarButtonItem) {
         presenter.addButtonTouched()
+    }
+
+    @objc func settingBarButtonTouched(_ sender: UIBarButtonItem) {
+        presenter.settingButtonTouched()
     }
 
     @objc func cellLongPress(gesture: UILongPressGestureRecognizer) {
@@ -90,6 +90,18 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         let pressPoint = gesture.location(in: collectionView)
         guard let indexPath = collectionView.indexPathForItem(at: pressPoint) else { return }
         presenter.cellLongPress(row: indexPath.item)
+    }
+
+    private func setBarButtonItems() {
+        let addBarItem = UIBarButtonItem(title: L10n.Localizable.addButtonText, style: .done, target: self, action: #selector(addBarButtonTouched(_:)))
+        addBarItem.image = UIImage(systemName: "plus")
+
+        navigationItem.rightBarButtonItems = [addBarItem]
+        let settingItem = UIBarButtonItem(image: UIImage(systemName: "seal"),
+                                          style: .plain,
+                                          target: self,
+                                          action: #selector(settingBarButtonTouched(_:)))
+        navigationItem.leftBarButtonItems = [settingItem]
     }
 }
 

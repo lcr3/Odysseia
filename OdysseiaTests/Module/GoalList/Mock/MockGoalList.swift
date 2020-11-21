@@ -32,6 +32,7 @@ class MockGoalListPresenter: GoalListPresentation {
     var callCountAddButtonTouched = 0
     var callCountGoalCellTouched = 0
     var callCountCellLongPress = 0
+    var callCountSettingButtonTouched = 0
     func loadGoals() {
         callCountLoadGoals += 1
     }
@@ -46,6 +47,10 @@ class MockGoalListPresenter: GoalListPresentation {
 
     func cellLongPress(row: Int) {
         callCountCellLongPress += 1
+    }
+
+    func settingButtonTouched() {
+        callCountSettingButtonTouched += 1
     }
 }
 

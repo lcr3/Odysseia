@@ -1,0 +1,25 @@
+//
+//  Mock{{ module_info.name }}.swift
+//  {{ module_info.project_name }}
+//
+//  Created by lcr on {{ date }}.
+//
+
+@testable import Odysseia
+
+class Mock{{ module_info.name }}View: {{ module_info.name }}View {
+    var presenter: {{ module_info.name }}Presentation!
+    var callCountViewDidLoad = 0
+
+    func viewDidLoad() {
+        callCountViewDidLoad += 1
+    }
+}
+
+class Mock{{ module_info.name }}Presenter: {{ module_info.name }}Presentation {
+    var callCount = 0
+}
+
+class Mock{{ module_info.name }}Router: {{ module_info.name }}Wireframe {
+    var callCount = 0
+}

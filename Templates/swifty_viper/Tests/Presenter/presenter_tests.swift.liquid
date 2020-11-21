@@ -9,29 +9,21 @@
 import XCTest
 
 class {{ module_info.name }}PresenterTest: XCTestCase {
+    var view: Mock{{ module_info.name }}View!
+    var router: Mock{{ module_info.name }}Router!
+    var interactor: Mock{{ module_info.name }}Interactor!
+    var presenter: {{ module_info.name }}Presenter!
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        view = Mock{{ module_info.name }}View()
+        router = Mock{{ module_info.name }}Router()
+        interactor = Mock{{ module_info.name }}Interactor()
+        presenter = SettingPresenter(view: view, router: router, interactor, interactor)
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-    }
-
-    class MockInteractor: {{ module_info.name }}UseCase {
-
-    }
-
-    class MockRouter: {{ module_info.name }}WireFrame {
-
-    }
-
-    class MockViewController: {{ module_info.name }}View {
-
-        func setupInitialState() {
-
-        }
     }
 }

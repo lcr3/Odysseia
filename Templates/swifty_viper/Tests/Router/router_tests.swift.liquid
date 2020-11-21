@@ -9,10 +9,16 @@
 import XCTest
 
 class {{ module_info.name }}RouterTests: XCTestCase {
+    var router: {{ module_info.name }}Router!
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let view = {{ module_info.name }}Router.assembleModules()
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            windowScene.windows.first?.rootViewController = GoalNavigationController(rootViewController: view)
+            windowScene.windows.first?.makeKeyAndVisible()
+        }
+        router = {{ module_info.name }}Router(viewController: view)
     }
 
     override func tearDown() {

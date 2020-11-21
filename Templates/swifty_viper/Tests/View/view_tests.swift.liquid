@@ -9,10 +9,18 @@
 import XCTest
 
 class {{ module_info.name }}ViewTests: XCTestCase {
+    var viewController: {{ module_info.name }}Controller!
+    var presenter: Mock{{ module_info.name }}Presenter!
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        presenter = Mock{{ module_info.name }}Presenter()
+        viewController = {{ module_info.name }}ViewController.instantiate()
+        viewController.presenter = presenter
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            windowScene.windows.first?.rootViewController = viewController
+            windowScene.windows.first?.makeKeyAndVisible()
+        }
     }
 
     override func tearDown() {

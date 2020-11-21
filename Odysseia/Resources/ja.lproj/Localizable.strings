@@ -35,3 +35,11 @@
 "NewYearRemindNotifyMsg" = "今年の目標設定はお済みですか?🌕";
 "halfYearRemindNotifyMsg" = "今年も後半戦、目標を確認しましょう🌓";
 "monthlyRemindNotifyMsg" = "目標の進捗はいかがですか?🌑";
+// Setting
+"AboutTitle" = "このアプリについて";
+"SupportTitle" = "サポート";
+"SourceTitle" = "ソースコード";
+"SourceCordURL" = "https://github.com/lcr3/Odysseia";
+// SettingAbout
+"HGCircularSliderTitle" = "HGCircularSlider";
+"HGCircularSliderLink" = "https://github.com/HamzaGhazouani/HGCircularSlider";

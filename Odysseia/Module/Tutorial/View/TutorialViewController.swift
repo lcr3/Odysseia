@@ -25,17 +25,18 @@ class TutorialViewController: UIPageViewController, StoryboardInstantiatable {
         dataSource = self
         delegate = self
 
+        let starView = StarView.make()
+        view.addSubview(starView)
+        starView.startAnimation()
+
         view.backgroundColor = Asset.astro.color
         pages = [getFirst(), getSecond(), getThird()]
         pageControll.frame = CGRect(x: UIScreen.main.bounds.width,
                                     y: UIScreen.main.bounds.height - TutorialPageControll.height * 2,
                                     width: UIScreen.main.bounds.width, height: TutorialPageControll.height)
         pageControll.numberOfPages = pages.count
+        pageControll.backgroundColor = .red
         view.addSubview(pageControll)
-
-        let starView = StarView.make()
-        view.addSubview(starView)
-        starView.startAnimation()
 
         guard let firstPage = pages.first else { return }
         self.setViewControllers([firstPage],

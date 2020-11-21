@@ -10,6 +10,7 @@ protocol GoalListPresentation: AnyObject {
     // View -> Presenter
     func loadGoals()
     func addButtonTouched()
+    func settingButtonTouched()
     func goalCellTouched(row: Int)
     func cellLongPress(row: Int)
 }
@@ -33,6 +34,10 @@ class GoalListPresenter {
 extension GoalListPresenter: GoalListPresentation {
     func addButtonTouched() {
         router.showAddGoal()
+    }
+
+    func settingButtonTouched() {
+        router.showSetting()
     }
 
     func goalCellTouched(row: Int) {

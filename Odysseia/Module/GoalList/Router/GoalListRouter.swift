@@ -10,6 +10,7 @@ import UIKit
 protocol GoalListWireframe: AnyObject {
     func showDetail(goal: Goal)
     func showAddGoal()
+    func showSetting()
     func showDeleteAlert(goal: Goal, output: GoalDeleteAlertPresenterOutput)
     var output: GoalListRouterOutput? { get }
 }
@@ -45,6 +46,12 @@ extension GoalListRouter: GoalListWireframe {
     func showAddGoal() {
         let addGoalView = AddGoalNameRouter.assembleModules()
         let nav = AddGoalNavigationController(rootVc: addGoalView, delegate: self)
+        viewController.navigationController?.present(nav, animated: true)
+    }
+
+    func showSetting() {
+        let settingView = SettingRouter.assembleModules()
+        let nav = GoalNavigationController(rootViewController: settingView)
         viewController.navigationController?.present(nav, animated: true)
     }
 

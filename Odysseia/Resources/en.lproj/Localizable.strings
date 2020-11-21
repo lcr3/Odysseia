@@ -35,3 +35,11 @@
 "NewYearRemindNotifyMsg" = "Have you set your goals for this year?🌕";
 "halfYearRemindNotifyMsg" = "The second half of the year, check your goals!🌓";
 "monthlyRemindNotifyMsg" = "How are you making progress on your goals?🌑";
+// Setting
+"AboutTitle" = "About";
+"SupportTitle" = "Support";
+"SourceTitle" = "Source Cord";
+"SourceCordURL" = "https://github.com/lcr3/Odysseia";
+// SettingAbout
+"HGCircularSliderTitle" = "HGCircularSlider";
+"HGCircularSliderLink" = "https://github.com/HamzaGhazouani/HGCircularSlider";

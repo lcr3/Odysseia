@@ -32,7 +32,6 @@ internal class Goal: NSManagedObject {
     // swiftlint:disable discouraged_optional_boolean discouraged_optional_collection
     @NSManaged internal var deadlineDate: Date
     @NSManaged internal var detail: String
-    @NSManaged internal var isReach: Bool
     @NSManaged internal var planet: Int16
     @NSManaged internal var reatchDate: Date?
     @NSManaged internal var title: String

@@ -23,5 +23,7 @@ class TutorialPageControll: UIPageControl {
     private func setting() {
         currentPage = 0
         isUserInteractionEnabled = false
+        backgroundStyle = .automatic
+        pageIndicatorTintColor = .blue
     }
 }

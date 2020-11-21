@@ -28,12 +28,18 @@ internal enum Asset {
         internal static let btnAddMoon = ImageAsset(name: "btn_add_moon")
         internal static let btnAddVenus = ImageAsset(name: "btn_add_venus")
     }
+    internal enum Setting {
+        internal static let icEarth = ImageAsset(name: "ic_earth")
+        internal static let icMercury = ImageAsset(name: "ic_mercury")
+        internal static let icVenus = ImageAsset(name: "ic_venus")
+    }
     internal static let astro = ColorAsset(name: "astro")
     internal static let earth = ColorAsset(name: "earth")
     internal static let launcherBlack = ImageAsset(name: "launcher_black")
     internal static let mars = ColorAsset(name: "mars")
     internal static let mercury = ColorAsset(name: "mercury")
     internal static let moon = ColorAsset(name: "moon")
+    internal static let settingAboutCell = ColorAsset(name: "setting_about_cell")
     internal static let venus = ColorAsset(name: "venus")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

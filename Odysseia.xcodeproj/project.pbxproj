@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0160820D815CEE66C0D4BA6B /* SettingAboutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB67C1A6A588F2B5A53C8 /* SettingAboutRouter.swift */; };
 		0270FCEE060D4B33AA35C1B0 /* TaskInputRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8893311B35FA10B3CD4E56 /* TaskInputRouterTests.swift */; };
 		05BE5317C6B3B6C3081C2919 /* AddTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */; };
 		068E8E1FED1E7FBB3F7BDF53 /* GoalDeleteAlertRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A0C0E4C41786B2D3D356F /* GoalDeleteAlertRouter.swift */; };
+		0787079DF14C088A29437C51 /* SettingAboutPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4801E41A990EA388E72CC71D /* SettingAboutPresenterTests.swift */; };
 		0A79080A4981356A6908510F /* AddTaskRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5626CF0488460640D40A0 /* AddTaskRouterTests.swift */; };
 		0C1A3C6488532F887F048FF5 /* GoalAlertViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF6BFA5976CD3FA12CE251 /* GoalAlertViewTests.swift */; };
 		0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */; };
+		19C928665AC1726B321B9748 /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B7AAFF7CE797BFB37E024 /* SettingRouter.swift */; };
 		23FCC9F67139A893CB708D22 /* AddGoalNameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */; };
+		24E0389CD4C8FCCD98DA20C5 /* SettingAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803A54443F8A7767C80E697 /* SettingAboutViewController.swift */; };
 		290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B5C4A253F1537009D54B1 /* Resources.xcassets */; };
 		290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */; };
 		291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746925541C430042DFB3 /* TaskAchievementCircle.swift */; };
@@ -24,10 +28,12 @@
 		29248085255C1191003D09CB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29248084255C1191003D09CB /* CloudKit.framework */; };
 		292480CE255C3439003D09CB /* GoalDeleteAlertInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292480CD255C3439003D09CB /* GoalDeleteAlertInteractorOutput.swift */; };
 		292480DB255D55BE003D09CB /* XCTxContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292480DA255D55BE003D09CB /* XCTxContext.swift */; };
+		2936F9572567A7710054CC14 /* SettingAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2936F9562567A7710054CC14 /* SettingAboutCell.swift */; };
 		293D0D06255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293D0D05255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift */; };
 		2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
 		2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954E9592540561200E89510 /* GoalNavigationController.swift */; };
 		2954E9672541251A00E89510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
+		29551D47256815860060E53A /* MockSettingAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29551D46256815860060E53A /* MockSettingAbout.swift */; };
 		2955280F253E76D9009AFE97 /* PersistentContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */; };
 		29552819253E779C009AFE97 /* GoalServicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552818253E779C009AFE97 /* GoalServicer.swift */; };
 		29552828253E8052009AFE97 /* TemporaryGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552827253E8052009AFE97 /* TemporaryGoal.swift */; };
@@ -88,16 +94,22 @@
 		29D7A81125667EA700CB1D0D /* TutorialSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A81025667EA700CB1D0D /* TutorialSubViews.swift */; };
 		29D7A81925667F0600CB1D0D /* TutorialPageControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A81825667F0600CB1D0D /* TutorialPageControll.swift */; };
 		29D7A81F256687C400CB1D0D /* MockTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A81E256687C400CB1D0D /* MockTutorial.swift */; };
+		29D7A8372566CDB700CB1D0D /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A8362566CDB700CB1D0D /* SettingCell.swift */; };
+		29D7A8452567E8D900CB1D0D /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A8442567E8D900CB1D0D /* SettingItem.swift */; };
+		29D7A84E2567F47D00CB1D0D /* SettingAboutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A84D2567F47D00CB1D0D /* SettingAboutItem.swift */; };
+		29D7A85D256808C200CB1D0D /* MockSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A85C256808C200CB1D0D /* MockSetting.swift */; };
 		29EF3687255A1DA000E0E669 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3683255A1D9F00E0E669 /* StarView.swift */; };
 		29EF3688255A1DA000E0E669 /* StarsParticles.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3684255A1DA000E0E669 /* StarsParticles.scnp */; };
 		29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3686255A1DA000E0E669 /* ConfettiView.swift */; };
 		29EF3691255A3A3E00E0E669 /* SceneKit.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3690255A3A3E00E0E669 /* SceneKit.scnassets */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
+		3905C72BEE22B5D4FA9E80C2 /* SettingAboutRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E174358A43722B0E0A837 /* SettingAboutRouterTests.swift */; };
 		48B6AAEFC42729ED38C7AF39 /* TaskInputRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D6E425673CFDB6476154D /* TaskInputRouter.swift */; };
 		48B9A742B2FA5E76B99AB363 /* TaskInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D4A7C52882A9FE01F27D0 /* TaskInputPresenter.swift */; };
 		5433577822706E6E4D26A1CA /* EditTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24B0DEE5E333B843DB2019 /* EditTaskRouter.swift */; };
 		56CAB67272EE6685B58873F6 /* GoalAlertRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DABBFB4A9ABEA28AEE2BF1 /* GoalAlertRouterTests.swift */; };
+		57360DFE87A05B17FC17EECB /* SettingPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F821057E29192B7E6DCBE /* SettingPresenterTests.swift */; };
 		6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */; };
 		716CB1F008A9E38BE9366A7F /* EditTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772246A719E6AA22508BC264 /* EditTaskViewTests.swift */; };
 		7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */; };
@@ -105,24 +117,32 @@
 		80C64535500523EA4188D8C0 /* TaskInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A1AC467D748C5DAB839B5 /* TaskInputViewController.swift */; };
 		8276F3B044165564D9EA940D /* EditTaskInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B70505EAE2815B54CDF35 /* EditTaskInteractorTests.swift */; };
 		86B69BB1B154260CF1034421 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4556B34216C45D3ADC129 /* TutorialViewController.swift */; };
+		86C94B578F01439DC9337831 /* SettingAboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62067338A699AFC93C4607 /* SettingAboutPresenter.swift */; };
 		8FB60D8450681B1D93A64C61 /* GoalDeleteAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680690566049669624CAFCAF /* GoalDeleteAlertViewController.swift */; };
 		906CD173E22DAD35C12F688F /* GoalAlertPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4212223B19FE56BE1FD56D /* GoalAlertPresenterTests.swift */; };
 		912C0E341BB3295DC5F8AA1B /* AddTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C9C45CD6FBED72AF5954F /* AddTaskViewTests.swift */; };
+		9629D5CB4805B4CBE5DD4879 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922962DEFEECC94C5BD988E0 /* SettingViewController.swift */; };
 		A15496138B32027A29C88ED0 /* EditTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92799FDBA86D0E1B90A00F4 /* EditTaskPresenter.swift */; };
 		A6C7FA0C899BC78349C8D297 /* EditTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */; };
 		A816599CCB5CB1821DC8E82A /* TutorialRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3D46CD122768902DB7AD4 /* TutorialRouterTests.swift */; };
 		B21D81F3D00B3254B7368DAE /* TutorialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA3FDD79EB79EDA7EE61DF /* TutorialRouter.swift */; };
 		B396BC7E75984A86F2A84969 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794871EE74CF19196C409A51 /* AddTaskViewController.swift */; };
 		B7B32281BE800B4207EB8720 /* TutorialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75C00AB95018D2EB5EC0CF5 /* TutorialViewController.storyboard */; };
+		BDCEBEAFD03112209ABE907C /* SettingRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF79242A54A415D82277E6 /* SettingRouterTests.swift */; };
 		C07B42F8FF5163FD26B7643E /* GoalDeleteAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9701B2D2EFB87714C5A58F /* GoalDeleteAlertPresenter.swift */; };
 		C4B155383D956F46C39C6D3D /* AddGoalNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */; };
 		C589E687723EE48129317146 /* TutorialPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCA2EBCE13B5C0F990D6B0 /* TutorialPresenterTests.swift */; };
 		CB3077A286FA70EC5C8501C1 /* TaskInputViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35798BAA945F0E06AB25747 /* TaskInputViewTests.swift */; };
+		CD1D109FA432DC4A2FF0840F /* SettingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75027F239969A5F7D884A778 /* SettingViewTests.swift */; };
 		D186C9C46FFAF32C32919C6E /* EditTaskRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0EE8220CA42F3F7B6AC356 /* EditTaskRouterTests.swift */; };
+		D2380133C3301B33655B20FD /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F4298E1BED6D3A4FE6788 /* SettingPresenter.swift */; };
 		D4391EAE8E92214833C98C20 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430410713F76BC9E6A19F1B /* EditTaskViewController.swift */; };
+		DCB4169C67D1D4B6515B8289 /* SettingAboutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB247CFE91D0DA2DF2C0D7A /* SettingAboutViewController.storyboard */; };
+		DCFFCCE253CBFE39BDAE1474 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAFAB88DA5F3C1722F7309A /* SettingViewController.storyboard */; };
 		DD609C2F2A50F5D45DD13B07 /* TaskInputPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289974CC5E5A9310DB4A387A /* TaskInputPresenterTests.swift */; };
 		E2D18B9DE149D4BBA35CFF0F /* TutorialPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D7919197874FB0CF982C1 /* TutorialPresenter.swift */; };
 		E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */; };
+		ECE9B10FF757644F8EDA65B9 /* SettingAboutViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC177E41FAA3FE8D2D163DE /* SettingAboutViewTests.swift */; };
 		EE7278D5F7853798744E7221 /* TutorialViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E894435B80F84D795191234 /* TutorialViewTests.swift */; };
 		F03277B2A7935E5EE21703EE /* AddTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F45DC0B51C7F550CA4798D8 /* AddTaskPresenter.swift */; };
 		F90E7D81DE7987F0F077D31F /* AddGoalNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD23B7AE9ED9C8E2FC06E5BA /* AddGoalNamePresenter.swift */; };
@@ -148,9 +168,12 @@
 
 /* Begin PBXFileReference section */
 		06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameViewController.swift; sourceTree = "<group>"; };
+		096DB67C1A6A588F2B5A53C8 /* SettingAboutRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutRouter.swift; sourceTree = "<group>"; };
 		10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskPresenterTests.swift; sourceTree = "<group>"; };
 		161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameRouter.swift; sourceTree = "<group>"; };
 		17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskRouter.swift; sourceTree = "<group>"; };
+		17DF79242A54A415D82277E6 /* SettingRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingRouterTests.swift; sourceTree = "<group>"; };
+		1D9B7AAFF7CE797BFB37E024 /* SettingRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
 		20DABBFB4A9ABEA28AEE2BF1 /* GoalAlertRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalAlertRouterTests.swift; sourceTree = "<group>"; };
 		289974CC5E5A9310DB4A387A /* TaskInputPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputPresenterTests.swift; sourceTree = "<group>"; };
 		290B5C4A253F1537009D54B1 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
@@ -166,12 +189,14 @@
 		29248084255C1191003D09CB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		292480CD255C3439003D09CB /* GoalDeleteAlertInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertInteractorOutput.swift; sourceTree = "<group>"; };
 		292480DA255D55BE003D09CB /* XCTxContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTxContext.swift; sourceTree = "<group>"; };
+		2936F9562567A7710054CC14 /* SettingAboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAboutCell.swift; sourceTree = "<group>"; };
 		293D0D05255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertInteractor.swift; sourceTree = "<group>"; };
 		2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		2954E9592540561200E89510 /* GoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNavigationController.swift; sourceTree = "<group>"; };
 		2954E9682541251A00E89510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2954E96D254125C600E89510 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2954E96E254125C700E89510 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		29551D46256815860060E53A /* MockSettingAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSettingAbout.swift; sourceTree = "<group>"; };
 		2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainerProvider.swift; sourceTree = "<group>"; };
 		29552818253E779C009AFE97 /* GoalServicer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalServicer.swift; sourceTree = "<group>"; };
 		29552827253E8052009AFE97 /* TemporaryGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryGoal.swift; sourceTree = "<group>"; };
@@ -247,6 +272,10 @@
 		29D7A81025667EA700CB1D0D /* TutorialSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSubViews.swift; sourceTree = "<group>"; };
 		29D7A81825667F0600CB1D0D /* TutorialPageControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageControll.swift; sourceTree = "<group>"; };
 		29D7A81E256687C400CB1D0D /* MockTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTutorial.swift; sourceTree = "<group>"; };
+		29D7A8362566CDB700CB1D0D /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		29D7A8442567E8D900CB1D0D /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
+		29D7A84D2567F47D00CB1D0D /* SettingAboutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAboutItem.swift; sourceTree = "<group>"; };
+		29D7A85C256808C200CB1D0D /* MockSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSetting.swift; sourceTree = "<group>"; };
 		29EF3683255A1D9F00E0E669 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		29EF3684255A1DA000E0E669 /* StarsParticles.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = StarsParticles.scnp; sourceTree = "<group>"; };
 		29EF3686255A1DA000E0E669 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
@@ -254,6 +283,7 @@
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
 		3E9701B2D2EFB87714C5A58F /* GoalDeleteAlertPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertPresenter.swift; sourceTree = "<group>"; };
 		414A1AC467D748C5DAB839B5 /* TaskInputViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputViewController.swift; sourceTree = "<group>"; };
+		4801E41A990EA388E72CC71D /* SettingAboutPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutPresenterTests.swift; sourceTree = "<group>"; };
 		49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractor.swift; sourceTree = "<group>"; };
 		4D8893311B35FA10B3CD4E56 /* TaskInputRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputRouterTests.swift; sourceTree = "<group>"; };
 		4E894435B80F84D795191234 /* TutorialViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialViewTests.swift; sourceTree = "<group>"; };
@@ -261,32 +291,42 @@
 		64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameRouterTests.swift; sourceTree = "<group>"; };
 		680690566049669624CAFCAF /* GoalDeleteAlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertViewController.swift; sourceTree = "<group>"; };
 		6D24B0DEE5E333B843DB2019 /* EditTaskRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskRouter.swift; sourceTree = "<group>"; };
+		6DAFAB88DA5F3C1722F7309A /* SettingViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		6F45DC0B51C7F550CA4798D8 /* AddTaskPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskPresenter.swift; sourceTree = "<group>"; };
 		73E4556B34216C45D3ADC129 /* TutorialViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		75027F239969A5F7D884A778 /* SettingViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingViewTests.swift; sourceTree = "<group>"; };
 		772246A719E6AA22508BC264 /* EditTaskViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskViewTests.swift; sourceTree = "<group>"; };
 		794871EE74CF19196C409A51 /* AddTaskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		8E6B70505EAE2815B54CDF35 /* EditTaskInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractorTests.swift; sourceTree = "<group>"; };
+		8FC177E41FAA3FE8D2D163DE /* SettingAboutViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutViewTests.swift; sourceTree = "<group>"; };
 		8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameViewTests.swift; sourceTree = "<group>"; };
+		922962DEFEECC94C5BD988E0 /* SettingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNamePresenterTests.swift; sourceTree = "<group>"; };
 		9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskInteractorTests.swift; sourceTree = "<group>"; };
 		A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterTests.swift; sourceTree = "<group>"; };
 		ABC3D46CD122768902DB7AD4 /* TutorialRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialRouterTests.swift; sourceTree = "<group>"; };
 		AC3D4A7C52882A9FE01F27D0 /* TaskInputPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputPresenter.swift; sourceTree = "<group>"; };
+		AC62067338A699AFC93C4607 /* SettingAboutPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutPresenter.swift; sourceTree = "<group>"; };
 		B17D6E425673CFDB6476154D /* TaskInputRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputRouter.swift; sourceTree = "<group>"; };
 		B2FA3FDD79EB79EDA7EE61DF /* TutorialRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialRouter.swift; sourceTree = "<group>"; };
 		B35798BAA945F0E06AB25747 /* TaskInputViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputViewTests.swift; sourceTree = "<group>"; };
 		B92799FDBA86D0E1B90A00F4 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
 		BADC81CD3D74368FAF6C69AA /* EditTaskInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractorOutput.swift; sourceTree = "<group>"; };
+		BB5E174358A43722B0E0A837 /* SettingAboutRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutRouterTests.swift; sourceTree = "<group>"; };
 		BD6C9C45CD6FBED72AF5954F /* AddTaskViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskViewTests.swift; sourceTree = "<group>"; };
+		C15F821057E29192B7E6DCBE /* SettingPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingPresenterTests.swift; sourceTree = "<group>"; };
 		C4CF6BFA5976CD3FA12CE251 /* GoalAlertViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalAlertViewTests.swift; sourceTree = "<group>"; };
 		CDB5626CF0488460640D40A0 /* AddTaskRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskRouterTests.swift; sourceTree = "<group>"; };
 		CE4212223B19FE56BE1FD56D /* GoalAlertPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalAlertPresenterTests.swift; sourceTree = "<group>"; };
+		D803A54443F8A7767C80E697 /* SettingAboutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutViewController.swift; sourceTree = "<group>"; };
+		DBB247CFE91D0DA2DF2C0D7A /* SettingAboutViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = SettingAboutViewController.storyboard; sourceTree = "<group>"; };
 		DD23B7AE9ED9C8E2FC06E5BA /* AddGoalNamePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNamePresenter.swift; sourceTree = "<group>"; };
 		E75C00AB95018D2EB5EC0CF5 /* TutorialViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = TutorialViewController.storyboard; sourceTree = "<group>"; };
 		EB8D7919197874FB0CF982C1 /* TutorialPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialPresenter.swift; sourceTree = "<group>"; };
 		ED0EE8220CA42F3F7B6AC356 /* EditTaskRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskRouterTests.swift; sourceTree = "<group>"; };
 		F7DCA2EBCE13B5C0F990D6B0 /* TutorialPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialPresenterTests.swift; sourceTree = "<group>"; };
 		F96A0C0E4C41786B2D3D356F /* GoalDeleteAlertRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertRouter.swift; sourceTree = "<group>"; };
+		FA8F4298E1BED6D3A4FE6788 /* SettingPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +365,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0F71D4C52DC6922B421E8122 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				29D7A85B256808A900CB1D0D /* Mock */,
+				BF8224F4362301887A28744B /* View */,
+				BE52EE2EA58392081A08947E /* Presenter */,
+				B45411F4A67FF0A8265749D6 /* Router */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		12ED1BEA6727E1B48D7420A2 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +390,14 @@
 			isa = PBXGroup;
 			children = (
 				CE4212223B19FE56BE1FD56D /* GoalAlertPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1948D402EFABB2C142E7B387 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4801E41A990EA388E72CC71D /* SettingAboutPresenterTests.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -433,6 +492,14 @@
 			path = TestHelper;
 			sourceTree = "<group>";
 		};
+		2936F9552567A7590054CC14 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				2936F9562567A7710054CC14 /* SettingAboutCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		293D0D01255BF19900F38522 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +516,14 @@
 				2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		29551D45256814AB0060E53A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29551D46256815860060E53A /* MockSettingAbout.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		29552826253E8032009AFE97 /* Entiry */ = {
@@ -505,6 +580,8 @@
 				D301884316355BD1DBF67836 /* TaskInput */,
 				9E75BD2B5B347E0B428ADDDF /* GoalAlert */,
 				B0E65552BF80673543553C77 /* Tutorial */,
+				0F71D4C52DC6922B421E8122 /* Setting */,
+				B482EAF4BBBDC679F4513046 /* SettingAbout */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -601,6 +678,8 @@
 				A2AF7B634B04AC0B115AECCA /* TaskInput */,
 				C080390E4AA44C6B3BB48097 /* GoalDeleteAlert */,
 				12ED1BEA6727E1B48D7420A2 /* Tutorial */,
+				945B9E78B044AD5ADAA23A3A /* Setting */,
+				9DA90171301FE93C0C7122C6 /* SettingAbout */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -861,6 +940,38 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		29D7A8352566CDAB00CB1D0D /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				29D7A8362566CDB700CB1D0D /* SettingCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		29D7A8432567E8C900CB1D0D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				29D7A8442567E8D900CB1D0D /* SettingItem.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		29D7A84C2567F47600CB1D0D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				29D7A84D2567F47D00CB1D0D /* SettingAboutItem.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		29D7A85B256808A900CB1D0D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29D7A85C256808C200CB1D0D /* MockSetting.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		29ECE039255690A400F03077 /* Store */ = {
 			isa = PBXGroup;
 			children = (
@@ -930,6 +1041,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		359D4A1896DEFB7ECB551B38 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BB5E174358A43722B0E0A837 /* SettingAboutRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		4EFA8EB208345F4A30F83653 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -952,6 +1071,16 @@
 				A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D6DE40B2BA5D87D25428154 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2936F9552567A7590054CC14 /* SubViews */,
+				D803A54443F8A7767C80E697 /* SettingAboutViewController.swift */,
+				DBB247CFE91D0DA2DF2C0D7A /* SettingAboutViewController.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5E00E305AAA27A1617CF20EF /* Presenter */ = {
@@ -1025,6 +1154,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7F3BB7584EB6F1204B916CBF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1D9B7AAFF7CE797BFB37E024 /* SettingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		81CB75202C09A767808F65D6 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1033,12 +1170,36 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		837723E35AEBC55F808890B3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA8F4298E1BED6D3A4FE6788 /* SettingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A23F52E2A5E413E5F9A23B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				096DB67C1A6A588F2B5A53C8 /* SettingAboutRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		8E2F888565361C82B9B58213 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				8E6B70505EAE2815B54CDF35 /* EditTaskInteractorTests.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		90BDC9CDE7E184D45AB0CBAF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AC62067338A699AFC93C4607 /* SettingAboutPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		9341D07E30977E9C817D1561 /* EditTask */ = {
@@ -1050,6 +1211,17 @@
 				E111ADD320E67193F5F0C50D /* Router */,
 			);
 			path = EditTask;
+			sourceTree = "<group>";
+		};
+		945B9E78B044AD5ADAA23A3A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				29D7A8432567E8C900CB1D0D /* Entity */,
+				D6C332F359554930FDF5BD48 /* View */,
+				837723E35AEBC55F808890B3 /* Presenter */,
+				7F3BB7584EB6F1204B916CBF /* Router */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		956D56AD9BC7A7F214AD8F66 /* AddTask */ = {
@@ -1069,6 +1241,17 @@
 				64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		9DA90171301FE93C0C7122C6 /* SettingAbout */ = {
+			isa = PBXGroup;
+			children = (
+				29D7A84C2567F47600CB1D0D /* Entity */,
+				5D6DE40B2BA5D87D25428154 /* View */,
+				90BDC9CDE7E184D45AB0CBAF /* Presenter */,
+				8A23F52E2A5E413E5F9A23B7 /* Router */,
+			);
+			path = SettingAbout;
 			sourceTree = "<group>";
 		};
 		9E75BD2B5B347E0B428ADDDF /* GoalAlert */ = {
@@ -1194,6 +1377,41 @@
 			path = Tutorial;
 			sourceTree = "<group>";
 		};
+		B45411F4A67FF0A8265749D6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				17DF79242A54A415D82277E6 /* SettingRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B482EAF4BBBDC679F4513046 /* SettingAbout */ = {
+			isa = PBXGroup;
+			children = (
+				29551D45256814AB0060E53A /* Mock */,
+				D014F792EE903F7B5B2AA90E /* View */,
+				1948D402EFABB2C142E7B387 /* Presenter */,
+				359D4A1896DEFB7ECB551B38 /* Router */,
+			);
+			path = SettingAbout;
+			sourceTree = "<group>";
+		};
+		BE52EE2EA58392081A08947E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C15F821057E29192B7E6DCBE /* SettingPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF8224F4362301887A28744B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75027F239969A5F7D884A778 /* SettingViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C080390E4AA44C6B3BB48097 /* GoalDeleteAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -1216,6 +1434,14 @@
 			path = AddGoalName;
 			sourceTree = "<group>";
 		};
+		D014F792EE903F7B5B2AA90E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FC177E41FAA3FE8D2D163DE /* SettingAboutViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D301884316355BD1DBF67836 /* TaskInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -1224,6 +1450,16 @@
 				DC1F48324D68BED0FE8E4130 /* Router */,
 			);
 			path = TaskInput;
+			sourceTree = "<group>";
+		};
+		D6C332F359554930FDF5BD48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29D7A8352566CDAB00CB1D0D /* SubViews */,
+				922962DEFEECC94C5BD988E0 /* SettingViewController.swift */,
+				6DAFAB88DA5F3C1722F7309A /* SettingViewController.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D71395C61B6F667EB6D69EB0 /* Presenter */ = {
@@ -1440,6 +1676,8 @@
 				29A248EE255A7EFD005E6230 /* TaskInputViewController.storyboard in Resources */,
 				2924806C255C0227003D09CB /* GoalDeleteAlertViewController.storyboard in Resources */,
 				B7B32281BE800B4207EB8720 /* TutorialViewController.storyboard in Resources */,
+				DCFFCCE253CBFE39BDAE1474 /* SettingViewController.storyboard in Resources */,
+				DCB4169C67D1D4B6515B8289 /* SettingAboutViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1488,6 +1726,7 @@
 				290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */,
 				29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */,
 				2959D094254A652000A3DC28 /* Constraints.swift in Sources */,
+				29D7A8372566CDB700CB1D0D /* SettingCell.swift in Sources */,
 				29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */,
 				29D7A81925667F0600CB1D0D /* TutorialPageControll.swift in Sources */,
 				29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */,
@@ -1503,6 +1742,7 @@
 				29B13479253D97E800C273F1 /* Goal.xcdatamodeld in Sources */,
 				299D7666253EDCB1006985FD /* EditGoalInteractorOutput.swift in Sources */,
 				2997609C253D96E300CDD568 /* GoalListRouter.swift in Sources */,
+				2936F9572567A7710054CC14 /* SettingAboutCell.swift in Sources */,
 				299D764E253EDBC3006985FD /* EditGoalViewController.swift in Sources */,
 				2959D0672549673800A3DC28 /* AddTaskInteractor.swift in Sources */,
 				29976052253D96A000CDD568 /* AppDelegate.swift in Sources */,
@@ -1518,6 +1758,7 @@
 				29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */,
 				29976097253D96E300CDD568 /* GoalListPresenter.swift in Sources */,
 				296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */,
+				29D7A84E2567F47D00CB1D0D /* SettingAboutItem.swift in Sources */,
 				2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */,
 				299D763E253ED49F006985FD /* GoalDetailRouter.swift in Sources */,
 				29552819253E779C009AFE97 /* GoalServicer.swift in Sources */,
@@ -1555,6 +1796,13 @@
 				86B69BB1B154260CF1034421 /* TutorialViewController.swift in Sources */,
 				E2D18B9DE149D4BBA35CFF0F /* TutorialPresenter.swift in Sources */,
 				B21D81F3D00B3254B7368DAE /* TutorialRouter.swift in Sources */,
+				29D7A8452567E8D900CB1D0D /* SettingItem.swift in Sources */,
+				9629D5CB4805B4CBE5DD4879 /* SettingViewController.swift in Sources */,
+				D2380133C3301B33655B20FD /* SettingPresenter.swift in Sources */,
+				19C928665AC1726B321B9748 /* SettingRouter.swift in Sources */,
+				24E0389CD4C8FCCD98DA20C5 /* SettingAboutViewController.swift in Sources */,
+				86C94B578F01439DC9337831 /* SettingAboutPresenter.swift in Sources */,
+				0160820D815CEE66C0D4BA6B /* SettingAboutRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1568,6 +1816,7 @@
 				291B748F2555766B0042DFB3 /* NotificationStoreTests.swift in Sources */,
 				292480DB255D55BE003D09CB /* XCTxContext.swift in Sources */,
 				7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */,
+				29D7A85D256808C200CB1D0D /* MockSetting.swift in Sources */,
 				E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */,
 				29D69A90255ED88E004C4606 /* GoalListViewTests.swift in Sources */,
 				29D7A7F625641B8C00CB1D0D /* TutorialConfigurator.swift in Sources */,
@@ -1592,6 +1841,13 @@
 				EE7278D5F7853798744E7221 /* TutorialViewTests.swift in Sources */,
 				C589E687723EE48129317146 /* TutorialPresenterTests.swift in Sources */,
 				A816599CCB5CB1821DC8E82A /* TutorialRouterTests.swift in Sources */,
+				CD1D109FA432DC4A2FF0840F /* SettingViewTests.swift in Sources */,
+				57360DFE87A05B17FC17EECB /* SettingPresenterTests.swift in Sources */,
+				29551D47256815860060E53A /* MockSettingAbout.swift in Sources */,
+				BDCEBEAFD03112209ABE907C /* SettingRouterTests.swift in Sources */,
+				ECE9B10FF757644F8EDA65B9 /* SettingAboutViewTests.swift in Sources */,
+				0787079DF14C088A29437C51 /* SettingAboutPresenterTests.swift in Sources */,
+				3905C72BEE22B5D4FA9E80C2 /* SettingAboutRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
