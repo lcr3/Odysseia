@@ -38,7 +38,6 @@ class GoalDetailViewController: UIViewController, StoryboardInstantiatable {
             taskViews.append(taskView)
         }
         checkGoalState()
-        print(achievementCircle.parcentLabel.frame)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -62,7 +61,7 @@ class GoalDetailViewController: UIViewController, StoryboardInstantiatable {
 extension GoalDetailViewController: GoalDetailView {
     func updateViews() {
         titleField.text = presenter.goal.title
-        achievementCircle.endPointValue = CGFloat(presenter.goal.achievement().reachCount)
+        achievementCircle.setAchievement(achievement: presenter.goal.achievement())
         for (index, taskView) in taskViews.enumerated() {
             taskView.set(task: presenter.goal.getTask(index: index))
         }
