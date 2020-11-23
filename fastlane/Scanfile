@@ -1,0 +1,8 @@
+# scanコマンドのデフォルトの設定(https://docs.fastlane.tools/actions/scan/)
+project("Odysseia.xcodeproj") 
+sdk("iphonesimulator") 
+configuration("Debug") 
+# シュミレータの設定
+device("iPhone 11")
+#destination("platform=iOS Simulator,name=iPhone 8 Plus,OS=13.3") 
+
