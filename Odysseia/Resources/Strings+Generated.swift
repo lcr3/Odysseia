@@ -27,6 +27,8 @@ internal enum L10n {
         internal static let addTaskTargetLevelNilMsg = L10n.tr("Localizable", "AddTaskTargetLevelNilMsg")
         /// アクションのタイトルを入力してください
         internal static let addTaskTitleNilMsg = L10n.tr("Localizable", "AddTaskTitleNilMsg")
+        /// ここからアクションを追加
+        internal static let addTaskTutorialMsg = L10n.tr("Localizable", "AddTaskTutorialMsg")
         /// キャンセル
         internal static let cancel = L10n.tr("Localizable", "Cancel")
         /// 目標締め切り年度を設定してください

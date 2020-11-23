@@ -9,6 +9,7 @@ import UIKit
 
 protocol AddTaskWireframe: AnyObject {
     // Presenter -> Router
+    func showTutorial(tutorialButtonFrame: CGRect)
     func dismiss()
     func back()
     func showAddTaskInput(outut: TaskInputPresenterOutput)
@@ -53,5 +54,12 @@ extension AddTaskRouter: AddTaskWireframe {
         addTaskInputView.modalPresentationStyle = .overFullScreen
         addTaskInputView.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         viewController.present(addTaskInputView, animated: true)
+    }
+
+    func showTutorial(tutorialButtonFrame: CGRect) {
+        let spotlightViewController = AddTaskTutorialViewController()
+        viewController.navigationController?.present(spotlightViewController, animated: true) {
+            spotlightViewController.start(frame: tutorialButtonFrame)
+        }
     }
 }

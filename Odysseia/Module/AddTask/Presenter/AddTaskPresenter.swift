@@ -9,6 +9,7 @@ protocol AddTaskPresentation: AnyObject {
     var tasks: [TemporaryTask] { get }
 
     // View -> Presenter
+    func viewDidLayoutSubviews()
     func taskCellTouched(row: Int)
     func addTaskButtonTouched()
     func doneButtonTouched()
@@ -42,6 +43,15 @@ class AddTaskPresenter {
 }
 
 extension AddTaskPresenter: AddTaskPresentation {
+    func viewDidLayoutSubviews() {
+        let configurator = TutorialConfigurator()
+        if !configurator.isComplete(type: .task) {
+            guard let buttonFrame = view?.addTaskButton.frame else { return }
+            configurator.complete(type: .task)
+            router.showTutorial(tutorialButtonFrame: buttonFrame)
+        }
+    }
+
     func addTaskButtonTouched() {
         router.showAddTaskInput(outut: self)
     }

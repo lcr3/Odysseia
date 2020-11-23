@@ -28,6 +28,8 @@
 "DeadlineYearUnknownMsg" = "目標締め切り年度が不正です";
 // AddTaskPresenter
 "AddTaskNilMsg" = "アクションを設定してください";
+// AddTask
+"AddTaskTutorialMsg" = "ここからアクションを追加";
 // AddTaskInput
 "AddTaskTitleNilMsg" = "アクションのタイトルを入力してください";
 "AddTaskTargetLevelNilMsg" = "アクションの達成回数を入力してください";

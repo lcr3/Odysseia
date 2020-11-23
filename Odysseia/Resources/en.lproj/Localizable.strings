@@ -28,6 +28,8 @@
 "DeadlineYearUnknownMsg" = "The deadline year is invalid.";
 // AddTaskPresenter
 "AddTaskNilMsg" = "Please set numerical target.";
+// AddTask
+"AddTaskTutorialMsg" = "Add a tasks from here";
 // AddTaskInput
 "AddTaskTitleNilMsg" = "Please enter the title of the numerical target.";
 "AddTaskTargetLevelNilMsg" = "Please enter the number of times you want to achieve the numerical goal.";

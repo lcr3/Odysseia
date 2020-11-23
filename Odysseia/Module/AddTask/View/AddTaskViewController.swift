@@ -13,6 +13,7 @@ enum TaskSection: Int, CaseIterable {
 
 protocol AddTaskView: AnyObject {
     var presenter: AddTaskPresentation! { get }
+    var addTaskButton: UIButton! { get }
     // Presenter -> View
     func reload(tasks: [TemporaryTask])
     func validationError(msg: String)
@@ -23,6 +24,7 @@ class AddTaskViewController: UIViewController, StoryboardInstantiatable {
     static var instantiateType: StoryboardInstantiateType { .initial }
     var presenter: AddTaskPresentation!
 
+    @IBOutlet weak var addTaskButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
 
     private let collectionViewMargin: CGFloat = 16
@@ -43,6 +45,11 @@ class AddTaskViewController: UIViewController, StoryboardInstantiatable {
         super.viewDidLoad()
         collectionView.dataSource = dataSource
         collectionView.delegate = self
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        presenter.viewDidLayoutSubviews()
     }
 
     @IBAction func addTaskButtonTouched(_ sender: Any) {

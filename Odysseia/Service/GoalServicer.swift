@@ -7,7 +7,7 @@
 
 import CoreData
 
-protocol GoalService {
+protocol GoalServiceProtocol {
     // Goal
     func add(goal: TemporaryGoal) throws -> Goal
     func add(goal: TemporaryGoal, tasks: [TemporaryTask]) throws -> Goal
@@ -29,7 +29,7 @@ class GoalServicer {
     private init() {}
 }
 
-extension GoalServicer: GoalService {
+extension GoalServicer: GoalServiceProtocol {
     func add(goal: TemporaryGoal, tasks: [TemporaryTask]) throws -> Goal {
         let newGoal = Goal(context: managedContext)
         newGoal.title = goal.title

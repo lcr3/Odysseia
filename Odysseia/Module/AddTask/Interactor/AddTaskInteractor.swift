@@ -9,15 +9,15 @@ import CoreData
 
 protocol AddTaskUsecase: AnyObject {
     var output: AddTaskInteractorOutput? { get }
-    var service: GoalServicer { get }
+    var service: GoalServiceProtocol { get }
     func addGoal(goal: TemporaryGoal, tasks: [TemporaryTask])
 }
 
 class AddTaskInteractor {
     weak var output: AddTaskInteractorOutput?
-    let service: GoalServicer
+    let service: GoalServiceProtocol
 
-    init(service: GoalServicer) {
+    init(service: GoalServiceProtocol) {
         self.service = service
     }
 }
