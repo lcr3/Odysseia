@@ -25,8 +25,12 @@ class SettingAboutPresenter {
     }
 
     static func createItems() -> [SettingAboutItem] {
-        [SettingAboutItem(title: L10n.Localizable.hgCircularSliderTitle,
-                          link: L10n.Localizable.hgCircularSliderLink)]
+        [
+            SettingAboutItem(title: L10n.Localizable.geccoTitle,
+                             link: L10n.Localizable.geccoLink),
+            SettingAboutItem(title: L10n.Localizable.hgCircularSliderTitle,
+                             link: L10n.Localizable.hgCircularSliderLink)
+        ]
     }
 }
 

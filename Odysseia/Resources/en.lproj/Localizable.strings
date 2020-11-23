@@ -45,5 +45,7 @@
 "SourceTitle" = "Source Cord";
 "SourceCordURL" = "https://github.com/lcr3/Odysseia";
 // SettingAbout
+"GeccoTitle" = "Gecco";
+"GeccoLink" = "https://github.com/bannzai/Gecco";
 "HGCircularSliderTitle" = "HGCircularSlider";
 "HGCircularSliderLink" = "https://github.com/HamzaGhazouani/HGCircularSlider";

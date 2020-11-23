@@ -45,6 +45,10 @@ internal enum L10n {
         internal static let editButtonText = L10n.tr("Localizable", "editButtonText")
         /// データの編集に失敗しました
         internal static let editGoalErrorMsg = L10n.tr("Localizable", "EditGoalErrorMsg")
+        /// https://github.com/bannzai/Gecco
+        internal static let geccoLink = L10n.tr("Localizable", "GeccoLink")
+        /// Gecco
+        internal static let geccoTitle = L10n.tr("Localizable", "GeccoTitle")
         /// データの取得に失敗しました
         internal static let getGoalErrorMsg = L10n.tr("Localizable", "GetGoalErrorMsg")
         ///  Days left
