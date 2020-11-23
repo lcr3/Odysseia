@@ -31,11 +31,11 @@ class TutorialViewController: UIPageViewController, StoryboardInstantiatable {
 
         view.backgroundColor = Asset.astro.color
         pages = [getFirst(), getSecond(), getThird()]
-        pageControll.frame = CGRect(x: UIScreen.main.bounds.width,
+        pageControll.frame = CGRect(x: 0,
                                     y: UIScreen.main.bounds.height - TutorialPageControll.height * 2,
-                                    width: UIScreen.main.bounds.width, height: TutorialPageControll.height)
+                                    width: UIScreen.main.bounds.width,
+                                    height: TutorialPageControll.height)
         pageControll.numberOfPages = pages.count
-        pageControll.backgroundColor = .red
         view.addSubview(pageControll)
 
         guard let firstPage = pages.first else { return }

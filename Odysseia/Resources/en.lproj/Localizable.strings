@@ -17,6 +17,8 @@
 "UpdateGoalErrorMsg" = "Failed to update data.";
 "GetGoalErrorMsg" = "Failed to get data.";
 "DeleteGoalErrorMsg" = "Failed to delete data.";
+// GoalList
+"GoalListTutorialMsg" = "Add a goal from here.";
 // GoalDetailView
 "GoalDetailDate" = " Days left";
 // AddGoalNamePresenter

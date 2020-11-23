@@ -8,6 +8,7 @@
 protocol GoalListPresentation: AnyObject {
     var goals: [Goal] { get }
     // View -> Presenter
+    func viewDidLoad()
     func loadGoals()
     func addButtonTouched()
     func settingButtonTouched()
@@ -32,6 +33,14 @@ class GoalListPresenter {
 }
 
 extension GoalListPresenter: GoalListPresentation {
+    func viewDidLoad() {
+        let configurator = TutorialConfigurator()
+        if !configurator.isComplete(type: .goal) {
+            configurator.complete(type: .goal)
+            router.showTutorial()
+        }
+    }
+
     func addButtonTouched() {
         router.showAddGoal()
     }

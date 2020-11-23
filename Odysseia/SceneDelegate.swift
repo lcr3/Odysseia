@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             self.window = window
             let tutorialConfigurator = TutorialConfigurator()
-            if tutorialConfigurator.isComplete() {
+            if tutorialConfigurator.isComplete(type: .app) {
                 let rootView = GoalListRouter.assembleModules()
                 let nav = GoalNavigationController(rootViewController: rootView)
                 window.rootViewController = nav

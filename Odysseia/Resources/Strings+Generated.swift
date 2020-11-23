@@ -47,6 +47,8 @@ internal enum L10n {
         internal static let getGoalErrorMsg = L10n.tr("Localizable", "GetGoalErrorMsg")
         ///  Days left
         internal static let goalDetailDate = L10n.tr("Localizable", "GoalDetailDate")
+        /// ここから目標を追加
+        internal static let goalListTutorialMsg = L10n.tr("Localizable", "GoalListTutorialMsg")
         /// 目標は50文字以内で入力して下さい
         internal static let goalTitleMaxLengthMsg = L10n.tr("Localizable", "GoalTitleMaxLengthMsg")
         /// 目標を入力して下さい

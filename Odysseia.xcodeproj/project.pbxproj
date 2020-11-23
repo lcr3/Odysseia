@@ -98,6 +98,10 @@
 		29D7A8452567E8D900CB1D0D /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A8442567E8D900CB1D0D /* SettingItem.swift */; };
 		29D7A84E2567F47D00CB1D0D /* SettingAboutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A84D2567F47D00CB1D0D /* SettingAboutItem.swift */; };
 		29D7A85D256808C200CB1D0D /* MockSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A85C256808C200CB1D0D /* MockSetting.swift */; };
+		29E6DF23256A470D00581807 /* Gecco in Frameworks */ = {isa = PBXBuildFile; productRef = 29E6DF22256A470D00581807 /* Gecco */; };
+		29E6DF28256A508800581807 /* GoalListTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF27256A508800581807 /* GoalListTutorialViewController.swift */; };
+		29E6DF2E256B53A300581807 /* GoalListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF2D256B53A300581807 /* GoalListRouterTests.swift */; };
+		29E6DF38256B58B800581807 /* GoalListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF37256B58B800581807 /* GoalListPresenterTests.swift */; };
 		29EF3687255A1DA000E0E669 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3683255A1D9F00E0E669 /* StarView.swift */; };
 		29EF3688255A1DA000E0E669 /* StarsParticles.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3684255A1DA000E0E669 /* StarsParticles.scnp */; };
 		29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3686255A1DA000E0E669 /* ConfettiView.swift */; };
@@ -276,6 +280,9 @@
 		29D7A8442567E8D900CB1D0D /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
 		29D7A84D2567F47D00CB1D0D /* SettingAboutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAboutItem.swift; sourceTree = "<group>"; };
 		29D7A85C256808C200CB1D0D /* MockSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSetting.swift; sourceTree = "<group>"; };
+		29E6DF27256A508800581807 /* GoalListTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListTutorialViewController.swift; sourceTree = "<group>"; };
+		29E6DF2D256B53A300581807 /* GoalListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListRouterTests.swift; sourceTree = "<group>"; };
+		29E6DF37256B58B800581807 /* GoalListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListPresenterTests.swift; sourceTree = "<group>"; };
 		29EF3683255A1D9F00E0E669 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		29EF3684255A1DA000E0E669 /* StarsParticles.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = StarsParticles.scnp; sourceTree = "<group>"; };
 		29EF3686255A1DA000E0E669 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
@@ -334,6 +341,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E6DF23256A470D00581807 /* Gecco in Frameworks */,
 				298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */,
 				29248085255C1191003D09CB /* CloudKit.framework in Frameworks */,
 			);
@@ -870,6 +878,7 @@
 			isa = PBXGroup;
 			children = (
 				299D7613253EB841006985FD /* GoalListCollectionCell.swift */,
+				29E6DF27256A508800581807 /* GoalListTutorialViewController.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -877,6 +886,8 @@
 		29D69A78255ED462004C4606 /* GoalList */ = {
 			isa = PBXGroup;
 			children = (
+				29E6DF35256B589700581807 /* Presenter */,
+				29E6DF2C256B539300581807 /* Router */,
 				29D69A86255ED64B004C4606 /* Mock */,
 				29D69A85255ED629004C4606 /* View */,
 			);
@@ -970,6 +981,22 @@
 				29D7A85C256808C200CB1D0D /* MockSetting.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		29E6DF2C256B539300581807 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				29E6DF2D256B53A300581807 /* GoalListRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		29E6DF35256B589700581807 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				29E6DF37256B58B800581807 /* GoalListPresenterTests.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		29ECE039255690A400F03077 /* Store */ = {
@@ -1567,6 +1594,7 @@
 			name = Odysseia;
 			packageProductDependencies = (
 				298337D72542AAC7001CB8D9 /* HGCircularSlider */,
+				29E6DF22256A470D00581807 /* Gecco */,
 			);
 			productName = Goal;
 			productReference = 2997604E253D96A000CDD568 /* Odysseia.app */;
@@ -1643,6 +1671,7 @@
 			mainGroup = 29976045253D96A000CDD568;
 			packageReferences = (
 				298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */,
+				29E6DF21256A470D00581807 /* XCRemoteSwiftPackageReference "Gecco" */,
 			);
 			productRefGroup = 2997604F253D96A000CDD568 /* Products */;
 			projectDirPath = "";
@@ -1733,6 +1762,7 @@
 				299D7660253EDC81006985FD /* EditGoalInteractor.swift in Sources */,
 				2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */,
 				29A0696A255ADFA500FCD057 /* GoalDeleteAlertPresenterOutput.swift in Sources */,
+				29E6DF28256A508800581807 /* GoalListTutorialViewController.swift in Sources */,
 				29EF3687255A1DA000E0E669 /* StarView.swift in Sources */,
 				29D67F8C254C073C00A6E396 /* Task+CoreDataProperties.swift in Sources */,
 				299D7626253ECD4C006985FD /* GoalDetailPresenter.swift in Sources */,
@@ -1835,11 +1865,13 @@
 				DD609C2F2A50F5D45DD13B07 /* TaskInputPresenterTests.swift in Sources */,
 				29D7A81F256687C400CB1D0D /* MockTutorial.swift in Sources */,
 				0270FCEE060D4B33AA35C1B0 /* TaskInputRouterTests.swift in Sources */,
+				29E6DF38256B58B800581807 /* GoalListPresenterTests.swift in Sources */,
 				0C1A3C6488532F887F048FF5 /* GoalAlertViewTests.swift in Sources */,
 				906CD173E22DAD35C12F688F /* GoalAlertPresenterTests.swift in Sources */,
 				56CAB67272EE6685B58873F6 /* GoalAlertRouterTests.swift in Sources */,
 				EE7278D5F7853798744E7221 /* TutorialViewTests.swift in Sources */,
 				C589E687723EE48129317146 /* TutorialPresenterTests.swift in Sources */,
+				29E6DF2E256B53A300581807 /* GoalListRouterTests.swift in Sources */,
 				A816599CCB5CB1821DC8E82A /* TutorialRouterTests.swift in Sources */,
 				CD1D109FA432DC4A2FF0840F /* SettingViewTests.swift in Sources */,
 				57360DFE87A05B17FC17EECB /* SettingPresenterTests.swift in Sources */,
@@ -2379,6 +2411,14 @@
 				kind = branch;
 			};
 		};
+		29E6DF21256A470D00581807 /* XCRemoteSwiftPackageReference "Gecco" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bannzai/Gecco";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2386,6 +2426,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */;
 			productName = HGCircularSlider;
+		};
+		29E6DF22256A470D00581807 /* Gecco */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29E6DF21256A470D00581807 /* XCRemoteSwiftPackageReference "Gecco" */;
+			productName = Gecco;
 		};
 /* End XCSwiftPackageProductDependency section */
 

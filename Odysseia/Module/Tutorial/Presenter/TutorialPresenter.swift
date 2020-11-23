@@ -28,6 +28,6 @@ extension TutorialPresenter: TutorialPresentation {
         router.showGoalList()
         let notificationStore = NotificationStore()
         notificationStore.requestAuth()
-        configurator.complete()
+        configurator.complete(type: .app)
     }
 }

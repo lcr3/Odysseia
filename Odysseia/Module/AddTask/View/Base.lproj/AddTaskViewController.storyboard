@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="GUl-aI-NOn">
-                                                    <rect key="frame" x="55" y="0.0" width="243" height="110"/>
+                                                    <rect key="frame" x="16" y="0.0" width="282" height="110"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -49,26 +49,14 @@
                                                     <color key="textColor" name="venus"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🪐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-0j-Qy2">
-                                                    <rect key="frame" x="16" y="44.5" width="23" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="23" id="4Rj-ff-R7j"/>
-                                                        <constraint firstAttribute="height" constant="21" id="Akm-rm-LEm"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="MUv-0j-Qy2" firstAttribute="centerY" secondItem="aC1-Do-5te" secondAttribute="centerY" id="03F-L8-x3K"/>
                                                 <constraint firstItem="GUl-aI-NOn" firstAttribute="top" secondItem="aC1-Do-5te" secondAttribute="top" id="1XV-CT-SQQ"/>
                                                 <constraint firstItem="Xif-Dh-MBP" firstAttribute="leading" secondItem="GUl-aI-NOn" secondAttribute="trailing" constant="16" id="1zK-mz-nxu"/>
                                                 <constraint firstItem="Xif-Dh-MBP" firstAttribute="centerY" secondItem="aC1-Do-5te" secondAttribute="centerY" id="VTM-Vb-6vB"/>
+                                                <constraint firstItem="GUl-aI-NOn" firstAttribute="leading" secondItem="aC1-Do-5te" secondAttribute="leading" constant="16" id="bFQ-JW-Pxu"/>
                                                 <constraint firstAttribute="trailing" secondItem="Xif-Dh-MBP" secondAttribute="trailing" constant="32" id="g7x-Xs-u3d"/>
-                                                <constraint firstItem="GUl-aI-NOn" firstAttribute="leading" secondItem="MUv-0j-Qy2" secondAttribute="trailing" constant="16" id="na2-Aa-gpf"/>
                                                 <constraint firstAttribute="bottom" secondItem="GUl-aI-NOn" secondAttribute="bottom" id="q6c-mo-hkr"/>
-                                                <constraint firstItem="MUv-0j-Qy2" firstAttribute="leading" secondItem="aC1-Do-5te" secondAttribute="leading" constant="16" id="s0r-VD-zXt"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" name="mercury"/>

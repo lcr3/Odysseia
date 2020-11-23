@@ -12,6 +12,7 @@ protocol GoalListWireframe: AnyObject {
     func showAddGoal()
     func showSetting()
     func showDeleteAlert(goal: Goal, output: GoalDeleteAlertPresenterOutput)
+    func showTutorial()
     var output: GoalListRouterOutput? { get }
 }
 
@@ -62,6 +63,13 @@ extension GoalListRouter: GoalListWireframe {
         deleteAlertView.modalPresentationStyle = .overFullScreen
         deleteAlertView.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         viewController.present(deleteAlertView, animated: true)
+    }
+
+    func showTutorial() {
+        let spotlightViewController = GoalListTutorialViewController()
+        viewController.navigationController?.present(spotlightViewController, animated: true) {
+            spotlightViewController.start()
+        }
     }
 }
 

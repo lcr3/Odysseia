@@ -26,7 +26,6 @@ enum GoalSection: Int, CaseIterable {
 protocol GoalListView: AnyObject {
     var presenter: GoalListPresentation! { get }
     // Prensenter -> View
-    func viewDidLoad()
     func reload(goals: [Goal])
     func showErrorMessageView(reason: String)
 }
@@ -70,6 +69,7 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         }
         let logPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(cellLongPress))
         collectionView.addGestureRecognizer(logPressGesture)
+        presenter.viewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -97,7 +97,7 @@ class GoalListViewController: UIViewController, StoryboardInstantiatable {
         addBarItem.image = UIImage(systemName: "plus")
 
         navigationItem.rightBarButtonItems = [addBarItem]
-        let settingItem = UIBarButtonItem(image: UIImage(systemName: "seal"),
+        let settingItem = UIBarButtonItem(image: UIImage(systemName: "gearshape"),
                                           style: .plain,
                                           target: self,
                                           action: #selector(settingBarButtonTouched(_:)))

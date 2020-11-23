@@ -17,6 +17,8 @@
 "UpdateGoalErrorMsg" = "データの更新に失敗しました";
 "GetGoalErrorMsg" = "データの取得に失敗しました";
 "DeleteGoalErrorMsg" = "データの削除に失敗しました";
+// GoalList
+"GoalListTutorialMsg" = "ここから目標を追加";
 // GoalDetailView
 "GoalDetailDate" = " Days left";
 // AddGoalNamePresenter

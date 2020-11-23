@@ -76,6 +76,7 @@ extension SettingViewController: UITableViewDataSource {
         }
         let item = presenter.getItems()[indexPath.row]
         settingCell.setCell(item: item)
+
         return settingCell
     }
 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SYL-FR-hiq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SYL-FR-hiq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +19,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYx-W6-anj">
                                 <rect key="frame" x="86" y="425.5" width="242" height="45.5"/>
                                 <string key="text">有意義な1年を過ごすために
-目標を立てましょう</string>
+目標を立てましょう🚩</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -52,8 +53,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="説明もんごん" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaM-0L-3T3">
-                                <rect key="frame" x="149" y="436.5" width="116.5" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaM-0L-3T3">
+                                <rect key="frame" x="42.5" y="425.5" width="329.5" height="45.5"/>
+                                <string key="text">目標を達成するために
+具体的なアクションを設定しましょう</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -79,9 +82,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R2-Ws-MYf">
-                                <rect key="frame" x="117" y="426" width="180" height="44"/>
+                                <rect key="frame" x="32" y="426" width="350" height="44"/>
+                                <color key="backgroundColor" name="tutorial"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="0QP-4q-uzm"/>
                                     <constraint firstAttribute="height" constant="44" id="15C-ns-llZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -90,7 +93,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -100,8 +103,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SNa-tX-Q6T"/>
                         <constraints>
-                            <constraint firstItem="5R2-Ws-MYf" firstAttribute="centerY" secondItem="4Rm-NW-gbq" secondAttribute="centerY" id="7rW-6l-dbn"/>
-                            <constraint firstItem="5R2-Ws-MYf" firstAttribute="centerX" secondItem="4Rm-NW-gbq" secondAttribute="centerX" id="NhQ-vQ-eqb"/>
+                            <constraint firstItem="SNa-tX-Q6T" firstAttribute="trailing" secondItem="5R2-Ws-MYf" secondAttribute="trailing" constant="32" id="3hc-eG-0iW"/>
+                            <constraint firstItem="5R2-Ws-MYf" firstAttribute="centerY" secondItem="4Rm-NW-gbq" secondAttribute="centerY" id="7a1-hd-4fb"/>
+                            <constraint firstItem="5R2-Ws-MYf" firstAttribute="leading" secondItem="SNa-tX-Q6T" secondAttribute="leading" constant="32" id="o2T-n4-9qp"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -110,4 +114,9 @@
             <point key="canvasLocation" x="1952" y="53"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="tutorial">
+            <color red="0.41600000858306885" green="0.016000000759959221" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

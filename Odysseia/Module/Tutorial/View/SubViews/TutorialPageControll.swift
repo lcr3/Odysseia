@@ -24,6 +24,7 @@ class TutorialPageControll: UIPageControl {
         currentPage = 0
         isUserInteractionEnabled = false
         backgroundStyle = .automatic
-        pageIndicatorTintColor = .blue
+        pageIndicatorTintColor = .white
+        currentPageIndicatorTintColor = Asset.tutorial.color
     }
 }

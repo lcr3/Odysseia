@@ -7,19 +7,30 @@
 
 import Foundation
 
+enum TutorialType: String {
+    case app = "appTutorial"
+    case goal = "addGoalTutorial"
+    case task = "addTaskTutorial"
+}
+
 class TutorialConfigurator {
-    private let key = "isCompleteTutorial"
     private let ud: UserDefaults
 
     init() {
         ud = UserDefaults.standard
     }
 
-    func isComplete() -> Bool {
-        ud.bool(forKey: key)
+    func isComplete(type: TutorialType) -> Bool {
+        ud.bool(forKey: type.rawValue)
     }
 
-    func complete() {
-        ud.set(true, forKey: key)
+    func complete(type: TutorialType) {
+        ud.set(true, forKey: type.rawValue)
+    }
+
+    func allClear() {
+        ud.dictionaryRepresentation().forEach {
+            ud.removeObject(forKey: $0.key)
+        }
     }
 }

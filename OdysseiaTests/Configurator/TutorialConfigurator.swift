@@ -13,11 +13,8 @@ class TutorialConfiguratorTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let ud = UserDefaults.standard
-        ud.dictionaryRepresentation().forEach {
-            ud.removeObject(forKey: $0.key)
-        }
         tutorialConfigurator = TutorialConfigurator()
+        tutorialConfigurator.allClear()
     }
 
     override func tearDown() {
@@ -26,12 +23,28 @@ class TutorialConfiguratorTests: XCTestCase {
 
     func testComplete() {
         // setup
-        XCTAssertFalse(tutorialConfigurator.isComplete())
+        XCTAssertFalse(tutorialConfigurator.isComplete(type: .app))
 
         // execute
-        tutorialConfigurator.complete()
+        tutorialConfigurator.complete(type: .app)
 
         // verify
-        XCTAssertTrue(tutorialConfigurator.isComplete())
+        XCTAssertTrue(tutorialConfigurator.isComplete(type: .app))
+    }
+
+    func testAllClear() {
+        // setup
+        let tutorialTypes: [TutorialType] = [.app, .goal, .task]
+        for type in tutorialTypes {
+            tutorialConfigurator.complete(type: type)
+        }
+
+        // execute
+        tutorialConfigurator.allClear()
+
+        // verify
+        for type in tutorialTypes {
+            XCTAssertFalse(tutorialConfigurator.isComplete(type: type))
+        }
     }
 }
