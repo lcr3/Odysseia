@@ -7,7 +7,11 @@
 
 import CoreData
 
-class PersistentContainerProvider {
+protocol ProviderProtocol {
+    static func getInstance() -> NSPersistentCloudKitContainer
+}
+
+class PersistentContainerProvider: ProviderProtocol {
     private init() {}
 
     private static let persistentContainer: NSPersistentCloudKitContainer = {

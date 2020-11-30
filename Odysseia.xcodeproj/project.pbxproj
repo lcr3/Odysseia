@@ -104,6 +104,8 @@
 		29E6DF38256B58B800581807 /* GoalListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF37256B58B800581807 /* GoalListPresenterTests.swift */; };
 		29E6DF46256B5DDE00581807 /* AddTaskTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF45256B5DDE00581807 /* AddTaskTutorialViewController.swift */; };
 		29E6DF4C256B690400581807 /* MockAddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF4B256B690400581807 /* MockAddTask.swift */; };
+		29E6DF5B256E84CD00581807 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF5A256E84CD00581807 /* ServiceTests.swift */; };
+		29E6DF63256EA13400581807 /* TestContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF62256EA13400581807 /* TestContainerProvider.swift */; };
 		29EF3687255A1DA000E0E669 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3683255A1D9F00E0E669 /* StarView.swift */; };
 		29EF3688255A1DA000E0E669 /* StarsParticles.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3684255A1DA000E0E669 /* StarsParticles.scnp */; };
 		29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3686255A1DA000E0E669 /* ConfettiView.swift */; };
@@ -287,6 +289,8 @@
 		29E6DF37256B58B800581807 /* GoalListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListPresenterTests.swift; sourceTree = "<group>"; };
 		29E6DF45256B5DDE00581807 /* AddTaskTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskTutorialViewController.swift; sourceTree = "<group>"; };
 		29E6DF4B256B690400581807 /* MockAddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddTask.swift; sourceTree = "<group>"; };
+		29E6DF5A256E84CD00581807 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		29E6DF62256EA13400581807 /* TestContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContainerProvider.swift; sourceTree = "<group>"; };
 		29EF3683255A1D9F00E0E669 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		29EF3684255A1DA000E0E669 /* StarsParticles.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = StarsParticles.scnp; sourceTree = "<group>"; };
 		29EF3686255A1DA000E0E669 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
@@ -526,6 +530,7 @@
 			children = (
 				2980AAA2254BC89B00B70A01 /* Entity */,
 				2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */,
+				29E6DF62256EA13400581807 /* TestContainerProvider.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -659,6 +664,7 @@
 		2997606A253D96A200CDD568 /* OdysseiaTests */ = {
 			isa = PBXGroup;
 			children = (
+				29E6DF59256E84B300581807 /* Service */,
 				29D7A7F425641B2000CB1D0D /* Configurator */,
 				292480D9255D55A5003D09CB /* TestHelper */,
 				291B748D255576520042DFB3 /* Store */,
@@ -1010,6 +1016,14 @@
 				29E6DF4B256B690400581807 /* MockAddTask.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		29E6DF59256E84B300581807 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				29E6DF5A256E84CD00581807 /* ServiceTests.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		29ECE039255690A400F03077 /* Store */ = {
@@ -1769,6 +1783,7 @@
 				290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */,
 				29D67F8F254C073C00A6E396 /* Task+CoreDataClass.swift in Sources */,
 				2959D094254A652000A3DC28 /* Constraints.swift in Sources */,
+				29E6DF63256EA13400581807 /* TestContainerProvider.swift in Sources */,
 				29D7A8372566CDB700CB1D0D /* SettingCell.swift in Sources */,
 				29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */,
 				29D7A81925667F0600CB1D0D /* TutorialPageControll.swift in Sources */,
@@ -1868,6 +1883,7 @@
 				29D7A7F625641B8C00CB1D0D /* TutorialConfigurator.swift in Sources */,
 				0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */,
 				29D69A88255ED65C004C4606 /* MockGoalList.swift in Sources */,
+				29E6DF5B256E84CD00581807 /* ServiceTests.swift in Sources */,
 				912C0E341BB3295DC5F8AA1B /* AddTaskViewTests.swift in Sources */,
 				7D5782F4FF379C023F0EB819 /* AddTaskInteractorTests.swift in Sources */,
 				6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */,

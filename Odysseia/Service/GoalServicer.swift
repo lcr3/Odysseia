@@ -9,7 +9,6 @@ import CoreData
 
 protocol GoalServiceProtocol {
     // Goal
-    func add(goal: TemporaryGoal) throws -> Goal
     func add(goal: TemporaryGoal, tasks: [TemporaryTask]) throws -> Goal
     func update(goal: Goal) throws -> Goal
     func delete(goal: Goal) throws
@@ -22,11 +21,17 @@ protocol GoalServiceProtocol {
 
 class GoalServicer {
     static let shared = GoalServicer()
-    let persistentContainer = PersistentContainerProvider.getInstance()
+    let persistentContainer: NSPersistentCloudKitContainer
     lazy var managedContext: NSManagedObjectContext = { persistentContainer.viewContext
     }()
     // 外部からのインスタンス生成を禁止
-    private init() {}
+    private init() {
+        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+            self.persistentContainer = TestProvider.getInstance()
+        } else {
+            self.persistentContainer = PersistentContainerProvider.getInstance()
+        }
+    }
 }
 
 extension GoalServicer: GoalServiceProtocol {
@@ -35,27 +40,16 @@ extension GoalServicer: GoalServiceProtocol {
         newGoal.title = goal.title
         newGoal.detail = goal.detail
         newGoal.deadlineDate = goal.deadlineDate
+        newGoal.createdAt = Date()
 
         for task in tasks {
             let newTask = Task(context: managedContext)
             newTask.title = task.title
             newTask.targetCount = Int16(task.targetCount)
+            newTask.createdAt = Date()
             newTask.goal = newGoal
         }
 
-        do {
-            try managedContext.save()
-        } catch {
-            throw GoalServiceError.addGoalError(msg: L10n.Localizable.addGoalErrorMsg)
-        }
-        return newGoal
-    }
-
-    func add(goal: TemporaryGoal) throws -> Goal {
-        let newGoal = Goal(context: managedContext)
-        newGoal.title = goal.title
-        newGoal.detail = goal.detail
-        newGoal.deadlineDate = goal.deadlineDate
         do {
             try managedContext.save()
         } catch {
@@ -70,6 +64,15 @@ extension GoalServicer: GoalServiceProtocol {
             try managedContext.save()
         } catch {
             throw GoalServiceError.deleteGoalError(msg: L10n.Localizable.deleteGoalErrorMsg)
+        }
+    }
+
+    func delete(task: Task) throws {
+        managedContext.delete(task)
+        do {
+            try managedContext.save()
+        } catch {
+            throw GoalServiceError.deleteGoalError(msg: L10n.Localizable.deleteTaskErrorMsg)
         }
     }
 
@@ -95,8 +98,12 @@ extension GoalServicer: GoalServiceProtocol {
     }
 
     func getAll() throws -> [Goal] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: Goal.className)
+        //ascendind true 昇順、false 降順
+        let sortDescripter = NSSortDescriptor(key: Goal.Key.createdAt.rawValue, ascending: true)
+        fetchRequest.sortDescriptors = [sortDescripter]
         do {
-            let result = try managedContext.fetch(Goal.fetchRequest())
+            let result = try managedContext.fetch(fetchRequest)
             if let goals = result as? [Goal] {
                 return goals
             }
@@ -127,6 +134,30 @@ extension GoalServicer: GoalServiceProtocol {
         }
         return task
     }
+
+    func allDelete() throws {
+        let goals: [Goal]
+        do {
+            try goals = getAll()
+        } catch {
+            throw GoalServiceError.allDeleteError(msg: L10n.Localizable.allDeleteErrorMsg)
+        }
+
+        for goal in goals {
+            for task in goal.getTasks() {
+                do {
+                    try delete(task: task)
+                } catch {
+                    throw GoalServiceError.allDeleteError(msg: L10n.Localizable.allDeleteErrorMsg)
+                }
+            }
+            do {
+                try delete(goal: goal)
+            } catch {
+                throw GoalServiceError.allDeleteError(msg: L10n.Localizable.allDeleteErrorMsg)
+            }
+        }
+    }
 }
 
 enum GoalServiceError: Error {
@@ -135,4 +166,5 @@ enum GoalServiceError: Error {
     case addGoalError(msg: String)
     case deleteGoalError(msg: String)
     case updateTaskError(msg: String)
+    case allDeleteError(msg: String)
 }

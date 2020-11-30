@@ -10,17 +10,14 @@ protocol TaskInputPresentation: AnyObject {
     func viewDidLoad()
     func incrementButtonTouched()
     func decrementButtonTouched()
-    func addTaskButtonTouched()
+    func addTaskButtonTouched(title: String?)
     func cancelButtonTouched()
-    func updateTitle(title: String)
 }
 
 class TaskInputPresenter {
     private weak var view: TaskInputView?
     private let router: TaskInputWireframe
     private weak var output: TaskInputPresenterOutput?
-
-    private var taskTitle: String
     private var targetCount: Int
 
     init(view: TaskInputView,
@@ -29,7 +26,6 @@ class TaskInputPresenter {
         self.view = view
         self.router = router
         self.output = output
-        taskTitle = ""
         targetCount = Task.minTargetCount
     }
 }
@@ -55,21 +51,17 @@ extension TaskInputPresenter: TaskInputPresentation {
         view?.setTargetCount(text: "\(targetCount)")
     }
 
-    func updateTitle(title: String) {
-        taskTitle = title
-    }
-
     func cancelButtonTouched() {
         output = nil
         router.dismiss()
     }
 
-    func addTaskButtonTouched() {
-        if taskTitle.isEmpty {
+    func addTaskButtonTouched(title: String?) {
+        guard let title = title else {
             view?.showErrorAlert(msg: L10n.Localizable.addTaskTitleNilMsg)
             return
         }
-        output?.successAddTask(title: taskTitle, targetLevel: targetCount)
+        output?.successAddTask(title: title, targetLevel: targetCount)
         output = nil
         router.dismiss()
     }

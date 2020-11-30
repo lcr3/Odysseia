@@ -29,6 +29,8 @@ internal enum L10n {
         internal static let addTaskTitleNilMsg = L10n.tr("Localizable", "AddTaskTitleNilMsg")
         /// ここからアクションを追加
         internal static let addTaskTutorialMsg = L10n.tr("Localizable", "AddTaskTutorialMsg")
+        /// すべてのデータ削除に失敗しました
+        internal static let allDeleteErrorMsg = L10n.tr("Localizable", "AllDeleteErrorMsg")
         /// キャンセル
         internal static let cancel = L10n.tr("Localizable", "Cancel")
         /// 目標締め切り年度を設定してください
@@ -39,6 +41,8 @@ internal enum L10n {
         internal static let delete = L10n.tr("Localizable", "Delete")
         /// データの削除に失敗しました
         internal static let deleteGoalErrorMsg = L10n.tr("Localizable", "DeleteGoalErrorMsg")
+        /// データの削除に失敗しました
+        internal static let deleteTaskErrorMsg = L10n.tr("Localizable", "DeleteTaskErrorMsg")
         /// 完了
         internal static let doneButtonText = L10n.tr("Localizable", "doneButtonText")
         /// 編集

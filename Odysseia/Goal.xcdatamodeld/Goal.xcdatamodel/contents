@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="20A5384c" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Goal" representedClassName="Goal" syncable="YES">
+        <attribute name="createdAt" attributeType="Date" defaultDateTimeInterval="630774000" usesScalarValueType="NO"/>
         <attribute name="deadlineDate" attributeType="Date" defaultDateTimeInterval="631119540" usesScalarValueType="NO"/>
         <attribute name="detail" attributeType="String" maxValueString="500" defaultValueString=""/>
         <attribute name="planet" attributeType="Integer 16" minValueString="0" maxValueString="9" defaultValueString="1" usesScalarValueType="YES"/>
@@ -9,6 +10,7 @@
         <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="goal" inverseEntity="Task"/>
     </entity>
     <entity name="Task" representedClassName="Task" syncable="YES">
+        <attribute name="createdAt" attributeType="Date" defaultDateTimeInterval="629046000" usesScalarValueType="NO"/>
         <attribute name="reachCount" attributeType="Integer 16" minValueString="0" maxValueString="999" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="reachDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="targetCount" attributeType="Integer 16" minValueString="1" maxValueString="999" defaultValueString="1" usesScalarValueType="YES"/>
@@ -16,7 +18,7 @@
         <relationship name="goal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goal" inverseName="tasks" inverseEntity="Goal"/>
     </entity>
     <elements>
-        <element name="Goal" positionX="-63" positionY="-17" width="128" height="119"/>
-        <element name="Task" positionX="142.8417358398438" positionY="-14.88092041015625" width="128" height="118"/>
+        <element name="Goal" positionX="-63" positionY="-17" width="128" height="148"/>
+        <element name="Task" positionX="142.8417358398438" positionY="-14.88092041015625" width="128" height="133"/>
     </elements>
 </model>

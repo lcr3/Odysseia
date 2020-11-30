@@ -19,6 +19,7 @@ extension Goal {
     @NSManaged public var planet: Int16
     @NSManaged public var reatchDate: Date?
     @NSManaged public var title: String
+    @NSManaged public var createdAt: Date
     @NSManaged public var tasks: NSSet?
 
 }
@@ -41,6 +42,15 @@ extension Goal {
 }
 
 extension Goal: Identifiable {
+    enum Key: String {
+        case title
+        case detail
+        case planet
+        case reatchDate
+        case createdAt
+        case tasks
+    }
+
     func getTask(index: Int) -> Task {
         let tasks = getTasks()
         return tasks[index]
@@ -50,7 +60,7 @@ extension Goal: Identifiable {
         guard let arrayTasks = tasks?.allObjects as? [Task] else {
             return []
         }
-        return arrayTasks
+        return arrayTasks.sorted { $0.createdAt < $1.createdAt }
     }
 
     func isAllTasksDone() -> Bool {

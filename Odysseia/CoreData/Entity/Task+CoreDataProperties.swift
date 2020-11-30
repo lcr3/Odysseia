@@ -18,6 +18,7 @@ extension Task {
     @NSManaged public var reachDate: Date?
     @NSManaged public var targetCount: Int16
     @NSManaged public var title: String
+    @NSManaged public var createdAt: Date
     @NSManaged public var goal: Goal?
 
 }

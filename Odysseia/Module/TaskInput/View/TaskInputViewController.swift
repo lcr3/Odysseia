@@ -48,7 +48,7 @@ class TaskInputViewController: UIViewController, StoryboardInstantiatable {
     }
 
     @IBAction func addTaskButtonTouched(_ sender: Any) {
-        presenter.addTaskButtonTouched()
+        presenter.addTaskButtonTouched(title: titleField.text)
     }
 }
 
@@ -64,11 +64,6 @@ extension TaskInputViewController: TaskInputView {
 }
 
 extension TaskInputViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        presenter.updateTitle(title: string)
-        return true
-    }
-
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         titleField.endEditing(true)
         return false
