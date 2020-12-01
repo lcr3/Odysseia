@@ -30,6 +30,10 @@
 		292480DB255D55BE003D09CB /* XCTxContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292480DA255D55BE003D09CB /* XCTxContext.swift */; };
 		2936F9572567A7710054CC14 /* SettingAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2936F9562567A7710054CC14 /* SettingAboutCell.swift */; };
 		293D0D06255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293D0D05255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift */; };
+		294D455925748D4F00DE6BA8 /* Goal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29B13477253D97E800C273F1 /* Goal.xcdatamodeld */; };
+		294D45632574B5DC00DE6BA8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29248084255C1191003D09CB /* CloudKit.framework */; };
+		294D45682574C2F500DE6BA8 /* GoalServicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552818253E779C009AFE97 /* GoalServicer.swift */; };
+		294D45802574D2AD00DE6BA8 /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D457F2574D2AD00DE6BA8 /* WidgetViewModel.swift */; };
 		2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
 		2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954E9592540561200E89510 /* GoalNavigationController.swift */; };
 		2954E9672541251A00E89510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
@@ -44,6 +48,23 @@
 		2959D0A1254A83DC00A3DC28 /* GoalListRouterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959D0A0254A83DC00A3DC28 /* GoalListRouterOutput.swift */; };
 		2959D0BC254A985C00A3DC28 /* AddTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2959D0BE254A985C00A3DC28 /* AddTaskViewController.storyboard */; };
 		295B39C32558CE9400A21E21 /* EditTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295B39C52558CE9400A21E21 /* EditTaskViewController.storyboard */; };
+		295B3BA82570909900899FF0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295B3BA72570909900899FF0 /* WidgetKit.framework */; };
+		295B3BAA2570909900899FF0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295B3BA92570909900899FF0 /* SwiftUI.framework */; };
+		295B3BAD2570909900899FF0 /* OdysseiaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B3BAC2570909900899FF0 /* OdysseiaWidget.swift */; };
+		295B3BB02570909A00899FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295B3BAF2570909A00899FF0 /* Assets.xcassets */; };
+		295B3BB22570909A00899FF0 /* OdysseiaWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 295B3BAE2570909900899FF0 /* OdysseiaWidget.intentdefinition */; };
+		295B3BB32570909A00899FF0 /* OdysseiaWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 295B3BAE2570909900899FF0 /* OdysseiaWidget.intentdefinition */; };
+		295B3BB62570909A00899FF0 /* OdysseiaWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 295B3BA62570909900899FF0 /* OdysseiaWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		295B3BC0257124D800899FF0 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
+		295B3BCA2571250800899FF0 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */; };
+		295B3BCF2571250B00899FF0 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */; };
+		295B3BD42571250D00899FF0 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */; };
+		295B3BD92571251000899FF0 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */; };
+		295B3BDE2571252B00899FF0 /* PersistentContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */; };
+		295B3BE32571253B00899FF0 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
+		295B3BE82571264500899FF0 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29833773254140F7001CB8D9 /* Strings+Generated.swift */; };
+		295B3BED2571264F00899FF0 /* TemporaryGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552827253E8052009AFE97 /* TemporaryGoal.swift */; };
+		295B3BF22571276D00899FF0 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B5C4A253F1537009D54B1 /* Resources.xcassets */; };
 		296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296412432552404D00CA732A /* EditTaskPresenterOutput.swift */; };
 		297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297795DB254842B000AD7E2D /* AddTaskCell.swift */; };
 		29833775254140F7001CB8D9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29833773254140F7001CB8D9 /* Strings+Generated.swift */; };
@@ -80,6 +101,9 @@
 		29A248EE255A7EFD005E6230 /* TaskInputViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A248F0255A7EFD005E6230 /* TaskInputViewController.storyboard */; };
 		29A24901255A85E8005E6230 /* AddGoalNameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A24903255A85E8005E6230 /* AddGoalNameViewController.storyboard */; };
 		29A2490E255A8B51005E6230 /* GoalDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A24910255A8B51005E6230 /* GoalDetailViewController.storyboard */; };
+		29A731382574E9C0007842CB /* OdysseiaTimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A731372574E9C0007842CB /* OdysseiaTimelineEntry.swift */; };
+		29A731432574EA91007842CB /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A731422574EA91007842CB /* Provider.swift */; };
+		29A731522574F0DB007842CB /* DayLeftWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A731512574F0DB007842CB /* DayLeftWidget.swift */; };
 		29B13479253D97E800C273F1 /* Goal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29B13477253D97E800C273F1 /* Goal.xcdatamodeld */; };
 		29D67F8C254C073C00A6E396 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */; };
 		29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */; };
@@ -110,6 +134,8 @@
 		29EF3688255A1DA000E0E669 /* StarsParticles.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3684255A1DA000E0E669 /* StarsParticles.scnp */; };
 		29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF3686255A1DA000E0E669 /* ConfettiView.swift */; };
 		29EF3691255A3A3E00E0E669 /* SceneKit.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3690255A3A3E00E0E669 /* SceneKit.scnassets */; };
+		29F32BBF2575097100510177 /* GoalTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BBE2575097100510177 /* GoalTitleView.swift */; };
+		29F32BC92575099A00510177 /* DaysLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BC82575099A00510177 /* DaysLeftView.swift */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
 		3905C72BEE22B5D4FA9E80C2 /* SettingAboutRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E174358A43722B0E0A837 /* SettingAboutRouterTests.swift */; };
@@ -158,6 +184,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		295B3BB42570909A00899FF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29976046253D96A000CDD568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 295B3BA52570909900899FF0;
+			remoteInfo = OdysseiaWidgetExtension;
+		};
 		29976068253D96A200CDD568 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29976046253D96A000CDD568 /* Project object */;
@@ -173,6 +206,20 @@
 			remoteInfo = Goal;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		295B3BB72570909A00899FF0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				295B3BB62570909A00899FF0 /* OdysseiaWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +246,8 @@
 		292480DA255D55BE003D09CB /* XCTxContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTxContext.swift; sourceTree = "<group>"; };
 		2936F9562567A7710054CC14 /* SettingAboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAboutCell.swift; sourceTree = "<group>"; };
 		293D0D05255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertInteractor.swift; sourceTree = "<group>"; };
+		294D455E2574B4CB00DE6BA8 /* OdysseiaWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OdysseiaWidgetExtension.entitlements; sourceTree = "<group>"; };
+		294D457F2574D2AD00DE6BA8 /* WidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewModel.swift; sourceTree = "<group>"; };
 		2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		2954E9592540561200E89510 /* GoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNavigationController.swift; sourceTree = "<group>"; };
 		2954E9682541251A00E89510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -219,6 +268,13 @@
 		295B39C42558CE9400A21E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditTaskViewController.storyboard; sourceTree = "<group>"; };
 		295B39CA2558CE9900A21E21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditTaskViewController.strings; sourceTree = "<group>"; };
 		295B39CC2558CE9E00A21E21 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/EditTaskViewController.strings; sourceTree = "<group>"; };
+		295B3BA62570909900899FF0 /* OdysseiaWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OdysseiaWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		295B3BA72570909900899FF0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		295B3BA92570909900899FF0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		295B3BAC2570909900899FF0 /* OdysseiaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaWidget.swift; sourceTree = "<group>"; };
+		295B3BAE2570909900899FF0 /* OdysseiaWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OdysseiaWidget.intentdefinition; sourceTree = "<group>"; };
+		295B3BAF2570909A00899FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		295B3BB12570909A00899FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		296412432552404D00CA732A /* EditTaskPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterOutput.swift; sourceTree = "<group>"; };
 		297795DB254842B000AD7E2D /* AddTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCell.swift; sourceTree = "<group>"; };
 		29833773254140F7001CB8D9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
@@ -266,6 +322,9 @@
 		29A2490F255A8B51005E6230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GoalDetailViewController.storyboard; sourceTree = "<group>"; };
 		29A24915255A8B57005E6230 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GoalDetailViewController.strings; sourceTree = "<group>"; };
 		29A24917255A8B86005E6230 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/GoalDetailViewController.strings; sourceTree = "<group>"; };
+		29A731372574E9C0007842CB /* OdysseiaTimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaTimelineEntry.swift; sourceTree = "<group>"; };
+		29A731422574EA91007842CB /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		29A731512574F0DB007842CB /* DayLeftWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayLeftWidget.swift; sourceTree = "<group>"; };
 		29B13478253D97E800C273F1 /* Goal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goal.xcdatamodel; sourceTree = "<group>"; };
 		29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -295,6 +354,8 @@
 		29EF3684255A1DA000E0E669 /* StarsParticles.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = StarsParticles.scnp; sourceTree = "<group>"; };
 		29EF3686255A1DA000E0E669 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		29EF3690255A3A3E00E0E669 /* SceneKit.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = SceneKit.scnassets; sourceTree = "<group>"; };
+		29F32BBE2575097100510177 /* GoalTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTitleView.swift; sourceTree = "<group>"; };
+		29F32BC82575099A00510177 /* DaysLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysLeftView.swift; sourceTree = "<group>"; };
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
 		3E9701B2D2EFB87714C5A58F /* GoalDeleteAlertPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertPresenter.swift; sourceTree = "<group>"; };
 		414A1AC467D748C5DAB839B5 /* TaskInputViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputViewController.swift; sourceTree = "<group>"; };
@@ -345,6 +406,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		295B3BA32570909900899FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				294D45632574B5DC00DE6BA8 /* CloudKit.framework in Frameworks */,
+				295B3BAA2570909900899FF0 /* SwiftUI.framework in Frameworks */,
+				295B3BA82570909900899FF0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2997604B253D96A000CDD568 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +558,8 @@
 			isa = PBXGroup;
 			children = (
 				29248084255C1191003D09CB /* CloudKit.framework */,
+				295B3BA72570909900899FF0 /* WidgetKit.framework */,
+				295B3BA92570909900899FF0 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -525,6 +598,23 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		294D456E2574C7CD00DE6BA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29F32BBD2575095F00510177 /* SubViews */,
+				295B3BAC2570909900899FF0 /* OdysseiaWidget.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		294D457E2574D29D00DE6BA8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				294D457F2574D2AD00DE6BA8 /* WidgetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		2954E95E25405CBA00E89510 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,6 +648,17 @@
 				2959D06B2549679500A3DC28 /* AddTaskInteractorOutput.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		295B3BAB2570909900899FF0 /* OdysseiaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				29A7314C2574EF0C007842CB /* DaysLeft */,
+				295B3BAE2570909900899FF0 /* OdysseiaWidget.intentdefinition */,
+				295B3BAF2570909A00899FF0 /* Assets.xcassets */,
+				295B3BB12570909A00899FF0 /* Info.plist */,
+			);
+			path = OdysseiaWidget;
 			sourceTree = "<group>";
 		};
 		296412422552404000CA732A /* Output */ = {
@@ -624,9 +725,11 @@
 		29976045253D96A000CDD568 = {
 			isa = PBXGroup;
 			children = (
+				294D455E2574B4CB00DE6BA8 /* OdysseiaWidgetExtension.entitlements */,
 				29976050253D96A000CDD568 /* Odysseia */,
 				2997606A253D96A200CDD568 /* OdysseiaTests */,
 				29976075253D96A200CDD568 /* OdysseiaUITests */,
+				295B3BAB2570909900899FF0 /* OdysseiaWidget */,
 				2997604F253D96A000CDD568 /* Products */,
 				29248083255C1191003D09CB /* Frameworks */,
 			);
@@ -638,6 +741,7 @@
 				2997604E253D96A000CDD568 /* Odysseia.app */,
 				29976067253D96A200CDD568 /* OdysseiaTests.xctest */,
 				29976072253D96A200CDD568 /* OdysseiaUITests.xctest */,
+				295B3BA62570909900899FF0 /* OdysseiaWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -885,6 +989,34 @@
 			path = Output;
 			sourceTree = "<group>";
 		};
+		29A731322574E929007842CB /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				29A731372574E9C0007842CB /* OdysseiaTimelineEntry.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		29A731412574EA77007842CB /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				29A731422574EA91007842CB /* Provider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		29A7314C2574EF0C007842CB /* DaysLeft */ = {
+			isa = PBXGroup;
+			children = (
+				29A731322574E929007842CB /* Entry */,
+				294D457E2574D29D00DE6BA8 /* ViewModel */,
+				294D456E2574C7CD00DE6BA8 /* View */,
+				29A731412574EA77007842CB /* Provider */,
+				29A731512574F0DB007842CB /* DayLeftWidget.swift */,
+			);
+			path = DaysLeft;
+			sourceTree = "<group>";
+		};
 		29B13485253DA6B200C273F1 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -1058,6 +1190,15 @@
 				29EF3686255A1DA000E0E669 /* ConfettiView.swift */,
 			);
 			path = Confetti;
+			sourceTree = "<group>";
+		};
+		29F32BBD2575095F00510177 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				29F32BBE2575097100510177 /* GoalTitleView.swift */,
+				29F32BC82575099A00510177 /* DaysLeftView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		29FB841B2548EBC400E0B387 /* Entity */ = {
@@ -1606,6 +1747,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		295B3BA52570909900899FF0 /* OdysseiaWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 295B3BBB2570909A00899FF0 /* Build configuration list for PBXNativeTarget "OdysseiaWidgetExtension" */;
+			buildPhases = (
+				295B3BA22570909900899FF0 /* Sources */,
+				295B3BA32570909900899FF0 /* Frameworks */,
+				295B3BA42570909900899FF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdysseiaWidgetExtension;
+			productName = OdysseiaWidgetExtension;
+			productReference = 295B3BA62570909900899FF0 /* OdysseiaWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		2997604D253D96A000CDD568 /* Odysseia */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2997607B253D96A200CDD568 /* Build configuration list for PBXNativeTarget "Odysseia" */;
@@ -1614,10 +1772,12 @@
 				2997604B253D96A000CDD568 /* Frameworks */,
 				2997604C253D96A000CDD568 /* Resources */,
 				290B5C45253F11A3009D54B1 /* ShellScript */,
+				295B3BB72570909A00899FF0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				295B3BB52570909A00899FF0 /* PBXTargetDependency */,
 			);
 			name = Odysseia;
 			packageProductDependencies = (
@@ -1674,6 +1834,9 @@
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					295B3BA52570909900899FF0 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					2997604D253D96A000CDD568 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -1708,11 +1871,21 @@
 				2997604D253D96A000CDD568 /* Odysseia */,
 				29976066253D96A200CDD568 /* OdysseiaTests */,
 				29976071253D96A200CDD568 /* OdysseiaUITests */,
+				295B3BA52570909900899FF0 /* OdysseiaWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		295B3BA42570909900899FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295B3BB02570909A00899FF0 /* Assets.xcassets in Resources */,
+				295B3BF22571276D00899FF0 /* Resources.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2997604C253D96A000CDD568 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1775,6 +1948,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		295B3BA22570909900899FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295B3BCA2571250800899FF0 /* Goal+CoreDataClass.swift in Sources */,
+				295B3BC0257124D800899FF0 /* XCAssets+Generated.swift in Sources */,
+				29A731382574E9C0007842CB /* OdysseiaTimelineEntry.swift in Sources */,
+				294D45802574D2AD00DE6BA8 /* WidgetViewModel.swift in Sources */,
+				29A731432574EA91007842CB /* Provider.swift in Sources */,
+				295B3BD42571250D00899FF0 /* Task+CoreDataClass.swift in Sources */,
+				295B3BCF2571250B00899FF0 /* Goal+CoreDataProperties.swift in Sources */,
+				295B3BED2571264F00899FF0 /* TemporaryGoal.swift in Sources */,
+				295B3BDE2571252B00899FF0 /* PersistentContainerProvider.swift in Sources */,
+				295B3BAD2570909900899FF0 /* OdysseiaWidget.swift in Sources */,
+				29F32BBF2575097100510177 /* GoalTitleView.swift in Sources */,
+				295B3BB22570909A00899FF0 /* OdysseiaWidget.intentdefinition in Sources */,
+				294D455925748D4F00DE6BA8 /* Goal.xcdatamodeld in Sources */,
+				295B3BD92571251000899FF0 /* Task+CoreDataProperties.swift in Sources */,
+				29F32BC92575099A00510177 /* DaysLeftView.swift in Sources */,
+				295B3BE32571253B00899FF0 /* TemporaryTask.swift in Sources */,
+				295B3BE82571264500899FF0 /* Strings+Generated.swift in Sources */,
+				294D45682574C2F500DE6BA8 /* GoalServicer.swift in Sources */,
+				29A731522574F0DB007842CB /* DayLeftWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2997604A253D96A000CDD568 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1785,6 +1984,7 @@
 				2959D094254A652000A3DC28 /* Constraints.swift in Sources */,
 				29E6DF63256EA13400581807 /* TestContainerProvider.swift in Sources */,
 				29D7A8372566CDB700CB1D0D /* SettingCell.swift in Sources */,
+				295B3BB32570909A00899FF0 /* OdysseiaWidget.intentdefinition in Sources */,
 				29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */,
 				29D7A81925667F0600CB1D0D /* TutorialPageControll.swift in Sources */,
 				29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */,
@@ -1926,6 +2126,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		295B3BB52570909A00899FF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 295B3BA52570909900899FF0 /* OdysseiaWidgetExtension */;
+			targetProxy = 295B3BB42570909A00899FF0 /* PBXContainerItemProxy */;
+		};
 		29976069253D96A200CDD568 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2997604D253D96A000CDD568 /* Odysseia */;
@@ -2083,6 +2288,7 @@
 		29248096255C1AAF003D09CB /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
@@ -2139,6 +2345,72 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Goal;
+			};
+			name = AdHoc;
+		};
+		295B3BB82570909A00899FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia.OdysseiaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		295B3BB92570909A00899FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia.OdysseiaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		295B3BBA2570909A00899FF0 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia.OdysseiaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHoc;
 		};
@@ -2268,6 +2540,7 @@
 		2997607C253D96A200CDD568 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
@@ -2288,6 +2561,7 @@
 		2997607D253D96A200CDD568 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
@@ -2392,6 +2666,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		295B3BBB2570909A00899FF0 /* Build configuration list for PBXNativeTarget "OdysseiaWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295B3BB82570909A00899FF0 /* Debug */,
+				295B3BB92570909A00899FF0 /* Release */,
+				295B3BBA2570909A00899FF0 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29976049253D96A000CDD568 /* Build configuration list for PBXProject "Odysseia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

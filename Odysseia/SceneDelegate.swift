@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WidgetKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -52,12 +53,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
-
-        // Save changes in the application's managed object context when the application transitions to the background.
-        // todo バックグラウンドに移ったときsaveする処理を追加
-        // (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        // バックグラウンドに移ったときWidgetを更新する
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }

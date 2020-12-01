@@ -21,17 +21,10 @@ protocol GoalServiceProtocol {
 
 class GoalServicer {
     static let shared = GoalServicer()
-    let persistentContainer: NSPersistentCloudKitContainer
-    lazy var managedContext: NSManagedObjectContext = { persistentContainer.viewContext
+    lazy var managedContext: NSManagedObjectContext = {
+        PersistentContainerProvider.getInstance().viewContext
     }()
-    // 外部からのインスタンス生成を禁止
-    private init() {
-        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-            self.persistentContainer = TestProvider.getInstance()
-        } else {
-            self.persistentContainer = PersistentContainerProvider.getInstance()
-        }
-    }
+    private init() {}
 }
 
 extension GoalServicer: GoalServiceProtocol {
@@ -98,7 +91,7 @@ extension GoalServicer: GoalServiceProtocol {
     }
 
     func getAll() throws -> [Goal] {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: Goal.className)
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Goal")
         //ascendind true 昇順、false 降順
         let sortDescripter = NSSortDescriptor(key: Goal.Key.createdAt.rawValue, ascending: true)
         fetchRequest.sortDescriptors = [sortDescripter]
