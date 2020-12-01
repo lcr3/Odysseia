@@ -8,12 +8,24 @@
 import WidgetKit
 
 struct Provider: IntentTimelineProvider {
+    private let model: DayLeftModelProtocol
+
+    init(service: GoalServiceProtocol = GoalServicer.shared) {
+        self.model = DayLeftModel(service: service)
+    }
+
     func placeholder(in context: Context) -> Entry {
-        Entry(date: Date(), configuration: ConfigurationIntent())
+        Entry(date: Date(),
+              configuration: ConfigurationIntent(),
+              title: L10n.Localizable.widgetSnapshotTitle,
+              leftdays: L10n.Localizable.widgetSnapshotLeftDays)
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Entry) -> Void) {
-        let entry = Entry(date: Date(), configuration: configuration)
+        let entry = Entry(date: Date(),
+                          configuration: configuration,
+                          title: L10n.Localizable.widgetSnapshotTitle,
+                          leftdays: L10n.Localizable.widgetSnapshotLeftDays)
         completion(entry)
     }
 
@@ -24,8 +36,8 @@ struct Provider: IntentTimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            // この時点でgoalを取得してentityに情報を乗せる方がいい？
-            let entry = Entry(date: entryDate, configuration: configuration)
+            let fetchGoalResult = model.fetchGoal(uuid: configuration.DayLeftType?.identifier)
+            let entry = Entry(date: entryDate, configuration: configuration, title: fetchGoalResult.title, leftdays: fetchGoalResult.daysLeft)
             entries.append(entry)
         }
 

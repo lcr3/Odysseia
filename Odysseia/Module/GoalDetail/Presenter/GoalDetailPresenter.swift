@@ -42,7 +42,7 @@ extension GoalDetailPresenter: GoalDetailPresentation {
     }
 
     func loadGoal() {
-        interactor.loadGoalList(objectId: goal.objectID)
+        interactor.loadGoalList(uuid: goal.id.uuidString)
     }
 
     func getAchievementRate() -> String {

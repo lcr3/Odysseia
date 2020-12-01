@@ -14,6 +14,7 @@ extension Goal {
         NSFetchRequest<Goal>(entityName: "Goal")
     }
 
+    @NSManaged public var id: UUID
     @NSManaged public var deadlineDate: Date
     @NSManaged public var detail: String
     @NSManaged public var planet: Int16

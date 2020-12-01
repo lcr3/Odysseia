@@ -33,7 +33,6 @@
 		294D455925748D4F00DE6BA8 /* Goal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29B13477253D97E800C273F1 /* Goal.xcdatamodeld */; };
 		294D45632574B5DC00DE6BA8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29248084255C1191003D09CB /* CloudKit.framework */; };
 		294D45682574C2F500DE6BA8 /* GoalServicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552818253E779C009AFE97 /* GoalServicer.swift */; };
-		294D45802574D2AD00DE6BA8 /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D457F2574D2AD00DE6BA8 /* WidgetViewModel.swift */; };
 		2950D8D325413DED007AC1C9 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */; };
 		2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954E9592540561200E89510 /* GoalNavigationController.swift */; };
 		2954E9672541251A00E89510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
@@ -136,6 +135,32 @@
 		29EF3691255A3A3E00E0E669 /* SceneKit.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EF3690255A3A3E00E0E669 /* SceneKit.scnassets */; };
 		29F32BBF2575097100510177 /* GoalTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BBE2575097100510177 /* GoalTitleView.swift */; };
 		29F32BC92575099A00510177 /* DaysLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BC82575099A00510177 /* DaysLeftView.swift */; };
+		29F32BEB2575CB6400510177 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BEA2575CB6400510177 /* IntentHandler.swift */; };
+		29F32BEF2575CB6400510177 /* OdysseiaWidgetIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29F32BE82575CB6400510177 /* OdysseiaWidgetIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		29F32BFA2575CC0900510177 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29248084255C1191003D09CB /* CloudKit.framework */; };
+		29F32C0C2575E83500510177 /* DayLeftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32C0B2575E83500510177 /* DayLeftModel.swift */; };
+		29F32C1725760A5200510177 /* OdysseiaWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 295B3BAE2570909900899FF0 /* OdysseiaWidget.intentdefinition */; };
+		29F32C2725760ECD00510177 /* GoalServicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552818253E779C009AFE97 /* GoalServicer.swift */; };
+		29F32C2D25760F0200510177 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */; };
+		29F32C3325760F0400510177 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */; };
+		29F32C3925760F0700510177 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8B254C073C00A6E396 /* Task+CoreDataClass.swift */; };
+		29F32C3F25760F0A00510177 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */; };
+		29F32C4525760F0F00510177 /* PersistentContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955280E253E76D9009AFE97 /* PersistentContainerProvider.swift */; };
+		29F32C4B2576101200510177 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
+		29F32C512576101900510177 /* TemporaryGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552827253E8052009AFE97 /* TemporaryGoal.swift */; };
+		29F32C572576102100510177 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29833773254140F7001CB8D9 /* Strings+Generated.swift */; };
+		29F32C67257619E000510177 /* Goal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29B13477253D97E800C273F1 /* Goal.xcdatamodeld */; };
+		29F5D21C25762D9900146C14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
+		29F5D22225762D9A00146C14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2954E9692541251A00E89510 /* Localizable.strings */; };
+		29F5D2392576329900146C14 /* OdysseiaWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5D2382576329900146C14 /* OdysseiaWidgetTests.swift */; };
+		29F5D24B257632B500146C14 /* DayLeftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32C0B2575E83500510177 /* DayLeftModel.swift */; };
+		29F5D252257632BC00146C14 /* OdysseiaTimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A731372574E9C0007842CB /* OdysseiaTimelineEntry.swift */; };
+		29F5D259257632C100146C14 /* OdysseiaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B3BAC2570909900899FF0 /* OdysseiaWidget.swift */; };
+		29F5D260257632C400146C14 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A731422574EA91007842CB /* Provider.swift */; };
+		29F5D267257632CA00146C14 /* DayLeftWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A731512574F0DB007842CB /* DayLeftWidget.swift */; };
+		29F5D26E257632D300146C14 /* GoalTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BBE2575097100510177 /* GoalTitleView.swift */; };
+		29F5D275257632D600146C14 /* DaysLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BC82575099A00510177 /* DaysLeftView.swift */; };
+		29F5D2902576368B00146C14 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
 		3905C72BEE22B5D4FA9E80C2 /* SettingAboutRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E174358A43722B0E0A837 /* SettingAboutRouterTests.swift */; };
@@ -205,6 +230,13 @@
 			remoteGlobalIDString = 2997604D253D96A000CDD568;
 			remoteInfo = Goal;
 		};
+		29F32BED2575CB6400510177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29976046253D96A000CDD568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29F32BE72575CB6400510177;
+			remoteInfo = OdysseiaWidgetIntent;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -215,6 +247,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				295B3BB62570909A00899FF0 /* OdysseiaWidgetExtension.appex in Embed App Extensions */,
+				29F32BEF2575CB6400510177 /* OdysseiaWidgetIntent.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +280,6 @@
 		2936F9562567A7710054CC14 /* SettingAboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAboutCell.swift; sourceTree = "<group>"; };
 		293D0D05255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertInteractor.swift; sourceTree = "<group>"; };
 		294D455E2574B4CB00DE6BA8 /* OdysseiaWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OdysseiaWidgetExtension.entitlements; sourceTree = "<group>"; };
-		294D457F2574D2AD00DE6BA8 /* WidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewModel.swift; sourceTree = "<group>"; };
 		2950D8D225413DED007AC1C9 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		2954E9592540561200E89510 /* GoalNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalNavigationController.swift; sourceTree = "<group>"; };
 		2954E9682541251A00E89510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -356,6 +388,14 @@
 		29EF3690255A3A3E00E0E669 /* SceneKit.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = SceneKit.scnassets; sourceTree = "<group>"; };
 		29F32BBE2575097100510177 /* GoalTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTitleView.swift; sourceTree = "<group>"; };
 		29F32BC82575099A00510177 /* DaysLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysLeftView.swift; sourceTree = "<group>"; };
+		29F32BE82575CB6400510177 /* OdysseiaWidgetIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OdysseiaWidgetIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F32BEA2575CB6400510177 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		29F32BEC2575CB6400510177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F32BF92575CBDA00510177 /* OdysseiaWidgetIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OdysseiaWidgetIntent.entitlements; sourceTree = "<group>"; };
+		29F32C0B2575E83500510177 /* DayLeftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayLeftModel.swift; sourceTree = "<group>"; };
+		29F5D2362576329900146C14 /* OdysseiaWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F5D2382576329900146C14 /* OdysseiaWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaWidgetTests.swift; sourceTree = "<group>"; };
+		29F5D23A2576329900146C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
 		3E9701B2D2EFB87714C5A58F /* GoalDeleteAlertPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertPresenter.swift; sourceTree = "<group>"; };
 		414A1AC467D748C5DAB839B5 /* TaskInputViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputViewController.swift; sourceTree = "<group>"; };
@@ -434,6 +474,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2997606F253D96A200CDD568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29F32BE52575CB6400510177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F32BFA2575CC0900510177 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29F5D2332576329900146C14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -607,14 +662,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		294D457E2574D29D00DE6BA8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				294D457F2574D2AD00DE6BA8 /* WidgetViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		2954E95E25405CBA00E89510 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +777,8 @@
 				2997606A253D96A200CDD568 /* OdysseiaTests */,
 				29976075253D96A200CDD568 /* OdysseiaUITests */,
 				295B3BAB2570909900899FF0 /* OdysseiaWidget */,
+				29F32BE92575CB6400510177 /* OdysseiaWidgetIntent */,
+				29F5D2372576329900146C14 /* OdysseiaWidgetTests */,
 				2997604F253D96A000CDD568 /* Products */,
 				29248083255C1191003D09CB /* Frameworks */,
 			);
@@ -742,6 +791,8 @@
 				29976067253D96A200CDD568 /* OdysseiaTests.xctest */,
 				29976072253D96A200CDD568 /* OdysseiaUITests.xctest */,
 				295B3BA62570909900899FF0 /* OdysseiaWidgetExtension.appex */,
+				29F32BE82575CB6400510177 /* OdysseiaWidgetIntent.appex */,
+				29F5D2362576329900146C14 /* OdysseiaWidgetTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1008,8 +1059,8 @@
 		29A7314C2574EF0C007842CB /* DaysLeft */ = {
 			isa = PBXGroup;
 			children = (
+				29F32C0A2575E78F00510177 /* Model */,
 				29A731322574E929007842CB /* Entry */,
-				294D457E2574D29D00DE6BA8 /* ViewModel */,
 				294D456E2574C7CD00DE6BA8 /* View */,
 				29A731412574EA77007842CB /* Provider */,
 				29A731512574F0DB007842CB /* DayLeftWidget.swift */,
@@ -1199,6 +1250,33 @@
 				29F32BC82575099A00510177 /* DaysLeftView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		29F32BE92575CB6400510177 /* OdysseiaWidgetIntent */ = {
+			isa = PBXGroup;
+			children = (
+				29F32BF92575CBDA00510177 /* OdysseiaWidgetIntent.entitlements */,
+				29F32BEA2575CB6400510177 /* IntentHandler.swift */,
+				29F32BEC2575CB6400510177 /* Info.plist */,
+			);
+			path = OdysseiaWidgetIntent;
+			sourceTree = "<group>";
+		};
+		29F32C0A2575E78F00510177 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29F32C0B2575E83500510177 /* DayLeftModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29F5D2372576329900146C14 /* OdysseiaWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				29F5D2382576329900146C14 /* OdysseiaWidgetTests.swift */,
+				29F5D23A2576329900146C14 /* Info.plist */,
+			);
+			path = OdysseiaWidgetTests;
 			sourceTree = "<group>";
 		};
 		29FB841B2548EBC400E0B387 /* Entity */ = {
@@ -1778,6 +1856,7 @@
 			);
 			dependencies = (
 				295B3BB52570909A00899FF0 /* PBXTargetDependency */,
+				29F32BEE2575CB6400510177 /* PBXTargetDependency */,
 			);
 			name = Odysseia;
 			packageProductDependencies = (
@@ -1824,13 +1903,47 @@
 			productReference = 29976072253D96A200CDD568 /* OdysseiaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		29F32BE72575CB6400510177 /* OdysseiaWidgetIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29F32BF32575CB6400510177 /* Build configuration list for PBXNativeTarget "OdysseiaWidgetIntent" */;
+			buildPhases = (
+				29F32BE42575CB6400510177 /* Sources */,
+				29F32BE52575CB6400510177 /* Frameworks */,
+				29F32BE62575CB6400510177 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdysseiaWidgetIntent;
+			productName = OdysseiaWidgetIntent;
+			productReference = 29F32BE82575CB6400510177 /* OdysseiaWidgetIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		29F5D2352576329900146C14 /* OdysseiaWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29F5D23B2576329900146C14 /* Build configuration list for PBXNativeTarget "OdysseiaWidgetTests" */;
+			buildPhases = (
+				29F5D2322576329900146C14 /* Sources */,
+				29F5D2332576329900146C14 /* Frameworks */,
+				29F5D2342576329900146C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdysseiaWidgetTests;
+			productName = OdysseiaWidgetTests;
+			productReference = 29F5D2362576329900146C14 /* OdysseiaWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		29976046253D96A000CDD568 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
@@ -1847,6 +1960,12 @@
 					29976071253D96A200CDD568 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 2997604D253D96A000CDD568;
+					};
+					29F32BE72575CB6400510177 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					29F5D2352576329900146C14 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -1871,7 +1990,9 @@
 				2997604D253D96A000CDD568 /* Odysseia */,
 				29976066253D96A200CDD568 /* OdysseiaTests */,
 				29976071253D96A200CDD568 /* OdysseiaUITests */,
+				29F5D2352576329900146C14 /* OdysseiaWidgetTests */,
 				295B3BA52570909900899FF0 /* OdysseiaWidgetExtension */,
+				29F32BE72575CB6400510177 /* OdysseiaWidgetIntent */,
 			);
 		};
 /* End PBXProject section */
@@ -1882,6 +2003,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				295B3BB02570909A00899FF0 /* Assets.xcassets in Resources */,
+				29F5D21C25762D9900146C14 /* Localizable.strings in Resources */,
 				295B3BF22571276D00899FF0 /* Resources.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1925,6 +2047,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29F32BE62575CB6400510177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F5D22225762D9A00146C14 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29F5D2342576329900146C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1955,7 +2092,6 @@
 				295B3BCA2571250800899FF0 /* Goal+CoreDataClass.swift in Sources */,
 				295B3BC0257124D800899FF0 /* XCAssets+Generated.swift in Sources */,
 				29A731382574E9C0007842CB /* OdysseiaTimelineEntry.swift in Sources */,
-				294D45802574D2AD00DE6BA8 /* WidgetViewModel.swift in Sources */,
 				29A731432574EA91007842CB /* Provider.swift in Sources */,
 				295B3BD42571250D00899FF0 /* Task+CoreDataClass.swift in Sources */,
 				295B3BCF2571250B00899FF0 /* Goal+CoreDataProperties.swift in Sources */,
@@ -1967,6 +2103,7 @@
 				294D455925748D4F00DE6BA8 /* Goal.xcdatamodeld in Sources */,
 				295B3BD92571251000899FF0 /* Task+CoreDataProperties.swift in Sources */,
 				29F32BC92575099A00510177 /* DaysLeftView.swift in Sources */,
+				29F32C0C2575E83500510177 /* DayLeftModel.swift in Sources */,
 				295B3BE32571253B00899FF0 /* TemporaryTask.swift in Sources */,
 				295B3BE82571264500899FF0 /* Strings+Generated.swift in Sources */,
 				294D45682574C2F500DE6BA8 /* GoalServicer.swift in Sources */,
@@ -2123,6 +2260,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29F32BE42575CB6400510177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F32C3325760F0400510177 /* Goal+CoreDataProperties.swift in Sources */,
+				29F32C4525760F0F00510177 /* PersistentContainerProvider.swift in Sources */,
+				29F32BEB2575CB6400510177 /* IntentHandler.swift in Sources */,
+				29F32C1725760A5200510177 /* OdysseiaWidget.intentdefinition in Sources */,
+				29F32C2D25760F0200510177 /* Goal+CoreDataClass.swift in Sources */,
+				29F32C3F25760F0A00510177 /* Task+CoreDataProperties.swift in Sources */,
+				29F32C512576101900510177 /* TemporaryGoal.swift in Sources */,
+				29F32C3925760F0700510177 /* Task+CoreDataClass.swift in Sources */,
+				29F32C67257619E000510177 /* Goal.xcdatamodeld in Sources */,
+				29F32C4B2576101200510177 /* TemporaryTask.swift in Sources */,
+				29F32C2725760ECD00510177 /* GoalServicer.swift in Sources */,
+				29F32C572576102100510177 /* Strings+Generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29F5D2322576329900146C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29F5D259257632C100146C14 /* OdysseiaWidget.swift in Sources */,
+				29F5D2392576329900146C14 /* OdysseiaWidgetTests.swift in Sources */,
+				29F5D24B257632B500146C14 /* DayLeftModel.swift in Sources */,
+				29F5D260257632C400146C14 /* Provider.swift in Sources */,
+				29F5D275257632D600146C14 /* DaysLeftView.swift in Sources */,
+				29F5D252257632BC00146C14 /* OdysseiaTimelineEntry.swift in Sources */,
+				29F5D26E257632D300146C14 /* GoalTitleView.swift in Sources */,
+				29F5D2902576368B00146C14 /* TemporaryTask.swift in Sources */,
+				29F5D267257632CA00146C14 /* DayLeftWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2140,6 +2312,11 @@
 			isa = PBXTargetDependency;
 			target = 2997604D253D96A000CDD568 /* Odysseia */;
 			targetProxy = 29976073253D96A200CDD568 /* PBXContainerItemProxy */;
+		};
+		29F32BEE2575CB6400510177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29F32BE72575CB6400510177 /* OdysseiaWidgetIntent */;
+			targetProxy = 29F32BED2575CB6400510177 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2663,6 +2840,126 @@
 			};
 			name = Release;
 		};
+		29F32BF02575CB6400510177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetIntent/OdysseiaWidgetIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidgetIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia.OdysseiaWidgetIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29F32BF12575CB6400510177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetIntent/OdysseiaWidgetIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidgetIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia.OdysseiaWidgetIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		29F32BF22575CB6400510177 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetIntent/OdysseiaWidgetIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidgetIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.Odysseia.OdysseiaWidgetIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
+		29F5D23C2576329900146C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidgetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29F5D23D2576329900146C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidgetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		29F5D23E2576329900146C14 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUF7376KJL;
+				INFOPLIST_FILE = OdysseiaWidgetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2712,6 +3009,26 @@
 				29976082253D96A200CDD568 /* Debug */,
 				29976083253D96A200CDD568 /* Release */,
 				29248098255C1AAF003D09CB /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29F32BF32575CB6400510177 /* Build configuration list for PBXNativeTarget "OdysseiaWidgetIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F32BF02575CB6400510177 /* Debug */,
+				29F32BF12575CB6400510177 /* Release */,
+				29F32BF22575CB6400510177 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29F5D23B2576329900146C14 /* Build configuration list for PBXNativeTarget "OdysseiaWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F5D23C2576329900146C14 /* Debug */,
+				29F5D23D2576329900146C14 /* Release */,
+				29F5D23E2576329900146C14 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

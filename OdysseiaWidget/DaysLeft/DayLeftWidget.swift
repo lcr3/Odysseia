@@ -16,7 +16,7 @@ struct OdysseiaWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             OdysseiaWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName(L10n.Localizable.widgetDisplayName)
+        .description(L10n.Localizable.widgetDescription)
     }
 }

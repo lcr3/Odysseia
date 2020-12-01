@@ -12,7 +12,7 @@ protocol GoalServiceProtocol {
     func add(goal: TemporaryGoal, tasks: [TemporaryTask]) throws -> Goal
     func update(goal: Goal) throws -> Goal
     func delete(goal: Goal) throws
-    func get(objectId: NSManagedObjectID) throws -> Goal
+    func get(uuid: String) throws -> Goal
     func getAll() throws -> [Goal]
 
     // Task
@@ -78,10 +78,14 @@ extension GoalServicer: GoalServiceProtocol {
         return goal
     }
 
-    func get(objectId: NSManagedObjectID) throws -> Goal {
+    func get(uuid: String) throws -> Goal {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Goal")
+        let predicate = NSPredicate(format: "%K = %@", "id", uuid)
+        fetchRequest.fetchLimit = 1
+        fetchRequest.predicate = predicate
         do {
-            let result = try managedContext.existingObject(with: objectId)
-            if let goal = result as? Goal {
+            let result = try managedContext.fetch(fetchRequest)
+            if let goal = result.first as? Goal {
                 return goal
             }
             throw GoalServiceError.getGoalError(msg: L10n.Localizable.getGoalErrorMsg)

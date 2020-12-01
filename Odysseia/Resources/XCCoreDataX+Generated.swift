@@ -33,6 +33,7 @@ internal class Goal: NSManagedObject {
     @NSManaged internal var createdAt: Date
     @NSManaged internal var deadlineDate: Date
     @NSManaged internal var detail: String
+    @NSManaged internal var id: UUID?
     @NSManaged internal var planet: Int16
     @NSManaged internal var reatchDate: Date?
     @NSManaged internal var title: String
@@ -78,6 +79,7 @@ internal class Task: NSManagedObject {
 
     // swiftlint:disable discouraged_optional_boolean discouraged_optional_collection
     @NSManaged internal var createdAt: Date
+    @NSManaged internal var id: UUID?
     @NSManaged internal var reachCount: Int16
     @NSManaged internal var reachDate: Date?
     @NSManaged internal var targetCount: Int16

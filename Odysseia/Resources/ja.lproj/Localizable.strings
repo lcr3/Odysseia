@@ -51,3 +51,9 @@
 "GeccoLink" = "https://github.com/bannzai/Gecco";
 "HGCircularSliderTitle" = "HGCircularSlider";
 "HGCircularSliderLink" = "https://github.com/HamzaGhazouani/HGCircularSlider";
+// Widget
+"WidgetDisplayName" = "Odysseia Widget";
+"WidgetDescription" = "目標達成までの残り日数を表示するWidget";
+"WidgetSnapshotTitle" = "今年の目標";
+"WidgetSnapshotLeftDays" = "365";
+"FailedFetchRequestTitle" = "目標を設定しよう";

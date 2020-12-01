@@ -66,14 +66,14 @@ class ServiceTests: XCTestCase {
 
     func testUpdateGoal() {
         // setup
-        guard let objId = saveGoal(title: "title", detail: "detail", tasks: []) else {
+        guard let uuid = saveGoal(title: "title", detail: "detail", tasks: []) else {
             return XCTFail("Failed save goal.")
         }
         let editTitle = "editTitle"
         let editDetail = "editDetail"
         var editGoal: Goal
         do {
-            try editGoal = service.get(objectId: objId)
+            try editGoal = service.get(uuid: uuid.uuidString)
         } catch {
             return XCTFail("Failed get goal.")
         }
@@ -88,7 +88,7 @@ class ServiceTests: XCTestCase {
         }
 
         // verify
-        guard let updateGoal = loadGoal(objid: objId) else {
+        guard let updateGoal = loadGoal(uuid: uuid) else {
             return XCTFail("Failed load goal.")
         }
         XCTAssertEqual(updateGoal.title, editTitle)
@@ -98,8 +98,8 @@ class ServiceTests: XCTestCase {
     func testDeleteGoal() {
         // setup
         let tasks = [TemporaryTask(title: "task", targetCount: 3)]
-        guard let objId = saveGoal(title: "title", detail: "detail", tasks: tasks),
-              let deleteGoal = loadGoal(objid: objId) else {
+        guard let uuid = saveGoal(title: "title", detail: "detail", tasks: tasks),
+              let deleteGoal = loadGoal(uuid: uuid) else {
             return XCTFail("Failed load goal.")
         }
 
@@ -112,7 +112,7 @@ class ServiceTests: XCTestCase {
 
         // verify
         do {
-            try _ = service.get(objectId: objId)
+            try _ = service.get(uuid: uuid.uuidString)
             XCTFail("Faild delete goal.")
         } catch {
             // expectation
@@ -123,16 +123,16 @@ class ServiceTests: XCTestCase {
         // setup
         let tasks1 = [TemporaryTask(title: "task1", targetCount: 1)]
         let tasks2 = [TemporaryTask(title: "task2", targetCount: 2)]
-        guard let objId1 = saveGoal(title: "title1", detail: "detail1", tasks: tasks1),
-              let objId2 = saveGoal(title: "title2", detail: "detail2", tasks: tasks2) else {
+        guard let uuid1 = saveGoal(title: "title1", detail: "detail1", tasks: tasks1),
+              let uuid2 = saveGoal(title: "title2", detail: "detail2", tasks: tasks2) else {
             return XCTFail("Failed save goal.")
         }
 
         // execute
         let getGoal1, getGoal2: Goal
         do {
-            try getGoal1 = service.get(objectId: objId1)
-            try getGoal2 = service.get(objectId: objId2)
+            try getGoal1 = service.get(uuid: uuid1.uuidString)
+            try getGoal2 = service.get(uuid: uuid2.uuidString)
         } catch {
             return XCTFail("Failed get goal.")
         }
@@ -183,8 +183,8 @@ class ServiceTests: XCTestCase {
         // setup
         let tasks = [TemporaryTask(title: "task1", targetCount: 3),
                      TemporaryTask(title: "task2", targetCount: 2)]
-        guard let objId = saveGoal(title: "title", detail: "detail", tasks: tasks),
-              let targetGoal = loadGoal(objid: objId) else {
+        guard let uuid = saveGoal(title: "title", detail: "detail", tasks: tasks),
+              let targetGoal = loadGoal(uuid: uuid) else {
             return XCTFail("Failed load goal.")
         }
 
@@ -197,7 +197,7 @@ class ServiceTests: XCTestCase {
         }
 
         // verify
-        guard let goal = loadGoal(objid: objId) else {
+        guard let goal = loadGoal(uuid: uuid) else {
             return XCTFail("Failed get goal.")
         }
         XCTAssertEqual(goal.getTasks().count, 1)
@@ -208,8 +208,8 @@ class ServiceTests: XCTestCase {
     func testUpdateTask() {
         // setup
         let tasks = [TemporaryTask(title: "task1", targetCount: 3)]
-        guard let objId = saveGoal(title: "title", detail: "detail", tasks: tasks),
-              let targetGoal = loadGoal(objid: objId) else {
+        guard let uuid = saveGoal(title: "title", detail: "detail", tasks: tasks),
+              let targetGoal = loadGoal(uuid: uuid) else {
             return XCTFail("Failed load goal.")
         }
 
@@ -224,26 +224,26 @@ class ServiceTests: XCTestCase {
         }
 
         // verify
-        guard let goal = loadGoal(objid: objId) else {
+        guard let goal = loadGoal(uuid: uuid) else {
             return XCTFail("Failed get goal.")
         }
         XCTAssertEqual(goal.getTask(index: 0).title, "update")
         XCTAssertEqual(goal.getTask(index: 0).targetCount, 99)
     }
 
-    private func saveGoal(title: String, detail: String, tasks: [TemporaryTask]) -> NSManagedObjectID? {
+    private func saveGoal(title: String, detail: String, tasks: [TemporaryTask]) -> UUID? {
         let tempGoal = TemporaryGoal(title: title, detail: detail, deadlineDate: Date())
         do {
             let goal = try service.add(goal: tempGoal, tasks: tasks)
-            return goal.objectID
+            return goal.id
         } catch {
             return nil
         }
     }
 
-    private func loadGoal(objid: NSManagedObjectID) -> Goal? {
+    private func loadGoal(uuid: UUID) -> Goal? {
         do {
-            return try service.get(objectId: objid)
+            return try service.get(uuid: uuid.uuidString)
         } catch {
             return nil
         }

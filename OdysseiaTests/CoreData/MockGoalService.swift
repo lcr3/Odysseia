@@ -39,7 +39,7 @@ class MockGoalService: GoalServiceProtocol {
         callCountDelete += 1
     }
 
-    func get(objectId: NSManagedObjectID) throws -> Goal {
+    func get(uuid: String) throws -> Goal {
         callCountGet += 1
         return mockGoal
     }

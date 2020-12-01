@@ -10,5 +10,8 @@ import CoreData
 
 @objc(Goal)
 public class Goal: NSManagedObject {
-
+    override public func awakeFromInsert() {
+        super.awakeFromInsert()
+        id = UUID()
+    }
 }

@@ -9,7 +9,7 @@ import CoreData
 
 protocol GoalDetailUsecase: AnyObject {
     var output: GoalDetailInteractorOutput? { get }
-    func loadGoalList(objectId: NSManagedObjectID)
+    func loadGoalList(uuid: String)
 }
 
 class GoalDetailInteractor {
@@ -18,9 +18,9 @@ class GoalDetailInteractor {
 }
 
 extension GoalDetailInteractor: GoalDetailUsecase {
-    func loadGoalList(objectId: NSManagedObjectID) {
+    func loadGoalList(uuid: String) {
         do {
-            let goal = try goalService.get(objectId: objectId)
+            let goal = try goalService.get(uuid: uuid)
             output?.successLoad(goal: goal)
         } catch {
             output?.failedLoad(error: error)

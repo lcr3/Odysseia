@@ -49,6 +49,8 @@ internal enum L10n {
         internal static let editButtonText = L10n.tr("Localizable", "editButtonText")
         /// データの編集に失敗しました
         internal static let editGoalErrorMsg = L10n.tr("Localizable", "EditGoalErrorMsg")
+        /// 目標を設定しよう
+        internal static let failedFetchRequestTitle = L10n.tr("Localizable", "FailedFetchRequestTitle")
         /// https://github.com/bannzai/Gecco
         internal static let geccoLink = L10n.tr("Localizable", "GeccoLink")
         /// Gecco
@@ -85,6 +87,14 @@ internal enum L10n {
         internal static let supportTitle = L10n.tr("Localizable", "SupportTitle")
         /// データの更新に失敗しました
         internal static let updateGoalErrorMsg = L10n.tr("Localizable", "UpdateGoalErrorMsg")
+        /// 目標達成までの残り日数を表示するWidget
+        internal static let widgetDescription = L10n.tr("Localizable", "WidgetDescription")
+        /// Odysseia Widget
+        internal static let widgetDisplayName = L10n.tr("Localizable", "WidgetDisplayName")
+        /// 365
+        internal static let widgetSnapshotLeftDays = L10n.tr("Localizable", "WidgetSnapshotLeftDays")
+        /// 今年の目標
+        internal static let widgetSnapshotTitle = L10n.tr("Localizable", "WidgetSnapshotTitle")
     }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

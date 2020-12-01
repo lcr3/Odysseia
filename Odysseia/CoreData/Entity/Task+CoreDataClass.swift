@@ -12,4 +12,9 @@ import CoreData
 public class Task: NSManagedObject {
     public static let maxTargetCount = 999
     public static let minTargetCount = 1
+
+    override public func awakeFromInsert() {
+        super.awakeFromInsert()
+        id = UUID()
+    }
 }
