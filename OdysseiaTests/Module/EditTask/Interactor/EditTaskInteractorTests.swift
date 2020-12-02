@@ -8,18 +8,48 @@
 import XCTest
 
 class EditTaskInteractorTests: XCTestCase {
+    var service: MockGoalService!
+    var interactor: EditTaskInteractor!
+    var output: MockEditTaskInteractorOutput!
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        service = MockGoalService()
+        output = MockEditTaskInteractorOutput()
+        interactor = EditTaskInteractor(service: service)
+        interactor.output = output
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
 
-    //    class MockPresenter: EditTaskInteractorOutput {
-    //
-    //    }
+    func testSuccessUpdate() {
+        // setup
+        let task = StubTask(title: "task",
+                            reachCount: 4,
+                            targetCount: 6)
+
+        // execute
+        interactor.update(task: task)
+
+        // verify
+        XCTAssertEqual(output.callCountSccessUpdate, 1)
+        XCTAssertEqual(service.callCountUpdateTask, 1)
+    }
+
+    func testFailedUpdate() {
+        // setup
+        let task = StubTask(title: "task",
+                            reachCount: 4,
+                            targetCount: 6)
+        service.isSuccessUpdateTask = false
+
+        // execute
+        interactor.update(task: task)
+
+        // verify
+        XCTAssertEqual(output.callCountFaildUpdate, 1)
+        XCTAssertEqual(service.callCountUpdateTask, 1)
+    }
 }

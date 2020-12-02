@@ -161,6 +161,7 @@
 		29F5D26E257632D300146C14 /* GoalTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BBE2575097100510177 /* GoalTitleView.swift */; };
 		29F5D275257632D600146C14 /* DaysLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F32BC82575099A00510177 /* DaysLeftView.swift */; };
 		29F5D2902576368B00146C14 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
+		29F5D2D925771E0200146C14 /* MockEditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5D2D825771E0200146C14 /* MockEditTask.swift */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
 		3905C72BEE22B5D4FA9E80C2 /* SettingAboutRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E174358A43722B0E0A837 /* SettingAboutRouterTests.swift */; };
@@ -396,6 +397,7 @@
 		29F5D2362576329900146C14 /* OdysseiaWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F5D2382576329900146C14 /* OdysseiaWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaWidgetTests.swift; sourceTree = "<group>"; };
 		29F5D23A2576329900146C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F5D2D825771E0200146C14 /* MockEditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEditTask.swift; sourceTree = "<group>"; };
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
 		3E9701B2D2EFB87714C5A58F /* GoalDeleteAlertPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertPresenter.swift; sourceTree = "<group>"; };
 		414A1AC467D748C5DAB839B5 /* TaskInputViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputViewController.swift; sourceTree = "<group>"; };
@@ -1279,6 +1281,14 @@
 			path = OdysseiaWidgetTests;
 			sourceTree = "<group>";
 		};
+		29F5D2D725771DEB00146C14 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29F5D2D825771E0200146C14 /* MockEditTask.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		29FB841B2548EBC400E0B387 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -1409,6 +1419,7 @@
 		78193783AEF073ABB774B037 /* EditTask */ = {
 			isa = PBXGroup;
 			children = (
+				29F5D2D725771DEB00146C14 /* Mock */,
 				6589D3B02848F6EEFA53D8FD /* View */,
 				8E2F888565361C82B9B58213 /* Interactor */,
 				5299DAB3F3420DD2E8D70F10 /* Presenter */,
@@ -2236,6 +2247,7 @@
 				0270FCEE060D4B33AA35C1B0 /* TaskInputRouterTests.swift in Sources */,
 				29E6DF38256B58B800581807 /* GoalListPresenterTests.swift in Sources */,
 				0C1A3C6488532F887F048FF5 /* GoalAlertViewTests.swift in Sources */,
+				29F5D2D925771E0200146C14 /* MockEditTask.swift in Sources */,
 				906CD173E22DAD35C12F688F /* GoalAlertPresenterTests.swift in Sources */,
 				56CAB67272EE6685B58873F6 /* GoalAlertRouterTests.swift in Sources */,
 				EE7278D5F7853798744E7221 /* TutorialViewTests.swift in Sources */,

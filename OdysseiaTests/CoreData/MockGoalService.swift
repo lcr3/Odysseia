@@ -17,6 +17,7 @@ class MockGoalService: GoalServiceProtocol {
     var callCountGet = 0
     var callCountGetAll = 0
     var callCountUpdateTask = 0
+    var isSuccessUpdateTask = true
     var mockGoal = Goal()
     var mockTask = Task()
 
@@ -51,6 +52,9 @@ class MockGoalService: GoalServiceProtocol {
 
     func update(task: Task) throws -> Task {
         callCountUpdateTask += 1
-        return mockTask
+        if isSuccessUpdateTask {
+            return mockTask
+        }
+        throw GoalServiceError.updateTaskError(msg: L10n.Localizable.updateGoalErrorMsg)
     }
 }

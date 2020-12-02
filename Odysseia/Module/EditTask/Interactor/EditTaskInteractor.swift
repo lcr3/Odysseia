@@ -8,15 +8,15 @@
 protocol EditTaskUsecase: AnyObject {
     // Interactor -> Presenter
     var output: EditTaskInteractorOutput? { get }
-    var service: GoalServicer { get }
+    var service: GoalServiceProtocol { get }
     func update(task: Task)
 }
 
 class EditTaskInteractor {
     weak var output: EditTaskInteractorOutput?
-    let service: GoalServicer
+    let service: GoalServiceProtocol
 
-    init(service: GoalServicer) {
+    init(service: GoalServiceProtocol) {
         self.service = service
     }
 }
