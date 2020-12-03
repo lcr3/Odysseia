@@ -65,10 +65,10 @@
 		295B3BED2571264F00899FF0 /* TemporaryGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552827253E8052009AFE97 /* TemporaryGoal.swift */; };
 		295B3BF22571276D00899FF0 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B5C4A253F1537009D54B1 /* Resources.xcassets */; };
 		296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296412432552404D00CA732A /* EditTaskPresenterOutput.swift */; };
+		296ABC98257870BE00D78DED /* Gecco in Frameworks */ = {isa = PBXBuildFile; productRef = 296ABC97257870BE00D78DED /* Gecco */; };
 		297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297795DB254842B000AD7E2D /* AddTaskCell.swift */; };
 		29833775254140F7001CB8D9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29833773254140F7001CB8D9 /* Strings+Generated.swift */; };
 		298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337BE2541B845001CB8D9 /* MockGoalService.swift */; };
-		298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 298337D72542AAC7001CB8D9 /* HGCircularSlider */; };
 		298337DE25441173001CB8D9 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337DD25441173001CB8D9 /* TaskView.swift */; };
 		298337E325441188001CB8D9 /* TaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298337E225441188001CB8D9 /* TaskView.xib */; };
 		29976052253D96A000CDD568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976051253D96A000CDD568 /* AppDelegate.swift */; };
@@ -104,6 +104,7 @@
 		29A731432574EA91007842CB /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A731422574EA91007842CB /* Provider.swift */; };
 		29A731522574F0DB007842CB /* DayLeftWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A731512574F0DB007842CB /* DayLeftWidget.swift */; };
 		29B13479253D97E800C273F1 /* Goal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29B13477253D97E800C273F1 /* Goal.xcdatamodeld */; };
+		29B9544925786546007D80D2 /* HGCircularSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 29B9544825786546007D80D2 /* HGCircularSlider */; };
 		29D67F8C254C073C00A6E396 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F88254C073C00A6E396 /* Task+CoreDataProperties.swift */; };
 		29D67F8D254C073C00A6E396 /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F89254C073C00A6E396 /* Goal+CoreDataClass.swift */; };
 		29D67F8E254C073C00A6E396 /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D67F8A254C073C00A6E396 /* Goal+CoreDataProperties.swift */; };
@@ -121,7 +122,6 @@
 		29D7A8452567E8D900CB1D0D /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A8442567E8D900CB1D0D /* SettingItem.swift */; };
 		29D7A84E2567F47D00CB1D0D /* SettingAboutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A84D2567F47D00CB1D0D /* SettingAboutItem.swift */; };
 		29D7A85D256808C200CB1D0D /* MockSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7A85C256808C200CB1D0D /* MockSetting.swift */; };
-		29E6DF23256A470D00581807 /* Gecco in Frameworks */ = {isa = PBXBuildFile; productRef = 29E6DF22256A470D00581807 /* Gecco */; };
 		29E6DF28256A508800581807 /* GoalListTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF27256A508800581807 /* GoalListTutorialViewController.swift */; };
 		29E6DF2E256B53A300581807 /* GoalListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF2D256B53A300581807 /* GoalListRouterTests.swift */; };
 		29E6DF38256B58B800581807 /* GoalListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6DF37256B58B800581807 /* GoalListPresenterTests.swift */; };
@@ -462,9 +462,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E6DF23256A470D00581807 /* Gecco in Frameworks */,
-				298337D82542AAC7001CB8D9 /* HGCircularSlider in Frameworks */,
+				296ABC98257870BE00D78DED /* Gecco in Frameworks */,
 				29248085255C1191003D09CB /* CloudKit.framework in Frameworks */,
+				29B9544925786546007D80D2 /* HGCircularSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1871,8 +1871,8 @@
 			);
 			name = Odysseia;
 			packageProductDependencies = (
-				298337D72542AAC7001CB8D9 /* HGCircularSlider */,
-				29E6DF22256A470D00581807 /* Gecco */,
+				29B9544825786546007D80D2 /* HGCircularSlider */,
+				296ABC97257870BE00D78DED /* Gecco */,
 			);
 			productName = Goal;
 			productReference = 2997604E253D96A000CDD568 /* Odysseia.app */;
@@ -1991,8 +1991,8 @@
 			);
 			mainGroup = 29976045253D96A000CDD568;
 			packageReferences = (
-				298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */,
-				29E6DF21256A470D00581807 /* XCRemoteSwiftPackageReference "Gecco" */,
+				29B9544725786546007D80D2 /* XCRemoteSwiftPackageReference "HGCircularSlider" */,
+				296ABC96257870BE00D78DED /* XCRemoteSwiftPackageReference "Gecco" */,
 			);
 			productRefGroup = 2997604F253D96A000CDD568 /* Products */;
 			projectDirPath = "";
@@ -2091,7 +2091,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which mint >/dev/null; then\n  mint run swiftlint swiftlint autocorrect --format\n  mint run swiftlint swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
+			shellScript = "if which mint >/dev/null; then\n  xcrun --sdk macosx mint run swiftlint swiftlint autocorrect --format\n  xcrun --sdk macosx mint run swiftlint swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3048,15 +3048,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/HamzaGhazouani/HGCircularSlider";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		29E6DF21256A470D00581807 /* XCRemoteSwiftPackageReference "Gecco" */ = {
+		296ABC96257870BE00D78DED /* XCRemoteSwiftPackageReference "Gecco" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bannzai/Gecco";
 			requirement = {
@@ -3064,18 +3056,26 @@
 				kind = branch;
 			};
 		};
+		29B9544725786546007D80D2 /* XCRemoteSwiftPackageReference "HGCircularSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HamzaGhazouani/HGCircularSlider";
+			requirement = {
+				kind = revision;
+				revision = 2b98462d32bf7211851aa73537dbaba5dd80229e;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		298337D72542AAC7001CB8D9 /* HGCircularSlider */ = {
+		296ABC97257870BE00D78DED /* Gecco */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 298337D62542AAC7001CB8D9 /* XCRemoteSwiftPackageReference "HGCircularSlider" */;
-			productName = HGCircularSlider;
-		};
-		29E6DF22256A470D00581807 /* Gecco */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 29E6DF21256A470D00581807 /* XCRemoteSwiftPackageReference "Gecco" */;
+			package = 296ABC96257870BE00D78DED /* XCRemoteSwiftPackageReference "Gecco" */;
 			productName = Gecco;
+		};
+		29B9544825786546007D80D2 /* HGCircularSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29B9544725786546007D80D2 /* XCRemoteSwiftPackageReference "HGCircularSlider" */;
+			productName = HGCircularSlider;
 		};
 /* End XCSwiftPackageProductDependency section */
 

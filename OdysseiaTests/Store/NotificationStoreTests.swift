@@ -8,6 +8,7 @@
 @testable import Odysseia
 import XCTest
 
+// シュミレータにあらかじめ通知権限を与える方法が見つかるまでSkip
 class NotificationStoreTests: XCTestCase {
     var notificationStore: NotificationStore!
 
@@ -32,6 +33,7 @@ class NotificationStoreTests: XCTestCase {
         sleep(2)
 
         UNUserNotificationCenter.current().getPendingNotificationRequests { requests in
+            XCTAssertEqual(requests.count, self.notificationStore.notifyMonths.count)
             for request in requests {
                 // verify
                 XCTAssertEqual(request.content.title, L10n.Localizable.notificationTitle)

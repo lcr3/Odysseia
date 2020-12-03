@@ -18,5 +18,6 @@ struct OdysseiaWidget: Widget {
         }
         .configurationDisplayName(L10n.Localizable.widgetDisplayName)
         .description(L10n.Localizable.widgetDescription)
+        .supportedFamilies([.systemSmall])
     }
 }

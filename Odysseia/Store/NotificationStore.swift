@@ -41,7 +41,7 @@ class NotificationStore: NSObject {
     // 毎月初のリマインド
     func setMonthlyRemindNotify() {
         for month in notifyMonths {
-            let identifier = "\(NotificationStore.newYearRemindNotifyId)\(month)"
+            let identifier = "\(NotificationStore.monthlyRemindNotifyId)\(month)"
             isAlreadySet(identifier: identifier) { isAlreadySet in
                 if isAlreadySet {
                     return
