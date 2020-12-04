@@ -1,5 +1,7 @@
 # Odysseia
-<img src="./odysseia.png">
+<img src="./Resources/odysseia.png">
+
+<img src="./Resources/app_store_badge.png" width=150>
 
 ## Environment
 

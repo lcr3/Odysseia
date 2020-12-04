@@ -2482,7 +2482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = Odysseia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2546,7 +2546,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = OdysseiaWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2570,7 +2570,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = OdysseiaWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2594,7 +2594,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = OdysseiaWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2742,7 +2742,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = Odysseia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2765,7 +2765,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Odysseia/Odysseia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = Odysseia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2869,10 +2869,10 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetIntent/OdysseiaWidgetIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = OdysseiaWidgetIntent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2892,10 +2892,10 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetIntent/OdysseiaWidgetIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = OdysseiaWidgetIntent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2915,10 +2915,10 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OdysseiaWidgetIntent/OdysseiaWidgetIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = UUF7376KJL;
 				INFOPLIST_FILE = OdysseiaWidgetIntent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
