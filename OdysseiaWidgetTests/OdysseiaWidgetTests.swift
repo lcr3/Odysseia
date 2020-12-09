@@ -2,7 +2,7 @@
 //  OdysseiaWidgetTests.swift
 //  OdysseiaWidgetTests
 //
-//  Created by okano on 2020/12/01.
+//  Created by lcr on 2020/12/01.
 //
 
 import XCTest

@@ -5,8 +5,9 @@
 //  Created by lcr on 2020/10/19.
 //
 
-import UIKit
 import CoreData
+import UIKit
+import StoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        SKPaymentQueue.default().remove(ProductClient.shared)
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {

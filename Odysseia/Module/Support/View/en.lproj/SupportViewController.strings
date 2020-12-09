@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Donation ☕"; ObjectID = "4kY-lQ-cLE"; */
+"4kY-lQ-cLE.normalTitle" = "Donation ☕";
+
+/* Class = "UILabel"; text = "Support"; ObjectID = "72o-Je-ZTi"; */
+"72o-Je-ZTi.text" = "Support";
+
+/* Class = "UIButton"; normalTitle = "DeleteButton(Debug)"; ObjectID = "SV4-yr-bia"; */
+"SV4-yr-bia.normalTitle" = "DeleteButton(Debug)";
+
+/* Class = "UILabel"; text = "Thank you for downloading.\nYou can make a donation to the developer."; ObjectID = "mI4-cQ-Z0J"; */
+"mI4-cQ-Z0J.text" = "Thank you for downloading.\nYou can make a donation to the developer.";

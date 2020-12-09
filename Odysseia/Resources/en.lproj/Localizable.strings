@@ -51,6 +51,14 @@
 "GeccoLink" = "https://github.com/bannzai/Gecco";
 "HGCircularSliderTitle" = "HGCircularSlider";
 "HGCircularSliderLink" = "https://github.com/HamzaGhazouani/HGCircularSlider";
+"KeychainAccessTitle" = "KeychainAccess";
+"KeychainAccessLink" = "https://github.com/kishikawakatsumi/KeychainAccess";
+// Support
+"SuccessPurchasedTitle" = "Success purchased";
+"FailedPurchasedTitle" = "Failed purchased";
+"RestoreButtonTitle" = "Restore";
+"AlredyPurchasedMsg" = "Thank you for support 🎉";
+"DonationMsg" = "Donation ☕";
 // Widget
 "WidgetDisplayName" = "Odysseia Widget";
 "WidgetDescription" = "The widget that displays the number of days to achieve the goal.";

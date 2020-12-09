@@ -31,7 +31,7 @@ class SettingAboutViewTests: XCTestCase {
         // viewDidLoad
         XCTAssertEqual(presenter.callCountViewDidLoad, 1)
         XCTAssertEqual(presenter.callCountGetItems, 1)
-        XCTAssertEqual(viewController.tableView.visibleCells.count, 2)
+        XCTAssertEqual(viewController.tableView.visibleCells.count, 3)
     }
 
     func testDidSelectRow() {

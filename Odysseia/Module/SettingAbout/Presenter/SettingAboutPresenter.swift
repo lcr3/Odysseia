@@ -29,7 +29,9 @@ class SettingAboutPresenter {
             SettingAboutItem(title: L10n.Localizable.geccoTitle,
                              link: L10n.Localizable.geccoLink),
             SettingAboutItem(title: L10n.Localizable.hgCircularSliderTitle,
-                             link: L10n.Localizable.hgCircularSliderLink)
+                             link: L10n.Localizable.hgCircularSliderLink),
+            SettingAboutItem(title: L10n.Localizable.keychainAccessTitle,
+                             link: L10n.Localizable.keychainAccessLink)
         ]
     }
 }

@@ -34,14 +34,17 @@ class SettingAboutPresenterTest: XCTestCase {
 
     func testGetItems() {
         // setup
-        let expectItems = SettingAboutPresenter.createItems()
+        let expectLibraries = [(title: L10n.Localizable.geccoTitle, link:  L10n.Localizable.geccoLink),
+                         (title: L10n.Localizable.hgCircularSliderTitle, link: L10n.Localizable.hgCircularSliderLink),
+                         (title: L10n.Localizable.keychainAccessTitle, link: L10n.Localizable.keychainAccessLink)
+        ]
 
         // execute
         let items = presenter.getItems()
 
         // verify
         for (index, item) in items.enumerated() {
-            let expectItem = expectItems[index]
+            let expectItem = expectLibraries[index]
             XCTAssertEqual(item.title, expectItem.title)
             XCTAssertEqual(item.link, expectItem.link)
         }

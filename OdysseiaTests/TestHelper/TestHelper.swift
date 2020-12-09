@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import XCTest
 
 extension UIApplication {
     var windowScene: UIWindowScene? {
@@ -29,4 +30,14 @@ var mainWindow: UIWindow? {
         }
     }
     return UIApplication.shared.keyWindow
+}
+
+extension XCTestCase {
+    func delay(seconds: Float) {
+        let delay = self.expectation(description: "delay finished")
+        DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(seconds)) {
+            delay.fulfill()
+        }
+        self.waitForExpectations(timeout: TimeInterval(seconds + 1.0))
+    }
 }

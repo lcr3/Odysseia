@@ -1,7 +1,7 @@
 # Odysseia
 <img src="./Resources/odysseia.png">
 
-<img src="./Resources/app_store_badge.png" width=150>
+<a href="https://apps.apple.com/jp/app/id1539914583"><img src="./Resources/app_store_badge.png" width=150 ></a>
 
 ## Environment
 

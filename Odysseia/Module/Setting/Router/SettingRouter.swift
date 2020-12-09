@@ -43,7 +43,8 @@ extension SettingRouter: SettingWireframe {
     }
 
     func showSupport() {
-
+        let supportView = SupportRouter.assembleModules()
+        viewController.navigationController?.pushViewController(supportView, animated: true)
     }
 
     func showSourceCord() {

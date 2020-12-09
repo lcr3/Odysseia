@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		0160820D815CEE66C0D4BA6B /* SettingAboutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB67C1A6A588F2B5A53C8 /* SettingAboutRouter.swift */; };
 		0270FCEE060D4B33AA35C1B0 /* TaskInputRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8893311B35FA10B3CD4E56 /* TaskInputRouterTests.swift */; };
+		04821204144BA0618BB600B0 /* SupportInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C37FD4E0B8BD4C394512D /* SupportInteractorTests.swift */; };
 		05BE5317C6B3B6C3081C2919 /* AddTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */; };
 		068E8E1FED1E7FBB3F7BDF53 /* GoalDeleteAlertRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A0C0E4C41786B2D3D356F /* GoalDeleteAlertRouter.swift */; };
+		077AA410E3734E1663DFA31A /* SupportRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB961ECAEE42B501731E560 /* SupportRouterTests.swift */; };
 		0787079DF14C088A29437C51 /* SettingAboutPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4801E41A990EA388E72CC71D /* SettingAboutPresenterTests.swift */; };
 		0A79080A4981356A6908510F /* AddTaskRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5626CF0488460640D40A0 /* AddTaskRouterTests.swift */; };
 		0C1A3C6488532F887F048FF5 /* GoalAlertViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF6BFA5976CD3FA12CE251 /* GoalAlertViewTests.swift */; };
 		0C6F582DC59DC988D21C4AD3 /* AddGoalNameRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E179A17AD5E7B20EC85613 /* AddGoalNameRouterTests.swift */; };
+		0D9D6BC07A46567BDADFBA53 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C403D85FE5AABFEB118E41 /* SupportViewController.swift */; };
+		164D2A7D7E4AE65E4639F747 /* SupportViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A9F276231795E63E10D978 /* SupportViewTests.swift */; };
 		19C928665AC1726B321B9748 /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B7AAFF7CE797BFB37E024 /* SettingRouter.swift */; };
 		23FCC9F67139A893CB708D22 /* AddGoalNameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */; };
 		24E0389CD4C8FCCD98DA20C5 /* SettingAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803A54443F8A7767C80E697 /* SettingAboutViewController.swift */; };
@@ -66,6 +70,10 @@
 		295B3BF22571276D00899FF0 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B5C4A253F1537009D54B1 /* Resources.xcassets */; };
 		296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296412432552404D00CA732A /* EditTaskPresenterOutput.swift */; };
 		296ABC98257870BE00D78DED /* Gecco in Frameworks */ = {isa = PBXBuildFile; productRef = 296ABC97257870BE00D78DED /* Gecco */; };
+		296ABD072579217200D78DED /* ProductClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296ABD062579217200D78DED /* ProductClient.swift */; };
+		296ABD0F2579238400D78DED /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296ABD0E2579238400D78DED /* StoreKit.framework */; };
+		296ABD98257CCA4F00D78DED /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296ABD97257CCA4F00D78DED /* KeychainStore.swift */; };
+		296ABDA7257CD20600D78DED /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 296ABDA6257CD20600D78DED /* KeychainAccess */; };
 		297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297795DB254842B000AD7E2D /* AddTaskCell.swift */; };
 		29833775254140F7001CB8D9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29833773254140F7001CB8D9 /* Strings+Generated.swift */; };
 		298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337BE2541B845001CB8D9 /* MockGoalService.swift */; };
@@ -75,7 +83,6 @@
 		29976054253D96A000CDD568 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976053253D96A000CDD568 /* SceneDelegate.swift */; };
 		2997605E253D96A200CDD568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2997605D253D96A200CDD568 /* Assets.xcassets */; };
 		29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2997605F253D96A200CDD568 /* LaunchScreen.storyboard */; };
-		2997606C253D96A200CDD568 /* OdysseiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997606B253D96A200CDD568 /* OdysseiaTests.swift */; };
 		29976077253D96A200CDD568 /* OdysseiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976076253D96A200CDD568 /* OdysseiaUITests.swift */; };
 		29976097253D96E300CDD568 /* GoalListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608D253D96E300CDD568 /* GoalListPresenter.swift */; };
 		29976098253D96E300CDD568 /* GoalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608F253D96E300CDD568 /* GoalListViewController.swift */; };
@@ -163,13 +170,23 @@
 		29F5D2902576368B00146C14 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
 		29F5D2D925771E0200146C14 /* MockEditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5D2D825771E0200146C14 /* MockEditTask.swift */; };
 		29FB841D2548EBFB00E0B387 /* TemporaryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */; };
+		29FCDD56257E48BC009FC8F2 /* ProductClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCDD55257E48BC009FC8F2 /* ProductClientError.swift */; };
+		29FCDD65257E48E4009FC8F2 /* ProductClientOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCDD64257E48E4009FC8F2 /* ProductClientOutput.swift */; };
+		29FCDD6E257E6761009FC8F2 /* ProductClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCDD6D257E6761009FC8F2 /* ProductClientTests.swift */; };
+		29FCDD81257E6C61009FC8F2 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 296ABD52257A65D700D78DED /* Configuration.storekit */; };
+		29FCDD89257FACD9009FC8F2 /* MockProductClientOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCDD88257FACD9009FC8F2 /* MockProductClientOutput.swift */; };
+		29FCDD9A257FAE3B009FC8F2 /* MockSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCDD99257FAE3B009FC8F2 /* MockSupport.swift */; };
+		29FCDDA8257FB672009FC8F2 /* MockKeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCDDA7257FB672009FC8F2 /* MockKeychainStore.swift */; };
+		29FCDDAF257FC627009FC8F2 /* SupportViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FCDDB1257FC627009FC8F2 /* SupportViewController.storyboard */; };
 		2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */; };
 		3905C72BEE22B5D4FA9E80C2 /* SettingAboutRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E174358A43722B0E0A837 /* SettingAboutRouterTests.swift */; };
 		48B6AAEFC42729ED38C7AF39 /* TaskInputRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D6E425673CFDB6476154D /* TaskInputRouter.swift */; };
 		48B9A742B2FA5E76B99AB363 /* TaskInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D4A7C52882A9FE01F27D0 /* TaskInputPresenter.swift */; };
 		5433577822706E6E4D26A1CA /* EditTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24B0DEE5E333B843DB2019 /* EditTaskRouter.swift */; };
+		5529BAA1F5F76C10D2524F5D /* SupportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56780BAC3EA6E072C9B2C /* SupportPresenter.swift */; };
 		56CAB67272EE6685B58873F6 /* GoalAlertRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DABBFB4A9ABEA28AEE2BF1 /* GoalAlertRouterTests.swift */; };
 		57360DFE87A05B17FC17EECB /* SettingPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F821057E29192B7E6DCBE /* SettingPresenterTests.swift */; };
+		69C401A575B9EFD02EC28599 /* SupportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16368FFBF865E412CEF3BCB3 /* SupportRouter.swift */; };
 		6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */; };
 		716CB1F008A9E38BE9366A7F /* EditTaskViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772246A719E6AA22508BC264 /* EditTaskViewTests.swift */; };
 		7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4ED7E3300B66D728FE889 /* AddGoalNameViewTests.swift */; };
@@ -185,10 +202,12 @@
 		A15496138B32027A29C88ED0 /* EditTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92799FDBA86D0E1B90A00F4 /* EditTaskPresenter.swift */; };
 		A6C7FA0C899BC78349C8D297 /* EditTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */; };
 		A816599CCB5CB1821DC8E82A /* TutorialRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3D46CD122768902DB7AD4 /* TutorialRouterTests.swift */; };
+		ABB98115DCBFBA9516503443 /* SupportInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC077D67B7DD4F6522922D3D /* SupportInteractorOutput.swift */; };
 		B21D81F3D00B3254B7368DAE /* TutorialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA3FDD79EB79EDA7EE61DF /* TutorialRouter.swift */; };
 		B396BC7E75984A86F2A84969 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794871EE74CF19196C409A51 /* AddTaskViewController.swift */; };
 		B7B32281BE800B4207EB8720 /* TutorialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75C00AB95018D2EB5EC0CF5 /* TutorialViewController.storyboard */; };
 		BDCEBEAFD03112209ABE907C /* SettingRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF79242A54A415D82277E6 /* SettingRouterTests.swift */; };
+		BED28A830208BE3E7EB5CC06 /* SupportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D4C651706F137528386956 /* SupportInteractor.swift */; };
 		C07B42F8FF5163FD26B7643E /* GoalDeleteAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9701B2D2EFB87714C5A58F /* GoalDeleteAlertPresenter.swift */; };
 		C4B155383D956F46C39C6D3D /* AddGoalNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */; };
 		C589E687723EE48129317146 /* TutorialPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCA2EBCE13B5C0F990D6B0 /* TutorialPresenterTests.swift */; };
@@ -201,6 +220,7 @@
 		DCFFCCE253CBFE39BDAE1474 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAFAB88DA5F3C1722F7309A /* SettingViewController.storyboard */; };
 		DD609C2F2A50F5D45DD13B07 /* TaskInputPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289974CC5E5A9310DB4A387A /* TaskInputPresenterTests.swift */; };
 		E2D18B9DE149D4BBA35CFF0F /* TutorialPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D7919197874FB0CF982C1 /* TutorialPresenter.swift */; };
+		E6BFF29B8FDA1DACAB8A87F9 /* SupportPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7E7D08C172A98DF53CCC2 /* SupportPresenterTests.swift */; };
 		E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */; };
 		ECE9B10FF757644F8EDA65B9 /* SettingAboutViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC177E41FAA3FE8D2D163DE /* SettingAboutViewTests.swift */; };
 		EE7278D5F7853798744E7221 /* TutorialViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E894435B80F84D795191234 /* TutorialViewTests.swift */; };
@@ -256,10 +276,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		052C37FD4E0B8BD4C394512D /* SupportInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportInteractorTests.swift; sourceTree = "<group>"; };
+		05C403D85FE5AABFEB118E41 /* SupportViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		06A7874279CFBED32B6383E6 /* AddGoalNameViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameViewController.swift; sourceTree = "<group>"; };
 		096DB67C1A6A588F2B5A53C8 /* SettingAboutRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutRouter.swift; sourceTree = "<group>"; };
 		10EF44790FF187FBDE676E6C /* AddTaskPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskPresenterTests.swift; sourceTree = "<group>"; };
+		14C56780BAC3EA6E072C9B2C /* SupportPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportPresenter.swift; sourceTree = "<group>"; };
+		15D4C651706F137528386956 /* SupportInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportInteractor.swift; sourceTree = "<group>"; };
 		161C9B9A183D08B58A842F6F /* AddGoalNameRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNameRouter.swift; sourceTree = "<group>"; };
+		16368FFBF865E412CEF3BCB3 /* SupportRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportRouter.swift; sourceTree = "<group>"; };
 		17668F48CCDDF8F23306FD57 /* AddTaskRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskRouter.swift; sourceTree = "<group>"; };
 		17DF79242A54A415D82277E6 /* SettingRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingRouterTests.swift; sourceTree = "<group>"; };
 		1D9B7AAFF7CE797BFB37E024 /* SettingRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
@@ -309,6 +334,10 @@
 		295B3BAF2570909A00899FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		295B3BB12570909A00899FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		296412432552404D00CA732A /* EditTaskPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterOutput.swift; sourceTree = "<group>"; };
+		296ABD062579217200D78DED /* ProductClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductClient.swift; sourceTree = "<group>"; };
+		296ABD0E2579238400D78DED /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		296ABD52257A65D700D78DED /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		296ABD97257CCA4F00D78DED /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		297795DB254842B000AD7E2D /* AddTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCell.swift; sourceTree = "<group>"; };
 		29833773254140F7001CB8D9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		298337BE2541B845001CB8D9 /* MockGoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGoalService.swift; sourceTree = "<group>"; };
@@ -321,7 +350,6 @@
 		29976060253D96A200CDD568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29976062253D96A200CDD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29976067253D96A200CDD568 /* OdysseiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2997606B253D96A200CDD568 /* OdysseiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaTests.swift; sourceTree = "<group>"; };
 		2997606D253D96A200CDD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29976072253D96A200CDD568 /* OdysseiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29976076253D96A200CDD568 /* OdysseiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaUITests.swift; sourceTree = "<group>"; };
@@ -399,10 +427,20 @@
 		29F5D23A2576329900146C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29F5D2D825771E0200146C14 /* MockEditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEditTask.swift; sourceTree = "<group>"; };
 		29FB841C2548EBFB00E0B387 /* TemporaryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTask.swift; sourceTree = "<group>"; };
+		29FCDD55257E48BC009FC8F2 /* ProductClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductClientError.swift; sourceTree = "<group>"; };
+		29FCDD64257E48E4009FC8F2 /* ProductClientOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductClientOutput.swift; sourceTree = "<group>"; };
+		29FCDD6D257E6761009FC8F2 /* ProductClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductClientTests.swift; sourceTree = "<group>"; };
+		29FCDD88257FACD9009FC8F2 /* MockProductClientOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductClientOutput.swift; sourceTree = "<group>"; };
+		29FCDD99257FAE3B009FC8F2 /* MockSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSupport.swift; sourceTree = "<group>"; };
+		29FCDDA7257FB672009FC8F2 /* MockKeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeychainStore.swift; sourceTree = "<group>"; };
+		29FCDDB0257FC627009FC8F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SupportViewController.storyboard; sourceTree = "<group>"; };
+		29FCDDBF257FC62C009FC8F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SupportViewController.strings; sourceTree = "<group>"; };
+		29FCDDC1257FC62F009FC8F2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SupportViewController.strings; sourceTree = "<group>"; };
 		3E9701B2D2EFB87714C5A58F /* GoalDeleteAlertPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoalDeleteAlertPresenter.swift; sourceTree = "<group>"; };
 		414A1AC467D748C5DAB839B5 /* TaskInputViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputViewController.swift; sourceTree = "<group>"; };
 		4801E41A990EA388E72CC71D /* SettingAboutPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutPresenterTests.swift; sourceTree = "<group>"; };
 		49C0672D1D36D9B54A1AEF7E /* EditTaskInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractor.swift; sourceTree = "<group>"; };
+		4AB961ECAEE42B501731E560 /* SupportRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportRouterTests.swift; sourceTree = "<group>"; };
 		4D8893311B35FA10B3CD4E56 /* TaskInputRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputRouterTests.swift; sourceTree = "<group>"; };
 		4E894435B80F84D795191234 /* TutorialViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialViewTests.swift; sourceTree = "<group>"; };
 		6430410713F76BC9E6A19F1B /* EditTaskViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
@@ -421,13 +459,16 @@
 		922962DEFEECC94C5BD988E0 /* SettingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddGoalNamePresenterTests.swift; sourceTree = "<group>"; };
 		9EC5633E6B73A8B80A9AF1B2 /* AddTaskInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTaskInteractorTests.swift; sourceTree = "<group>"; };
+		A2A9F276231795E63E10D978 /* SupportViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportViewTests.swift; sourceTree = "<group>"; };
 		A76463B4AD0A46E2F1913A87 /* EditTaskPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterTests.swift; sourceTree = "<group>"; };
 		ABC3D46CD122768902DB7AD4 /* TutorialRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialRouterTests.swift; sourceTree = "<group>"; };
+		AC077D67B7DD4F6522922D3D /* SupportInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportInteractorOutput.swift; sourceTree = "<group>"; };
 		AC3D4A7C52882A9FE01F27D0 /* TaskInputPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputPresenter.swift; sourceTree = "<group>"; };
 		AC62067338A699AFC93C4607 /* SettingAboutPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutPresenter.swift; sourceTree = "<group>"; };
 		B17D6E425673CFDB6476154D /* TaskInputRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputRouter.swift; sourceTree = "<group>"; };
 		B2FA3FDD79EB79EDA7EE61DF /* TutorialRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TutorialRouter.swift; sourceTree = "<group>"; };
 		B35798BAA945F0E06AB25747 /* TaskInputViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputViewTests.swift; sourceTree = "<group>"; };
+		B4B7E7D08C172A98DF53CCC2 /* SupportPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportPresenterTests.swift; sourceTree = "<group>"; };
 		B92799FDBA86D0E1B90A00F4 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
 		BADC81CD3D74368FAF6C69AA /* EditTaskInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTaskInteractorOutput.swift; sourceTree = "<group>"; };
 		BB5E174358A43722B0E0A837 /* SettingAboutRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingAboutRouterTests.swift; sourceTree = "<group>"; };
@@ -465,6 +506,8 @@
 				296ABC98257870BE00D78DED /* Gecco in Frameworks */,
 				29248085255C1191003D09CB /* CloudKit.framework in Frameworks */,
 				29B9544925786546007D80D2 /* HGCircularSlider in Frameworks */,
+				296ABD0F2579238400D78DED /* StoreKit.framework in Frameworks */,
+				296ABDA7257CD20600D78DED /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +650,7 @@
 			isa = PBXGroup;
 			children = (
 				291B748E2555766B0042DFB3 /* NotificationStoreTests.swift */,
+				29FCDDA7257FB672009FC8F2 /* MockKeychainStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -614,6 +658,7 @@
 		29248083255C1191003D09CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				296ABD0E2579238400D78DED /* StoreKit.framework */,
 				29248084255C1191003D09CB /* CloudKit.framework */,
 				295B3BA72570909900899FF0 /* WidgetKit.framework */,
 				295B3BA92570909900899FF0 /* SwiftUI.framework */,
@@ -718,6 +763,16 @@
 			path = Output;
 			sourceTree = "<group>";
 		};
+		296ABD052579214B00D78DED /* ProductClient */ = {
+			isa = PBXGroup;
+			children = (
+				29FCDD63257E48D6009FC8F2 /* output */,
+				296ABD062579217200D78DED /* ProductClient.swift */,
+				29FCDD55257E48BC009FC8F2 /* ProductClientError.swift */,
+			);
+			path = ProductClient;
+			sourceTree = "<group>";
+		};
 		297795DA2548428E00AD7E2D /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,6 +805,7 @@
 				B0E65552BF80673543553C77 /* Tutorial */,
 				0F71D4C52DC6922B421E8122 /* Setting */,
 				B482EAF4BBBDC679F4513046 /* SettingAbout */,
+				314803583C2F5CC6E77B2D20 /* Support */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -774,6 +830,7 @@
 		29976045253D96A000CDD568 = {
 			isa = PBXGroup;
 			children = (
+				296ABD52257A65D700D78DED /* Configuration.storekit */,
 				294D455E2574B4CB00DE6BA8 /* OdysseiaWidgetExtension.entitlements */,
 				29976050253D96A000CDD568 /* Odysseia */,
 				2997606A253D96A200CDD568 /* OdysseiaTests */,
@@ -827,7 +884,6 @@
 				291B748D255576520042DFB3 /* Store */,
 				298337BD2541B836001CB8D9 /* CoreData */,
 				298337A32541B35F001CB8D9 /* Module */,
-				2997606B253D96A200CDD568 /* OdysseiaTests.swift */,
 				2997606D253D96A200CDD568 /* Info.plist */,
 			);
 			path = OdysseiaTests;
@@ -856,6 +912,7 @@
 				12ED1BEA6727E1B48D7420A2 /* Tutorial */,
 				945B9E78B044AD5ADAA23A3A /* Setting */,
 				9DA90171301FE93C0C7122C6 /* SettingAbout */,
+				D76F60994CB98FF956E5D3F3 /* Support */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -1215,6 +1272,7 @@
 			isa = PBXGroup;
 			children = (
 				291B74882554EA080042DFB3 /* NotificationStore.swift */,
+				296ABD97257CCA4F00D78DED /* KeychainStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -1297,6 +1355,31 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		29FCDD63257E48D6009FC8F2 /* output */ = {
+			isa = PBXGroup;
+			children = (
+				29FCDD64257E48E4009FC8F2 /* ProductClientOutput.swift */,
+			);
+			path = output;
+			sourceTree = "<group>";
+		};
+		29FCDD6C257E6743009FC8F2 /* ProductClient */ = {
+			isa = PBXGroup;
+			children = (
+				29FCDD6D257E6761009FC8F2 /* ProductClientTests.swift */,
+				29FCDD88257FACD9009FC8F2 /* MockProductClientOutput.swift */,
+			);
+			path = ProductClient;
+			sourceTree = "<group>";
+		};
+		29FCDD98257FAE1A009FC8F2 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29FCDD99257FAE3B009FC8F2 /* MockSupport.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		2B51E43C1F27C1AF53AA2383 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1305,6 +1388,34 @@
 				E75C00AB95018D2EB5EC0CF5 /* TutorialViewController.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2C4B67676A778E139C2D002F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4AB961ECAEE42B501731E560 /* SupportRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3037F3477C09EC6EDF8F2A30 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4B7E7D08C172A98DF53CCC2 /* SupportPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		314803583C2F5CC6E77B2D20 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				29FCDD98257FAE1A009FC8F2 /* Mock */,
+				D16C5F3BC8EDB5EE29CCD6B4 /* View */,
+				FB9CCB718BBD368FD99E1745 /* Interactor */,
+				3037F3477C09EC6EDF8F2A30 /* Presenter */,
+				2C4B67676A778E139C2D002F /* Router */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		3382E8C8BD866F4DF0DB735F /* Interactor */ = {
@@ -1356,6 +1467,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		5BE56618E217E1FFD1F4FF18 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AC077D67B7DD4F6522922D3D /* SupportInteractorOutput.swift */,
+				15D4C651706F137528386956 /* SupportInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		5D6DE40B2BA5D87D25428154 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1370,6 +1490,14 @@
 			isa = PBXGroup;
 			children = (
 				289974CC5E5A9310DB4A387A /* TaskInputPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		609A11FDEC55660F87CCD8E8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				14C56780BAC3EA6E072C9B2C /* SupportPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1426,6 +1554,14 @@
 				33839CFB547CF3F20406FCF6 /* Router */,
 			);
 			path = EditTask;
+			sourceTree = "<group>";
+		};
+		7939140749CD4B974ABD812A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				16368FFBF865E412CEF3BCB3 /* SupportRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		7ED89A13CD8B6157EEA473DD /* View */ = {
@@ -1583,6 +1719,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		A66D60CAB14704D131F0C8AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05C403D85FE5AABFEB118E41 /* SupportViewController.swift */,
+				29FCDDB1257FC627009FC8F2 /* SupportViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A845CF16AEB2B4F1F38AD615 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1727,6 +1872,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D16C5F3BC8EDB5EE29CCD6B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2A9F276231795E63E10D978 /* SupportViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D301884316355BD1DBF67836 /* TaskInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -1753,6 +1906,18 @@
 				925D4AA7044F4DA87AF47437 /* AddGoalNamePresenterTests.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D76F60994CB98FF956E5D3F3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				296ABD052579214B00D78DED /* ProductClient */,
+				A66D60CAB14704D131F0C8AD /* View */,
+				609A11FDEC55660F87CCD8E8 /* Presenter */,
+				5BE56618E217E1FFD1F4FF18 /* Interactor */,
+				7939140749CD4B974ABD812A /* Router */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		DC1F48324D68BED0FE8E4130 /* Router */ = {
@@ -1833,6 +1998,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		FB9CCB718BBD368FD99E1745 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				29FCDD6C257E6743009FC8F2 /* ProductClient */,
+				052C37FD4E0B8BD4C394512D /* SupportInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1873,6 +2047,7 @@
 			packageProductDependencies = (
 				29B9544825786546007D80D2 /* HGCircularSlider */,
 				296ABC97257870BE00D78DED /* Gecco */,
+				296ABDA6257CD20600D78DED /* KeychainAccess */,
 			);
 			productName = Goal;
 			productReference = 2997604E253D96A000CDD568 /* Odysseia.app */;
@@ -1993,6 +2168,7 @@
 			packageReferences = (
 				29B9544725786546007D80D2 /* XCRemoteSwiftPackageReference "HGCircularSlider" */,
 				296ABC96257870BE00D78DED /* XCRemoteSwiftPackageReference "Gecco" */,
+				296ABDA5257CD20600D78DED /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 2997604F253D96A000CDD568 /* Products */;
 			projectDirPath = "";
@@ -2024,6 +2200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2959D0BC254A985C00A3DC28 /* AddTaskViewController.storyboard in Resources */,
+				29FCDD81257E6C61009FC8F2 /* Configuration.storekit in Resources */,
 				29EF3688255A1DA000E0E669 /* StarsParticles.scnp in Resources */,
 				29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */,
 				290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */,
@@ -2041,6 +2218,7 @@
 				B7B32281BE800B4207EB8720 /* TutorialViewController.storyboard in Resources */,
 				DCFFCCE253CBFE39BDAE1474 /* SettingViewController.storyboard in Resources */,
 				DCB4169C67D1D4B6515B8289 /* SettingAboutViewController.storyboard in Resources */,
+				29FCDDAF257FC627009FC8F2 /* SupportViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2157,6 +2335,7 @@
 				299760A2253D96F900CDD568 /* Extension.swift in Sources */,
 				299D766E253EDCE7006985FD /* EditGoalRouter.swift in Sources */,
 				297795DC254842B000AD7E2D /* AddTaskCell.swift in Sources */,
+				296ABD98257CCA4F00D78DED /* KeychainStore.swift in Sources */,
 				2997609B253D96E300CDD568 /* GoalListInteractorOutput.swift in Sources */,
 				29976054253D96A000CDD568 /* SceneDelegate.swift in Sources */,
 				29552828253E8052009AFE97 /* TemporaryGoal.swift in Sources */,
@@ -2164,6 +2343,7 @@
 				2959D0A1254A83DC00A3DC28 /* GoalListRouterOutput.swift in Sources */,
 				29EF3689255A1DA000E0E669 /* ConfettiView.swift in Sources */,
 				29976097253D96E300CDD568 /* GoalListPresenter.swift in Sources */,
+				29FCDD65257E48E4009FC8F2 /* ProductClientOutput.swift in Sources */,
 				296412442552404D00CA732A /* EditTaskPresenterOutput.swift in Sources */,
 				29D7A84E2567F47D00CB1D0D /* SettingAboutItem.swift in Sources */,
 				2954E95A2540561200E89510 /* GoalNavigationController.swift in Sources */,
@@ -2171,6 +2351,7 @@
 				29552819253E779C009AFE97 /* GoalServicer.swift in Sources */,
 				293D0D06255BF1BD00F38522 /* GoalDeleteAlertInteractor.swift in Sources */,
 				298337DE25441173001CB8D9 /* TaskView.swift in Sources */,
+				296ABD072579217200D78DED /* ProductClient.swift in Sources */,
 				299D765B253EDC31006985FD /* EditGoalPresenter.swift in Sources */,
 				29D69AB025601244004C4606 /* TutorialConfigurator.swift in Sources */,
 				291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */,
@@ -2183,6 +2364,7 @@
 				2959D09C254A7C2700A3DC28 /* AddGoalNavigationController.swift in Sources */,
 				C4B155383D956F46C39C6D3D /* AddGoalNameViewController.swift in Sources */,
 				F90E7D81DE7987F0F077D31F /* AddGoalNamePresenter.swift in Sources */,
+				29FCDD56257E48BC009FC8F2 /* ProductClientError.swift in Sources */,
 				23FCC9F67139A893CB708D22 /* AddGoalNameRouter.swift in Sources */,
 				B396BC7E75984A86F2A84969 /* AddTaskViewController.swift in Sources */,
 				F03277B2A7935E5EE21703EE /* AddTaskPresenter.swift in Sources */,
@@ -2211,6 +2393,11 @@
 				24E0389CD4C8FCCD98DA20C5 /* SettingAboutViewController.swift in Sources */,
 				86C94B578F01439DC9337831 /* SettingAboutPresenter.swift in Sources */,
 				0160820D815CEE66C0D4BA6B /* SettingAboutRouter.swift in Sources */,
+				0D9D6BC07A46567BDADFBA53 /* SupportViewController.swift in Sources */,
+				5529BAA1F5F76C10D2524F5D /* SupportPresenter.swift in Sources */,
+				ABB98115DCBFBA9516503443 /* SupportInteractorOutput.swift in Sources */,
+				BED28A830208BE3E7EB5CC06 /* SupportInteractor.swift in Sources */,
+				69C401A575B9EFD02EC28599 /* SupportRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2219,11 +2406,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */,
-				2997606C253D96A200CDD568 /* OdysseiaTests.swift in Sources */,
 				29D69A99255EDB01004C4606 /* MockAddGoaName.swift in Sources */,
 				291B748F2555766B0042DFB3 /* NotificationStoreTests.swift in Sources */,
 				292480DB255D55BE003D09CB /* XCTxContext.swift in Sources */,
 				7D369C583E63A05C23D18E29 /* AddGoalNameViewTests.swift in Sources */,
+				29FCDD6E257E6761009FC8F2 /* ProductClientTests.swift in Sources */,
 				29D7A85D256808C200CB1D0D /* MockSetting.swift in Sources */,
 				29E6DF4C256B690400581807 /* MockAddTask.swift in Sources */,
 				E7C051535EA73A14AA0624A2 /* AddGoalNamePresenterTests.swift in Sources */,
@@ -2237,6 +2424,7 @@
 				6D7BE93F484F6C828383932B /* AddTaskPresenterTests.swift in Sources */,
 				0A79080A4981356A6908510F /* AddTaskRouterTests.swift in Sources */,
 				716CB1F008A9E38BE9366A7F /* EditTaskViewTests.swift in Sources */,
+				29FCDD89257FACD9009FC8F2 /* MockProductClientOutput.swift in Sources */,
 				8276F3B044165564D9EA940D /* EditTaskInteractorTests.swift in Sources */,
 				29D69AA1255EDDF6004C4606 /* TestHelper.swift in Sources */,
 				2F3587798FAB07973F6E22CB /* EditTaskPresenterTests.swift in Sources */,
@@ -2244,6 +2432,7 @@
 				CB3077A286FA70EC5C8501C1 /* TaskInputViewTests.swift in Sources */,
 				DD609C2F2A50F5D45DD13B07 /* TaskInputPresenterTests.swift in Sources */,
 				29D7A81F256687C400CB1D0D /* MockTutorial.swift in Sources */,
+				29FCDDA8257FB672009FC8F2 /* MockKeychainStore.swift in Sources */,
 				0270FCEE060D4B33AA35C1B0 /* TaskInputRouterTests.swift in Sources */,
 				29E6DF38256B58B800581807 /* GoalListPresenterTests.swift in Sources */,
 				0C1A3C6488532F887F048FF5 /* GoalAlertViewTests.swift in Sources */,
@@ -2253,6 +2442,7 @@
 				EE7278D5F7853798744E7221 /* TutorialViewTests.swift in Sources */,
 				C589E687723EE48129317146 /* TutorialPresenterTests.swift in Sources */,
 				29E6DF2E256B53A300581807 /* GoalListRouterTests.swift in Sources */,
+				29FCDD9A257FAE3B009FC8F2 /* MockSupport.swift in Sources */,
 				A816599CCB5CB1821DC8E82A /* TutorialRouterTests.swift in Sources */,
 				CD1D109FA432DC4A2FF0840F /* SettingViewTests.swift in Sources */,
 				57360DFE87A05B17FC17EECB /* SettingPresenterTests.swift in Sources */,
@@ -2261,6 +2451,10 @@
 				ECE9B10FF757644F8EDA65B9 /* SettingAboutViewTests.swift in Sources */,
 				0787079DF14C088A29437C51 /* SettingAboutPresenterTests.swift in Sources */,
 				3905C72BEE22B5D4FA9E80C2 /* SettingAboutRouterTests.swift in Sources */,
+				164D2A7D7E4AE65E4639F747 /* SupportViewTests.swift in Sources */,
+				04821204144BA0618BB600B0 /* SupportInteractorTests.swift in Sources */,
+				E6BFF29B8FDA1DACAB8A87F9 /* SupportPresenterTests.swift in Sources */,
+				077AA410E3734E1663DFA31A /* SupportRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2409,6 +2603,16 @@
 				29A24917255A8B86005E6230 /* ja */,
 			);
 			name = GoalDetailViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		29FCDDB1257FC627009FC8F2 /* SupportViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29FCDDB0257FC627009FC8F2 /* Base */,
+				29FCDDBF257FC62C009FC8F2 /* en */,
+				29FCDDC1257FC62F009FC8F2 /* ja */,
+			);
+			name = SupportViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -3074,6 +3278,14 @@
 				kind = branch;
 			};
 		};
+		296ABDA5257CD20600D78DED /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.1;
+			};
+		};
 		29B9544725786546007D80D2 /* XCRemoteSwiftPackageReference "HGCircularSlider" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/HamzaGhazouani/HGCircularSlider";
@@ -3089,6 +3301,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 296ABC96257870BE00D78DED /* XCRemoteSwiftPackageReference "Gecco" */;
 			productName = Gecco;
+		};
+		296ABDA6257CD20600D78DED /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 296ABDA5257CD20600D78DED /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 		29B9544825786546007D80D2 /* HGCircularSlider */ = {
 			isa = XCSwiftPackageProductDependency;

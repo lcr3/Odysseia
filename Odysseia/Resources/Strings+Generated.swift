@@ -31,6 +31,8 @@ internal enum L10n {
         internal static let addTaskTutorialMsg = L10n.tr("Localizable", "AddTaskTutorialMsg")
         /// すべてのデータ削除に失敗しました
         internal static let allDeleteErrorMsg = L10n.tr("Localizable", "AllDeleteErrorMsg")
+        /// Thank you for support 🎉
+        internal static let alredyPurchasedMsg = L10n.tr("Localizable", "AlredyPurchasedMsg")
         /// キャンセル
         internal static let cancel = L10n.tr("Localizable", "Cancel")
         /// 目標締め切り年度を設定してください
@@ -43,6 +45,8 @@ internal enum L10n {
         internal static let deleteGoalErrorMsg = L10n.tr("Localizable", "DeleteGoalErrorMsg")
         /// データの削除に失敗しました
         internal static let deleteTaskErrorMsg = L10n.tr("Localizable", "DeleteTaskErrorMsg")
+        /// コーヒーを奢る ☕
+        internal static let donationMsg = L10n.tr("Localizable", "DonationMsg")
         /// 完了
         internal static let doneButtonText = L10n.tr("Localizable", "doneButtonText")
         /// 編集
@@ -51,6 +55,8 @@ internal enum L10n {
         internal static let editGoalErrorMsg = L10n.tr("Localizable", "EditGoalErrorMsg")
         /// 目標を設定しよう
         internal static let failedFetchRequestTitle = L10n.tr("Localizable", "FailedFetchRequestTitle")
+        /// 失敗
+        internal static let failedPurchasedTitle = L10n.tr("Localizable", "FailedPurchasedTitle")
         /// https://github.com/bannzai/Gecco
         internal static let geccoLink = L10n.tr("Localizable", "GeccoLink")
         /// Gecco
@@ -71,6 +77,10 @@ internal enum L10n {
         internal static let hgCircularSliderLink = L10n.tr("Localizable", "HGCircularSliderLink")
         /// HGCircularSlider
         internal static let hgCircularSliderTitle = L10n.tr("Localizable", "HGCircularSliderTitle")
+        /// https://github.com/kishikawakatsumi/KeychainAccess
+        internal static let keychainAccessLink = L10n.tr("Localizable", "KeychainAccessLink")
+        /// KeychainAccess
+        internal static let keychainAccessTitle = L10n.tr("Localizable", "KeychainAccessTitle")
         /// 目標の進捗はいかがですか?🌑
         internal static let monthlyRemindNotifyMsg = L10n.tr("Localizable", "monthlyRemindNotifyMsg")
         /// 今年の目標設定はお済みですか?🌕
@@ -79,10 +89,14 @@ internal enum L10n {
         internal static let notificationTitle = L10n.tr("Localizable", "NotificationTitle")
         /// OK
         internal static let ok = L10n.tr("Localizable", "Ok")
+        /// リストア
+        internal static let restoreButtonTitle = L10n.tr("Localizable", "RestoreButtonTitle")
         /// https://github.com/lcr3/Odysseia
         internal static let sourceCordURL = L10n.tr("Localizable", "SourceCordURL")
         /// ソースコード
         internal static let sourceTitle = L10n.tr("Localizable", "SourceTitle")
+        /// 成功
+        internal static let successPurchasedTitle = L10n.tr("Localizable", "SuccessPurchasedTitle")
         /// サポート
         internal static let supportTitle = L10n.tr("Localizable", "SupportTitle")
         /// データの更新に失敗しました

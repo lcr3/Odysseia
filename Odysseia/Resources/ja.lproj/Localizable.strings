@@ -51,6 +51,14 @@
 "GeccoLink" = "https://github.com/bannzai/Gecco";
 "HGCircularSliderTitle" = "HGCircularSlider";
 "HGCircularSliderLink" = "https://github.com/HamzaGhazouani/HGCircularSlider";
+"KeychainAccessTitle" = "KeychainAccess";
+"KeychainAccessLink" = "https://github.com/kishikawakatsumi/KeychainAccess";
+// Support
+"SuccessPurchasedTitle" = "成功";
+"FailedPurchasedTitle" = "失敗";
+"RestoreButtonTitle" = "リストア";
+"AlredyPurchasedMsg" = "Thank you for support 🎉";
+"DonationMsg" = "コーヒーを奢る ☕";
 // Widget
 "WidgetDisplayName" = "Odysseia Widget";
 "WidgetDescription" = "目標達成までの残り日数を表示するWidget";
