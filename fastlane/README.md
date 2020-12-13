@@ -26,6 +26,11 @@ Description of what the lane does
 fastlane ios run_unit_test
 ```
 Run unit test
+### ios run_ui_test
+```
+fastlane ios run_ui_test
+```
+Run ui test
 
 ----
 

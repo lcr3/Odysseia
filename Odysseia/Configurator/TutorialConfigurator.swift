@@ -21,7 +21,11 @@ class TutorialConfigurator {
     }
 
     func isComplete(type: TutorialType) -> Bool {
-        ud.bool(forKey: type.rawValue)
+        let testContainer = getTestContainer()
+        if testContainer.isTesting {
+            return testContainer.isSkipTutorial
+        }
+        return ud.bool(forKey: type.rawValue)
     }
 
     func complete(type: TutorialType) {
@@ -33,4 +37,19 @@ class TutorialConfigurator {
             ud.removeObject(forKey: $0.key)
         }
     }
+
+    func getTestContainer() -> TestContainer {
+        let isUITesting = ProcessInfo.processInfo.arguments.contains(TestContainer.isTestingKey)
+        let isSkipTurorial = ProcessInfo.processInfo.arguments.contains(TestContainer.isSkipTutorialKey)
+        return TestContainer(isTesting: isUITesting, isSkipTutorial: isSkipTurorial)
+    }
+}
+
+// UITest用の設定
+struct TestContainer {
+    static let isTestingKey = "is-ui-testing"
+    static let isSkipTutorialKey = "skip-tutorial"
+
+    let isTesting: Bool
+    let isSkipTutorial: Bool
 }

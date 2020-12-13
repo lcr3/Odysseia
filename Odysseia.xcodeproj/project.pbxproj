@@ -24,6 +24,9 @@
 		24E0389CD4C8FCCD98DA20C5 /* SettingAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803A54443F8A7767C80E697 /* SettingAboutViewController.swift */; };
 		290B5C4B253F1537009D54B1 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290B5C4A253F1537009D54B1 /* Resources.xcassets */; };
 		290B5C5625400503009D54B1 /* GoalDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */; };
+		2911BC98258334B30013EEB8 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911BC97258334B30013EEB8 /* Page.swift */; };
+		2911BCB2258335610013EEB8 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911BCB1258335610013EEB8 /* TutorialPage.swift */; };
+		2911BCBB258338140013EEB8 /* TutorialPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911BCBA258338140013EEB8 /* TutorialPageTests.swift */; };
 		291B746A25541C430042DFB3 /* TaskAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746925541C430042DFB3 /* TaskAchievementCircle.swift */; };
 		291B746F25541C780042DFB3 /* GoalAchievementCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */; };
 		291B74892554EA080042DFB3 /* NotificationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B74882554EA080042DFB3 /* NotificationStore.swift */; };
@@ -79,11 +82,12 @@
 		298337BF2541B845001CB8D9 /* MockGoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337BE2541B845001CB8D9 /* MockGoalService.swift */; };
 		298337DE25441173001CB8D9 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298337DD25441173001CB8D9 /* TaskView.swift */; };
 		298337E325441188001CB8D9 /* TaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298337E225441188001CB8D9 /* TaskView.xib */; };
+		2995CC33258604C7004A3F6C /* GoalListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995CC32258604C7004A3F6C /* GoalListPage.swift */; };
+		2995CC3A25860895004A3F6C /* TutorialConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D69AAF25601244004C4606 /* TutorialConfigurator.swift */; };
 		29976052253D96A000CDD568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976051253D96A000CDD568 /* AppDelegate.swift */; };
 		29976054253D96A000CDD568 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976053253D96A000CDD568 /* SceneDelegate.swift */; };
 		2997605E253D96A200CDD568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2997605D253D96A200CDD568 /* Assets.xcassets */; };
 		29976061253D96A200CDD568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2997605F253D96A200CDD568 /* LaunchScreen.storyboard */; };
-		29976077253D96A200CDD568 /* OdysseiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29976076253D96A200CDD568 /* OdysseiaUITests.swift */; };
 		29976097253D96E300CDD568 /* GoalListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608D253D96E300CDD568 /* GoalListPresenter.swift */; };
 		29976098253D96E300CDD568 /* GoalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997608F253D96E300CDD568 /* GoalListViewController.swift */; };
 		29976099253D96E300CDD568 /* GoalListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29976090253D96E300CDD568 /* GoalListViewController.storyboard */; };
@@ -292,6 +296,9 @@
 		289974CC5E5A9310DB4A387A /* TaskInputPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaskInputPresenterTests.swift; sourceTree = "<group>"; };
 		290B5C4A253F1537009D54B1 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
 		290B5C5525400503009D54B1 /* GoalDetailInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailInteractorOutput.swift; sourceTree = "<group>"; };
+		2911BC97258334B30013EEB8 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		2911BCB1258335610013EEB8 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
+		2911BCBA258338140013EEB8 /* TutorialPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageTests.swift; sourceTree = "<group>"; };
 		291B746925541C430042DFB3 /* TaskAchievementCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAchievementCircle.swift; sourceTree = "<group>"; };
 		291B746E25541C780042DFB3 /* GoalAchievementCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalAchievementCircle.swift; sourceTree = "<group>"; };
 		291B74882554EA080042DFB3 /* NotificationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStore.swift; sourceTree = "<group>"; };
@@ -343,6 +350,7 @@
 		298337BE2541B845001CB8D9 /* MockGoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGoalService.swift; sourceTree = "<group>"; };
 		298337DD25441173001CB8D9 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		298337E225441188001CB8D9 /* TaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskView.xib; sourceTree = "<group>"; };
+		2995CC32258604C7004A3F6C /* GoalListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListPage.swift; sourceTree = "<group>"; };
 		2997604E253D96A000CDD568 /* Odysseia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Odysseia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29976051253D96A000CDD568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29976053253D96A000CDD568 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -352,7 +360,6 @@
 		29976067253D96A200CDD568 /* OdysseiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2997606D253D96A200CDD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29976072253D96A200CDD568 /* OdysseiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdysseiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		29976076253D96A200CDD568 /* OdysseiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdysseiaUITests.swift; sourceTree = "<group>"; };
 		29976078253D96A200CDD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2997608D253D96E300CDD568 /* GoalListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListPresenter.swift; sourceTree = "<group>"; };
 		2997608F253D96E300CDD568 /* GoalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalListViewController.swift; sourceTree = "<group>"; };
@@ -637,6 +644,24 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		2911BC962583349F0013EEB8 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				2911BC97258334B30013EEB8 /* Page.swift */,
+				2911BCB1258335610013EEB8 /* TutorialPage.swift */,
+				2995CC32258604C7004A3F6C /* GoalListPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		2911BCB9258337F80013EEB8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2911BCBA258338140013EEB8 /* TutorialPageTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		291B746825541C170042DFB3 /* CircleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -892,7 +917,8 @@
 		29976075253D96A200CDD568 /* OdysseiaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				29976076253D96A200CDD568 /* OdysseiaUITests.swift */,
+				2911BCB9258337F80013EEB8 /* Tests */,
+				2911BC962583349F0013EEB8 /* Pages */,
 				29976078253D96A200CDD568 /* Info.plist */,
 			);
 			path = OdysseiaUITests;
@@ -2462,7 +2488,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29976077253D96A200CDD568 /* OdysseiaUITests.swift in Sources */,
+				2995CC33258604C7004A3F6C /* GoalListPage.swift in Sources */,
+				2995CC3A25860895004A3F6C /* TutorialConfigurator.swift in Sources */,
+				2911BC98258334B30013EEB8 /* Page.swift in Sources */,
+				2911BCBB258338140013EEB8 /* TutorialPageTests.swift in Sources */,
+				2911BCB2258335610013EEB8 /* TutorialPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2737,9 +2767,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Goal;
+				TEST_TARGET_NAME = Odysseia;
 			};
 			name = AdHoc;
 		};
@@ -3042,9 +3073,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Goal;
+				TEST_TARGET_NAME = Odysseia;
 			};
 			name = Debug;
 		};
@@ -3062,9 +3094,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lcr.OdysseiaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Goal;
+				TEST_TARGET_NAME = Odysseia;
 			};
 			name = Release;
 		};

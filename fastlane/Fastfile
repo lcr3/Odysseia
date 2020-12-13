@@ -34,4 +34,9 @@ platform :ios do
       #slack_message: "Finish night time test 🚀"
     )
   end
+
+  desc "Run ui test"
+  lane :run_ui_test do
+     scan(scheme: "OdysseiaUITests")
+  end
 end
