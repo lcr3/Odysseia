@@ -16,6 +16,12 @@ Mint: 0.14.2
 SwiftGen: 6.4.0
 ```
 
+### Architecture
+[VIPER](https://cheesecakelabs.com/blog/ios-project-architecture-using-viper/)
+
+### CI
+[Bitrise](https://www.bitrise.io/)
+
 ### Setup
 
 mint
