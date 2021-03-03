@@ -39,7 +39,7 @@ extension SettingPresenter: SettingPresentation {
         case .support:
             router.showSupport()
         case .source:
-            router.showSourceCord()
+            router.showSourceCode()
         }
     }
 

@@ -45,7 +45,7 @@
 "AboutTitle" = "このアプリについて";
 "SupportTitle" = "サポート";
 "SourceTitle" = "ソースコード";
-"SourceCordURL" = "https://github.com/lcr3/Odysseia";
+"SourceCodeURL" = "https://github.com/lcr3/Odysseia";
 // SettingAbout
 "GeccoTitle" = "Gecco";
 "GeccoLink" = "https://github.com/bannzai/Gecco";

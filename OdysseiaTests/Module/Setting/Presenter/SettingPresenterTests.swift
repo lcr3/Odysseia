@@ -34,7 +34,7 @@ class SettingPresenterTest: XCTestCase {
         // verify
         XCTAssertEqual(router.callCountShowAbout, 1)
         XCTAssertEqual(router.callCountShowSupport, 0)
-        XCTAssertEqual(router.callCountShowSourceCord, 0)
+        XCTAssertEqual(router.callCountShowSourceCode, 0)
     }
 
     func testShowSupport() {
@@ -47,7 +47,7 @@ class SettingPresenterTest: XCTestCase {
         // verify
         XCTAssertEqual(router.callCountShowAbout, 0)
         XCTAssertEqual(router.callCountShowSupport, 1)
-        XCTAssertEqual(router.callCountShowSourceCord, 0)
+        XCTAssertEqual(router.callCountShowSourceCode, 0)
     }
 
     func testShowSource() {
@@ -60,7 +60,7 @@ class SettingPresenterTest: XCTestCase {
         // verify
         XCTAssertEqual(router.callCountShowAbout, 0)
         XCTAssertEqual(router.callCountShowSupport, 0)
-        XCTAssertEqual(router.callCountShowSourceCord, 1)
+        XCTAssertEqual(router.callCountShowSourceCode, 1)
     }
 
     func testGetItems() {

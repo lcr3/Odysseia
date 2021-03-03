@@ -92,7 +92,7 @@ internal enum L10n {
         /// リストア
         internal static let restoreButtonTitle = L10n.tr("Localizable", "RestoreButtonTitle")
         /// https://github.com/lcr3/Odysseia
-        internal static let sourceCordURL = L10n.tr("Localizable", "SourceCordURL")
+        internal static let sourceCodeURL = L10n.tr("Localizable", "SourceCodeURL")
         /// ソースコード
         internal static let sourceTitle = L10n.tr("Localizable", "SourceTitle")
         /// 成功

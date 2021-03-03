@@ -44,8 +44,8 @@
 // Setting
 "AboutTitle" = "About";
 "SupportTitle" = "Support";
-"SourceTitle" = "Source Cord";
-"SourceCordURL" = "https://github.com/lcr3/Odysseia";
+"SourceTitle" = "Source Code";
+"SourceCodeURL" = "https://github.com/lcr3/Odysseia";
 // SettingAbout
 "GeccoTitle" = "Gecco";
 "GeccoLink" = "https://github.com/bannzai/Gecco";

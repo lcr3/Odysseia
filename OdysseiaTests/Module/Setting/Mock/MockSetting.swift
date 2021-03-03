@@ -42,7 +42,7 @@ class MockSettingRouter: SettingWireframe {
     var callCountDismiss = 0
     var callCountShowAbout = 0
     var callCountShowSupport = 0
-    var callCountShowSourceCord = 0
+    var callCountShowSourceCode = 0
 
     func dismiss() {
         callCountDismiss += 1
@@ -56,7 +56,7 @@ class MockSettingRouter: SettingWireframe {
         callCountShowSupport += 1
     }
 
-    func showSourceCord() {
-        callCountShowSourceCord += 1
+    func showSourceCode() {
+        callCountShowSourceCode += 1
     }
 }

@@ -12,7 +12,7 @@ protocol SettingWireframe: AnyObject {
     func dismiss()
     func showAbout()
     func showSupport()
-    func showSourceCord()
+    func showSourceCode()
 }
 
 class SettingRouter {
@@ -47,8 +47,8 @@ extension SettingRouter: SettingWireframe {
         viewController.navigationController?.pushViewController(supportView, animated: true)
     }
 
-    func showSourceCord() {
-        guard let url = URL(string: L10n.Localizable.sourceCordURL) else { return }
+    func showSourceCode() {
+        guard let url = URL(string: L10n.Localizable.sourceCodeURL) else { return }
         UIApplication.shared.open(url)
     }
 }
